@@ -33,41 +33,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Java finally和return的执行顺序(非常重要)</title>
-    <url>/posts/28311/</url>
-    <content><![CDATA[<p>分享两篇文章，我个人认为好！  </p>
-<p><a href="https://blog.csdn.net/coder_no/article/details/83581442?utm_source=app&app_version=4.5.8">《java return与finally执行顺序测试》</a>  <a href="https://blog.csdn.net/qq_36299025/article/details/89435275?utm_source=app&app_version=4.5.8">《Java中finally和return执行顺序》</a>  </p>
-<span id="more"></span>  
-
-<p><strong>完！</strong>  </p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>C实现非递减有序数组删除重复元素</title>
-    <url>/posts/46996/</url>
-    <content><![CDATA[<p>参考csdn上一位大佬的文章：<a href="https://blog.csdn.net/zy010101/article/details/81302145?utm_source=app&app_version=4.5.5">删除一个有序数组中的重复元素</a>  </p>
-<span id="more"></span>  
-
-<p>本人采用的是方案二，代码实现如下：  </p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="comment">//#define OK 1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> N 10</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">DelSameX</span><span class="params">(<span class="type">int</span> *L,<span class="type">int</span> n)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> i=<span class="number">0</span>,j;</span><br><span class="line">    <span class="keyword">if</span>(n==<span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        i=<span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(j=<span class="number">1</span>;j&lt;n;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(L[j]!=L[i])</span><br><span class="line">            &#123;</span><br><span class="line">                i++;</span><br><span class="line">                L[i]=L[j];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> i;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Please input feidijian youxu shuzu[%d]: &quot;</span>,N);</span><br><span class="line">    <span class="type">int</span> num[N];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;N;i++)</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;num[i]);</span><br><span class="line">    <span class="type">int</span> j=DelSameX(num,N);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;=j;i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,num[i]);</span><br><span class="line">    <span class="built_in">putchar</span>(<span class="string">&#x27;\n&#x27;</span>);</span><br><span class="line">    system(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行效果如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/DelSame.JPG">  </p>
-<p><strong>完！</strong></p>
-]]></content>
-      <categories>
-        <category>数据结构</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo搭建博客详细教程</title>
     <url>/posts/31931/</url>
     <content><![CDATA[<p>欢迎来到我的博客！这是我用hexo建立的第一个博客静态网页，部署在<a href="https://github.com/">github</a>上的，因此难免会有些许不尽人意的地方，但我会努力改善的，我会分享一些我平时所学的知识与经验，也分享一些我遇到过的技术错误，我相信有心人天不负，谢谢！    </p>
@@ -118,6 +83,41 @@
       </tags>
   </entry>
   <entry>
+    <title>Java finally和return的执行顺序(非常重要)</title>
+    <url>/posts/28311/</url>
+    <content><![CDATA[<p>分享两篇文章，我个人认为好！  </p>
+<p><a href="https://blog.csdn.net/coder_no/article/details/83581442?utm_source=app&app_version=4.5.8">《java return与finally执行顺序测试》</a>  <a href="https://blog.csdn.net/qq_36299025/article/details/89435275?utm_source=app&app_version=4.5.8">《Java中finally和return执行顺序》</a>  </p>
+<span id="more"></span>  
+
+<p><strong>完！</strong>  </p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C实现非递减有序数组删除重复元素</title>
+    <url>/posts/46996/</url>
+    <content><![CDATA[<p>参考csdn上一位大佬的文章：<a href="https://blog.csdn.net/zy010101/article/details/81302145?utm_source=app&app_version=4.5.5">删除一个有序数组中的重复元素</a>  </p>
+<span id="more"></span>  
+
+<p>本人采用的是方案二，代码实现如下：  </p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="comment">//#define OK 1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> N 10</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">DelSameX</span><span class="params">(<span class="type">int</span> *L,<span class="type">int</span> n)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> i=<span class="number">0</span>,j;</span><br><span class="line">    <span class="keyword">if</span>(n==<span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        i=<span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(j=<span class="number">1</span>;j&lt;n;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(L[j]!=L[i])</span><br><span class="line">            &#123;</span><br><span class="line">                i++;</span><br><span class="line">                L[i]=L[j];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> i;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Please input feidijian youxu shuzu[%d]: &quot;</span>,N);</span><br><span class="line">    <span class="type">int</span> num[N];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;N;i++)</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;num[i]);</span><br><span class="line">    <span class="type">int</span> j=DelSameX(num,N);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;=j;i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,num[i]);</span><br><span class="line">    <span class="built_in">putchar</span>(<span class="string">&#x27;\n&#x27;</span>);</span><br><span class="line">    system(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行效果如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/DelSame.JPG">  </p>
+<p><strong>完！</strong></p>
+]]></content>
+      <categories>
+        <category>数据结构</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java static的常见问题和使用误区</title>
     <url>/posts/10897/</url>
     <content><![CDATA[<p>详细介绍可学习csdn大佬的一篇文章<a href="https://blog.csdn.net/weixin_44234912/article/details/108737054?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161512057416780266281223%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=161512057416780266281223&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-2-108737054.first_rank_v2_pc_rank_v29&utm_term=Java+static%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E4%BD%BF%E7%94%A8%E8%AF%AF%E5%8C%BA">《static的常见问题和使用误区》</a>  </p>
@@ -154,6 +154,22 @@
 <span id="more"></span>  
 
 <p><strong>完！</strong>  </p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java使用二维数组输出杨辉三角</title>
+    <url>/posts/9719/</url>
+    <content><![CDATA[<p>代码如下：    </p>
+<span id="more"></span>  
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ArrayTest5</span> &#123;</span><br><span class="line">	<span class="comment">/*</span></span><br><span class="line"><span class="comment">	 * 声明num()方法，在 num() 方法中传入两个参数，即 x 和 y。</span></span><br><span class="line"><span class="comment">	 * 其中，x 表示行，y 表示列。num() 方法用于计算第 x 行第 y 列的数值。</span></span><br><span class="line"><span class="comment">	 * 代码如下：</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">num</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y)</span>	&#123;</span><br><span class="line">		<span class="keyword">if</span>(y==<span class="number">1</span> || y==x)</span><br><span class="line">			<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">		<span class="type">int</span> c=num(x-<span class="number">1</span>,y-<span class="number">1</span>)+num(x-<span class="number">1</span>,y);</span><br><span class="line">		<span class="keyword">return</span> c;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>	&#123;</span><br><span class="line">		<span class="meta">@SuppressWarnings(&quot;resource&quot;)</span></span><br><span class="line">		Scanner input=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		System.out.print(<span class="string">&quot;输入打印杨辉三角形的行数：&quot;</span>);</span><br><span class="line">		<span class="type">int</span> row=input.nextInt();</span><br><span class="line">		<span class="type">int</span>[][] yhsj=<span class="keyword">new</span> <span class="title class_">int</span>[row+<span class="number">1</span>][row+<span class="number">1</span>];</span><br><span class="line">		<span class="comment">//定义二维数组，因为第0行不用，所以数组空间大小要+1</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=row;i++)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=i;j++)	&#123;</span><br><span class="line">				yhsj[i][j]=num(i,j);</span><br><span class="line">				<span class="comment">//通过数组来存储每行的数值</span></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=row;i++)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=row-i;j++)	&#123;</span><br><span class="line">				System.out.print(<span class="string">&quot; &quot;</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=i;j++)	&#123;</span><br><span class="line">				System.out.print(yhsj[i][j] + <span class="string">&quot; &quot;</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			System.out.println();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>保存，输出结果如图示：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/yhsj.JPG">  </p>
 ]]></content>
       <categories>
         <category>Java</category>
@@ -245,13 +261,12 @@
       </tags>
   </entry>
   <entry>
-    <title>Java使用二维数组输出杨辉三角</title>
-    <url>/posts/9719/</url>
-    <content><![CDATA[<p>代码如下：    </p>
-<span id="more"></span>  
+    <title>Java数组实战训练2</title>
+    <url>/posts/919/</url>
+    <content><![CDATA[<p>假设在仓库系统中，每件商品都有 3 个库存信息，分别是入库量、出库量和当前库存量。定义一个一维数组来存储 5 件商品的名称，并定义一个二维数组来存储这 5 件商品的 3 个库存信息。用户可以根据商品名称查询该商品的所有库存，也可以查看某个类别库存下数量小于 100 的商品名单，并将该类别的所有库存量按从低到高的顺序排列。具体代码如下:  </p>
+<span id="more"></span>          
 
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ArrayTest5</span> &#123;</span><br><span class="line">	<span class="comment">/*</span></span><br><span class="line"><span class="comment">	 * 声明num()方法，在 num() 方法中传入两个参数，即 x 和 y。</span></span><br><span class="line"><span class="comment">	 * 其中，x 表示行，y 表示列。num() 方法用于计算第 x 行第 y 列的数值。</span></span><br><span class="line"><span class="comment">	 * 代码如下：</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">num</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y)</span>	&#123;</span><br><span class="line">		<span class="keyword">if</span>(y==<span class="number">1</span> || y==x)</span><br><span class="line">			<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">		<span class="type">int</span> c=num(x-<span class="number">1</span>,y-<span class="number">1</span>)+num(x-<span class="number">1</span>,y);</span><br><span class="line">		<span class="keyword">return</span> c;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>	&#123;</span><br><span class="line">		<span class="meta">@SuppressWarnings(&quot;resource&quot;)</span></span><br><span class="line">		Scanner input=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		System.out.print(<span class="string">&quot;输入打印杨辉三角形的行数：&quot;</span>);</span><br><span class="line">		<span class="type">int</span> row=input.nextInt();</span><br><span class="line">		<span class="type">int</span>[][] yhsj=<span class="keyword">new</span> <span class="title class_">int</span>[row+<span class="number">1</span>][row+<span class="number">1</span>];</span><br><span class="line">		<span class="comment">//定义二维数组，因为第0行不用，所以数组空间大小要+1</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=row;i++)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=i;j++)	&#123;</span><br><span class="line">				yhsj[i][j]=num(i,j);</span><br><span class="line">				<span class="comment">//通过数组来存储每行的数值</span></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=row;i++)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=row-i;j++)	&#123;</span><br><span class="line">				System.out.print(<span class="string">&quot; &quot;</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=i;j++)	&#123;</span><br><span class="line">				System.out.print(yhsj[i][j] + <span class="string">&quot; &quot;</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			System.out.println();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>保存，输出结果如图示：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/yhsj.JPG">  </p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ArrayTest4</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>	&#123;</span><br><span class="line">		<span class="meta">@SuppressWarnings(&quot;resource&quot;)</span></span><br><span class="line">		Scanner input=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		String[] products= &#123;<span class="string">&quot;洗发水&quot;</span>,<span class="string">&quot;纸巾&quot;</span>,<span class="string">&quot;水杯&quot;</span>,<span class="string">&quot;牙膏&quot;</span>,</span><br><span class="line">			<span class="string">&quot;香皂&quot;</span>&#125;;</span><br><span class="line">		<span class="type">int</span>[][] amounts= &#123;&#123;<span class="number">50</span>,<span class="number">80</span>,<span class="number">90</span>&#125;,&#123;<span class="number">40</span>,<span class="number">80</span>,<span class="number">78</span>&#125;,&#123;<span class="number">50</span>,<span class="number">45</span></span><br><span class="line">			,<span class="number">789</span>&#125;,&#123;<span class="number">100</span>,<span class="number">685</span>,<span class="number">55</span>&#125;,&#123;<span class="number">898</span>,<span class="number">754</span>,<span class="number">63</span>&#125;&#125;;</span><br><span class="line">		System.out.println(<span class="string">&quot;————————库存系统————————&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;请输入要查询库存信息的商品名称：&quot;</span>);</span><br><span class="line">		String name=input.next();</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;products.length;i++)	&#123;</span><br><span class="line">			<span class="keyword">if</span>(products[i].equals(name))	&#123;</span><br><span class="line">				System.out.println(<span class="string">&quot;商品【&quot;</span> + products[i]</span><br><span class="line">						+ <span class="string">&quot;】的库存信息如下：&quot;</span>);</span><br><span class="line">				System.out.println(<span class="string">&quot;入库\t出库\t库存&quot;</span>);</span><br><span class="line">				<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;<span class="number">3</span>;j++)	&#123;</span><br><span class="line">					System.out.print(amounts[i][j] + <span class="string">&quot;\t&quot;</span>);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(<span class="string">&quot;\n————————查询库存不足100的商品&quot;</span></span><br><span class="line">				+ <span class="string">&quot;————————&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;1.入库\t2.出库\t3.库存&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;请输入序号：&quot;</span>);</span><br><span class="line">		<span class="type">int</span> no=input.nextInt();</span><br><span class="line">		<span class="type">int</span>[] temp=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">5</span>];<span class="comment">//定义数组，存储该类别的所有商品</span></span><br><span class="line">		System.out.println(<span class="string">&quot;该类别下数量较少的商品有：&quot;</span>);</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)	&#123;</span><br><span class="line">			temp[i]=amounts[i][no-<span class="number">1</span>];<span class="comment">//将指定类别的商品数目</span></span><br><span class="line">			<span class="comment">//存储到temp数组中</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;temp.length;i++)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=temp.length-i-<span class="number">2</span>;j&gt;=i;j--)	&#123;</span><br><span class="line">				<span class="keyword">if</span>(temp[j]&gt;temp[j+<span class="number">1</span>])	&#123;</span><br><span class="line">					<span class="type">int</span> x=temp[j];</span><br><span class="line">					temp[j]=temp[j+<span class="number">1</span>];</span><br><span class="line">					temp[j+<span class="number">1</span>]=x;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)	&#123;</span><br><span class="line">			<span class="keyword">if</span>(temp[i]&lt;<span class="number">100</span> &amp;&amp; temp[i]!=temp[i+<span class="number">1</span>])	&#123;</span><br><span class="line">				<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;<span class="number">5</span>;j++)	&#123;</span><br><span class="line">					<span class="keyword">if</span>(amounts[j][no-<span class="number">1</span>]==temp[i])	&#123;</span><br><span class="line">						System.out.print(products[j] + </span><br><span class="line">								<span class="string">&quot;\t&quot;</span>);</span><br><span class="line">						</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(<span class="string">&quot;\n该类别的商品库存信息从低到高的&quot;</span></span><br><span class="line">				+ <span class="string">&quot;排列如下：&quot;</span>);</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;temp.length;i++)	&#123;</span><br><span class="line">			System.out.print(temp[i] + <span class="string">&quot;\t&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;     </span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>Java</category>
@@ -261,12 +276,12 @@
       </tags>
   </entry>
   <entry>
-    <title>Java数组实战训练2</title>
-    <url>/posts/919/</url>
-    <content><![CDATA[<p>假设在仓库系统中，每件商品都有 3 个库存信息，分别是入库量、出库量和当前库存量。定义一个一维数组来存储 5 件商品的名称，并定义一个二维数组来存储这 5 件商品的 3 个库存信息。用户可以根据商品名称查询该商品的所有库存，也可以查看某个类别库存下数量小于 100 的商品名单，并将该类别的所有库存量按从低到高的顺序排列。具体代码如下:  </p>
-<span id="more"></span>          
+    <title>Java注释:类、方法和字段注释</title>
+    <url>/posts/65033/</url>
+    <content><![CDATA[<p>详细介绍可参考c语言中文网教程<a href="http://c.biancheng.net/view/6114.html">《Java注释:类、方法和字段注释》</a>。  </p>
+<span id="more"></span>  
 
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ArrayTest4</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>	&#123;</span><br><span class="line">		<span class="meta">@SuppressWarnings(&quot;resource&quot;)</span></span><br><span class="line">		Scanner input=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		String[] products= &#123;<span class="string">&quot;洗发水&quot;</span>,<span class="string">&quot;纸巾&quot;</span>,<span class="string">&quot;水杯&quot;</span>,<span class="string">&quot;牙膏&quot;</span>,</span><br><span class="line">			<span class="string">&quot;香皂&quot;</span>&#125;;</span><br><span class="line">		<span class="type">int</span>[][] amounts= &#123;&#123;<span class="number">50</span>,<span class="number">80</span>,<span class="number">90</span>&#125;,&#123;<span class="number">40</span>,<span class="number">80</span>,<span class="number">78</span>&#125;,&#123;<span class="number">50</span>,<span class="number">45</span></span><br><span class="line">			,<span class="number">789</span>&#125;,&#123;<span class="number">100</span>,<span class="number">685</span>,<span class="number">55</span>&#125;,&#123;<span class="number">898</span>,<span class="number">754</span>,<span class="number">63</span>&#125;&#125;;</span><br><span class="line">		System.out.println(<span class="string">&quot;————————库存系统————————&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;请输入要查询库存信息的商品名称：&quot;</span>);</span><br><span class="line">		String name=input.next();</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;products.length;i++)	&#123;</span><br><span class="line">			<span class="keyword">if</span>(products[i].equals(name))	&#123;</span><br><span class="line">				System.out.println(<span class="string">&quot;商品【&quot;</span> + products[i]</span><br><span class="line">						+ <span class="string">&quot;】的库存信息如下：&quot;</span>);</span><br><span class="line">				System.out.println(<span class="string">&quot;入库\t出库\t库存&quot;</span>);</span><br><span class="line">				<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;<span class="number">3</span>;j++)	&#123;</span><br><span class="line">					System.out.print(amounts[i][j] + <span class="string">&quot;\t&quot;</span>);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(<span class="string">&quot;\n————————查询库存不足100的商品&quot;</span></span><br><span class="line">				+ <span class="string">&quot;————————&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;1.入库\t2.出库\t3.库存&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;请输入序号：&quot;</span>);</span><br><span class="line">		<span class="type">int</span> no=input.nextInt();</span><br><span class="line">		<span class="type">int</span>[] temp=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">5</span>];<span class="comment">//定义数组，存储该类别的所有商品</span></span><br><span class="line">		System.out.println(<span class="string">&quot;该类别下数量较少的商品有：&quot;</span>);</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)	&#123;</span><br><span class="line">			temp[i]=amounts[i][no-<span class="number">1</span>];<span class="comment">//将指定类别的商品数目</span></span><br><span class="line">			<span class="comment">//存储到temp数组中</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;temp.length;i++)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=temp.length-i-<span class="number">2</span>;j&gt;=i;j--)	&#123;</span><br><span class="line">				<span class="keyword">if</span>(temp[j]&gt;temp[j+<span class="number">1</span>])	&#123;</span><br><span class="line">					<span class="type">int</span> x=temp[j];</span><br><span class="line">					temp[j]=temp[j+<span class="number">1</span>];</span><br><span class="line">					temp[j+<span class="number">1</span>]=x;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)	&#123;</span><br><span class="line">			<span class="keyword">if</span>(temp[i]&lt;<span class="number">100</span> &amp;&amp; temp[i]!=temp[i+<span class="number">1</span>])	&#123;</span><br><span class="line">				<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;<span class="number">5</span>;j++)	&#123;</span><br><span class="line">					<span class="keyword">if</span>(amounts[j][no-<span class="number">1</span>]==temp[i])	&#123;</span><br><span class="line">						System.out.print(products[j] + </span><br><span class="line">								<span class="string">&quot;\t&quot;</span>);</span><br><span class="line">						</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(<span class="string">&quot;\n该类别的商品库存信息从低到高的&quot;</span></span><br><span class="line">				+ <span class="string">&quot;排列如下：&quot;</span>);</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;temp.length;i++)	&#123;</span><br><span class="line">			System.out.print(temp[i] + <span class="string">&quot;\t&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;     </span><br></pre></td></tr></table></figure>
+<p><strong>完！</strong>  </p>
 ]]></content>
       <categories>
         <category>Java</category>
@@ -293,32 +308,22 @@
       </tags>
   </entry>
   <entry>
-    <title>Java注释:类、方法和字段注释</title>
-    <url>/posts/65033/</url>
-    <content><![CDATA[<p>详细介绍可参考c语言中文网教程<a href="http://c.biancheng.net/view/6114.html">《Java注释:类、方法和字段注释》</a>。  </p>
+    <title>Java用户修改密码程序</title>
+    <url>/posts/63646/</url>
+    <content><![CDATA[<p>详细内容请看阅读全文：</p>
 <span id="more"></span>  
 
+<p>每一个应用系统或程序都离不开用户模块。用户模块除了提供登录之外，还允许用户查看自己的信息和进行修改。本实例将创建一个用户类，然后再创建一个测试类调用用户类，实现修改密码的功能。</p>
+<ol>
+<li><p>先创建用户类，仅包含用户名和密码两个属性。  </p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> classExample;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Member</span> &#123;<span class="comment">//用户类</span></span><br><span class="line">	<span class="keyword">private</span> String username;<span class="comment">//用户名</span></span><br><span class="line">	<span class="keyword">private</span> String password;<span class="comment">//密码</span></span><br><span class="line">	<span class="keyword">public</span> String <span class="title function_">getUsername</span><span class="params">()</span> &#123;</span><br><span class="line">		<span class="keyword">return</span> username;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setUsername</span><span class="params">(String username)</span> &#123;</span><br><span class="line">		<span class="built_in">this</span>.username=username;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> String <span class="title function_">getPassword</span><span class="params">()</span> &#123;</span><br><span class="line">		<span class="keyword">return</span> password;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setPassword</span><span class="params">(String password)</span> &#123;</span><br><span class="line">		<span class="built_in">this</span>.password=password;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> <span class="title function_">Member</span><span class="params">(String username, String password)</span> &#123;</span><br><span class="line">		<span class="built_in">this</span>.username=username;</span><br><span class="line">		<span class="built_in">this</span>.password=password;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> String <span class="title function_">toString</span><span class="params">()</span> &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="string">&quot;用户名：&quot;</span> + username + <span class="string">&quot;\n密码：&quot;</span> + password;</span><br><span class="line">		<span class="comment">//输出用户信息</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>再创建MemberTest类实现修改密码的功能，即当用户输入的密码与原理密码相同时方可进行修改密码操作，否则提示用户输入的密码不正确。  </p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> classExample;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MemberTest</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">		Member admin=<span class="keyword">new</span> <span class="title class_">Member</span>(<span class="string">&quot;admin&quot;</span>,<span class="string">&quot;123456&quot;</span>);</span><br><span class="line">		<span class="comment">//创建用户对象</span></span><br><span class="line">		<span class="meta">@SuppressWarnings(&quot;resource&quot;)</span></span><br><span class="line">		Scanner input=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		System.out.println(<span class="string">&quot;请输入原密码：&quot;</span>);</span><br><span class="line">		String pwd=input.next();<span class="comment">//获取用户输入的原密码</span></span><br><span class="line">		<span class="keyword">if</span>(pwd.equals(admin.getPassword())) &#123;</span><br><span class="line">			<span class="comment">//对用户输入的密码与原密码进行验证</span></span><br><span class="line">			System.out.println(<span class="string">&quot;请输入新密码：&quot;</span>);</span><br><span class="line">			admin.setPassword(input.next());</span><br><span class="line">			<span class="comment">//获取用户输入的新密码</span></span><br><span class="line">		&#125;	<span class="keyword">else</span> &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;输入的密码错误，无法进行修改！&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(<span class="string">&quot;————————用户信息————————\n&quot;</span></span><br><span class="line">				+ admin);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>在main()方法中创建了Member类的对象admin，并访问了该对象的成员变量password和成员方法toString()。  </p>
+<p>输出结果如图所示：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/chpw.JPG">  <img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/chpw2.JPG">  </p>
 <p><strong>完！</strong>  </p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java程序易错点</title>
-    <url>/posts/21658/</url>
-    <content><![CDATA[<p>易错点警示：  </p>
-<span id="more"></span>
-
-<p>1、增强的for循环出现的错误：  </p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Test</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">int</span> a[]=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> n=<span class="number">0</span>;n&lt;a.length;n++) &#123;</span><br><span class="line">            System.out.println(a[n]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i:a) &#123;</span><br><span class="line">            System.out.println(i);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> m=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(m:a) &#123;<span class="comment">//错误</span></span><br><span class="line">            System.out.println(m);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>2、<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/javaCuoTi.JPG">  </p>
-<p>3、<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/javaCuoTi2.JPG">  </p>
-<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/javaCuoTi2_2.JPG">  </p>
 ]]></content>
       <categories>
         <category>Java</category>
@@ -405,22 +410,17 @@
       </tags>
   </entry>
   <entry>
-    <title>Java用户修改密码程序</title>
-    <url>/posts/63646/</url>
-    <content><![CDATA[<p>详细内容请看阅读全文：</p>
-<span id="more"></span>  
+    <title>Java程序易错点</title>
+    <url>/posts/21658/</url>
+    <content><![CDATA[<p>易错点警示：  </p>
+<span id="more"></span>
 
-<p>每一个应用系统或程序都离不开用户模块。用户模块除了提供登录之外，还允许用户查看自己的信息和进行修改。本实例将创建一个用户类，然后再创建一个测试类调用用户类，实现修改密码的功能。</p>
-<ol>
-<li><p>先创建用户类，仅包含用户名和密码两个属性。  </p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> classExample;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Member</span> &#123;<span class="comment">//用户类</span></span><br><span class="line">	<span class="keyword">private</span> String username;<span class="comment">//用户名</span></span><br><span class="line">	<span class="keyword">private</span> String password;<span class="comment">//密码</span></span><br><span class="line">	<span class="keyword">public</span> String <span class="title function_">getUsername</span><span class="params">()</span> &#123;</span><br><span class="line">		<span class="keyword">return</span> username;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setUsername</span><span class="params">(String username)</span> &#123;</span><br><span class="line">		<span class="built_in">this</span>.username=username;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> String <span class="title function_">getPassword</span><span class="params">()</span> &#123;</span><br><span class="line">		<span class="keyword">return</span> password;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setPassword</span><span class="params">(String password)</span> &#123;</span><br><span class="line">		<span class="built_in">this</span>.password=password;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> <span class="title function_">Member</span><span class="params">(String username, String password)</span> &#123;</span><br><span class="line">		<span class="built_in">this</span>.username=username;</span><br><span class="line">		<span class="built_in">this</span>.password=password;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> String <span class="title function_">toString</span><span class="params">()</span> &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="string">&quot;用户名：&quot;</span> + username + <span class="string">&quot;\n密码：&quot;</span> + password;</span><br><span class="line">		<span class="comment">//输出用户信息</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>再创建MemberTest类实现修改密码的功能，即当用户输入的密码与原理密码相同时方可进行修改密码操作，否则提示用户输入的密码不正确。  </p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> classExample;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MemberTest</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">		Member admin=<span class="keyword">new</span> <span class="title class_">Member</span>(<span class="string">&quot;admin&quot;</span>,<span class="string">&quot;123456&quot;</span>);</span><br><span class="line">		<span class="comment">//创建用户对象</span></span><br><span class="line">		<span class="meta">@SuppressWarnings(&quot;resource&quot;)</span></span><br><span class="line">		Scanner input=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		System.out.println(<span class="string">&quot;请输入原密码：&quot;</span>);</span><br><span class="line">		String pwd=input.next();<span class="comment">//获取用户输入的原密码</span></span><br><span class="line">		<span class="keyword">if</span>(pwd.equals(admin.getPassword())) &#123;</span><br><span class="line">			<span class="comment">//对用户输入的密码与原密码进行验证</span></span><br><span class="line">			System.out.println(<span class="string">&quot;请输入新密码：&quot;</span>);</span><br><span class="line">			admin.setPassword(input.next());</span><br><span class="line">			<span class="comment">//获取用户输入的新密码</span></span><br><span class="line">		&#125;	<span class="keyword">else</span> &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;输入的密码错误，无法进行修改！&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(<span class="string">&quot;————————用户信息————————\n&quot;</span></span><br><span class="line">				+ admin);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>在main()方法中创建了Member类的对象admin，并访问了该对象的成员变量password和成员方法toString()。  </p>
-<p>输出结果如图所示：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/chpw.JPG">  <img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/chpw2.JPG">  </p>
-<p><strong>完！</strong>  </p>
+<p>1、增强的for循环出现的错误：  </p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Test</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">int</span> a[]=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> n=<span class="number">0</span>;n&lt;a.length;n++) &#123;</span><br><span class="line">            System.out.println(a[n]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i:a) &#123;</span><br><span class="line">            System.out.println(i);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> m=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(m:a) &#123;<span class="comment">//错误</span></span><br><span class="line">            System.out.println(m);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>2、<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/javaCuoTi.JPG">  </p>
+<p>3、<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/javaCuoTi2.JPG">  </p>
+<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/javaCuoTi2_2.JPG">  </p>
 ]]></content>
       <categories>
         <category>Java</category>
@@ -454,21 +454,6 @@
 ]]></content>
       <categories>
         <category>Java</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MIT教授推荐的学习方法</title>
-    <url>/posts/29170/</url>
-    <content><![CDATA[<p>老师这样说的，在你思考难题时，如果独自想了45分钟左右仍没有解决题目，那么你就应该选择放弃，就算完全没有搞懂也没有关系，在接下来的时间里可以做其它更有意义的事，难题一般需要团队协作来解决，不仅效率高，而且对个人的学习能力的提升也有很大的帮助，不过，要在团队解决问题之前应该独立思考45分钟左右做好准备，应该怎么问。  </p>
-<span id="more"></span>  
-
-<p><strong>完！</strong></p>
-]]></content>
-      <categories>
-        <category>随笔</category>
       </categories>
       <tags>
         <tag>学习</tag>
@@ -510,6 +495,21 @@
       </tags>
   </entry>
   <entry>
+    <title>MIT教授推荐的学习方法</title>
+    <url>/posts/29170/</url>
+    <content><![CDATA[<p>老师这样说的，在你思考难题时，如果独自想了45分钟左右仍没有解决题目，那么你就应该选择放弃，就算完全没有搞懂也没有关系，在接下来的时间里可以做其它更有意义的事，难题一般需要团队协作来解决，不仅效率高，而且对个人的学习能力的提升也有很大的帮助，不过，要在团队解决问题之前应该独立思考45分钟左右做好准备，应该怎么问。  </p>
+<span id="more"></span>  
+
+<p><strong>完！</strong></p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>VSCode Code Runner插件运行Java程序输出乱码</title>
     <url>/posts/59895/</url>
     <content><![CDATA[<img src="https://w.wallhaven.cc/full/4g/wallhaven-4g6l30.jpg" style="zoom: 25%;" />  
@@ -523,36 +523,6 @@
       </categories>
       <tags>
         <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo+next主题添加valine评论</title>
-    <url>/posts/51662/</url>
-    <content><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>参考文章：<a href="https://github.com/next-theme/hexo-theme-next/issues/188#issuecomment-766578906">Why remove the valine comment in the latest version？</a>.</p>
-<span id="more"></span>
-
-<p><img src="https://photo.lihui327.cn/blog/2022/2022-05-07_143721.jpg"></p>
-<h4 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h4><ol>
-<li>换一个评论系统，完事…</li>
-<li>参考<a href="https://github.com/next-theme/hexo-next-valine">Hexo NexT Valine</a>.</li>
-</ol>
-<p>① powershell管理员模式下cd到博客根目录，执行<code>npm install next-theme/hexo-next-valine</code></p>
-<p>② 进入主题配置文件夹，加入如下代码</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Valine</span></span><br><span class="line"><span class="comment"># For more information: https://valine.js.org, https://github.com/xCss/Valine</span></span><br><span class="line"><span class="attr">valine:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">appId:</span>  <span class="comment"># your leancloud application appid</span></span><br><span class="line">  <span class="attr">appKey:</span>  <span class="comment"># your leancloud application appkey</span></span><br><span class="line">  <span class="attr">serverURLs:</span> <span class="comment"># When the custom domain name is enabled, fill it in here</span></span><br><span class="line">  <span class="attr">placeholder:</span> <span class="string">Just</span> <span class="string">go</span> <span class="string">go</span> <span class="comment"># comment box placeholder</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">mm</span> <span class="comment"># gravatar style</span></span><br><span class="line">  <span class="attr">meta:</span> [<span class="string">nick</span>, <span class="string">mail</span>, <span class="string">link</span>] <span class="comment"># Custom comment header</span></span><br><span class="line">  <span class="attr">pageSize:</span> <span class="number">10</span> <span class="comment"># pagination size</span></span><br><span class="line">  <span class="attr">visitor:</span> <span class="literal">false</span> <span class="comment"># leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors&#x27; for counter compatibility. Article reading statistic https://valine.js.org/visitor.html</span></span><br><span class="line">  <span class="attr">comment_count:</span> <span class="literal">true</span> <span class="comment"># If false, comment count will only be displayed in post page, not in home page</span></span><br><span class="line">  <span class="attr">recordIP:</span> <span class="literal">false</span> <span class="comment"># Whether to record the commenter IP</span></span><br></pre></td></tr></table></figure>
-
-<p>③ <a href="https://www.leancloud.cn/">leancloud</a>. 创建开发板项目，获取appid和appkey，并将其填入上面的appId和appKey中</p>
-<p>④ 调试，一般情况下到这里就完成了，不过因为我的是next主题，所以有点特殊，经过上述配置后，调试时，在文章底部会看到如下问题：</p>
-<p><img src="https://photo.lihui327.cn/blog/2022/2022-05-07_144622.jpg"></p>
-<p><strong>解决办法</strong>：进入leancloud控制台，在设置-应用凭证里复制<code>REST API 服务器地址</code>，粘贴到上面代码中的<code>serverURLs</code>中，即可解决。</p>
-<p>参考文章：<a href="https://zhuanlan.zhihu.com/p/424932976">Next主题设置-安装Valine和Artitalk</a>.</p>
-]]></content>
-      <categories>
-        <category>博客教程</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>next</tag>
-        <tag>valine</tag>
       </tags>
   </entry>
   <entry>
@@ -599,12 +569,25 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo+next主题黑暗模式配置</title>
-    <url>/posts/9967/</url>
-    <content><![CDATA[<h4 id="参考网站"><a href="#参考网站" class="headerlink" title="参考网站"></a>参考网站</h4><p><a href="https://github.com/rqh656418510/hexo-next-darkmode">hexo-next-darkmode</a>.</p>
+    <title>hexo+next主题添加valine评论</title>
+    <url>/posts/51662/</url>
+    <content><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>参考文章：<a href="https://github.com/next-theme/hexo-theme-next/issues/188#issuecomment-766578906">Why remove the valine comment in the latest version？</a>.</p>
 <span id="more"></span>
 
-<p>网站上的教程挺详细，有空再看。现在懒得搞…</p>
+<p><img src="https://photo.lihui327.cn/blog/2022/2022-05-07_143721.jpg"></p>
+<h4 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h4><ol>
+<li>换一个评论系统，完事…</li>
+<li>参考<a href="https://github.com/next-theme/hexo-next-valine">Hexo NexT Valine</a>.</li>
+</ol>
+<p>① powershell管理员模式下cd到博客根目录，执行<code>npm install next-theme/hexo-next-valine</code></p>
+<p>② 进入主题配置文件夹，加入如下代码</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Valine</span></span><br><span class="line"><span class="comment"># For more information: https://valine.js.org, https://github.com/xCss/Valine</span></span><br><span class="line"><span class="attr">valine:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">appId:</span>  <span class="comment"># your leancloud application appid</span></span><br><span class="line">  <span class="attr">appKey:</span>  <span class="comment"># your leancloud application appkey</span></span><br><span class="line">  <span class="attr">serverURLs:</span> <span class="comment"># When the custom domain name is enabled, fill it in here</span></span><br><span class="line">  <span class="attr">placeholder:</span> <span class="string">Just</span> <span class="string">go</span> <span class="string">go</span> <span class="comment"># comment box placeholder</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">mm</span> <span class="comment"># gravatar style</span></span><br><span class="line">  <span class="attr">meta:</span> [<span class="string">nick</span>, <span class="string">mail</span>, <span class="string">link</span>] <span class="comment"># Custom comment header</span></span><br><span class="line">  <span class="attr">pageSize:</span> <span class="number">10</span> <span class="comment"># pagination size</span></span><br><span class="line">  <span class="attr">visitor:</span> <span class="literal">false</span> <span class="comment"># leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors&#x27; for counter compatibility. Article reading statistic https://valine.js.org/visitor.html</span></span><br><span class="line">  <span class="attr">comment_count:</span> <span class="literal">true</span> <span class="comment"># If false, comment count will only be displayed in post page, not in home page</span></span><br><span class="line">  <span class="attr">recordIP:</span> <span class="literal">false</span> <span class="comment"># Whether to record the commenter IP</span></span><br></pre></td></tr></table></figure>
+
+<p>③ <a href="https://www.leancloud.cn/">leancloud</a>. 创建开发板项目，获取appid和appkey，并将其填入上面的appId和appKey中</p>
+<p>④ 调试，一般情况下到这里就完成了，不过因为我的是next主题，所以有点特殊，经过上述配置后，调试时，在文章底部会看到如下问题：</p>
+<p><img src="https://photo.lihui327.cn/blog/2022/2022-05-07_144622.jpg"></p>
+<p><strong>解决办法</strong>：进入leancloud控制台，在设置-应用凭证里复制<code>REST API 服务器地址</code>，粘贴到上面代码中的<code>serverURLs</code>中，即可解决。</p>
+<p>参考文章：<a href="https://zhuanlan.zhihu.com/p/424932976">Next主题设置-安装Valine和Artitalk</a>.</p>
 ]]></content>
       <categories>
         <category>博客教程</category>
@@ -612,6 +595,7 @@
       <tags>
         <tag>hexo</tag>
         <tag>next</tag>
+        <tag>valine</tag>
       </tags>
   </entry>
   <entry>
@@ -632,6 +616,36 @@
       </categories>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>不言弃，是胜利的第一步</title>
+    <url>/posts/13928/</url>
+    <content><![CDATA[<p>成功路上需要不断的坚持，需要多读书，许多伟大的人之所以能成功就在于他们读的书多，思考的多，所以就能成功。</p>
+<span id="more"></span>
+
+<iframe width="750" height="435" src="https://ydlunacommon-cdn.nosdn.127.net/494bd228676511fbc63997dd39d3f754.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>励志</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo+next主题黑暗模式配置</title>
+    <url>/posts/9967/</url>
+    <content><![CDATA[<h4 id="参考网站"><a href="#参考网站" class="headerlink" title="参考网站"></a>参考网站</h4><p><a href="https://github.com/rqh656418510/hexo-next-darkmode">hexo-next-darkmode</a>.</p>
+<span id="more"></span>
+
+<p>网站上的教程挺详细，有空再看。现在懒得搞…</p>
+]]></content>
+      <categories>
+        <category>博客教程</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
       </tags>
   </entry>
   <entry>
@@ -661,20 +675,6 @@
       </tags>
   </entry>
   <entry>
-    <title>不言弃，是胜利的第一步</title>
-    <url>/posts/13928/</url>
-    <content><![CDATA[<p>成功路上需要不断的坚持，需要多读书，许多伟大的人之所以能成功就在于他们读的书多，思考的多，所以就能成功。</p>
-<span id="more"></span>
-
-<iframe width="750" height="435" src="https://ydlunacommon-cdn.nosdn.127.net/494bd228676511fbc63997dd39d3f754.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>励志</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>中国程序员VS美国程序员，太形象了...</title>
     <url>/posts/26891/</url>
     <content><![CDATA[<p>转载一篇文章，原创<a href="https://mp.weixin.qq.com/s/tglPT8ipyUuvg6JJmm-F6A"><em>中国程序员VS美国程序员，太形象了…</em></a>，作者：不笑青年，公众号：不会笑青年  </p>
@@ -695,7 +695,7 @@
 <p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican11.jpg">  </p>
 <p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican12.jpg">  </p>
 <p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican13.jpg">  </p>
-<p>本人无意侵犯原作者著作权，若此文章侵犯了您的权益，请将相关版权信息提交至邮箱<a href="mailto:&#50;&#x33;&#50;&#x32;&#48;&#51;&#51;&#51;&#52;&#56;&#64;&#x71;&#x71;&#x2e;&#99;&#x6f;&#x6d;">&#50;&#x33;&#50;&#x32;&#48;&#51;&#51;&#51;&#52;&#56;&#64;&#x71;&#x71;&#x2e;&#99;&#x6f;&#x6d;</a>，我会第一时间处理，谢谢！</p>
+<p>本人无意侵犯原作者著作权，若此文章侵犯了您的权益，请将相关版权信息提交至邮箱<a href="mailto:&#50;&#51;&#50;&#x32;&#x30;&#x33;&#x33;&#x33;&#52;&#56;&#64;&#x71;&#113;&#46;&#x63;&#x6f;&#x6d;">&#50;&#51;&#50;&#x32;&#x30;&#x33;&#x33;&#x33;&#52;&#56;&#64;&#x71;&#113;&#46;&#x63;&#x6f;&#x6d;</a>，我会第一时间处理，谢谢！</p>
 ]]></content>
       <categories>
         <category>随笔</category>
@@ -780,11 +780,80 @@
 <li>solo: <a href="https://solo.b3log.org/">https://solo.b3log.org/</a>  </li>
 <li>wordpress: <a href="https://wordpress.org/">https://wordpress.org/</a></li>
 </ol>
-<p>参考文章：<a href="https://blog.csdn.net/weixin_45784655/article/details/104780438?utm_source=app&app_version=4.5.8">《个人博客搭建——介绍几种博客搭建框架》</a>，如本文侵犯了您的权益，请通过邮箱发送相关消息给本人(<a href="mailto:&#50;&#x33;&#50;&#50;&#x30;&#51;&#51;&#x33;&#x34;&#x38;&#x40;&#113;&#113;&#46;&#x63;&#111;&#x6d;">&#50;&#x33;&#50;&#50;&#x30;&#51;&#51;&#x33;&#x34;&#x38;&#x40;&#113;&#113;&#46;&#x63;&#111;&#x6d;</a>)，也可通过右边聊天图标发送消息，我看到后会第一时间进行处理，谢谢！  </p>
+<p>参考文章：<a href="https://blog.csdn.net/weixin_45784655/article/details/104780438?utm_source=app&app_version=4.5.8">《个人博客搭建——介绍几种博客搭建框架》</a>，如本文侵犯了您的权益，请通过邮箱发送相关消息给本人(<a href="mailto:&#50;&#51;&#x32;&#x32;&#48;&#x33;&#x33;&#51;&#52;&#x38;&#64;&#113;&#x71;&#x2e;&#99;&#x6f;&#109;">&#50;&#51;&#x32;&#x32;&#48;&#x33;&#x33;&#51;&#52;&#x38;&#64;&#113;&#x71;&#x2e;&#99;&#x6f;&#109;</a>)，也可通过右边聊天图标发送消息，我看到后会第一时间进行处理，谢谢！  </p>
 <p><strong>完！</strong></p>
 ]]></content>
       <categories>
         <category>博客教程</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>免费在线影视网址集合</title>
+    <url>/posts/34575/</url>
+    <content><![CDATA[<p>以下是个人收藏的一些影视网站，欢迎大家前来观看  </p>
+<span id="more"></span>
+
+<ul>
+<li>片库：资源丰富，提供磁力、迅雷、种子等多个下载链接(首推)<br><a href="https://www.pianku.li/">https://www.pianku.li/</a>  </li>
+<li>真不卡电影网：超清，网站无广告，个人认为热门资源比较多，冷门资源较少<br><a href="https://www.zhenbuka.com/">https://www.zhenbuka.com</a>  </li>
+<li>麦豆TV：超清，网站无广告，个人感觉同上<br><a href="https://www.mdoutv.com/">https://www.mdoutv.com</a>  </li>
+<li>Dokidoka: 影视搜索，个人感觉搜集资源比较全(推荐)<br><a href="https://www.dokidoka.com/">https://www.dokidoka.com</a>  </li>
+<li>i3S影视搜索引擎<br><a href="http://i3s.cn/">http://i3s.cn</a>  </li>
+<li>CCTV节目官网：观看电视剧还需要flash(强烈吐槽)，可以看央视节目<br><a href="http://tv.cctv.com/">http://tv.cctv.com/</a>  </li>
+<li>团长资源：提供在线观看，高速下载<br><a href="https://tzfile.com/">https://tzfile.com/</a>  </li>
+<li>低端电影：超清在线画质好<br><a href="http://ddrk.me/category/movie">http://ddrk.me/category/movie</a>  </li>
+<li>泡饭网：超清无水印<br><a href="http://www.paofans.net/">http://www.paofans.net/</a>  </li>
+<li>电影天堂：清晰度不错<br><a href="http://www.dyttv.com/">http://www.dyttv.com/</a>  </li>
+<li>追剧吧：清晰度一般，线路倒是挺多<br><a href="http://www.huaxiab.com/">http://www.huaxiab.com/</a>  </li>
+<li>彩虹影视：超清无水印<br><a href="http://www.952780.com/">http://www.952780.com/</a>  </li>
+<li>爱美剧<br><a href="https://www.imeiju.io/">https://www.imeiju.io/</a>  </li>
+<li>韩迷TV<br><a href="https://www.hmtv.me/">https://www.hmtv.me/</a>  </li>
+<li>MK影视<br><a href="https://www.mkvdo.com/">https://www.mkvdo.com/</a>  </li>
+<li>爱美剧网<br><a href="https://www.mjw2020.com/">https://www.mjw2020.com/</a>  </li>
+<li>独播库<br><a href="https://www.duboku.tv/">https://www.duboku.tv/</a>  </li>
+<li>南瓜电影<br><a href="http://www.nangua55.com/">http://www.nangua55.com/</a>  </li>
+<li>人人影视<br><a href="http://www.yyetss.com/">http://www.yyetss.com/</a>  </li>
+<li>青柠檬视频<br><a href="https://www.qnmtv.com/">https://www.qnmtv.com</a>  </li>
+<li>片吧影院<br><a href="https://www.pianba.net/">https://www.pianba.net</a>  </li>
+<li>VIP影院<br><a href="https://bukaivip.com/">https://bukaivip.com</a>  </li>
+<li>全能VIP视频在线解析(推荐还是用脚本吧，这个也不错)<br><a href="https://tool.yijingying.com/video/">https://tool.yijingying.com/video/</a>  </li>
+<li>舞帝影院<br><a href="http://shenma666.com/">http://shenma666.com/</a>  </li>
+<li>80青苹果影院<br><a href="https://www.80qpg.com/">https://www.80qpg.com</a>  </li>
+<li>58影视(个人体验还是不错的，值得一看，有安卓软件)<br><a href="http://9744.net/">http://9744.net/</a>  </li>
+<li>魔力电影网(资源多、冷门资源、福利)<br><a href="https://magbt.net/">https://magbt.net/</a>  </li>
+<li>力古拉斯(画质不错，更新较慢)<br><a href="http://xiaosp.ml/">http://xiaosp.ml/</a>  </li>
+<li>胖子视频(普通在线视频网站，但注册后有福利)<br><a href="http://www.pangzitv.com/">http://www.pangzitv.com/</a>  </li>
+<li>白鹿影院(免费在线，综艺更新快)<br><a href="http://bailutv.cn/">http://bailutv.cn/</a>  </li>
+<li>完美看看(免费在线，影视剧)<br><a href="https://www.wanmeikk.me/">https://www.wanmeikk.me/</a>  </li>
+<li>片吧(免费在线，影视剧(手机页面))<br><a href="http://pbpb.tv/">http://pbpb.tv</a>  </li>
+<li>看看屋(免费在线，影视剧)<br><a href="https://www.kankanwu.com/">https://www.kankanwu.com</a>  </li>
+<li>达达兔(免费在线，资源丰富，影视剧)<br><a href="https://v.jlszyy.cc/">https://v.jlszyy.cc</a>  </li>
+<li>太初电影(电影电视剧，资源丰富更新快)<br><a href="https://www.tcmove.com/">https://www.tcmove.com</a>  </li>
+<li>悟空视频(电影电视剧，资源丰富更新快)<br><a href="https://www.wukongshipin.com/">https://www.wukongshipin.com</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于Java自定义方法内部进行数值相等比较产生的问题</title>
+    <url>/posts/36358/</url>
+    <content><![CDATA[<p>我的建议就是不要在函数内部进行例如整数之类的相等比较，不管怎样，总是false，我也不知道为啥，例如下面的这个程序，如果我在自定义方法内部进行比较的话，一定出错，不信可以自己试试，但是在主方法内部进行比较时没有问题，so，我认为还是不要在方法内进行比较，这个原因还有待我考证，再说吧…   </p>
+<span id="more"></span>  
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">L2_2</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">loop</span><span class="params">(<span class="type">int</span> x)</span> &#123;</span><br><span class="line">        <span class="type">int</span>[] num=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">8</span>];</span><br><span class="line">        <span class="type">int</span> k=<span class="number">0</span>,sum=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">10</span>;x!=<span class="number">0</span>; ) &#123;</span><br><span class="line">            num[k]=(x%<span class="number">10</span>);</span><br><span class="line">            <span class="comment">//System.out.print(num[k]);</span></span><br><span class="line">            k++;</span><br><span class="line">            x/=<span class="number">10</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(k&gt;<span class="number">1</span>) &#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;(k-<span class="number">1</span>);i++) &#123;</span><br><span class="line">                <span class="keyword">for</span>(<span class="type">int</span> j=i;j&lt;(k-<span class="number">1</span>);j++) </span><br><span class="line">                    num[i]*=<span class="number">10</span>;</span><br><span class="line">                sum+=num[i];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        sum+=num[k-<span class="number">1</span>];</span><br><span class="line">        <span class="comment">//System.out.println(sum);</span></span><br><span class="line">        <span class="keyword">return</span> sum;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Scanner input=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">int</span> a=input.nextInt();</span><br><span class="line">        <span class="type">int</span> b=input.nextInt();</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=a;i&lt;=b;i++) &#123;</span><br><span class="line">            <span class="keyword">if</span>(loop(i)==i) &#123;</span><br><span class="line">                System.out.println(i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        input.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>完！</strong></p>
+]]></content>
+      <categories>
+        <category>Java</category>
       </categories>
       <tags>
         <tag>学习</tag>
@@ -840,58 +909,6 @@
         <tag>hexo</tag>
         <tag>next</tag>
         <tag>valine</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>免费在线影视网址集合</title>
-    <url>/posts/34575/</url>
-    <content><![CDATA[<p>以下是个人收藏的一些影视网站，欢迎大家前来观看  </p>
-<span id="more"></span>
-
-<ul>
-<li>片库：资源丰富，提供磁力、迅雷、种子等多个下载链接(首推)<br><a href="https://www.pianku.li/">https://www.pianku.li/</a>  </li>
-<li>真不卡电影网：超清，网站无广告，个人认为热门资源比较多，冷门资源较少<br><a href="https://www.zhenbuka.com/">https://www.zhenbuka.com</a>  </li>
-<li>麦豆TV：超清，网站无广告，个人感觉同上<br><a href="https://www.mdoutv.com/">https://www.mdoutv.com</a>  </li>
-<li>Dokidoka: 影视搜索，个人感觉搜集资源比较全(推荐)<br><a href="https://www.dokidoka.com/">https://www.dokidoka.com</a>  </li>
-<li>i3S影视搜索引擎<br><a href="http://i3s.cn/">http://i3s.cn</a>  </li>
-<li>CCTV节目官网：观看电视剧还需要flash(强烈吐槽)，可以看央视节目<br><a href="http://tv.cctv.com/">http://tv.cctv.com/</a>  </li>
-<li>团长资源：提供在线观看，高速下载<br><a href="https://tzfile.com/">https://tzfile.com/</a>  </li>
-<li>低端电影：超清在线画质好<br><a href="http://ddrk.me/category/movie">http://ddrk.me/category/movie</a>  </li>
-<li>泡饭网：超清无水印<br><a href="http://www.paofans.net/">http://www.paofans.net/</a>  </li>
-<li>电影天堂：清晰度不错<br><a href="http://www.dyttv.com/">http://www.dyttv.com/</a>  </li>
-<li>追剧吧：清晰度一般，线路倒是挺多<br><a href="http://www.huaxiab.com/">http://www.huaxiab.com/</a>  </li>
-<li>彩虹影视：超清无水印<br><a href="http://www.952780.com/">http://www.952780.com/</a>  </li>
-<li>爱美剧<br><a href="https://www.imeiju.io/">https://www.imeiju.io/</a>  </li>
-<li>韩迷TV<br><a href="https://www.hmtv.me/">https://www.hmtv.me/</a>  </li>
-<li>MK影视<br><a href="https://www.mkvdo.com/">https://www.mkvdo.com/</a>  </li>
-<li>爱美剧网<br><a href="https://www.mjw2020.com/">https://www.mjw2020.com/</a>  </li>
-<li>独播库<br><a href="https://www.duboku.tv/">https://www.duboku.tv/</a>  </li>
-<li>南瓜电影<br><a href="http://www.nangua55.com/">http://www.nangua55.com/</a>  </li>
-<li>人人影视<br><a href="http://www.yyetss.com/">http://www.yyetss.com/</a>  </li>
-<li>青柠檬视频<br><a href="https://www.qnmtv.com/">https://www.qnmtv.com</a>  </li>
-<li>片吧影院<br><a href="https://www.pianba.net/">https://www.pianba.net</a>  </li>
-<li>VIP影院<br><a href="https://bukaivip.com/">https://bukaivip.com</a>  </li>
-<li>全能VIP视频在线解析(推荐还是用脚本吧，这个也不错)<br><a href="https://tool.yijingying.com/video/">https://tool.yijingying.com/video/</a>  </li>
-<li>舞帝影院<br><a href="http://shenma666.com/">http://shenma666.com/</a>  </li>
-<li>80青苹果影院<br><a href="https://www.80qpg.com/">https://www.80qpg.com</a>  </li>
-<li>58影视(个人体验还是不错的，值得一看，有安卓软件)<br><a href="http://9744.net/">http://9744.net/</a>  </li>
-<li>魔力电影网(资源多、冷门资源、福利)<br><a href="https://magbt.net/">https://magbt.net/</a>  </li>
-<li>力古拉斯(画质不错，更新较慢)<br><a href="http://xiaosp.ml/">http://xiaosp.ml/</a>  </li>
-<li>胖子视频(普通在线视频网站，但注册后有福利)<br><a href="http://www.pangzitv.com/">http://www.pangzitv.com/</a>  </li>
-<li>白鹿影院(免费在线，综艺更新快)<br><a href="http://bailutv.cn/">http://bailutv.cn/</a>  </li>
-<li>完美看看(免费在线，影视剧)<br><a href="https://www.wanmeikk.me/">https://www.wanmeikk.me/</a>  </li>
-<li>片吧(免费在线，影视剧(手机页面))<br><a href="http://pbpb.tv/">http://pbpb.tv</a>  </li>
-<li>看看屋(免费在线，影视剧)<br><a href="https://www.kankanwu.com/">https://www.kankanwu.com</a>  </li>
-<li>达达兔(免费在线，资源丰富，影视剧)<br><a href="https://v.jlszyy.cc/">https://v.jlszyy.cc</a>  </li>
-<li>太初电影(电影电视剧，资源丰富更新快)<br><a href="https://www.tcmove.com/">https://www.tcmove.com</a>  </li>
-<li>悟空视频(电影电视剧，资源丰富更新快)<br><a href="https://www.wukongshipin.com/">https://www.wukongshipin.com</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -951,20 +968,19 @@
       </tags>
   </entry>
   <entry>
-    <title>关于Java自定义方法内部进行数值相等比较产生的问题</title>
-    <url>/posts/36358/</url>
-    <content><![CDATA[<p>我的建议就是不要在函数内部进行例如整数之类的相等比较，不管怎样，总是false，我也不知道为啥，例如下面的这个程序，如果我在自定义方法内部进行比较的话，一定出错，不信可以自己试试，但是在主方法内部进行比较时没有问题，so，我认为还是不要在方法内进行比较，这个原因还有待我考证，再说吧…   </p>
-<span id="more"></span>  
+    <title>关于next主题配置执行hexo g出现问题</title>
+    <url>/posts/63081/</url>
+    <content><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>我在我的旧电脑中不曾遇到过这种情况，就是会出现找不到某css文件，解析失败的情况。</p>
+<span id="more"></span>
 
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">L2_2</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">loop</span><span class="params">(<span class="type">int</span> x)</span> &#123;</span><br><span class="line">        <span class="type">int</span>[] num=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">8</span>];</span><br><span class="line">        <span class="type">int</span> k=<span class="number">0</span>,sum=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">10</span>;x!=<span class="number">0</span>; ) &#123;</span><br><span class="line">            num[k]=(x%<span class="number">10</span>);</span><br><span class="line">            <span class="comment">//System.out.print(num[k]);</span></span><br><span class="line">            k++;</span><br><span class="line">            x/=<span class="number">10</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(k&gt;<span class="number">1</span>) &#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;(k-<span class="number">1</span>);i++) &#123;</span><br><span class="line">                <span class="keyword">for</span>(<span class="type">int</span> j=i;j&lt;(k-<span class="number">1</span>);j++) </span><br><span class="line">                    num[i]*=<span class="number">10</span>;</span><br><span class="line">                sum+=num[i];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        sum+=num[k-<span class="number">1</span>];</span><br><span class="line">        <span class="comment">//System.out.println(sum);</span></span><br><span class="line">        <span class="keyword">return</span> sum;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Scanner input=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">int</span> a=input.nextInt();</span><br><span class="line">        <span class="type">int</span> b=input.nextInt();</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=a;i&lt;=b;i++) &#123;</span><br><span class="line">            <span class="keyword">if</span>(loop(i)==i) &#123;</span><br><span class="line">                System.out.println(i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        input.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>完！</strong></p>
+<h4 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h4><p>这是next主题的原因，我使用其它主题都没出现过这种情况，关闭杀毒软件，退出窗口重新进入再执行<code>hexo g</code>命令即可，如果是其它的问题就可能不是主题的原因了，需要另外分析了。</p>
 ]]></content>
       <categories>
-        <category>Java</category>
+        <category>博客教程</category>
       </categories>
       <tags>
-        <tag>学习</tag>
+        <tag>hexo</tag>
+        <tag>next</tag>
       </tags>
   </entry>
   <entry>
@@ -999,22 +1015,6 @@
       </categories>
       <tags>
         <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于next主题配置执行hexo g出现问题</title>
-    <url>/posts/63081/</url>
-    <content><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>我在我的旧电脑中不曾遇到过这种情况，就是会出现找不到某css文件，解析失败的情况。</p>
-<span id="more"></span>
-
-<h4 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h4><p>这是next主题的原因，我使用其它主题都没出现过这种情况，关闭杀毒软件，退出窗口重新进入再执行<code>hexo g</code>命令即可，如果是其它的问题就可能不是主题的原因了，需要另外分析了。</p>
-]]></content>
-      <categories>
-        <category>博客教程</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>next</tag>
       </tags>
   </entry>
   <entry>
@@ -1397,6 +1397,37 @@
       </tags>
   </entry>
   <entry>
+    <title>编写算法求一元多项式的值</title>
+    <url>/posts/4387/</url>
+    <content><![CDATA[<p>题目如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/Czuoye1.JPG"></p>
+<span id="more"></span>  
+
+<p>废话不多说，直接上代码：  </p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> N 10</span></span><br><span class="line"><span class="comment">/* 使用迭代法重写第一次作业算法题 */</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">QiuMi</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> a)</span> </span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">return</span> a*x;</span><br><span class="line">&#125;   </span><br><span class="line"><span class="type">void</span> <span class="title function_">PrintPn</span><span class="params">(<span class="type">int</span> *a,<span class="type">int</span> n,<span class="type">int</span> x)</span> <span class="comment">/* 负责打印结果，以及调用求幂函数参与运算 */</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> Pn=<span class="number">0</span>,count=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;n;i++) </span><br><span class="line">    &#123;</span><br><span class="line">        Pn+=(a[i]*QiuMi(x,count));<span class="comment">//该语句一共执行n-1次</span></span><br><span class="line">        count=QiuMi(x,count);</span><br><span class="line">    &#125;</span><br><span class="line">    Pn+=a[<span class="number">0</span>];<span class="comment">//执行1次</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Pn(%d)=%d\n&quot;</span>,x,Pn);</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> a[N],x;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Please input %d numbers: \n&quot;</span>,N);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;N;i++) </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;a[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Please input X0: \n&quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;x);</span><br><span class="line">    PrintPn(a,N,x);</span><br><span class="line">    system(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>程序运行结果如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/CdiyizhangZuoYe.JPG">  </p>
+<p>正确答案如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/Czuoye1DaAn.JPG"></p>
+]]></content>
+      <categories>
+        <category>C</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>虎牙云游戏手机端体验</title>
+    <url>/posts/59253/</url>
+    <content><![CDATA[<p>不得不说，体验云游戏的感觉就是速度快，延迟特别小，有个缺点就是手机不太好操作PC端游戏，反应也挺快的，就是人的思路没有跟上，哈哈😂，我用手机打了两盘联盟，真心想说，我太难了，还是不能适应它的操作啊，暂且就这样吧，我觉得云游戏可能是以后游戏的一个发展趋势，普通人也许不需要配置很好的电脑就能玩要求很高的游戏，同样，手机也是如此，让我们拭目以待吧！但是不得不说，云游戏的确还有很长一段路要走。 </p>
+<span id="more"></span>  ]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>算法实现从顺序表中删除所有元素值介于x和y之间的所有元素且要求空间复杂度为O(1)</title>
     <url>/posts/24179/</url>
     <content><![CDATA[<p><strong>题目1：</strong>设计一个高效的算法，从顺序表L中删除所有元素值介于x和y之间的所有元素，要求空间复杂度为O(1)，即算法最多只额外使用一个元素空间。函数原型如下所示：  </p>
@@ -1456,46 +1487,18 @@
       </tags>
   </entry>
   <entry>
-    <title>编写算法求一元多项式的值</title>
-    <url>/posts/4387/</url>
-    <content><![CDATA[<p>题目如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/Czuoye1.JPG"></p>
+    <title>要做就做努力的失败者，绝不做沉沦的失败者</title>
+    <url>/posts/47530/</url>
+    <content><![CDATA[<p><strong>算是对学习上出现思想下滑的自己一种勉励吧！</strong>  </p>
 <span id="more"></span>  
 
-<p>废话不多说，直接上代码：  </p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> N 10</span></span><br><span class="line"><span class="comment">/* 使用迭代法重写第一次作业算法题 */</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">QiuMi</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> a)</span> </span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">return</span> a*x;</span><br><span class="line">&#125;   </span><br><span class="line"><span class="type">void</span> <span class="title function_">PrintPn</span><span class="params">(<span class="type">int</span> *a,<span class="type">int</span> n,<span class="type">int</span> x)</span> <span class="comment">/* 负责打印结果，以及调用求幂函数参与运算 */</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> Pn=<span class="number">0</span>,count=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;n;i++) </span><br><span class="line">    &#123;</span><br><span class="line">        Pn+=(a[i]*QiuMi(x,count));<span class="comment">//该语句一共执行n-1次</span></span><br><span class="line">        count=QiuMi(x,count);</span><br><span class="line">    &#125;</span><br><span class="line">    Pn+=a[<span class="number">0</span>];<span class="comment">//执行1次</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Pn(%d)=%d\n&quot;</span>,x,Pn);</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> a[N],x;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Please input %d numbers: \n&quot;</span>,N);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;N;i++) </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;a[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Please input X0: \n&quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;x);</span><br><span class="line">    PrintPn(a,N,x);</span><br><span class="line">    system(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>程序运行结果如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/CdiyizhangZuoYe.JPG">  </p>
-<p>正确答案如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/Czuoye1DaAn.JPG"></p>
+<p><strong>完！</strong>  </p>
 ]]></content>
       <categories>
-        <category>C</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>联想工程师内部专用工具</title>
-    <url>/posts/52374/</url>
-    <content><![CDATA[<p>分享一篇公众号文章：<a href="https://mp.weixin.qq.com/s/IqHR3zKrKk2c7NCCGaxvZg">内部泄露软件！足足两百多款！</a>，再附上下载链接：<a href="https://pan.baidu.com/s/1O0IlN1zx0GZUmDIAk8QWuw">https://pan.baidu.com/s/1O0IlN1zx0GZUmDIAk8QWuw</a>，提取码：qqve  </p>
-<span id="more"></span>  ]]></content>
-      <categories>
         <category>随笔</category>
       </categories>
       <tags>
         <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>虎牙云游戏手机端体验</title>
-    <url>/posts/59253/</url>
-    <content><![CDATA[<p>不得不说，体验云游戏的感觉就是速度快，延迟特别小，有个缺点就是手机不太好操作PC端游戏，反应也挺快的，就是人的思路没有跟上，哈哈😂，我用手机打了两盘联盟，真心想说，我太难了，还是不能适应它的操作啊，暂且就这样吧，我觉得云游戏可能是以后游戏的一个发展趋势，普通人也许不需要配置很好的电脑就能玩要求很高的游戏，同样，手机也是如此，让我们拭目以待吧！但是不得不说，云游戏的确还有很长一段路要走。 </p>
-<span id="more"></span>  ]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -1546,28 +1549,10 @@
       </tags>
   </entry>
   <entry>
-    <title>计算机栈原理</title>
-    <url>/posts/9040/</url>
-    <content><![CDATA[<p>分享一篇文章：<a href="http://www.360doc.cn/mip/834063726.html">《计算机栈原理，让你一次彻底理解！》</a>  </p>
-<span id="more"></span>  
-
-<p><strong>完！</strong></p>
-]]></content>
-      <categories>
-        <category>数据结构</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>要做就做努力的失败者，绝不做沉沦的失败者</title>
-    <url>/posts/47530/</url>
-    <content><![CDATA[<p><strong>算是对学习上出现思想下滑的自己一种勉励吧！</strong>  </p>
-<span id="more"></span>  
-
-<p><strong>完！</strong>  </p>
-]]></content>
+    <title>联想工程师内部专用工具</title>
+    <url>/posts/52374/</url>
+    <content><![CDATA[<p>分享一篇公众号文章：<a href="https://mp.weixin.qq.com/s/IqHR3zKrKk2c7NCCGaxvZg">内部泄露软件！足足两百多款！</a>，再附上下载链接：<a href="https://pan.baidu.com/s/1O0IlN1zx0GZUmDIAk8QWuw">https://pan.baidu.com/s/1O0IlN1zx0GZUmDIAk8QWuw</a>，提取码：qqve  </p>
+<span id="more"></span>  ]]></content>
       <categories>
         <category>随笔</category>
       </categories>
@@ -1599,6 +1584,49 @@
       </categories>
       <tags>
         <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机栈原理</title>
+    <url>/posts/9040/</url>
+    <content><![CDATA[<p>分享一篇文章：<a href="http://www.360doc.cn/mip/834063726.html">《计算机栈原理，让你一次彻底理解！》</a>  </p>
+<span id="more"></span>  
+
+<p><strong>完！</strong></p>
+]]></content>
+      <categories>
+        <category>数据结构</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>谷歌镜像网站</title>
+    <url>/posts/50687/</url>
+    <content><![CDATA[<div class="poem-wrap">
+  <div class="poem-border poem-left"></div>
+  <div class="poem-border poem-right"></div>
+    <h1>诗词</h1>
+    <div>
+    <span id="jinrishici-sentence">小荷才露尖尖角，早有蜻蜓立上头。</span></div>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+</div>
+
+<span id="more"></span>
+
+<p>网址：<a href="https://jia110.github.io/">https://jia110.github.io/</a>. <a href="http://gufenso.coderschool.cn/">http://gufenso.coderschool.cn/</a>.</p>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ol>
+<li><a href="https://www.wrfou.com/google.html">2022谷歌镜像网站大全，教你无限制使用谷歌搜索及谷歌学术科学上网查阅资料</a>.</li>
+<li><a href="https://funletu.com/1158/.html">谷歌镜像站大全</a>.</li>
+</ol>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+        <tag>google</tag>
       </tags>
   </entry>
   <entry>
@@ -1641,34 +1669,6 @@
       </categories>
       <tags>
         <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>谷歌镜像网站</title>
-    <url>/posts/50687/</url>
-    <content><![CDATA[<div class="poem-wrap">
-  <div class="poem-border poem-left"></div>
-  <div class="poem-border poem-right"></div>
-    <h1>诗词</h1>
-    <div>
-    <span id="jinrishici-sentence">小荷才露尖尖角，早有蜻蜓立上头。</span></div>
-<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-</div>
-
-<span id="more"></span>
-
-<p>网址：<a href="https://jia110.github.io/">https://jia110.github.io/</a>. <a href="http://gufenso.coderschool.cn/">http://gufenso.coderschool.cn/</a>.</p>
-<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ol>
-<li><a href="https://www.wrfou.com/google.html">2022谷歌镜像网站大全，教你无限制使用谷歌搜索及谷歌学术科学上网查阅资料</a>.</li>
-<li><a href="https://funletu.com/1158/.html">谷歌镜像站大全</a>.</li>
-</ol>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-        <tag>google</tag>
       </tags>
   </entry>
 </search>

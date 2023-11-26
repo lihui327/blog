@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.0.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha256-CTSx/A06dm1B063156EVh15m6Y67pAjZZaQc89LLSrU=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"iloveszy.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.18.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="用定长顺序串编写下列算法：   (1)将顺序串s中所有值为ch1的字符转换成ch2的字符，其中参数ch1和ch2传入的均为字符量。   int charReplace(SString *s,char ch1,char ch2)   (2)将顺序串s中所有字符按照相反的次序仍存放在s中，即实现字符串的逆置。   int strInverse(SString *s)   (3)从顺序串s中删除其值等于">
+<meta property="og:type" content="article">
+<meta property="og:title" content="采用定长顺序串编写算法...">
+<meta property="og:url" content="https://iloveszy.com/posts/21955/index.html">
+<meta property="og:site_name" content="黎辉的博客">
+<meta property="og:description" content="用定长顺序串编写下列算法：   (1)将顺序串s中所有值为ch1的字符转换成ch2的字符，其中参数ch1和ch2传入的均为字符量。   int charReplace(SString *s,char ch1,char ch2)   (2)将顺序串s中所有字符按照相反的次序仍存放在s中，即实现字符串的逆置。   int strInverse(SString *s)   (3)从顺序串s中删除其值等于">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-05-01T08:29:58.000Z">
+<meta property="article:modified_time" content="2023-11-24T15:17:08.204Z">
+<meta property="article:author" content="黎辉">
+<meta property="article:tag" content="学习">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://iloveszy.com/posts/21955/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://iloveszy.com/posts/21955/","path":"posts/21955/","title":"采用定长顺序串编写算法..."}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>采用定长顺序串编写算法... | 黎辉的博客</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">黎辉的博客</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">攀峰之高险，岂有崖颠；搏海之明辉，何来彼岸？前进不止，奋斗不息</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="黎辉"
+      src="https://pic.imgdb.cn/api/avatar">
+  <p class="site-author-name" itemprop="name">黎辉</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">65</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/lihui327" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;lihui327" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/2322033348@qq.com" title="E-Mail → 2322033348@qq.com" rel="noopener me"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://iloveszy.com/posts/21955/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://pic.imgdb.cn/api/avatar">
+      <meta itemprop="name" content="黎辉">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="黎辉的博客">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="采用定长顺序串编写算法... | 黎辉的博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          采用定长顺序串编写算法...
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-05-01 16:29:58" itemprop="dateCreated datePublished" datetime="2021-05-01T16:29:58+08:00">2021-05-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-11-24 23:17:08" itemprop="dateModified" datetime="2023-11-24T23:17:08+08:00">2023-11-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" itemprop="url" rel="index"><span itemprop="name">数据结构</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>用定长顺序串编写下列算法：  </p>
+<p>(1)将顺序串s中所有值为ch1的字符转换成ch2的字符，其中参数ch1和ch2传入的均为字符量。  </p>
+<p><code>int charReplace(SString *s,char ch1,char ch2)</code>  </p>
+<p>(2)将顺序串s中所有字符按照相反的次序仍存放在s中，即实现字符串的逆置。  </p>
+<p><code>int strInverse(SString *s)</code>  </p>
+<p>(3)从顺序串s中删除其值等于ch的所有字符，其中参数ch传入的为字符量。  </p>
+<p><code>int charDelete(SString *s,char ch)</code>    </p>
+<span id="more"></span>
+
+<p>(1)我的答案：  </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> OK 1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ERROR 0</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> MAXSIZE 20</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="type">int</span> QueueElementType;</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">SeqQueue</span> //定义循环队列</span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    QueueElementType element[MAXSIZE];</span><br><span class="line">    <span class="type">int</span> front;</span><br><span class="line">    <span class="type">int</span> rear;</span><br><span class="line">    <span class="type">int</span> tag;</span><br><span class="line">&#125;SeqQueue;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">InitQueue</span><span class="params">(SeqQueue *Q)</span> <span class="comment">//初始化循环队列</span></span><br><span class="line">&#123;</span><br><span class="line">    Q-&gt;front=Q-&gt;rear=<span class="number">0</span>;</span><br><span class="line">    Q-&gt;tag=<span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">EnterQueue</span><span class="params">(SeqQueue *Q,QueueElementType x)</span>  <span class="comment">//入队</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(((Q-&gt;rear)%MAXSIZE)==(Q-&gt;front) &amp;&amp; Q-&gt;tag==<span class="number">1</span>)<span class="comment">//判断队列是否已满</span></span><br><span class="line">        <span class="keyword">return</span> ERROR;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        Q-&gt;element[Q-&gt;rear]=x;</span><br><span class="line">        Q-&gt;rear=(Q-&gt;rear+<span class="number">1</span>)%MAXSIZE;</span><br><span class="line">        <span class="keyword">if</span>((Q-&gt;rear)==(Q-&gt;front))<span class="comment">//判断队列是否已满</span></span><br><span class="line">            Q-&gt;tag=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">return</span> OK;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">DeleteQueue</span><span class="params">(SeqQueue *Q,QueueElementType *x)</span> <span class="comment">//出队</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(((Q-&gt;rear)%MAXSIZE)==(Q-&gt;front) &amp;&amp; Q-&gt;tag==<span class="number">0</span>)<span class="comment">//判断队列是否为空</span></span><br><span class="line">        <span class="keyword">return</span> ERROR;</span><br><span class="line">    <span class="keyword">else</span> </span><br><span class="line">    &#123;</span><br><span class="line">        (*x)=Q-&gt;element[Q-&gt;front];</span><br><span class="line">        Q-&gt;front=(Q-&gt;front+<span class="number">1</span>)%MAXSIZE;</span><br><span class="line">        <span class="keyword">if</span>((Q-&gt;front)==(Q-&gt;rear))<span class="comment">//判断队列是否已空</span></span><br><span class="line">            Q-&gt;tag=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">return</span> OK;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">void printQueue(SeqQueue Q)</span></span><br><span class="line"><span class="comment">&#123;</span></span><br><span class="line"><span class="comment">    int i;</span></span><br><span class="line"><span class="comment">    for(i=Q.front;i&lt;Q.rear;i++)</span></span><br><span class="line"><span class="comment">        printf(&quot;%d &quot;,Q.element[i]);</span></span><br><span class="line"><span class="comment">    putchar(&#x27;\n&#x27;);</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    SeqQueue s;</span><br><span class="line">    InitQueue(&amp;s);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Please input int xing numbers: \n&quot;</span>);</span><br><span class="line">    QueueElementType x;</span><br><span class="line">    <span class="keyword">do</span> &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;x);</span><br><span class="line">    &#125; <span class="keyword">while</span>(EnterQueue(&amp;s,x));</span><br><span class="line">    <span class="keyword">while</span>(DeleteQueue(&amp;s,&amp;x))</span><br><span class="line">     <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,x);</span><br><span class="line">    <span class="built_in">putchar</span>(<span class="string">&#x27;\n&#x27;</span>);</span><br><span class="line">    system(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>正确答案：  </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">charReplace</span><span class="params">(SString *s,<span class="type">char</span> ch1,<span class="type">char</span> ch2)</span> &#123;</span><br><span class="line">  <span class="type">int</span> i;</span><br><span class="line">  <span class="keyword">if</span>(!s)		<span class="keyword">return</span> ERROR;		<span class="comment">/*参数为空*/</span></span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;(s-&gt;len);i++)</span><br><span class="line">    <span class="keyword">if</span>(s-&gt;ch[i]==ch1)</span><br><span class="line">      s-&gt;ch[i]=ch2;</span><br><span class="line">  <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>(2)我的答案：  </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;ds.h&quot;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">isReverse</span><span class="params">(<span class="type">char</span> *c)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> i=<span class="number">0</span>,j,k,count=<span class="number">0</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Please input characters and input @ means endinput: \n&quot;</span>);</span><br><span class="line">    <span class="keyword">do</span> &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%c&quot;</span>,&amp;c[i]);</span><br><span class="line">        i++;</span><br><span class="line">    &#125; <span class="keyword">while</span>(c[i<span class="number">-1</span>]!=<span class="string">&#x27;@&#x27;</span>);</span><br><span class="line">    i--;</span><br><span class="line">    <span class="keyword">for</span>(j=<span class="number">0</span>;j&lt;i;j++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(c[j]==<span class="string">&#x27;&amp;&#x27;</span>)</span><br><span class="line">            count++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(count)</span><br><span class="line">    &#123;</span><br><span class="line">         <span class="keyword">for</span>(j=<span class="number">0</span>;c[j]!=<span class="string">&#x27;&amp;&#x27;</span>;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            k=i<span class="number">-1</span>-j;</span><br><span class="line">            <span class="keyword">if</span>(c[k]==c[j])</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">return</span> ERROR;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> OK;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="keyword">return</span> ERROR;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> c[Stack_Size];</span><br><span class="line">    <span class="keyword">if</span>(isReverse(c))</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Yes! \n&quot;</span>);</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;NO! \n&quot;</span>);</span><br><span class="line">    system(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>其中，”ds.h”文件源码如下：  </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*定义常量*/</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span>		TRUE	1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span>		FALSE	0</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span>		OK		1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span>		ERROR	0</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span>		Stack_Size 20<span class="comment">/*顺序栈空间大小*/</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*定义ElemType类型和使用到的物理数据类型*/</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="type">char</span> StackElementType;</span><br><span class="line"><span class="comment">/*定义使用顺序栈*/</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">SeqStack</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">	StackElementType elem[Stack_Size]; <span class="comment">/*用来存放栈中元素的一维数组*/</span></span><br><span class="line">	<span class="type">int</span> top;          		<span class="comment">/*用来存放栈顶元素的下标，top为-1表示空栈*/</span></span><br><span class="line">&#125;SeqStack;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*声明物理数据类型的操作（函数）和使用到的其他功能函数*/</span></span><br><span class="line"><span class="comment">/*初始化*/</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">InitStack</span><span class="params">(SeqStack *S)</span>;</span><br><span class="line"><span class="comment">/*判栈空*/</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">IsEmpty</span><span class="params">(SeqStack *S)</span>; <span class="comment">/*判断栈S为空栈时返回值为真，反之为假*/</span></span><br><span class="line"><span class="comment">/*判栈满*/</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">IsFull</span><span class="params">(SeqStack *S)</span>;	<span class="comment">/*判断栈S为满栈时返回值为真，反之为假*/</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">Push</span><span class="params">(SeqStack *S,StackElementType x)</span>;</span><br><span class="line"><span class="type">void</span> <span class="title function_">Pop</span><span class="params">(SeqStack *S,StackElementType *x)</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*定义物理数据类型的操作（函数）和使用到的其他功能函数*/</span></span><br><span class="line"><span class="comment">/*初始化*/</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">InitStack</span><span class="params">(SeqStack *S)</span></span><br><span class="line">&#123;</span><br><span class="line">	S-&gt;top=<span class="number">-1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*判栈空*/</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">IsEmpty</span><span class="params">(SeqStack *S)</span> <span class="comment">/*判断栈S为空栈时返回值为真，反之为假*/</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span>((S-&gt;top)==<span class="number">-1</span>)</span><br><span class="line">		<span class="keyword">return</span> TRUE;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		<span class="keyword">return</span> FALSE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*判栈满*/</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">IsFull</span><span class="params">(SeqStack *S)</span>	<span class="comment">/*判断栈S为满栈时返回值为真，反之为假*/</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>((S-&gt;top)==(Stack_Size<span class="number">-1</span>))</span><br><span class="line">        <span class="keyword">return</span> TRUE;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="keyword">return</span> FALSE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">Push</span><span class="params">(SeqStack *S,StackElementType x)</span> <span class="comment">//进栈</span></span><br><span class="line">&#123;</span><br><span class="line">    S-&gt;top++;</span><br><span class="line">    S-&gt;elem[S-&gt;top]=x;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">Pop</span><span class="params">(SeqStack *S,StackElementType *x)</span> <span class="comment">//出栈</span></span><br><span class="line">&#123;</span><br><span class="line">    (*x)=S-&gt;elem[S-&gt;top];</span><br><span class="line">    S-&gt;top--;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>正确答案如下：  </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">strInverse</span><span class="params">(SString *s)</span> &#123;</span><br><span class="line">  <span class="type">int</span> i,j;</span><br><span class="line">  <span class="type">char</span> ch;</span><br><span class="line">  <span class="keyword">if</span>(!s)		<span class="keyword">return</span> ERROR;		<span class="comment">/*参数为空*/</span></span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">0</span>,j=s-&gt;len<span class="number">-1</span>;i&lt;j;i++,j--) &#123;</span><br><span class="line">    ch=s-&gt;ch[i];</span><br><span class="line">    s-&gt;ch[i]=s-&gt;ch[j];</span><br><span class="line">    s-&gt;ch[j]=ch;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>(3)我的答案：  </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> Stack_Size 50</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> TRUE 1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> FALSE 0</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="type">char</span> StackElementType;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">char</span> QueueElementType;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> //声明顺序栈</span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    StackElementType elem[Stack_Size];</span><br><span class="line">    <span class="type">int</span> top;</span><br><span class="line">&#125;SeqStack;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">InitStack</span><span class="params">(SeqStack *S)</span> <span class="comment">//初始化顺序栈</span></span><br><span class="line">&#123;</span><br><span class="line">    S-&gt;top=<span class="number">-1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">Push</span><span class="params">(SeqStack *S,StackElementType x)</span> <span class="comment">//进栈</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(S-&gt;top==(Stack_Size<span class="number">-1</span>))</span><br><span class="line">        <span class="keyword">return</span> FALSE;</span><br><span class="line">    S-&gt;top++;</span><br><span class="line">    S-&gt;elem[S-&gt;top]=x;</span><br><span class="line">    <span class="keyword">return</span> TRUE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">Pop</span><span class="params">(SeqStack *S,StackElementType *x)</span> <span class="comment">//出栈</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(S-&gt;top==<span class="number">-1</span>)</span><br><span class="line">        <span class="keyword">return</span> FALSE;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        (*x)=S-&gt;elem[S-&gt;top];</span><br><span class="line">        S-&gt;top--;</span><br><span class="line">        <span class="keyword">return</span> TRUE;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> //声明循环队列</span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    QueueElementType element[Stack_Size];</span><br><span class="line">    <span class="type">int</span> front;</span><br><span class="line">    <span class="type">int</span> rear;</span><br><span class="line">&#125;SeqQueue;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">InitQueue</span><span class="params">(SeqQueue *Q)</span> <span class="comment">//循环队列初始化</span></span><br><span class="line">&#123;</span><br><span class="line">    Q-&gt;front=Q-&gt;rear=<span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">EnterQueue</span><span class="params">(SeqQueue *Q,QueueElementType x)</span> <span class="comment">//循环队列进队</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(((Q-&gt;rear+<span class="number">1</span>)%Stack_Size)==Q-&gt;front)</span><br><span class="line">        <span class="keyword">return</span> FALSE;</span><br><span class="line">    Q-&gt;element[Q-&gt;rear]=x;</span><br><span class="line">    Q-&gt;rear=(Q-&gt;rear+<span class="number">1</span>)%Stack_Size;</span><br><span class="line">    <span class="keyword">return</span> TRUE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">DleteQueue</span><span class="params">(SeqQueue *Q,QueueElementType *x)</span> <span class="comment">//循环队列出队</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(Q-&gt;front==Q-&gt;rear)</span><br><span class="line">        <span class="keyword">return</span> FALSE;</span><br><span class="line">    (*x)=Q-&gt;element[Q-&gt;front];</span><br><span class="line">    Q-&gt;front=(Q-&gt;front+<span class="number">1</span>)%Stack_Size;</span><br><span class="line">    <span class="keyword">return</span> TRUE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">Palindrome_Test</span><span class="params">(SeqStack *S,SeqQueue *Q)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Please input characters and input @ means endinput: \n&quot;</span>);</span><br><span class="line">    StackElementType c,d;</span><br><span class="line">    <span class="type">int</span> count=<span class="number">0</span>,i;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%c&quot;</span>,&amp;c);</span><br><span class="line">    <span class="keyword">while</span>(c!=<span class="string">&#x27;@&#x27;</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        count++;</span><br><span class="line">        Push(S,c);</span><br><span class="line">        EnterQueue(Q,c);</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%c&quot;</span>,&amp;c);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;count/<span class="number">2</span>;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(Pop(S,&amp;c));</span><br><span class="line">        <span class="keyword">if</span>(DleteQueue(Q,&amp;d));</span><br><span class="line">        <span class="keyword">if</span>(c==d)</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            <span class="keyword">return</span> FALSE;  </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> TRUE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    SeqStack s;</span><br><span class="line">    SeqQueue q;</span><br><span class="line">    InitStack(&amp;s);</span><br><span class="line">    InitQueue(&amp;q);</span><br><span class="line">    <span class="keyword">if</span>(Palindrome_Test(&amp;s,&amp;q))</span><br><span class="line">        <span class="built_in">puts</span>(<span class="string">&quot;Yes! &quot;</span>);</span><br><span class="line">    <span class="keyword">else</span> </span><br><span class="line">        <span class="built_in">puts</span>(<span class="string">&quot;No! &quot;</span>);</span><br><span class="line">    system(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>正确答案如下：  </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="title function_">charDelete</span><span class="params">(SString *s,<span class="type">char</span> ch)</span> &#123;</span><br><span class="line">  <span class="type">int</span> i,j;</span><br><span class="line">  <span class="keyword">if</span>(!s)		<span class="keyword">return</span> ERROR;		<span class="comment">/*参数为空*/</span></span><br><span class="line">  i=j=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">while</span>(j&lt;(s-&gt;len)) &#123;</span><br><span class="line">    <span class="keyword">if</span>(s-&gt;ch[j]!=ch) &#123;</span><br><span class="line">      s-&gt;ch[i]=s-&gt;ch[j];</span><br><span class="line">      i++;j++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">      j++;</span><br><span class="line">  &#125;</span><br><span class="line">  s-&gt;len=i;</span><br><span class="line">  <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>完！</strong></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag"># 学习</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/9040/" rel="prev" title="计算机栈原理">
+                  <i class="fa fa-angle-left"></i> 计算机栈原理
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/posts/18991/" rel="next" title="分享一个每日领qq绿钻的软件">
+                  分享一个每日领qq绿钻的软件 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2021 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">黎辉</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> & <a href="https://vercel.com/" rel="noopener" target="_blank">Vercel</a> 强力驱动
+  </div>
+  
+  <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt = new Date("02/09/2021 21:30:29"); //在此处修改你的建站时间
+        now.setTime(now.getTime() + 250);
+        days = (now - grt) / 1000 / 60 / 60 / 24;     
+        dnum = Math.floor(days);
+        
+        years = dnum / 365;
+        ynum = Math.floor(years);
+        month = (dnum - 365 * ynum) / 31;
+        monnum = Math.floor(month);
+        days2 = dnum - 365 * ynum - 31 * monnum;
+        dnum2 = Math.floor(days2);
+        
+        if (String(monnum).length == 1) {
+            monnum = "0" + monnum;
+        }
+        if (String(dnum2).length == 1) {
+            dnum2 = "0" + dnum2;
+        }
+        
+        hours = (now - grt) / 1000 / 60 / 60 - 24 * dnum;
+        hnum = Math.floor(hours);
+        if (String(hnum).length == 1) {
+            hnum = "0" + hnum;
+        }
+        minutes = (now - grt) / 1000 / 60 - 24 * 60 * dnum - 60 * hnum;
+        mnum = Math.floor(minutes);
+        if (String(mnum).length == 1) {
+            mnum = "0" + mnum;
+        }
+        seconds = (now - grt) / 1000 - 24 * 60 * 60 * dnum - 60 * 60 * hnum - 60 * mnum;
+        snum = Math.round(seconds);
+        if (String(snum).length == 1) {
+            snum = "0" + snum;
+        }
+        document.getElementById("timeDate").innerHTML =
+            "本站已运行 " + ynum + " 年 " + monnum + " 月 " + dnum2 + " 日";
+        document.getElementById("times").innerHTML =
+            hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+    setInterval("createtime()", 250);
+</script>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  <!--动态线条背景-->
+<script type="text/javascript"
+color="122 103 238" opacity='0.7' zIndex="-2" count="100" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+</script>
+<script type="text/javascript" src="//libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/snow.js"></script>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/heart.js"></script>
+</body>
+</html>

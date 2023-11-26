@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>2020下半年英语六级</title>
-    <url>/posts/13114/</url>
-    <content><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/2020xiasiliuji.jpg">  </p>
-<span id="more"></span>   
-
-<p>不得不承认，这次六级考试对我还有很大的挑战性，我还需要继续努力。  </p>
-<p>老实说，我不喜欢这个分数，第一个原因是它太低了，第二个原因是这个分数不吉利，听着就像是死死死的意思，这大过年的出这个分数真的令我很无语啊！不过这也从侧面上反映出了我上个学期的真实学习写照，照这样下去感觉我很难啊，so我不能忘记学习，不能忘记初心，不能放弃自己的梦想，下个学期加把劲把成绩提上去，虽然我知道我不会因为一次考试不理想而怎么怎么样，但是我想我可能懂得了人生的一点点真谛，就是需要磨练，没有磨练的人生是不会有好结果的，就像蜘蛛侠英雄远征里一句经典的台词，<strong>欲戴王冠，必承其重！</strong>就这样吧！想要得到更多你就得牺牲更多，没有不劳而获。  </p>
-<p><strong>完！</strong></p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>ENIAC计算机与ABC计算机的关于第一台计算机的十余年之争</title>
     <url>/posts/20094/</url>
     <content><![CDATA[<p>分享一篇文章<a href="https://baijiahao.baidu.com/s?id=1645658087402989097&wfr=spider&for=pc">ENIAC计算机与ABC计算机的关于第一台计算机的十余年之争</a>。</p>
@@ -46,6 +29,23 @@
 ]]></content>
       <categories>
         <category>数据结构</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2020下半年英语六级</title>
+    <url>/posts/13114/</url>
+    <content><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/2020xiasiliuji.jpg">  </p>
+<span id="more"></span>   
+
+<p>不得不承认，这次六级考试对我还有很大的挑战性，我还需要继续努力。  </p>
+<p>老实说，我不喜欢这个分数，第一个原因是它太低了，第二个原因是这个分数不吉利，听着就像是死死死的意思，这大过年的出这个分数真的令我很无语啊！不过这也从侧面上反映出了我上个学期的真实学习写照，照这样下去感觉我很难啊，so我不能忘记学习，不能忘记初心，不能放弃自己的梦想，下个学期加把劲把成绩提上去，虽然我知道我不会因为一次考试不理想而怎么怎么样，但是我想我可能懂得了人生的一点点真谛，就是需要磨练，没有磨练的人生是不会有好结果的，就像蜘蛛侠英雄远征里一句经典的台词，<strong>欲戴王冠，必承其重！</strong>就这样吧！想要得到更多你就得牺牲更多，没有不劳而获。  </p>
+<p><strong>完！</strong></p>
+]]></content>
+      <categories>
+        <category>随笔</category>
       </categories>
       <tags>
         <tag>学习</tag>
@@ -133,21 +133,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Java中的空对象</title>
-    <url>/posts/31520/</url>
-    <content><![CDATA[<p>详细介绍可参考<a href="https://blog.csdn.net/lgh2691861/article/details/52248038?utm_source=app&app_version=4.5.2">《Java中空对象（null)引用方法及属性简单分析！》</a>  </p>
-<span id="more"></span>  
-
-<p><strong>完！</strong>  </p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Java中Lambda表达式的3种简写方式</title>
     <url>/posts/56742/</url>
     <content><![CDATA[<p>分享一篇文章：<a href="https://blog.csdn.net/weixin_42397335/article/details/114941616?utm_source=app&app_version=4.5.8">《java中-&gt;表达式_Java Lambda表达式的3种简写方式》</a>  </p>
@@ -163,12 +148,90 @@
       </tags>
   </entry>
   <entry>
+    <title>Java中的空对象</title>
+    <url>/posts/31520/</url>
+    <content><![CDATA[<p>详细介绍可参考<a href="https://blog.csdn.net/lgh2691861/article/details/52248038?utm_source=app&app_version=4.5.2">《Java中空对象（null)引用方法及属性简单分析！》</a>  </p>
+<span id="more"></span>  
+
+<p><strong>完！</strong>  </p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java使用二维数组输出杨辉三角</title>
+    <url>/posts/9719/</url>
+    <content><![CDATA[<p>代码如下：    </p>
+<span id="more"></span>  
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ArrayTest5</span> &#123;</span><br><span class="line">	<span class="comment">/*</span></span><br><span class="line"><span class="comment">	 * 声明num()方法，在 num() 方法中传入两个参数，即 x 和 y。</span></span><br><span class="line"><span class="comment">	 * 其中，x 表示行，y 表示列。num() 方法用于计算第 x 行第 y 列的数值。</span></span><br><span class="line"><span class="comment">	 * 代码如下：</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">num</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y)</span>	&#123;</span><br><span class="line">		<span class="keyword">if</span>(y==<span class="number">1</span> || y==x)</span><br><span class="line">			<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">		<span class="type">int</span> c=num(x-<span class="number">1</span>,y-<span class="number">1</span>)+num(x-<span class="number">1</span>,y);</span><br><span class="line">		<span class="keyword">return</span> c;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>	&#123;</span><br><span class="line">		<span class="meta">@SuppressWarnings(&quot;resource&quot;)</span></span><br><span class="line">		Scanner input=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		System.out.print(<span class="string">&quot;输入打印杨辉三角形的行数：&quot;</span>);</span><br><span class="line">		<span class="type">int</span> row=input.nextInt();</span><br><span class="line">		<span class="type">int</span>[][] yhsj=<span class="keyword">new</span> <span class="title class_">int</span>[row+<span class="number">1</span>][row+<span class="number">1</span>];</span><br><span class="line">		<span class="comment">//定义二维数组，因为第0行不用，所以数组空间大小要+1</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=row;i++)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=i;j++)	&#123;</span><br><span class="line">				yhsj[i][j]=num(i,j);</span><br><span class="line">				<span class="comment">//通过数组来存储每行的数值</span></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=row;i++)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=row-i;j++)	&#123;</span><br><span class="line">				System.out.print(<span class="string">&quot; &quot;</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=i;j++)	&#123;</span><br><span class="line">				System.out.print(yhsj[i][j] + <span class="string">&quot; &quot;</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			System.out.println();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>保存，输出结果如图示：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/yhsj.JPG">  </p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java抽象类和接口的联系与区别</title>
+    <url>/posts/4792/</url>
+    <content><![CDATA[<p>分享一篇文章：<a href="https://blog.csdn.net/qq_33591903/article/details/81709511?utm_source=app&app_version=4.5.7">【JAVA】抽象类和接口的联系与区别</a>，留着以后不懂时多拿出来看看。  </p>
+<span id="more"></span>  
+
+<p><strong>完！</strong>  </p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java数组实战训练2</title>
+    <url>/posts/919/</url>
+    <content><![CDATA[<p>假设在仓库系统中，每件商品都有 3 个库存信息，分别是入库量、出库量和当前库存量。定义一个一维数组来存储 5 件商品的名称，并定义一个二维数组来存储这 5 件商品的 3 个库存信息。用户可以根据商品名称查询该商品的所有库存，也可以查看某个类别库存下数量小于 100 的商品名单，并将该类别的所有库存量按从低到高的顺序排列。具体代码如下:  </p>
+<span id="more"></span>          
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ArrayTest4</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>	&#123;</span><br><span class="line">		<span class="meta">@SuppressWarnings(&quot;resource&quot;)</span></span><br><span class="line">		Scanner input=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		String[] products= &#123;<span class="string">&quot;洗发水&quot;</span>,<span class="string">&quot;纸巾&quot;</span>,<span class="string">&quot;水杯&quot;</span>,<span class="string">&quot;牙膏&quot;</span>,</span><br><span class="line">			<span class="string">&quot;香皂&quot;</span>&#125;;</span><br><span class="line">		<span class="type">int</span>[][] amounts= &#123;&#123;<span class="number">50</span>,<span class="number">80</span>,<span class="number">90</span>&#125;,&#123;<span class="number">40</span>,<span class="number">80</span>,<span class="number">78</span>&#125;,&#123;<span class="number">50</span>,<span class="number">45</span></span><br><span class="line">			,<span class="number">789</span>&#125;,&#123;<span class="number">100</span>,<span class="number">685</span>,<span class="number">55</span>&#125;,&#123;<span class="number">898</span>,<span class="number">754</span>,<span class="number">63</span>&#125;&#125;;</span><br><span class="line">		System.out.println(<span class="string">&quot;————————库存系统————————&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;请输入要查询库存信息的商品名称：&quot;</span>);</span><br><span class="line">		String name=input.next();</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;products.length;i++)	&#123;</span><br><span class="line">			<span class="keyword">if</span>(products[i].equals(name))	&#123;</span><br><span class="line">				System.out.println(<span class="string">&quot;商品【&quot;</span> + products[i]</span><br><span class="line">						+ <span class="string">&quot;】的库存信息如下：&quot;</span>);</span><br><span class="line">				System.out.println(<span class="string">&quot;入库\t出库\t库存&quot;</span>);</span><br><span class="line">				<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;<span class="number">3</span>;j++)	&#123;</span><br><span class="line">					System.out.print(amounts[i][j] + <span class="string">&quot;\t&quot;</span>);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(<span class="string">&quot;\n————————查询库存不足100的商品&quot;</span></span><br><span class="line">				+ <span class="string">&quot;————————&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;1.入库\t2.出库\t3.库存&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;请输入序号：&quot;</span>);</span><br><span class="line">		<span class="type">int</span> no=input.nextInt();</span><br><span class="line">		<span class="type">int</span>[] temp=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">5</span>];<span class="comment">//定义数组，存储该类别的所有商品</span></span><br><span class="line">		System.out.println(<span class="string">&quot;该类别下数量较少的商品有：&quot;</span>);</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)	&#123;</span><br><span class="line">			temp[i]=amounts[i][no-<span class="number">1</span>];<span class="comment">//将指定类别的商品数目</span></span><br><span class="line">			<span class="comment">//存储到temp数组中</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;temp.length;i++)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=temp.length-i-<span class="number">2</span>;j&gt;=i;j--)	&#123;</span><br><span class="line">				<span class="keyword">if</span>(temp[j]&gt;temp[j+<span class="number">1</span>])	&#123;</span><br><span class="line">					<span class="type">int</span> x=temp[j];</span><br><span class="line">					temp[j]=temp[j+<span class="number">1</span>];</span><br><span class="line">					temp[j+<span class="number">1</span>]=x;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)	&#123;</span><br><span class="line">			<span class="keyword">if</span>(temp[i]&lt;<span class="number">100</span> &amp;&amp; temp[i]!=temp[i+<span class="number">1</span>])	&#123;</span><br><span class="line">				<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;<span class="number">5</span>;j++)	&#123;</span><br><span class="line">					<span class="keyword">if</span>(amounts[j][no-<span class="number">1</span>]==temp[i])	&#123;</span><br><span class="line">						System.out.print(products[j] + </span><br><span class="line">								<span class="string">&quot;\t&quot;</span>);</span><br><span class="line">						</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(<span class="string">&quot;\n该类别的商品库存信息从低到高的&quot;</span></span><br><span class="line">				+ <span class="string">&quot;排列如下：&quot;</span>);</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;temp.length;i++)	&#123;</span><br><span class="line">			System.out.print(temp[i] + <span class="string">&quot;\t&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;     </span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java内部类的作用，实现多重继承</title>
     <url>/posts/39656/</url>
     <content><![CDATA[<p>分享一篇文章：<a href="https://blog.csdn.net/yzw_will/article/details/21229225?utm_source=app&app_version=4.5.7">Java内部类的作用，实现多重继承</a>  </p>
 <span id="more"></span>  
 
 <p><strong>完！</strong></p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java数组实战训练</title>
+    <url>/posts/22327/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我是参考csdn的一位大佬的代码编写的，传送门：<a href="https://blog.csdn.net/weixin_45743799/article/details/104696705?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161286173616780264077580%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=161286173616780264077580&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v29-1-104696705.pc_search_result_no_baidu_js&utm_term=java%E8%BD%AC%E4%BA%BA%E6%B0%91%E5%B8%81%E8%AF%BB%E6%B3%95&spm=1018.2226.3001.4187">java人民币读法转换</a>，以下为详细代码：  </p>
+<span id="more"></span>      
+
+<ol>
+<li>Java数字转人民币读法，代码如下：      <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ArrayTest2</span> &#123;</span><br><span class="line">	<span class="keyword">private</span> String[] str1= &#123;<span class="string">&quot;零&quot;</span>,<span class="string">&quot;壹&quot;</span>,<span class="string">&quot;贰&quot;</span>,<span class="string">&quot;叁&quot;</span>,<span class="string">&quot;肆&quot;</span>,<span class="string">&quot;伍&quot;</span>,</span><br><span class="line">			<span class="string">&quot;陆&quot;</span>,<span class="string">&quot;柒&quot;</span>,<span class="string">&quot;捌&quot;</span>,<span class="string">&quot;玖&quot;</span>&#125;;</span><br><span class="line">	<span class="keyword">private</span> String[] str2= &#123;<span class="string">&quot;十&quot;</span>,<span class="string">&quot;百&quot;</span>,<span class="string">&quot;千&quot;</span>&#125;;</span><br><span class="line">	<span class="keyword">private</span> String[] str3= &#123;<span class="string">&quot;角&quot;</span>,<span class="string">&quot;分&quot;</span>&#125;;</span><br><span class="line">	<span class="keyword">private</span> String[] str4= &#123;<span class="string">&quot;元&quot;</span>,<span class="string">&quot;万&quot;</span>,<span class="string">&quot;亿&quot;</span>&#125;;</span><br><span class="line">	<span class="keyword">private</span> String <span class="title function_">divadeZheng</span><span class="params">(<span class="type">double</span> num)</span>	&#123;</span><br><span class="line">		<span class="comment">//把浮点数分解成整数部分字符串</span></span><br><span class="line">		<span class="type">long</span> zheng=(<span class="type">long</span>)num;</span><br><span class="line">		<span class="keyword">return</span> String.valueOf(zheng);<span class="comment">//整型转换成字符串</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">private</span> String <span class="title function_">divadeXiao</span><span class="params">(<span class="type">double</span> num)</span>	&#123;</span><br><span class="line">		<span class="comment">//把浮点数分解成小数部分字符串</span></span><br><span class="line">		<span class="type">long</span> zheng=(<span class="type">long</span>)num;</span><br><span class="line">		<span class="type">long</span> xiao=Math.round((num-zheng)*<span class="number">100</span>);</span><br><span class="line">		<span class="comment">//得到浮点数的小数部分</span></span><br><span class="line">		<span class="keyword">return</span> String.valueOf(xiao);<span class="comment">//返回字符串</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">private</span> String <span class="title function_">toStr1</span><span class="params">(String xiao)</span>	&#123;</span><br><span class="line">		<span class="comment">//把小数部分的数字字符串转换成汉字字符串</span></span><br><span class="line">		String re1=<span class="string">&quot;&quot;</span>;</span><br><span class="line">		<span class="type">int</span> len=xiao.length();</span><br><span class="line">		<span class="keyword">if</span>(len==<span class="number">2</span>)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">2</span>;i++)	&#123;</span><br><span class="line">				<span class="type">int</span> num=xiao.charAt(i)-<span class="number">48</span>;<span class="comment">//把字符串转换成数字</span></span><br><span class="line">				<span class="keyword">if</span>(num!=<span class="number">0</span>)	&#123;</span><br><span class="line">					re1+=str1[num]+str3[i];</span><br><span class="line">					<span class="comment">//数字不为零则需要加单位，为零则不操作</span></span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(len==<span class="number">1</span> &amp;&amp; xiao.charAt(<span class="number">0</span>)!=<span class="string">&#x27;0&#x27;</span>)	&#123;</span><br><span class="line">			<span class="comment">//若长度为1，例：12.09小数部分为9</span></span><br><span class="line">			<span class="type">int</span> num=xiao.charAt(<span class="number">0</span>)-<span class="number">48</span>;</span><br><span class="line">			re1+=str1[num]+str3[<span class="number">1</span>];</span><br><span class="line">			<span class="comment">//此时只有分，加单位str3[1]</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> re1;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">private</span> String <span class="title function_">toStr</span><span class="params">(String zheng)</span>	&#123;</span><br><span class="line">		<span class="comment">//把一个四位的数字字符串变成汉字字符串</span></span><br><span class="line">		String re=<span class="string">&quot;&quot;</span>;</span><br><span class="line">		<span class="type">int</span> j=<span class="number">0</span>;</span><br><span class="line">		<span class="type">int</span> lenz=zheng.length();</span><br><span class="line">		<span class="keyword">if</span>(zheng.charAt(<span class="number">0</span>)==<span class="string">&#x27;0&#x27;</span> &amp;&amp; lenz==<span class="number">1</span>)	&#123;</span><br><span class="line">			<span class="comment">//特殊情况如输入0.89时，整数字符串为0的处理</span></span><br><span class="line">			re+=<span class="string">&quot;零&quot;</span>;</span><br><span class="line">			<span class="keyword">return</span> re;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;lenz;i++)	&#123;<span class="comment">//遍历每一位数字</span></span><br><span class="line">			<span class="type">int</span> num=zheng.charAt(i)-<span class="number">48</span>;</span><br><span class="line">			<span class="keyword">if</span>(i!=lenz-<span class="number">1</span> &amp;&amp; num!=<span class="number">0</span>)	&#123;</span><br><span class="line">				<span class="comment">//若不是最后一位数字且数字不为零，则需要添加单位</span></span><br><span class="line">				re+=str1[num]+str2[lenz-<span class="number">2</span>-i];</span><br><span class="line">			&#125;	<span class="keyword">else</span> <span class="keyword">if</span>(!(num==<span class="number">0</span> &amp;&amp; re.charAt(j-<span class="number">1</span>)==<span class="string">&#x27;零&#x27;</span>)</span><br><span class="line">					)	&#123;</span><br><span class="line">				<span class="comment">//对于连续0出现的特殊处理，如009，第二个零不进行操作</span></span><br><span class="line">				re+=str1[num];</span><br><span class="line">			&#125;</span><br><span class="line">			j=re.length();</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(re.charAt(j-<span class="number">1</span>)==<span class="string">&#x27;零&#x27;</span>)	&#123;</span><br><span class="line">			<span class="comment">//对特殊情况最后一位是零的处理，如1990，删除掉末尾的零</span></span><br><span class="line">			re=re.substring(<span class="number">0</span>, j-<span class="number">1</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> re;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">private</span> String <span class="title function_">zhengDivade</span><span class="params">(String zheng)</span>	&#123;</span><br><span class="line">		<span class="comment">//对于金额的整数部分在12位数以内的处理，以4位数为一组</span></span><br><span class="line">		<span class="comment">//如1234（亿），5678（万），1234（元）.89</span></span><br><span class="line">		<span class="type">int</span> len=zheng.length();</span><br><span class="line">		String Re=<span class="string">&quot;&quot;</span>;</span><br><span class="line">		<span class="type">int</span> n=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">if</span>(len&gt;=<span class="number">9</span>)</span><br><span class="line">			<span class="comment">//判断整数部分的长度，考虑需要分几个组</span></span><br><span class="line">			n=<span class="number">3</span>;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(len&gt;=<span class="number">5</span> &amp;&amp; n&lt;<span class="number">9</span>)</span><br><span class="line">			n=<span class="number">2</span>;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(len&gt;=<span class="number">1</span> &amp;&amp; n&lt;<span class="number">5</span>)</span><br><span class="line">			n=<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span>(len%<span class="number">4</span> != <span class="number">0</span>)	&#123;</span><br><span class="line">			<span class="comment">//若位数非4的倍数，则在前面补0，直到位数为4的倍数为止</span></span><br><span class="line">			<span class="comment">//如12，2345补为0012，2345</span></span><br><span class="line">			String zh=<span class="string">&quot;&quot;</span>;</span><br><span class="line">			<span class="type">int</span> s=len%<span class="number">4</span>;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> k=<span class="number">0</span>;k&lt;(<span class="number">4</span>-s);k++)	&#123;</span><br><span class="line">				<span class="comment">//在前面补0</span></span><br><span class="line">				zh+=<span class="string">&quot;0&quot;</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			zh+=zheng;</span><br><span class="line">			zheng=zh;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)	&#123;</span><br><span class="line">			<span class="comment">//进行n个组合的串联</span></span><br><span class="line">			<span class="comment">//进行n次循环</span></span><br><span class="line">			String Zheng=<span class="string">&quot;&quot;</span>;</span><br><span class="line">			String sss=<span class="string">&quot;&quot;</span>;</span><br><span class="line">			len=zheng.length();<span class="comment">//长度在变化</span></span><br><span class="line">			<span class="comment">//提取出整数部分后四位，进行分开的转换</span></span><br><span class="line">			Zheng=zheng.substring(len-<span class="number">4</span>);</span><br><span class="line">			<span class="comment">//除去已经提取的字符串以外的字符串，字符串更新</span></span><br><span class="line">			zheng=zheng.substring(<span class="number">0</span>, len-<span class="number">4</span>);</span><br><span class="line">			<span class="type">int</span> m=<span class="number">0</span>,me=<span class="number">0</span>;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">3</span>;j&gt;=<span class="number">0</span>;j--)	&#123;</span><br><span class="line">				<span class="comment">//把字符串转换成整形数，如0012换成12</span></span><br><span class="line">				m=(<span class="type">int</span>)((Zheng.charAt(j)-<span class="number">48</span>)*Math.pow</span><br><span class="line">						(<span class="number">10</span>, <span class="number">3</span>-j));</span><br><span class="line">				me+=m;</span><br><span class="line">			&#125;</span><br><span class="line">			Zheng=String.valueOf(me);<span class="comment">//把数字转换成字符串</span></span><br><span class="line">			sss=<span class="built_in">this</span>.toStr(Zheng);<span class="comment">//把字符串转换成中文汉字</span></span><br><span class="line">			sss+=str4[i]+Re;</span><br><span class="line">			<span class="comment">//衔接上元等单位，再加上已经转换好的汉字字符串，注意每组</span></span><br><span class="line">			<span class="comment">//字符串间的顺序</span></span><br><span class="line">			Re=sss;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> Re;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>	&#123;</span><br><span class="line">		<span class="comment">//输入金额，并将整数部分和小数部分连接</span></span><br><span class="line">		<span class="comment">//TODO Auto-generated method stub</span></span><br><span class="line">		ArrayTest2 s=<span class="keyword">new</span> <span class="title class_">ArrayTest2</span>();</span><br><span class="line">		System.out.println(<span class="string">&quot;请输入整数部分为十二位以内的金额：&quot;</span>);</span><br><span class="line">		<span class="meta">@SuppressWarnings(&quot;resource&quot;)</span></span><br><span class="line">		Scanner input=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		<span class="type">double</span> a=input.nextDouble();</span><br><span class="line">		System.out.println(<span class="string">&quot;人民币读法为：&quot;</span>);</span><br><span class="line">		System.out.println(s.zhengDivade(s.divadeZheng(a))</span><br><span class="line">				+s.toStr1(s.divadeXiao(a)));</span><br><span class="line">		<span class="comment">//将整数部分的汉字字符串和小数部分的汉字字符串连接</span></span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
 ]]></content>
       <categories>
         <category>Java</category>
@@ -230,69 +293,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Java数组实战训练</title>
-    <url>/posts/22327/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我是参考csdn的一位大佬的代码编写的，传送门：<a href="https://blog.csdn.net/weixin_45743799/article/details/104696705?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161286173616780264077580%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=161286173616780264077580&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v29-1-104696705.pc_search_result_no_baidu_js&utm_term=java%E8%BD%AC%E4%BA%BA%E6%B0%91%E5%B8%81%E8%AF%BB%E6%B3%95&spm=1018.2226.3001.4187">java人民币读法转换</a>，以下为详细代码：  </p>
-<span id="more"></span>      
-
-<ol>
-<li>Java数字转人民币读法，代码如下：      <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ArrayTest2</span> &#123;</span><br><span class="line">	<span class="keyword">private</span> String[] str1= &#123;<span class="string">&quot;零&quot;</span>,<span class="string">&quot;壹&quot;</span>,<span class="string">&quot;贰&quot;</span>,<span class="string">&quot;叁&quot;</span>,<span class="string">&quot;肆&quot;</span>,<span class="string">&quot;伍&quot;</span>,</span><br><span class="line">			<span class="string">&quot;陆&quot;</span>,<span class="string">&quot;柒&quot;</span>,<span class="string">&quot;捌&quot;</span>,<span class="string">&quot;玖&quot;</span>&#125;;</span><br><span class="line">	<span class="keyword">private</span> String[] str2= &#123;<span class="string">&quot;十&quot;</span>,<span class="string">&quot;百&quot;</span>,<span class="string">&quot;千&quot;</span>&#125;;</span><br><span class="line">	<span class="keyword">private</span> String[] str3= &#123;<span class="string">&quot;角&quot;</span>,<span class="string">&quot;分&quot;</span>&#125;;</span><br><span class="line">	<span class="keyword">private</span> String[] str4= &#123;<span class="string">&quot;元&quot;</span>,<span class="string">&quot;万&quot;</span>,<span class="string">&quot;亿&quot;</span>&#125;;</span><br><span class="line">	<span class="keyword">private</span> String <span class="title function_">divadeZheng</span><span class="params">(<span class="type">double</span> num)</span>	&#123;</span><br><span class="line">		<span class="comment">//把浮点数分解成整数部分字符串</span></span><br><span class="line">		<span class="type">long</span> zheng=(<span class="type">long</span>)num;</span><br><span class="line">		<span class="keyword">return</span> String.valueOf(zheng);<span class="comment">//整型转换成字符串</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">private</span> String <span class="title function_">divadeXiao</span><span class="params">(<span class="type">double</span> num)</span>	&#123;</span><br><span class="line">		<span class="comment">//把浮点数分解成小数部分字符串</span></span><br><span class="line">		<span class="type">long</span> zheng=(<span class="type">long</span>)num;</span><br><span class="line">		<span class="type">long</span> xiao=Math.round((num-zheng)*<span class="number">100</span>);</span><br><span class="line">		<span class="comment">//得到浮点数的小数部分</span></span><br><span class="line">		<span class="keyword">return</span> String.valueOf(xiao);<span class="comment">//返回字符串</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">private</span> String <span class="title function_">toStr1</span><span class="params">(String xiao)</span>	&#123;</span><br><span class="line">		<span class="comment">//把小数部分的数字字符串转换成汉字字符串</span></span><br><span class="line">		String re1=<span class="string">&quot;&quot;</span>;</span><br><span class="line">		<span class="type">int</span> len=xiao.length();</span><br><span class="line">		<span class="keyword">if</span>(len==<span class="number">2</span>)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">2</span>;i++)	&#123;</span><br><span class="line">				<span class="type">int</span> num=xiao.charAt(i)-<span class="number">48</span>;<span class="comment">//把字符串转换成数字</span></span><br><span class="line">				<span class="keyword">if</span>(num!=<span class="number">0</span>)	&#123;</span><br><span class="line">					re1+=str1[num]+str3[i];</span><br><span class="line">					<span class="comment">//数字不为零则需要加单位，为零则不操作</span></span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(len==<span class="number">1</span> &amp;&amp; xiao.charAt(<span class="number">0</span>)!=<span class="string">&#x27;0&#x27;</span>)	&#123;</span><br><span class="line">			<span class="comment">//若长度为1，例：12.09小数部分为9</span></span><br><span class="line">			<span class="type">int</span> num=xiao.charAt(<span class="number">0</span>)-<span class="number">48</span>;</span><br><span class="line">			re1+=str1[num]+str3[<span class="number">1</span>];</span><br><span class="line">			<span class="comment">//此时只有分，加单位str3[1]</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> re1;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">private</span> String <span class="title function_">toStr</span><span class="params">(String zheng)</span>	&#123;</span><br><span class="line">		<span class="comment">//把一个四位的数字字符串变成汉字字符串</span></span><br><span class="line">		String re=<span class="string">&quot;&quot;</span>;</span><br><span class="line">		<span class="type">int</span> j=<span class="number">0</span>;</span><br><span class="line">		<span class="type">int</span> lenz=zheng.length();</span><br><span class="line">		<span class="keyword">if</span>(zheng.charAt(<span class="number">0</span>)==<span class="string">&#x27;0&#x27;</span> &amp;&amp; lenz==<span class="number">1</span>)	&#123;</span><br><span class="line">			<span class="comment">//特殊情况如输入0.89时，整数字符串为0的处理</span></span><br><span class="line">			re+=<span class="string">&quot;零&quot;</span>;</span><br><span class="line">			<span class="keyword">return</span> re;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;lenz;i++)	&#123;<span class="comment">//遍历每一位数字</span></span><br><span class="line">			<span class="type">int</span> num=zheng.charAt(i)-<span class="number">48</span>;</span><br><span class="line">			<span class="keyword">if</span>(i!=lenz-<span class="number">1</span> &amp;&amp; num!=<span class="number">0</span>)	&#123;</span><br><span class="line">				<span class="comment">//若不是最后一位数字且数字不为零，则需要添加单位</span></span><br><span class="line">				re+=str1[num]+str2[lenz-<span class="number">2</span>-i];</span><br><span class="line">			&#125;	<span class="keyword">else</span> <span class="keyword">if</span>(!(num==<span class="number">0</span> &amp;&amp; re.charAt(j-<span class="number">1</span>)==<span class="string">&#x27;零&#x27;</span>)</span><br><span class="line">					)	&#123;</span><br><span class="line">				<span class="comment">//对于连续0出现的特殊处理，如009，第二个零不进行操作</span></span><br><span class="line">				re+=str1[num];</span><br><span class="line">			&#125;</span><br><span class="line">			j=re.length();</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(re.charAt(j-<span class="number">1</span>)==<span class="string">&#x27;零&#x27;</span>)	&#123;</span><br><span class="line">			<span class="comment">//对特殊情况最后一位是零的处理，如1990，删除掉末尾的零</span></span><br><span class="line">			re=re.substring(<span class="number">0</span>, j-<span class="number">1</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> re;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">private</span> String <span class="title function_">zhengDivade</span><span class="params">(String zheng)</span>	&#123;</span><br><span class="line">		<span class="comment">//对于金额的整数部分在12位数以内的处理，以4位数为一组</span></span><br><span class="line">		<span class="comment">//如1234（亿），5678（万），1234（元）.89</span></span><br><span class="line">		<span class="type">int</span> len=zheng.length();</span><br><span class="line">		String Re=<span class="string">&quot;&quot;</span>;</span><br><span class="line">		<span class="type">int</span> n=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">if</span>(len&gt;=<span class="number">9</span>)</span><br><span class="line">			<span class="comment">//判断整数部分的长度，考虑需要分几个组</span></span><br><span class="line">			n=<span class="number">3</span>;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(len&gt;=<span class="number">5</span> &amp;&amp; n&lt;<span class="number">9</span>)</span><br><span class="line">			n=<span class="number">2</span>;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(len&gt;=<span class="number">1</span> &amp;&amp; n&lt;<span class="number">5</span>)</span><br><span class="line">			n=<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span>(len%<span class="number">4</span> != <span class="number">0</span>)	&#123;</span><br><span class="line">			<span class="comment">//若位数非4的倍数，则在前面补0，直到位数为4的倍数为止</span></span><br><span class="line">			<span class="comment">//如12，2345补为0012，2345</span></span><br><span class="line">			String zh=<span class="string">&quot;&quot;</span>;</span><br><span class="line">			<span class="type">int</span> s=len%<span class="number">4</span>;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> k=<span class="number">0</span>;k&lt;(<span class="number">4</span>-s);k++)	&#123;</span><br><span class="line">				<span class="comment">//在前面补0</span></span><br><span class="line">				zh+=<span class="string">&quot;0&quot;</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			zh+=zheng;</span><br><span class="line">			zheng=zh;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)	&#123;</span><br><span class="line">			<span class="comment">//进行n个组合的串联</span></span><br><span class="line">			<span class="comment">//进行n次循环</span></span><br><span class="line">			String Zheng=<span class="string">&quot;&quot;</span>;</span><br><span class="line">			String sss=<span class="string">&quot;&quot;</span>;</span><br><span class="line">			len=zheng.length();<span class="comment">//长度在变化</span></span><br><span class="line">			<span class="comment">//提取出整数部分后四位，进行分开的转换</span></span><br><span class="line">			Zheng=zheng.substring(len-<span class="number">4</span>);</span><br><span class="line">			<span class="comment">//除去已经提取的字符串以外的字符串，字符串更新</span></span><br><span class="line">			zheng=zheng.substring(<span class="number">0</span>, len-<span class="number">4</span>);</span><br><span class="line">			<span class="type">int</span> m=<span class="number">0</span>,me=<span class="number">0</span>;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">3</span>;j&gt;=<span class="number">0</span>;j--)	&#123;</span><br><span class="line">				<span class="comment">//把字符串转换成整形数，如0012换成12</span></span><br><span class="line">				m=(<span class="type">int</span>)((Zheng.charAt(j)-<span class="number">48</span>)*Math.pow</span><br><span class="line">						(<span class="number">10</span>, <span class="number">3</span>-j));</span><br><span class="line">				me+=m;</span><br><span class="line">			&#125;</span><br><span class="line">			Zheng=String.valueOf(me);<span class="comment">//把数字转换成字符串</span></span><br><span class="line">			sss=<span class="built_in">this</span>.toStr(Zheng);<span class="comment">//把字符串转换成中文汉字</span></span><br><span class="line">			sss+=str4[i]+Re;</span><br><span class="line">			<span class="comment">//衔接上元等单位，再加上已经转换好的汉字字符串，注意每组</span></span><br><span class="line">			<span class="comment">//字符串间的顺序</span></span><br><span class="line">			Re=sss;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> Re;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>	&#123;</span><br><span class="line">		<span class="comment">//输入金额，并将整数部分和小数部分连接</span></span><br><span class="line">		<span class="comment">//TODO Auto-generated method stub</span></span><br><span class="line">		ArrayTest2 s=<span class="keyword">new</span> <span class="title class_">ArrayTest2</span>();</span><br><span class="line">		System.out.println(<span class="string">&quot;请输入整数部分为十二位以内的金额：&quot;</span>);</span><br><span class="line">		<span class="meta">@SuppressWarnings(&quot;resource&quot;)</span></span><br><span class="line">		Scanner input=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		<span class="type">double</span> a=input.nextDouble();</span><br><span class="line">		System.out.println(<span class="string">&quot;人民币读法为：&quot;</span>);</span><br><span class="line">		System.out.println(s.zhengDivade(s.divadeZheng(a))</span><br><span class="line">				+s.toStr1(s.divadeXiao(a)));</span><br><span class="line">		<span class="comment">//将整数部分的汉字字符串和小数部分的汉字字符串连接</span></span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java使用二维数组输出杨辉三角</title>
-    <url>/posts/9719/</url>
-    <content><![CDATA[<p>代码如下：    </p>
-<span id="more"></span>  
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ArrayTest5</span> &#123;</span><br><span class="line">	<span class="comment">/*</span></span><br><span class="line"><span class="comment">	 * 声明num()方法，在 num() 方法中传入两个参数，即 x 和 y。</span></span><br><span class="line"><span class="comment">	 * 其中，x 表示行，y 表示列。num() 方法用于计算第 x 行第 y 列的数值。</span></span><br><span class="line"><span class="comment">	 * 代码如下：</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">num</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y)</span>	&#123;</span><br><span class="line">		<span class="keyword">if</span>(y==<span class="number">1</span> || y==x)</span><br><span class="line">			<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">		<span class="type">int</span> c=num(x-<span class="number">1</span>,y-<span class="number">1</span>)+num(x-<span class="number">1</span>,y);</span><br><span class="line">		<span class="keyword">return</span> c;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>	&#123;</span><br><span class="line">		<span class="meta">@SuppressWarnings(&quot;resource&quot;)</span></span><br><span class="line">		Scanner input=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		System.out.print(<span class="string">&quot;输入打印杨辉三角形的行数：&quot;</span>);</span><br><span class="line">		<span class="type">int</span> row=input.nextInt();</span><br><span class="line">		<span class="type">int</span>[][] yhsj=<span class="keyword">new</span> <span class="title class_">int</span>[row+<span class="number">1</span>][row+<span class="number">1</span>];</span><br><span class="line">		<span class="comment">//定义二维数组，因为第0行不用，所以数组空间大小要+1</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=row;i++)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=i;j++)	&#123;</span><br><span class="line">				yhsj[i][j]=num(i,j);</span><br><span class="line">				<span class="comment">//通过数组来存储每行的数值</span></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=row;i++)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=row-i;j++)	&#123;</span><br><span class="line">				System.out.print(<span class="string">&quot; &quot;</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=i;j++)	&#123;</span><br><span class="line">				System.out.print(yhsj[i][j] + <span class="string">&quot; &quot;</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			System.out.println();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>保存，输出结果如图示：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/yhsj.JPG">  </p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java抽象类和接口的联系与区别</title>
-    <url>/posts/4792/</url>
-    <content><![CDATA[<p>分享一篇文章：<a href="https://blog.csdn.net/qq_33591903/article/details/81709511?utm_source=app&app_version=4.5.7">【JAVA】抽象类和接口的联系与区别</a>，留着以后不懂时多拿出来看看。  </p>
-<span id="more"></span>  
-
-<p><strong>完！</strong>  </p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java数组实战训练2</title>
-    <url>/posts/919/</url>
-    <content><![CDATA[<p>假设在仓库系统中，每件商品都有 3 个库存信息，分别是入库量、出库量和当前库存量。定义一个一维数组来存储 5 件商品的名称，并定义一个二维数组来存储这 5 件商品的 3 个库存信息。用户可以根据商品名称查询该商品的所有库存，也可以查看某个类别库存下数量小于 100 的商品名单，并将该类别的所有库存量按从低到高的顺序排列。具体代码如下:  </p>
-<span id="more"></span>          
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ArrayTest4</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>	&#123;</span><br><span class="line">		<span class="meta">@SuppressWarnings(&quot;resource&quot;)</span></span><br><span class="line">		Scanner input=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		String[] products= &#123;<span class="string">&quot;洗发水&quot;</span>,<span class="string">&quot;纸巾&quot;</span>,<span class="string">&quot;水杯&quot;</span>,<span class="string">&quot;牙膏&quot;</span>,</span><br><span class="line">			<span class="string">&quot;香皂&quot;</span>&#125;;</span><br><span class="line">		<span class="type">int</span>[][] amounts= &#123;&#123;<span class="number">50</span>,<span class="number">80</span>,<span class="number">90</span>&#125;,&#123;<span class="number">40</span>,<span class="number">80</span>,<span class="number">78</span>&#125;,&#123;<span class="number">50</span>,<span class="number">45</span></span><br><span class="line">			,<span class="number">789</span>&#125;,&#123;<span class="number">100</span>,<span class="number">685</span>,<span class="number">55</span>&#125;,&#123;<span class="number">898</span>,<span class="number">754</span>,<span class="number">63</span>&#125;&#125;;</span><br><span class="line">		System.out.println(<span class="string">&quot;————————库存系统————————&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;请输入要查询库存信息的商品名称：&quot;</span>);</span><br><span class="line">		String name=input.next();</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;products.length;i++)	&#123;</span><br><span class="line">			<span class="keyword">if</span>(products[i].equals(name))	&#123;</span><br><span class="line">				System.out.println(<span class="string">&quot;商品【&quot;</span> + products[i]</span><br><span class="line">						+ <span class="string">&quot;】的库存信息如下：&quot;</span>);</span><br><span class="line">				System.out.println(<span class="string">&quot;入库\t出库\t库存&quot;</span>);</span><br><span class="line">				<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;<span class="number">3</span>;j++)	&#123;</span><br><span class="line">					System.out.print(amounts[i][j] + <span class="string">&quot;\t&quot;</span>);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(<span class="string">&quot;\n————————查询库存不足100的商品&quot;</span></span><br><span class="line">				+ <span class="string">&quot;————————&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;1.入库\t2.出库\t3.库存&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;请输入序号：&quot;</span>);</span><br><span class="line">		<span class="type">int</span> no=input.nextInt();</span><br><span class="line">		<span class="type">int</span>[] temp=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">5</span>];<span class="comment">//定义数组，存储该类别的所有商品</span></span><br><span class="line">		System.out.println(<span class="string">&quot;该类别下数量较少的商品有：&quot;</span>);</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)	&#123;</span><br><span class="line">			temp[i]=amounts[i][no-<span class="number">1</span>];<span class="comment">//将指定类别的商品数目</span></span><br><span class="line">			<span class="comment">//存储到temp数组中</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;temp.length;i++)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=temp.length-i-<span class="number">2</span>;j&gt;=i;j--)	&#123;</span><br><span class="line">				<span class="keyword">if</span>(temp[j]&gt;temp[j+<span class="number">1</span>])	&#123;</span><br><span class="line">					<span class="type">int</span> x=temp[j];</span><br><span class="line">					temp[j]=temp[j+<span class="number">1</span>];</span><br><span class="line">					temp[j+<span class="number">1</span>]=x;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)	&#123;</span><br><span class="line">			<span class="keyword">if</span>(temp[i]&lt;<span class="number">100</span> &amp;&amp; temp[i]!=temp[i+<span class="number">1</span>])	&#123;</span><br><span class="line">				<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;<span class="number">5</span>;j++)	&#123;</span><br><span class="line">					<span class="keyword">if</span>(amounts[j][no-<span class="number">1</span>]==temp[i])	&#123;</span><br><span class="line">						System.out.print(products[j] + </span><br><span class="line">								<span class="string">&quot;\t&quot;</span>);</span><br><span class="line">						</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(<span class="string">&quot;\n该类别的商品库存信息从低到高的&quot;</span></span><br><span class="line">				+ <span class="string">&quot;排列如下：&quot;</span>);</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;temp.length;i++)	&#123;</span><br><span class="line">			System.out.print(temp[i] + <span class="string">&quot;\t&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;     </span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Java注释:类、方法和字段注释</title>
     <url>/posts/65033/</url>
     <content><![CDATA[<p>详细介绍可参考c语言中文网教程<a href="http://c.biancheng.net/view/6114.html">《Java注释:类、方法和字段注释》</a>。  </p>
@@ -323,6 +323,21 @@
 </ol>
 <p>在main()方法中创建了Member类的对象admin，并访问了该对象的成员变量password和成员方法toString()。  </p>
 <p>输出结果如图所示：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/chpw.JPG">  <img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/chpw2.JPG">  </p>
+<p><strong>完！</strong>  </p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java访问控制修饰符详解</title>
+    <url>/posts/44557/</url>
+    <content><![CDATA[<p>详细介绍可参考C语言中文网Java教程<a href="http://c.biancheng.net/view/965.html">《Java访问控制修饰符详解(public、private、protected和friendly)</a>  </p>
+<span id="more"></span>  
+
 <p><strong>完！</strong>  </p>
 ]]></content>
       <categories>
@@ -420,21 +435,6 @@
 <td align="center"></td>
 </tr>
 </tbody></table>
-<p><strong>完！</strong>  </p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java访问控制修饰符详解</title>
-    <url>/posts/44557/</url>
-    <content><![CDATA[<p>详细介绍可参考C语言中文网Java教程<a href="http://c.biancheng.net/view/965.html">《Java访问控制修饰符详解(public、private、protected和friendly)</a>  </p>
-<span id="more"></span>  
-
 <p><strong>完！</strong>  </p>
 ]]></content>
       <categories>
@@ -635,6 +635,20 @@
       </tags>
   </entry>
   <entry>
+    <title>不言弃，是胜利的第一步</title>
+    <url>/posts/13928/</url>
+    <content><![CDATA[<p>成功路上需要不断的坚持，需要多读书，许多伟大的人之所以能成功就在于他们读的书多，思考的多，所以就能成功。</p>
+<span id="more"></span>
+
+<iframe width="750" height="435" src="https://ydlunacommon-cdn.nosdn.127.net/494bd228676511fbc63997dd39d3f754.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>励志</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>个性化博客</title>
     <url>/posts/16544/</url>
     <content><![CDATA[<div class="poem-wrap">
@@ -661,20 +675,6 @@
       </tags>
   </entry>
   <entry>
-    <title>不言弃，是胜利的第一步</title>
-    <url>/posts/13928/</url>
-    <content><![CDATA[<p>成功路上需要不断的坚持，需要多读书，许多伟大的人之所以能成功就在于他们读的书多，思考的多，所以就能成功。</p>
-<span id="more"></span>
-
-<iframe width="750" height="435" src="https://ydlunacommon-cdn.nosdn.127.net/494bd228676511fbc63997dd39d3f754.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>励志</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>中国程序员VS美国程序员，太形象了...</title>
     <url>/posts/26891/</url>
     <content><![CDATA[<p>转载一篇文章，原创<a href="https://mp.weixin.qq.com/s/tglPT8ipyUuvg6JJmm-F6A"><em>中国程序员VS美国程序员，太形象了…</em></a>，作者：不笑青年，公众号：不会笑青年  </p>
@@ -695,7 +695,7 @@
 <p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican11.jpg">  </p>
 <p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican12.jpg">  </p>
 <p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican13.jpg">  </p>
-<p>本人无意侵犯原作者著作权，若此文章侵犯了您的权益，请将相关版权信息提交至邮箱<a href="mailto:&#x32;&#51;&#50;&#50;&#x30;&#51;&#x33;&#x33;&#52;&#x38;&#64;&#x71;&#x71;&#46;&#x63;&#x6f;&#109;">&#x32;&#51;&#50;&#50;&#x30;&#51;&#x33;&#x33;&#52;&#x38;&#64;&#x71;&#x71;&#46;&#x63;&#x6f;&#109;</a>，我会第一时间处理，谢谢！</p>
+<p>本人无意侵犯原作者著作权，若此文章侵犯了您的权益，请将相关版权信息提交至邮箱<a href="mailto:&#x32;&#x33;&#x32;&#50;&#48;&#x33;&#x33;&#x33;&#52;&#x38;&#64;&#113;&#113;&#46;&#x63;&#111;&#109;">&#x32;&#x33;&#x32;&#50;&#48;&#x33;&#x33;&#x33;&#52;&#x38;&#64;&#113;&#113;&#46;&#x63;&#111;&#109;</a>，我会第一时间处理，谢谢！</p>
 ]]></content>
       <categories>
         <category>随笔</category>
@@ -744,28 +744,6 @@
       </tags>
   </entry>
   <entry>
-    <title>为博客添加雪花飘落效果</title>
-    <url>/posts/11460/</url>
-    <content><![CDATA[<p id="hitokoto">获取中...</p>
-<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
-
-<span id="more"></span>
-
-<h4 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h4><ol>
-<li><a href="https://juejin.cn/post/6997775533840793614#heading-10">https://juejin.cn/post/6997775533840793614#heading-10</a>.</li>
-<li><a href="https://www.imooc.com/article/272005?block_id=tuijian_wz">https://www.imooc.com/article/272005?block_id=tuijian_wz</a>.</li>
-<li><a href="https://cnhuazhu.gitee.io/2021/02/24/Hexo%E9%AD%94%E6%94%B9/Hexo%E6%B7%BB%E5%8A%A0%E9%9B%AA%E8%8A%B1%E5%8A%A8%E6%80%81%E6%95%88%E6%9E%9C%E8%83%8C%E6%99%AF/">https://cnhuazhu.gitee.io/2021/02/24/Hexo%E9%AD%94%E6%94%B9/Hexo%E6%B7%BB%E5%8A%A0%E9%9B%AA%E8%8A%B1%E5%8A%A8%E6%80%81%E6%95%88%E6%9E%9C%E8%83%8C%E6%99%AF/</a>.</li>
-</ol>
-<h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><p>需要注意的就是要引入jquery，代码<code>&lt;script type=&quot;text/javascript&quot; src=&quot;//libs.baidu.com/jquery/1.8.3/jquery.min.js&quot;&gt;&lt;/script&gt;</code></p>
-]]></content>
-      <categories>
-        <category>博客教程</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>介绍几种个人博客的搭建框架</title>
     <url>/posts/39590/</url>
     <content><![CDATA[<ol>
@@ -780,7 +758,7 @@
 <li>solo: <a href="https://solo.b3log.org/">https://solo.b3log.org/</a>  </li>
 <li>wordpress: <a href="https://wordpress.org/">https://wordpress.org/</a></li>
 </ol>
-<p>参考文章：<a href="https://blog.csdn.net/weixin_45784655/article/details/104780438?utm_source=app&app_version=4.5.8">《个人博客搭建——介绍几种博客搭建框架》</a>，如本文侵犯了您的权益，请通过邮箱发送相关消息给本人(<a href="mailto:&#50;&#x33;&#50;&#x32;&#48;&#51;&#x33;&#51;&#52;&#56;&#x40;&#113;&#113;&#46;&#99;&#x6f;&#x6d;">&#50;&#x33;&#50;&#x32;&#48;&#51;&#x33;&#51;&#52;&#56;&#x40;&#113;&#113;&#46;&#99;&#x6f;&#x6d;</a>)，也可通过右边聊天图标发送消息，我看到后会第一时间进行处理，谢谢！  </p>
+<p>参考文章：<a href="https://blog.csdn.net/weixin_45784655/article/details/104780438?utm_source=app&app_version=4.5.8">《个人博客搭建——介绍几种博客搭建框架》</a>，如本文侵犯了您的权益，请通过邮箱发送相关消息给本人(<a href="mailto:&#x32;&#51;&#50;&#x32;&#48;&#x33;&#x33;&#x33;&#52;&#56;&#64;&#113;&#x71;&#x2e;&#99;&#x6f;&#x6d;">&#x32;&#51;&#50;&#x32;&#48;&#x33;&#x33;&#x33;&#52;&#56;&#64;&#113;&#x71;&#x2e;&#99;&#x6f;&#x6d;</a>)，也可通过右边聊天图标发送消息，我看到后会第一时间进行处理，谢谢！  </p>
 <p><strong>完！</strong></p>
 ]]></content>
       <categories>
@@ -788,75 +766,6 @@
       </categories>
       <tags>
         <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于Java自定义方法内部进行数值相等比较产生的问题</title>
-    <url>/posts/36358/</url>
-    <content><![CDATA[<p>我的建议就是不要在函数内部进行例如整数之类的相等比较，不管怎样，总是false，我也不知道为啥，例如下面的这个程序，如果我在自定义方法内部进行比较的话，一定出错，不信可以自己试试，但是在主方法内部进行比较时没有问题，so，我认为还是不要在方法内进行比较，这个原因还有待我考证，再说吧…   </p>
-<span id="more"></span>  
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">L2_2</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">loop</span><span class="params">(<span class="type">int</span> x)</span> &#123;</span><br><span class="line">        <span class="type">int</span>[] num=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">8</span>];</span><br><span class="line">        <span class="type">int</span> k=<span class="number">0</span>,sum=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">10</span>;x!=<span class="number">0</span>; ) &#123;</span><br><span class="line">            num[k]=(x%<span class="number">10</span>);</span><br><span class="line">            <span class="comment">//System.out.print(num[k]);</span></span><br><span class="line">            k++;</span><br><span class="line">            x/=<span class="number">10</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(k&gt;<span class="number">1</span>) &#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;(k-<span class="number">1</span>);i++) &#123;</span><br><span class="line">                <span class="keyword">for</span>(<span class="type">int</span> j=i;j&lt;(k-<span class="number">1</span>);j++) </span><br><span class="line">                    num[i]*=<span class="number">10</span>;</span><br><span class="line">                sum+=num[i];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        sum+=num[k-<span class="number">1</span>];</span><br><span class="line">        <span class="comment">//System.out.println(sum);</span></span><br><span class="line">        <span class="keyword">return</span> sum;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Scanner input=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">int</span> a=input.nextInt();</span><br><span class="line">        <span class="type">int</span> b=input.nextInt();</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=a;i&lt;=b;i++) &#123;</span><br><span class="line">            <span class="keyword">if</span>(loop(i)==i) &#123;</span><br><span class="line">                System.out.println(i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        input.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>完！</strong></p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于hexo+next主题valine评论设置邮件提醒</title>
-    <url>/posts/31714/</url>
-    <content><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>可能是我眼睛不好使的缘故，本来网上的教程讲得很详细，我硬是没有看到操作界面，这，我也比较无语…</p>
-<span id="more"></span>
-
-<h4 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h4><p><a href="https://blog.csdn.net/weixin_43167980/article/details/113808068">为Valine评论系统添加邮件提醒</a>.</p>
-<p><a href="https://github.com/zhaojun1998/Valine-Admin">Valine-Admin</a>.</p>
-<p><strong>说明</strong>：网上的教程千篇一律，大致相同，但是我选择这篇，因为它让我找到了正确的位置。</p>
-<h4 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h4><ol>
-<li>打开leancloud官网&lt;&gt;登录进入控制台，然后按照图示来(PS: 就为了找到这个Git部署，我花了好长时间，真的感觉自己眼睛不大好使啊😂)</li>
-</ol>
-<p><img src="https://photo.lihui327.cn/blog/2022/2022-05-08_214953.jpg"></p>
-<p><strong>注意</strong>：可能一开始看不到Git部署，要先部署项目，然后选择Git部署；</p>
-<ol start="2">
-<li>选择配置Git</li>
-</ol>
-<p><img src="https://photo.lihui327.cn/blog/2022/2022-05-08_215700.jpg"> </p>
-<ol start="3">
-<li>配置Git填写<code>https://github.com/zhaojun1998/Valine-Admin</code>(固定)，分支填写master，点击部署；</li>
-</ol>
-<p><img src="https://photo.lihui327.cn/blog/2022/2022-05-08_220215.jpg"></p>
-<p><img src="http://photo.lihui327.cn/blog/2022/2022-05-08_215946.jpg"></p>
-<ol start="4">
-<li>设置6个变量；</li>
-</ol>
-<p><img src="https://photo.lihui327.cn/blog/2022/2022-05-08_220601.jpg"> </p>
-<p><strong>注意</strong>：</p>
-<p><code>SMTP_PASS</code>就是邮箱授权码，需要支持smtp，如何获取请百度或者谷歌。</p>
-<p><code>SMEP_SERVICE</code>支持列表<a href="https://nodemailer.com/smtp/well-known/#supported-services">https://nodemailer.com/smtp/well-known/#supported-services</a>.</p>
-<p><code>SMTP_USER</code>就是邮箱地址。</p>
-<ol start="5">
-<li>需要设置邮箱的休眠策略，需要有管理后台的必须域名备案(国际版好像不用，但我用的是国内开发版)，然后参考上面的文章即可，没有备案的可忽略，表达式填写<code>0 */20 7-23 * * ?</code></li>
-</ol>
-<p><img src="https://photo.lihui327.cn/blog/2022/2022-05-08_221657.jpg"></p>
-<ol start="6">
-<li>重启服务，重新部署，不要忘记填写分支master</li>
-</ol>
-<p><img src="https://photo.lihui327.cn/blog/2022/2022-05-08_221956.jpg"> </p>
-<ol start="7">
-<li>到这里就结束了，不用更新hexo，等待一会儿之后，在博客网站里面提交评论时就会收到邮件提醒了。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>博客教程</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>next</tag>
-        <tag>valine</tag>
       </tags>
   </entry>
   <entry>
@@ -909,6 +818,97 @@
       </categories>
       <tags>
         <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于Java自定义方法内部进行数值相等比较产生的问题</title>
+    <url>/posts/36358/</url>
+    <content><![CDATA[<p>我的建议就是不要在函数内部进行例如整数之类的相等比较，不管怎样，总是false，我也不知道为啥，例如下面的这个程序，如果我在自定义方法内部进行比较的话，一定出错，不信可以自己试试，但是在主方法内部进行比较时没有问题，so，我认为还是不要在方法内进行比较，这个原因还有待我考证，再说吧…   </p>
+<span id="more"></span>  
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">L2_2</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">loop</span><span class="params">(<span class="type">int</span> x)</span> &#123;</span><br><span class="line">        <span class="type">int</span>[] num=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">8</span>];</span><br><span class="line">        <span class="type">int</span> k=<span class="number">0</span>,sum=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">10</span>;x!=<span class="number">0</span>; ) &#123;</span><br><span class="line">            num[k]=(x%<span class="number">10</span>);</span><br><span class="line">            <span class="comment">//System.out.print(num[k]);</span></span><br><span class="line">            k++;</span><br><span class="line">            x/=<span class="number">10</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(k&gt;<span class="number">1</span>) &#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;(k-<span class="number">1</span>);i++) &#123;</span><br><span class="line">                <span class="keyword">for</span>(<span class="type">int</span> j=i;j&lt;(k-<span class="number">1</span>);j++) </span><br><span class="line">                    num[i]*=<span class="number">10</span>;</span><br><span class="line">                sum+=num[i];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        sum+=num[k-<span class="number">1</span>];</span><br><span class="line">        <span class="comment">//System.out.println(sum);</span></span><br><span class="line">        <span class="keyword">return</span> sum;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Scanner input=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">int</span> a=input.nextInt();</span><br><span class="line">        <span class="type">int</span> b=input.nextInt();</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=a;i&lt;=b;i++) &#123;</span><br><span class="line">            <span class="keyword">if</span>(loop(i)==i) &#123;</span><br><span class="line">                System.out.println(i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        input.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>完！</strong></p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为博客添加雪花飘落效果</title>
+    <url>/posts/11460/</url>
+    <content><![CDATA[<p id="hitokoto">获取中...</p>
+<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+
+<span id="more"></span>
+
+<h4 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h4><ol>
+<li><a href="https://juejin.cn/post/6997775533840793614#heading-10">https://juejin.cn/post/6997775533840793614#heading-10</a>.</li>
+<li><a href="https://www.imooc.com/article/272005?block_id=tuijian_wz">https://www.imooc.com/article/272005?block_id=tuijian_wz</a>.</li>
+<li><a href="https://cnhuazhu.gitee.io/2021/02/24/Hexo%E9%AD%94%E6%94%B9/Hexo%E6%B7%BB%E5%8A%A0%E9%9B%AA%E8%8A%B1%E5%8A%A8%E6%80%81%E6%95%88%E6%9E%9C%E8%83%8C%E6%99%AF/">https://cnhuazhu.gitee.io/2021/02/24/Hexo%E9%AD%94%E6%94%B9/Hexo%E6%B7%BB%E5%8A%A0%E9%9B%AA%E8%8A%B1%E5%8A%A8%E6%80%81%E6%95%88%E6%9E%9C%E8%83%8C%E6%99%AF/</a>.</li>
+</ol>
+<h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><p>需要注意的就是要引入jquery，代码<code>&lt;script type=&quot;text/javascript&quot; src=&quot;//libs.baidu.com/jquery/1.8.3/jquery.min.js&quot;&gt;&lt;/script&gt;</code></p>
+]]></content>
+      <categories>
+        <category>博客教程</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于hexo+next主题valine评论设置邮件提醒</title>
+    <url>/posts/31714/</url>
+    <content><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>可能是我眼睛不好使的缘故，本来网上的教程讲得很详细，我硬是没有看到操作界面，这，我也比较无语…</p>
+<span id="more"></span>
+
+<h4 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h4><p><a href="https://blog.csdn.net/weixin_43167980/article/details/113808068">为Valine评论系统添加邮件提醒</a>.</p>
+<p><a href="https://github.com/zhaojun1998/Valine-Admin">Valine-Admin</a>.</p>
+<p><strong>说明</strong>：网上的教程千篇一律，大致相同，但是我选择这篇，因为它让我找到了正确的位置。</p>
+<h4 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h4><ol>
+<li>打开leancloud官网&lt;&gt;登录进入控制台，然后按照图示来(PS: 就为了找到这个Git部署，我花了好长时间，真的感觉自己眼睛不大好使啊😂)</li>
+</ol>
+<p><img src="https://photo.lihui327.cn/blog/2022/2022-05-08_214953.jpg"></p>
+<p><strong>注意</strong>：可能一开始看不到Git部署，要先部署项目，然后选择Git部署；</p>
+<ol start="2">
+<li>选择配置Git</li>
+</ol>
+<p><img src="https://photo.lihui327.cn/blog/2022/2022-05-08_215700.jpg"> </p>
+<ol start="3">
+<li>配置Git填写<code>https://github.com/zhaojun1998/Valine-Admin</code>(固定)，分支填写master，点击部署；</li>
+</ol>
+<p><img src="https://photo.lihui327.cn/blog/2022/2022-05-08_220215.jpg"></p>
+<p><img src="http://photo.lihui327.cn/blog/2022/2022-05-08_215946.jpg"></p>
+<ol start="4">
+<li>设置6个变量；</li>
+</ol>
+<p><img src="https://photo.lihui327.cn/blog/2022/2022-05-08_220601.jpg"> </p>
+<p><strong>注意</strong>：</p>
+<p><code>SMTP_PASS</code>就是邮箱授权码，需要支持smtp，如何获取请百度或者谷歌。</p>
+<p><code>SMEP_SERVICE</code>支持列表<a href="https://nodemailer.com/smtp/well-known/#supported-services">https://nodemailer.com/smtp/well-known/#supported-services</a>.</p>
+<p><code>SMTP_USER</code>就是邮箱地址。</p>
+<ol start="5">
+<li>需要设置邮箱的休眠策略，需要有管理后台的必须域名备案(国际版好像不用，但我用的是国内开发版)，然后参考上面的文章即可，没有备案的可忽略，表达式填写<code>0 */20 7-23 * * ?</code></li>
+</ol>
+<p><img src="https://photo.lihui327.cn/blog/2022/2022-05-08_221657.jpg"></p>
+<ol start="6">
+<li>重启服务，重新部署，不要忘记填写分支master</li>
+</ol>
+<p><img src="https://photo.lihui327.cn/blog/2022/2022-05-08_221956.jpg"> </p>
+<ol start="7">
+<li>到这里就结束了，不用更新hexo，等待一会儿之后，在博客网站里面提交评论时就会收到邮件提醒了。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>博客教程</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
+        <tag>valine</tag>
       </tags>
   </entry>
   <entry>
@@ -968,22 +968,6 @@
       </tags>
   </entry>
   <entry>
-    <title>关于next主题配置执行hexo g出现问题</title>
-    <url>/posts/63081/</url>
-    <content><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>我在我的旧电脑中不曾遇到过这种情况，就是会出现找不到某css文件，解析失败的情况。</p>
-<span id="more"></span>
-
-<h4 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h4><p>这是next主题的原因，我使用其它主题都没出现过这种情况，关闭杀毒软件，退出窗口重新进入再执行<code>hexo g</code>命令即可，如果是其它的问题就可能不是主题的原因了，需要另外分析了。</p>
-]]></content>
-      <categories>
-        <category>博客教程</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>next</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于一个PC里面使用多个github账号的问题</title>
     <url>/posts/6720/</url>
     <content><![CDATA[<p>因为我有两个github账号，但是在git push仓库时发现在同一台PC上只能对一个账号下的仓库进行git push操作，另外一个执行git push会出现denied to错误。参考网上的文章，问题得到了解决。</p>
@@ -1031,6 +1015,22 @@
       </tags>
   </entry>
   <entry>
+    <title>关于next主题配置执行hexo g出现问题</title>
+    <url>/posts/63081/</url>
+    <content><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>我在我的旧电脑中不曾遇到过这种情况，就是会出现找不到某css文件，解析失败的情况。</p>
+<span id="more"></span>
+
+<h4 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h4><p>这是next主题的原因，我使用其它主题都没出现过这种情况，关闭杀毒软件，退出窗口重新进入再执行<code>hexo g</code>命令即可，如果是其它的问题就可能不是主题的原因了，需要另外分析了。</p>
+]]></content>
+      <categories>
+        <category>博客教程</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>员工排序</title>
     <url>/posts/1480/</url>
     <content><![CDATA[<h4 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h4><p>某公司要针对员工情况统一调薪，现有一个员工列表，包含姓名、职级、工作年限、工资信息。现要求将该列表按以下规则重新排序：</p>
@@ -1075,6 +1075,90 @@
 <iframe width="1350" height="775" src="//player.bilibili.com/player.html?aid=248824623&bvid=BV1fv411n73Q&cid=359525880&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>]]></content>
       <categories>
         <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何在博客文章中添加每日一句诗或者每日一言</title>
+    <url>/posts/34763/</url>
+    <content><![CDATA[<p>示例如下：  </p>
+<div class="poem-wrap">
+  <div class="poem-border poem-left"></div>
+  <div class="poem-border poem-right"></div>
+    <h1>两句诗</h1>
+    <p id="poem">挑选中...</p>
+    <p id="info"> 
+  <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    jinrishici.load(function(result) {
+      poem.innerHTML = result.data.content
+      info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
+      document.getElementById("poem").value(poem);
+      document.getElementById("info").value(info);  
+  });
+  </script> 
+</div>
+
+<span id="more"></span>  
+
+<p>参考文章：<a href="https://blog.csdn.net/qq_44036990/article/details/105088198?utm_source=app">hexo(next)-每日一言，今日诗词</a>  </p>
+<p>可直接在你的.md或者.html文件里插入如下代码显示每日诗词：  </p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;poem-wrap&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;poem-border poem-left&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;poem-border poem-right&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>念两句诗<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">&quot;poem&quot;</span>&gt;</span>挑选中...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">&quot;info&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://sdk.jinrishici.com/v2/browser/jinrishici.js&quot;</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    jinrishici.<span class="title function_">load</span>(<span class="keyword">function</span>(<span class="params">result</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">      poem.<span class="property">innerHTML</span> = result.<span class="property">data</span>.<span class="property">content</span></span></span><br><span class="line"><span class="language-javascript">      info.<span class="property">innerHTML</span> = <span class="string">&#x27;【&#x27;</span> + result.<span class="property">data</span>.<span class="property">origin</span>.<span class="property">dynasty</span> + <span class="string">&#x27;】&#x27;</span> + result.<span class="property">data</span>.<span class="property">origin</span>.<span class="property">author</span> + <span class="string">&#x27;《&#x27;</span> + result.<span class="property">data</span>.<span class="property">origin</span>.<span class="property">title</span> + <span class="string">&#x27;》&#x27;</span></span></span><br><span class="line"><span class="language-javascript">      <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;poem&quot;</span>).<span class="title function_">value</span>(poem);</span></span><br><span class="line"><span class="language-javascript">      <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;info&quot;</span>).<span class="title function_">value</span>(info);  </span></span><br><span class="line"><span class="language-javascript">  &#125;);</span></span><br><span class="line"><span class="language-javascript">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>也可在文本中插入如下代码显示每日一言：  </p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">&quot;hitokoto&quot;</span>&gt;</span>获取中...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://v1.hitokoto.cn/?encode=js&amp;select=%23hitokoto&quot;</span> <span class="attr">defer</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>完！</strong></p>
+]]></content>
+      <categories>
+        <category>博客教程</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>安装Node.js</title>
+    <url>/posts/11257/</url>
+    <content><![CDATA[<ul>
+<li><p>下载<br>  <a href="https://nodejs.org/zh-cn/download">官网下载地址</a>     </p>
+  <span id="more"></span>  
+</li>
+<li><p>安装<br>如果不想修改安装目录的话，一路next即可，修改安装目录后也是一路next即可    </p>
+</li>
+<li><p>检验<br>在cmd窗口中输入如下指令：    </p>
+<ol>
+<li><code>node -v</code>    </li>
+<li><code>npm -v</code><br>显示结果如下代表安装成功：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/node%20-v.PNG"></li>
+</ol>
+</li>
+<li><p>配值环境变量</p>
+</li>
+</ul>
+<ol>
+<li>首先在NodeJs这个文件夹(即刚刚安装node.js所在目录下)建立”node_global”和”node_cache”两个文件夹，如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/node_global.PNG">    </li>
+<li>打开cmd(是以管理员身份运行，我以前没有以管理员身份运行，后面就会出现错误)，输入：</li>
+</ol>
+<ul>
+<li><code>npm config set prefix &quot;你的路径\nodejs\node_global&quot;</code>  回车   </li>
+<li><code>npm config set cache &quot;你的路径\nodejs\node_cache&quot;</code>  回车   </li>
+<li>然后关闭cmd窗口，使用win+r键输入control打开控制面板，找到系统-高级系统设置-高级-环境变量，在<em>系统变量</em>下新建变量 <code>NODE_PATH</code> ，变量值填写：<br><code>你的路径\nodejs\node_global\node_modules</code>     </li>
+<li>在变量path下新建新的路径：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/%E8%AE%BE%E7%BD%AEnode%E8%B7%AF%E5%BE%84.PNG">   <em>注意下面这个是设置你的hexo路径，我是因为自定义安装node.js，所以需要手动设置hexo指令路径，你需要找到它，并path上添加这个路径</em></li>
+</ul>
+<ol start="3">
+<li>可能出现的错误</li>
+</ol>
+<ul>
+<li>在你的博客文件夹中按住shift同时右键鼠标，点击*在此处打开PowerShell窗口(s)*，如果你已经安装hexo，输入<code>hexo -v</code>，若出现既不是内部也不是外部指令，就需要设置hexo的路径</li>
+</ul>
+<ul>
+<li>结束</li>
+</ul>
+]]></content>
+      <categories>
+        <category>博客教程</category>
       </categories>
       <tags>
         <tag>学习</tag>
@@ -1136,90 +1220,6 @@
       </tags>
   </entry>
   <entry>
-    <title>安装Node.js</title>
-    <url>/posts/11257/</url>
-    <content><![CDATA[<ul>
-<li><p>下载<br>  <a href="https://nodejs.org/zh-cn/download">官网下载地址</a>     </p>
-  <span id="more"></span>  
-</li>
-<li><p>安装<br>如果不想修改安装目录的话，一路next即可，修改安装目录后也是一路next即可    </p>
-</li>
-<li><p>检验<br>在cmd窗口中输入如下指令：    </p>
-<ol>
-<li><code>node -v</code>    </li>
-<li><code>npm -v</code><br>显示结果如下代表安装成功：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/node%20-v.PNG"></li>
-</ol>
-</li>
-<li><p>配值环境变量</p>
-</li>
-</ul>
-<ol>
-<li>首先在NodeJs这个文件夹(即刚刚安装node.js所在目录下)建立”node_global”和”node_cache”两个文件夹，如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/node_global.PNG">    </li>
-<li>打开cmd(是以管理员身份运行，我以前没有以管理员身份运行，后面就会出现错误)，输入：</li>
-</ol>
-<ul>
-<li><code>npm config set prefix &quot;你的路径\nodejs\node_global&quot;</code>  回车   </li>
-<li><code>npm config set cache &quot;你的路径\nodejs\node_cache&quot;</code>  回车   </li>
-<li>然后关闭cmd窗口，使用win+r键输入control打开控制面板，找到系统-高级系统设置-高级-环境变量，在<em>系统变量</em>下新建变量 <code>NODE_PATH</code> ，变量值填写：<br><code>你的路径\nodejs\node_global\node_modules</code>     </li>
-<li>在变量path下新建新的路径：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/%E8%AE%BE%E7%BD%AEnode%E8%B7%AF%E5%BE%84.PNG">   <em>注意下面这个是设置你的hexo路径，我是因为自定义安装node.js，所以需要手动设置hexo指令路径，你需要找到它，并path上添加这个路径</em></li>
-</ul>
-<ol start="3">
-<li>可能出现的错误</li>
-</ol>
-<ul>
-<li>在你的博客文件夹中按住shift同时右键鼠标，点击*在此处打开PowerShell窗口(s)*，如果你已经安装hexo，输入<code>hexo -v</code>，若出现既不是内部也不是外部指令，就需要设置hexo的路径</li>
-</ul>
-<ul>
-<li>结束</li>
-</ul>
-]]></content>
-      <categories>
-        <category>博客教程</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何在博客文章中添加每日一句诗或者每日一言</title>
-    <url>/posts/34763/</url>
-    <content><![CDATA[<p>示例如下：  </p>
-<div class="poem-wrap">
-  <div class="poem-border poem-left"></div>
-  <div class="poem-border poem-right"></div>
-    <h1>两句诗</h1>
-    <p id="poem">挑选中...</p>
-    <p id="info"> 
-  <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-  <script type="text/javascript">
-    jinrishici.load(function(result) {
-      poem.innerHTML = result.data.content
-      info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
-      document.getElementById("poem").value(poem);
-      document.getElementById("info").value(info);  
-  });
-  </script> 
-</div>
-
-<span id="more"></span>  
-
-<p>参考文章：<a href="https://blog.csdn.net/qq_44036990/article/details/105088198?utm_source=app">hexo(next)-每日一言，今日诗词</a>  </p>
-<p>可直接在你的.md或者.html文件里插入如下代码显示每日诗词：  </p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;poem-wrap&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;poem-border poem-left&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;poem-border poem-right&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>念两句诗<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">&quot;poem&quot;</span>&gt;</span>挑选中...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">&quot;info&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://sdk.jinrishici.com/v2/browser/jinrishici.js&quot;</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    jinrishici.<span class="title function_">load</span>(<span class="keyword">function</span>(<span class="params">result</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">      poem.<span class="property">innerHTML</span> = result.<span class="property">data</span>.<span class="property">content</span></span></span><br><span class="line"><span class="language-javascript">      info.<span class="property">innerHTML</span> = <span class="string">&#x27;【&#x27;</span> + result.<span class="property">data</span>.<span class="property">origin</span>.<span class="property">dynasty</span> + <span class="string">&#x27;】&#x27;</span> + result.<span class="property">data</span>.<span class="property">origin</span>.<span class="property">author</span> + <span class="string">&#x27;《&#x27;</span> + result.<span class="property">data</span>.<span class="property">origin</span>.<span class="property">title</span> + <span class="string">&#x27;》&#x27;</span></span></span><br><span class="line"><span class="language-javascript">      <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;poem&quot;</span>).<span class="title function_">value</span>(poem);</span></span><br><span class="line"><span class="language-javascript">      <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;info&quot;</span>).<span class="title function_">value</span>(info);  </span></span><br><span class="line"><span class="language-javascript">  &#125;);</span></span><br><span class="line"><span class="language-javascript">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>也可在文本中插入如下代码显示每日一言：  </p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">&quot;hitokoto&quot;</span>&gt;</span>获取中...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://v1.hitokoto.cn/?encode=js&amp;select=%23hitokoto&quot;</span> <span class="attr">defer</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>完！</strong></p>
-]]></content>
-      <categories>
-        <category>博客教程</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>悼念外婆</title>
     <url>/posts/44562/</url>
     <content><![CDATA[<p>最近因为做英语诗歌赏析，所选取的诗歌就是一首悼亡诗，由感而发，想到了已经去世十多年的外婆，触物生情，故在此抒发一下自己的情绪，同时表达一下对外婆的怀念！  </p>
@@ -1260,36 +1260,6 @@
       </categories>
       <tags>
         <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>新年祝福</title>
-    <url>/posts/47961/</url>
-    <content><![CDATA[<div class="poem-wrap">
-  <div class="poem-border poem-left"></div>
-  <div class="poem-border poem-right"></div>
-    <h1>两句诗</h1>
-    <p id="poem">挑选中...</p>
-    <p id="info">  
-  <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-  <script type="text/javascript">
-    jinrishici.load(function(result) {
-      poem.innerHTML = result.data.content
-      info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
-      document.getElementById("poem").value(poem);
-      document.getElementById("info").value(info);  
-  });
-  </script> 
-</div>  
-<span id="more"></span>  
-
-<p><strong>新的一年，我在博客上祝福大家愿所求皆如愿，所行化坦途！！！</strong></p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -1339,6 +1309,36 @@
       </categories>
       <tags>
         <tag>历史</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>新年祝福</title>
+    <url>/posts/47961/</url>
+    <content><![CDATA[<div class="poem-wrap">
+  <div class="poem-border poem-left"></div>
+  <div class="poem-border poem-right"></div>
+    <h1>两句诗</h1>
+    <p id="poem">挑选中...</p>
+    <p id="info">  
+  <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    jinrishici.load(function(result) {
+      poem.innerHTML = result.data.content
+      info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
+      document.getElementById("poem").value(poem);
+      document.getElementById("info").value(info);  
+  });
+  </script> 
+</div>  
+<span id="more"></span>  
+
+<p><strong>新的一年，我在博客上祝福大家愿所求皆如愿，所行化坦途！！！</strong></p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -1487,6 +1487,18 @@
       </tags>
   </entry>
   <entry>
+    <title>虎牙云游戏手机端体验</title>
+    <url>/posts/59253/</url>
+    <content><![CDATA[<p>不得不说，体验云游戏的感觉就是速度快，延迟特别小，有个缺点就是手机不太好操作PC端游戏，反应也挺快的，就是人的思路没有跟上，哈哈😂，我用手机打了两盘联盟，真心想说，我太难了，还是不能适应它的操作啊，暂且就这样吧，我觉得云游戏可能是以后游戏的一个发展趋势，普通人也许不需要配置很好的电脑就能玩要求很高的游戏，同样，手机也是如此，让我们拭目以待吧！但是不得不说，云游戏的确还有很长一段路要走。 </p>
+<span id="more"></span>  ]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>要做就做努力的失败者，绝不做沉沦的失败者</title>
     <url>/posts/47530/</url>
     <content><![CDATA[<p><strong>算是对学习上出现思想下滑的自己一种勉励吧！</strong>  </p>
@@ -1499,18 +1511,6 @@
       </categories>
       <tags>
         <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>虎牙云游戏手机端体验</title>
-    <url>/posts/59253/</url>
-    <content><![CDATA[<p>不得不说，体验云游戏的感觉就是速度快，延迟特别小，有个缺点就是手机不太好操作PC端游戏，反应也挺快的，就是人的思路没有跟上，哈哈😂，我用手机打了两盘联盟，真心想说，我太难了，还是不能适应它的操作啊，暂且就这样吧，我觉得云游戏可能是以后游戏的一个发展趋势，普通人也许不需要配置很好的电脑就能玩要求很高的游戏，同样，手机也是如此，让我们拭目以待吧！但是不得不说，云游戏的确还有很长一段路要走。 </p>
-<span id="more"></span>  ]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -1570,6 +1570,32 @@
 ]]></content>
       <categories>
         <category>数据结构</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机组成原理定点除法运算</title>
+    <url>/posts/41291/</url>
+    <content><![CDATA[<p>对于定点除法运算，我认为我只掌握了一点皮毛，真正的精髓我还没触碰到，最重要的是，我发现老师讲的与书上说的有一点出入，这令我很不解，第一次感到很困惑，哎，有点难受！  </p>
+<span id="more"></span>  
+
+<p>先用一张图看一道题的解法：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/411b355a601c5fcf.png">  </p>
+<p>首先第一步，确定符号，若两数均为正，则直接进行第二步，若有一个负号，将负号提前，若两数均为负号，去掉负号；  </p>
+<p>第二步，保证接下来的除数与被除数均为正(如有负号则已提前)，对除数与被除数进行小数点向左的移位，将除数与被除数均转化为小数，此时要注意有效数据的位数；  </p>
+<p>第三步，对被除数求补码，再对除数求补码以及其相反数的补码，然后开始进行加法，此时先用除数相反数的补码与被除数的补码进行相加  </p>
+<blockquote>
+<p>1.若得出的小数点左边第一位是1，就先将得出的结果进行小数点右移(溢出的直接舍掉)，再用除数补码与该结果进行相加</p>
+</blockquote>
+<blockquote>
+<p>2.若得出的小数点左边第一位是0，将得出的结果进行小数点右移(溢出的直接舍弃)，再用除数的相反数的补码与该结果进行相加</p>
+</blockquote>
+<p>反复进行上述1、2过程，直到达到题目所说的精度，<strong>要注意最后对余数的处理</strong>，不要忘了符号！！！  </p>
+<p><strong>完！</strong></p>
+]]></content>
+      <categories>
+        <category>计算机组成原理</category>
       </categories>
       <tags>
         <tag>学习</tag>
@@ -1640,32 +1666,6 @@
 ]]></content>
       <categories>
         <category>数据结构</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算机组成原理定点除法运算</title>
-    <url>/posts/41291/</url>
-    <content><![CDATA[<p>对于定点除法运算，我认为我只掌握了一点皮毛，真正的精髓我还没触碰到，最重要的是，我发现老师讲的与书上说的有一点出入，这令我很不解，第一次感到很困惑，哎，有点难受！  </p>
-<span id="more"></span>  
-
-<p>先用一张图看一道题的解法：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/411b355a601c5fcf.png">  </p>
-<p>首先第一步，确定符号，若两数均为正，则直接进行第二步，若有一个负号，将负号提前，若两数均为负号，去掉负号；  </p>
-<p>第二步，保证接下来的除数与被除数均为正(如有负号则已提前)，对除数与被除数进行小数点向左的移位，将除数与被除数均转化为小数，此时要注意有效数据的位数；  </p>
-<p>第三步，对被除数求补码，再对除数求补码以及其相反数的补码，然后开始进行加法，此时先用除数相反数的补码与被除数的补码进行相加  </p>
-<blockquote>
-<p>1.若得出的小数点左边第一位是1，就先将得出的结果进行小数点右移(溢出的直接舍掉)，再用除数补码与该结果进行相加</p>
-</blockquote>
-<blockquote>
-<p>2.若得出的小数点左边第一位是0，将得出的结果进行小数点右移(溢出的直接舍弃)，再用除数的相反数的补码与该结果进行相加</p>
-</blockquote>
-<p>反复进行上述1、2过程，直到达到题目所说的精度，<strong>要注意最后对余数的处理</strong>，不要忘了符号！！！  </p>
-<p><strong>完！</strong></p>
-]]></content>
-      <categories>
-        <category>计算机组成原理</category>
       </categories>
       <tags>
         <tag>学习</tag>

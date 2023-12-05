@@ -1,25 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>C实现非递减有序数组删除重复元素</title>
-    <url>/posts/46996/</url>
-    <content><![CDATA[<p>参考csdn上一位大佬的文章：<a href="https://blog.csdn.net/zy010101/article/details/81302145?utm_source=app&app_version=4.5.5">删除一个有序数组中的重复元素</a>  </p>
-<span id="more"></span>  
-
-<p>本人采用的是方案二，代码实现如下：  </p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="comment">//#define OK 1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> N 10</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">DelSameX</span><span class="params">(<span class="type">int</span> *L,<span class="type">int</span> n)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> i=<span class="number">0</span>,j;</span><br><span class="line">    <span class="keyword">if</span>(n==<span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        i=<span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(j=<span class="number">1</span>;j&lt;n;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(L[j]!=L[i])</span><br><span class="line">            &#123;</span><br><span class="line">                i++;</span><br><span class="line">                L[i]=L[j];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> i;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Please input feidijian youxu shuzu[%d]: &quot;</span>,N);</span><br><span class="line">    <span class="type">int</span> num[N];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;N;i++)</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;num[i]);</span><br><span class="line">    <span class="type">int</span> j=DelSameX(num,N);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;=j;i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,num[i]);</span><br><span class="line">    <span class="built_in">putchar</span>(<span class="string">&#x27;\n&#x27;</span>);</span><br><span class="line">    system(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行效果如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/DelSame.JPG">  </p>
-<p><strong>完！</strong></p>
-]]></content>
-      <categories>
-        <category>数据结构</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2020下半年英语六级</title>
     <url>/posts/13114/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码不太对，请再试试" data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -42,55 +23,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo搭建博客详细教程</title>
-    <url>/posts/31931/</url>
-    <content><![CDATA[<p>欢迎来到我的博客！这是我用hexo建立的第一个博客静态网页，部署在<a href="https://github.com/">github</a>上的，因此难免会有些许不尽人意的地方，但我会努力改善的，我会分享一些我平时所学的知识与经验，也分享一些我遇到过的技术错误，我相信有心人天不负，谢谢！    </p>
-<span id="more"></span>  
-
-<h4 id="hexo搭建博客经验分享"><a href="#hexo搭建博客经验分享" class="headerlink" title="hexo搭建博客经验分享"></a>hexo搭建博客经验分享</h4><h5 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h5><p>这就相当是制作一个静态网页，但是不用自掏资本，但只能是轻量的网页，因此非常适合博客的搭建，本网页界面就是用hexo制作的，也许不足以激发你的兴趣，但是它也可以用来分享你的生活的点点滴滴，只要你有一颗好奇的心，以及敢于去尝试的勇气，搞定博客不在话下。   </p>
-<p><strong>最开始我是参考博主小坏孩的博客制作的，传送门：<a href="https://www.sakura521.cn/technology/hexoTutorial.html">Hexo博客 搭建超详细教程</a>，我在这里简单介绍一下步骤：</strong>  </p>
-<ol>
-<li><p><strong>安装Git以及连接GitHub</strong><br> <a href="/posts/5303">详细教程</a>      </p>
-</li>
-<li><p><strong>安装Node.js</strong><br> <a href="/posts/11257">详细教程</a>   </p>
-</li>
-<li><p><strong>安装Hexo</strong></p>
-</li>
-</ol>
-<ul>
-<li>首先创建一个文件夹，命名(感觉最好全是英文)，进入文件夹后，按住shift键同时右键鼠标，点击<code>在此处打开PowerShell窗口(s)</code> ，使用npm命令安装hexo，<code>npm install -g hexo-cli</code> ，安装完后输入<code>hexo -v</code> 来验证是否安装成功，若显示既不是外部也不是内部命令，则请参考文章：<a href="/2021-02-09-%E5%AE%89%E8%A3%85Node-js">安装Node.js</a> ，若提示这是非签名脚本，已被系统拒绝执行，请参考以下步骤(没有则请忽略😂)：     <ul>
-<li>win10下关闭脚本执行安全策略<br>点击开始，设置，搜索power，点击powershell developer settings，往下拉，找到应用以下设置已执行powershell脚本，勾选，点击应用就可以了</li>
-</ul>
-</li>
-<li>hexo -v正确显示之后就开始初始化网址，输入<br>  <code>hexo init</code>   </li>
-<li>接着输入npm install来安装这个网址需要的插件<br>  <code>npm install</code>    </li>
-<li>完成后，输入hexo g来生成静态网页<br>  <code>hexo g</code>   </li>
-<li>结果显示：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/hexo%20g.JPG">   </li>
-<li>hexo s开启本地服务器<br>  <code>hexo s</code>   </li>
-<li>结果显示：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/hexo%20s.JPG"> 这就代表启动成功了。  </li>
-<li>可在浏览器输入网址<a href="http://localhost:4000/">http://localhost:4000</a>就可以查看了，关闭本地服务可直接ctrl+c</li>
-</ul>
-<ol start="4">
-<li><strong>后续美化</strong></li>
-</ol>
-<ul>
-<li><p>我正在学习，慢慢添加吧，网上有很多教程的，这里推荐<a href="https://hexo.io/">博客主题网站</a>，里面有许多精美主题，个个都是大佬，相信只要我们不断努力学习，也能达到大佬的水平的，相信自己😂！  </p>
-</li>
-<li><p>我目前正在使用的主题是参考网上一位大佬的教程制作的，在这里为这位大佬点赞，我是看了他的文章才知道如何使用别人的主题，其完整教程：<a href="https://mp.weixin.qq.com/s/2Spv9KHO6mLHui0CFBmCnQ">Hexo搭建个人博客网站</a> ，我使用的是next主题，具体可参考他的文章<a href="https://mp.weixin.qq.com/s?__biz=MzA4MzA2NDUxOQ==&mid=2247484074&idx=1&sn=5f5afa93c6c5aa7a9ea3b1d62ce31cd0&chksm=9ffd6102a88ae81480769c40377ab9414bad00f895684df8ea3b68d0a9e4285672bf01ecd1f2&cur_album_id=1339610139661484036&scene=189#rd">Hexo主题配置-Next</a>    </p>
-</li>
-<li><p>可参考文章(next主题配置美化)：<a href="https://blog.csdn.net/nightmare_dimple/article/details/86661502?utm_source=app&app_version=4.5.8">《Hexo博客优化之Next主题美化》</a>、<a href="https://blog.csdn.net/forever_008/article/details/113524039?utm_source=app&app_version=4.5.8">《安装并优化next主题》</a></p>
-<p><strong>未完待续…</strong></p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>博客教程</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>ENIAC计算机与ABC计算机的关于第一台计算机的十余年之争</title>
     <url>/posts/20094/</url>
     <content><![CDATA[<p>分享一篇文章<a href="https://baijiahao.baidu.com/s?id=1645658087402989097&wfr=spider&for=pc">ENIAC计算机与ABC计算机的关于第一台计算机的十余年之争</a>。</p>
@@ -106,21 +38,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Java static的常见问题和使用误区</title>
-    <url>/posts/10897/</url>
-    <content><![CDATA[<p>详细介绍可学习csdn大佬的一篇文章<a href="https://blog.csdn.net/weixin_44234912/article/details/108737054?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161512057416780266281223%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=161512057416780266281223&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-2-108737054.first_rank_v2_pc_rank_v29&utm_term=Java+static%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E4%BD%BF%E7%94%A8%E8%AF%AF%E5%8C%BA">《static的常见问题和使用误区》</a>  </p>
-<span id="more"></span>  
-
-<p><strong>完！</strong>  </p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Java finally和return的执行顺序(非常重要)</title>
     <url>/posts/28311/</url>
     <content><![CDATA[<p>分享两篇文章，我个人认为好！  </p>
@@ -128,37 +45,6 @@
 <span id="more"></span>  
 
 <p><strong>完！</strong>  </p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java中的空对象</title>
-    <url>/posts/31520/</url>
-    <content><![CDATA[<p>详细介绍可参考<a href="https://blog.csdn.net/lgh2691861/article/details/52248038?utm_source=app&app_version=4.5.2">《Java中空对象（null)引用方法及属性简单分析！》</a>  </p>
-<span id="more"></span>  
-
-<p><strong>完！</strong>  </p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java使用二维数组输出杨辉三角</title>
-    <url>/posts/9719/</url>
-    <content><![CDATA[<p>代码如下：    </p>
-<span id="more"></span>  
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ArrayTest5</span> &#123;</span><br><span class="line">	<span class="comment">/*</span></span><br><span class="line"><span class="comment">	 * 声明num()方法，在 num() 方法中传入两个参数，即 x 和 y。</span></span><br><span class="line"><span class="comment">	 * 其中，x 表示行，y 表示列。num() 方法用于计算第 x 行第 y 列的数值。</span></span><br><span class="line"><span class="comment">	 * 代码如下：</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">num</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y)</span>	&#123;</span><br><span class="line">		<span class="keyword">if</span>(y==<span class="number">1</span> || y==x)</span><br><span class="line">			<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">		<span class="type">int</span> c=num(x-<span class="number">1</span>,y-<span class="number">1</span>)+num(x-<span class="number">1</span>,y);</span><br><span class="line">		<span class="keyword">return</span> c;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>	&#123;</span><br><span class="line">		<span class="meta">@SuppressWarnings(&quot;resource&quot;)</span></span><br><span class="line">		Scanner input=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		System.out.print(<span class="string">&quot;输入打印杨辉三角形的行数：&quot;</span>);</span><br><span class="line">		<span class="type">int</span> row=input.nextInt();</span><br><span class="line">		<span class="type">int</span>[][] yhsj=<span class="keyword">new</span> <span class="title class_">int</span>[row+<span class="number">1</span>][row+<span class="number">1</span>];</span><br><span class="line">		<span class="comment">//定义二维数组，因为第0行不用，所以数组空间大小要+1</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=row;i++)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=i;j++)	&#123;</span><br><span class="line">				yhsj[i][j]=num(i,j);</span><br><span class="line">				<span class="comment">//通过数组来存储每行的数值</span></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=row;i++)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=row-i;j++)	&#123;</span><br><span class="line">				System.out.print(<span class="string">&quot; &quot;</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=i;j++)	&#123;</span><br><span class="line">				System.out.print(yhsj[i][j] + <span class="string">&quot; &quot;</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			System.out.println();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>保存，输出结果如图示：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/yhsj.JPG">  </p>
 ]]></content>
       <categories>
         <category>Java</category>
@@ -183,12 +69,61 @@
       </tags>
   </entry>
   <entry>
-    <title>Java内部类的作用，实现多重继承</title>
-    <url>/posts/39656/</url>
-    <content><![CDATA[<p>分享一篇文章：<a href="https://blog.csdn.net/yzw_will/article/details/21229225?utm_source=app&app_version=4.5.7">Java内部类的作用，实现多重继承</a>  </p>
+    <title>Java static的常见问题和使用误区</title>
+    <url>/posts/10897/</url>
+    <content><![CDATA[<p>详细介绍可学习csdn大佬的一篇文章<a href="https://blog.csdn.net/weixin_44234912/article/details/108737054?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161512057416780266281223%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=161512057416780266281223&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-2-108737054.first_rank_v2_pc_rank_v29&utm_term=Java+static%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E4%BD%BF%E7%94%A8%E8%AF%AF%E5%8C%BA">《static的常见问题和使用误区》</a>  </p>
 <span id="more"></span>  
 
+<p><strong>完！</strong>  </p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C实现非递减有序数组删除重复元素</title>
+    <url>/posts/46996/</url>
+    <content><![CDATA[<p>参考csdn上一位大佬的文章：<a href="https://blog.csdn.net/zy010101/article/details/81302145?utm_source=app&app_version=4.5.5">删除一个有序数组中的重复元素</a>  </p>
+<span id="more"></span>  
+
+<p>本人采用的是方案二，代码实现如下：  </p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="comment">//#define OK 1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> N 10</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">DelSameX</span><span class="params">(<span class="type">int</span> *L,<span class="type">int</span> n)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> i=<span class="number">0</span>,j;</span><br><span class="line">    <span class="keyword">if</span>(n==<span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        i=<span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(j=<span class="number">1</span>;j&lt;n;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(L[j]!=L[i])</span><br><span class="line">            &#123;</span><br><span class="line">                i++;</span><br><span class="line">                L[i]=L[j];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> i;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Please input feidijian youxu shuzu[%d]: &quot;</span>,N);</span><br><span class="line">    <span class="type">int</span> num[N];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;N;i++)</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;num[i]);</span><br><span class="line">    <span class="type">int</span> j=DelSameX(num,N);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;=j;i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,num[i]);</span><br><span class="line">    <span class="built_in">putchar</span>(<span class="string">&#x27;\n&#x27;</span>);</span><br><span class="line">    system(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行效果如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/DelSame.JPG">  </p>
 <p><strong>完！</strong></p>
+]]></content>
+      <categories>
+        <category>数据结构</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java中的空对象</title>
+    <url>/posts/31520/</url>
+    <content><![CDATA[<p>详细介绍可参考<a href="https://blog.csdn.net/lgh2691861/article/details/52248038?utm_source=app&app_version=4.5.2">《Java中空对象（null)引用方法及属性简单分析！》</a>  </p>
+<span id="more"></span>  
+
+<p><strong>完！</strong>  </p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java抽象类和接口的联系与区别</title>
+    <url>/posts/4792/</url>
+    <content><![CDATA[<p>分享一篇文章：<a href="https://blog.csdn.net/qq_33591903/article/details/81709511?utm_source=app&app_version=4.5.7">【JAVA】抽象类和接口的联系与区别</a>，留着以后不懂时多拿出来看看。  </p>
+<span id="more"></span>  
+
+<p><strong>完！</strong>  </p>
 ]]></content>
       <categories>
         <category>Java</category>
@@ -250,6 +185,21 @@
       </tags>
   </entry>
   <entry>
+    <title>Java数组实战训练2</title>
+    <url>/posts/919/</url>
+    <content><![CDATA[<p>假设在仓库系统中，每件商品都有 3 个库存信息，分别是入库量、出库量和当前库存量。定义一个一维数组来存储 5 件商品的名称，并定义一个二维数组来存储这 5 件商品的 3 个库存信息。用户可以根据商品名称查询该商品的所有库存，也可以查看某个类别库存下数量小于 100 的商品名单，并将该类别的所有库存量按从低到高的顺序排列。具体代码如下:  </p>
+<span id="more"></span>          
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ArrayTest4</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>	&#123;</span><br><span class="line">		<span class="meta">@SuppressWarnings(&quot;resource&quot;)</span></span><br><span class="line">		Scanner input=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		String[] products= &#123;<span class="string">&quot;洗发水&quot;</span>,<span class="string">&quot;纸巾&quot;</span>,<span class="string">&quot;水杯&quot;</span>,<span class="string">&quot;牙膏&quot;</span>,</span><br><span class="line">			<span class="string">&quot;香皂&quot;</span>&#125;;</span><br><span class="line">		<span class="type">int</span>[][] amounts= &#123;&#123;<span class="number">50</span>,<span class="number">80</span>,<span class="number">90</span>&#125;,&#123;<span class="number">40</span>,<span class="number">80</span>,<span class="number">78</span>&#125;,&#123;<span class="number">50</span>,<span class="number">45</span></span><br><span class="line">			,<span class="number">789</span>&#125;,&#123;<span class="number">100</span>,<span class="number">685</span>,<span class="number">55</span>&#125;,&#123;<span class="number">898</span>,<span class="number">754</span>,<span class="number">63</span>&#125;&#125;;</span><br><span class="line">		System.out.println(<span class="string">&quot;————————库存系统————————&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;请输入要查询库存信息的商品名称：&quot;</span>);</span><br><span class="line">		String name=input.next();</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;products.length;i++)	&#123;</span><br><span class="line">			<span class="keyword">if</span>(products[i].equals(name))	&#123;</span><br><span class="line">				System.out.println(<span class="string">&quot;商品【&quot;</span> + products[i]</span><br><span class="line">						+ <span class="string">&quot;】的库存信息如下：&quot;</span>);</span><br><span class="line">				System.out.println(<span class="string">&quot;入库\t出库\t库存&quot;</span>);</span><br><span class="line">				<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;<span class="number">3</span>;j++)	&#123;</span><br><span class="line">					System.out.print(amounts[i][j] + <span class="string">&quot;\t&quot;</span>);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(<span class="string">&quot;\n————————查询库存不足100的商品&quot;</span></span><br><span class="line">				+ <span class="string">&quot;————————&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;1.入库\t2.出库\t3.库存&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;请输入序号：&quot;</span>);</span><br><span class="line">		<span class="type">int</span> no=input.nextInt();</span><br><span class="line">		<span class="type">int</span>[] temp=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">5</span>];<span class="comment">//定义数组，存储该类别的所有商品</span></span><br><span class="line">		System.out.println(<span class="string">&quot;该类别下数量较少的商品有：&quot;</span>);</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)	&#123;</span><br><span class="line">			temp[i]=amounts[i][no-<span class="number">1</span>];<span class="comment">//将指定类别的商品数目</span></span><br><span class="line">			<span class="comment">//存储到temp数组中</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;temp.length;i++)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=temp.length-i-<span class="number">2</span>;j&gt;=i;j--)	&#123;</span><br><span class="line">				<span class="keyword">if</span>(temp[j]&gt;temp[j+<span class="number">1</span>])	&#123;</span><br><span class="line">					<span class="type">int</span> x=temp[j];</span><br><span class="line">					temp[j]=temp[j+<span class="number">1</span>];</span><br><span class="line">					temp[j+<span class="number">1</span>]=x;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)	&#123;</span><br><span class="line">			<span class="keyword">if</span>(temp[i]&lt;<span class="number">100</span> &amp;&amp; temp[i]!=temp[i+<span class="number">1</span>])	&#123;</span><br><span class="line">				<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;<span class="number">5</span>;j++)	&#123;</span><br><span class="line">					<span class="keyword">if</span>(amounts[j][no-<span class="number">1</span>]==temp[i])	&#123;</span><br><span class="line">						System.out.print(products[j] + </span><br><span class="line">								<span class="string">&quot;\t&quot;</span>);</span><br><span class="line">						</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(<span class="string">&quot;\n该类别的商品库存信息从低到高的&quot;</span></span><br><span class="line">				+ <span class="string">&quot;排列如下：&quot;</span>);</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;temp.length;i++)	&#123;</span><br><span class="line">			System.out.print(temp[i] + <span class="string">&quot;\t&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;     </span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java数组实战训练</title>
     <url>/posts/22327/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我是参考csdn的一位大佬的代码编写的，传送门：<a href="https://blog.csdn.net/weixin_45743799/article/details/104696705?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161286173616780264077580%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=161286173616780264077580&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v29-1-104696705.pc_search_result_no_baidu_js&utm_term=java%E8%BD%AC%E4%BA%BA%E6%B0%91%E5%B8%81%E8%AF%BB%E6%B3%95&spm=1018.2226.3001.4187">java人民币读法转换</a>，以下为详细代码：  </p>
@@ -267,12 +217,13 @@
       </tags>
   </entry>
   <entry>
-    <title>Java数组实战训练2</title>
-    <url>/posts/919/</url>
-    <content><![CDATA[<p>假设在仓库系统中，每件商品都有 3 个库存信息，分别是入库量、出库量和当前库存量。定义一个一维数组来存储 5 件商品的名称，并定义一个二维数组来存储这 5 件商品的 3 个库存信息。用户可以根据商品名称查询该商品的所有库存，也可以查看某个类别库存下数量小于 100 的商品名单，并将该类别的所有库存量按从低到高的顺序排列。具体代码如下:  </p>
-<span id="more"></span>          
+    <title>Java使用二维数组输出杨辉三角</title>
+    <url>/posts/9719/</url>
+    <content><![CDATA[<p>代码如下：    </p>
+<span id="more"></span>  
 
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ArrayTest4</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>	&#123;</span><br><span class="line">		<span class="meta">@SuppressWarnings(&quot;resource&quot;)</span></span><br><span class="line">		Scanner input=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		String[] products= &#123;<span class="string">&quot;洗发水&quot;</span>,<span class="string">&quot;纸巾&quot;</span>,<span class="string">&quot;水杯&quot;</span>,<span class="string">&quot;牙膏&quot;</span>,</span><br><span class="line">			<span class="string">&quot;香皂&quot;</span>&#125;;</span><br><span class="line">		<span class="type">int</span>[][] amounts= &#123;&#123;<span class="number">50</span>,<span class="number">80</span>,<span class="number">90</span>&#125;,&#123;<span class="number">40</span>,<span class="number">80</span>,<span class="number">78</span>&#125;,&#123;<span class="number">50</span>,<span class="number">45</span></span><br><span class="line">			,<span class="number">789</span>&#125;,&#123;<span class="number">100</span>,<span class="number">685</span>,<span class="number">55</span>&#125;,&#123;<span class="number">898</span>,<span class="number">754</span>,<span class="number">63</span>&#125;&#125;;</span><br><span class="line">		System.out.println(<span class="string">&quot;————————库存系统————————&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;请输入要查询库存信息的商品名称：&quot;</span>);</span><br><span class="line">		String name=input.next();</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;products.length;i++)	&#123;</span><br><span class="line">			<span class="keyword">if</span>(products[i].equals(name))	&#123;</span><br><span class="line">				System.out.println(<span class="string">&quot;商品【&quot;</span> + products[i]</span><br><span class="line">						+ <span class="string">&quot;】的库存信息如下：&quot;</span>);</span><br><span class="line">				System.out.println(<span class="string">&quot;入库\t出库\t库存&quot;</span>);</span><br><span class="line">				<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;<span class="number">3</span>;j++)	&#123;</span><br><span class="line">					System.out.print(amounts[i][j] + <span class="string">&quot;\t&quot;</span>);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(<span class="string">&quot;\n————————查询库存不足100的商品&quot;</span></span><br><span class="line">				+ <span class="string">&quot;————————&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;1.入库\t2.出库\t3.库存&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;请输入序号：&quot;</span>);</span><br><span class="line">		<span class="type">int</span> no=input.nextInt();</span><br><span class="line">		<span class="type">int</span>[] temp=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">5</span>];<span class="comment">//定义数组，存储该类别的所有商品</span></span><br><span class="line">		System.out.println(<span class="string">&quot;该类别下数量较少的商品有：&quot;</span>);</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)	&#123;</span><br><span class="line">			temp[i]=amounts[i][no-<span class="number">1</span>];<span class="comment">//将指定类别的商品数目</span></span><br><span class="line">			<span class="comment">//存储到temp数组中</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;temp.length;i++)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=temp.length-i-<span class="number">2</span>;j&gt;=i;j--)	&#123;</span><br><span class="line">				<span class="keyword">if</span>(temp[j]&gt;temp[j+<span class="number">1</span>])	&#123;</span><br><span class="line">					<span class="type">int</span> x=temp[j];</span><br><span class="line">					temp[j]=temp[j+<span class="number">1</span>];</span><br><span class="line">					temp[j+<span class="number">1</span>]=x;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)	&#123;</span><br><span class="line">			<span class="keyword">if</span>(temp[i]&lt;<span class="number">100</span> &amp;&amp; temp[i]!=temp[i+<span class="number">1</span>])	&#123;</span><br><span class="line">				<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;<span class="number">5</span>;j++)	&#123;</span><br><span class="line">					<span class="keyword">if</span>(amounts[j][no-<span class="number">1</span>]==temp[i])	&#123;</span><br><span class="line">						System.out.print(products[j] + </span><br><span class="line">								<span class="string">&quot;\t&quot;</span>);</span><br><span class="line">						</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(<span class="string">&quot;\n该类别的商品库存信息从低到高的&quot;</span></span><br><span class="line">				+ <span class="string">&quot;排列如下：&quot;</span>);</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;temp.length;i++)	&#123;</span><br><span class="line">			System.out.print(temp[i] + <span class="string">&quot;\t&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;     </span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ArrayTest5</span> &#123;</span><br><span class="line">	<span class="comment">/*</span></span><br><span class="line"><span class="comment">	 * 声明num()方法，在 num() 方法中传入两个参数，即 x 和 y。</span></span><br><span class="line"><span class="comment">	 * 其中，x 表示行，y 表示列。num() 方法用于计算第 x 行第 y 列的数值。</span></span><br><span class="line"><span class="comment">	 * 代码如下：</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">num</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y)</span>	&#123;</span><br><span class="line">		<span class="keyword">if</span>(y==<span class="number">1</span> || y==x)</span><br><span class="line">			<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">		<span class="type">int</span> c=num(x-<span class="number">1</span>,y-<span class="number">1</span>)+num(x-<span class="number">1</span>,y);</span><br><span class="line">		<span class="keyword">return</span> c;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>	&#123;</span><br><span class="line">		<span class="meta">@SuppressWarnings(&quot;resource&quot;)</span></span><br><span class="line">		Scanner input=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		System.out.print(<span class="string">&quot;输入打印杨辉三角形的行数：&quot;</span>);</span><br><span class="line">		<span class="type">int</span> row=input.nextInt();</span><br><span class="line">		<span class="type">int</span>[][] yhsj=<span class="keyword">new</span> <span class="title class_">int</span>[row+<span class="number">1</span>][row+<span class="number">1</span>];</span><br><span class="line">		<span class="comment">//定义二维数组，因为第0行不用，所以数组空间大小要+1</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=row;i++)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=i;j++)	&#123;</span><br><span class="line">				yhsj[i][j]=num(i,j);</span><br><span class="line">				<span class="comment">//通过数组来存储每行的数值</span></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=row;i++)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=row-i;j++)	&#123;</span><br><span class="line">				System.out.print(<span class="string">&quot; &quot;</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=i;j++)	&#123;</span><br><span class="line">				System.out.print(yhsj[i][j] + <span class="string">&quot; &quot;</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			System.out.println();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>保存，输出结果如图示：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/yhsj.JPG">  </p>
 ]]></content>
       <categories>
         <category>Java</category>
@@ -282,12 +233,12 @@
       </tags>
   </entry>
   <entry>
-    <title>Java抽象类和接口的联系与区别</title>
-    <url>/posts/4792/</url>
-    <content><![CDATA[<p>分享一篇文章：<a href="https://blog.csdn.net/qq_33591903/article/details/81709511?utm_source=app&app_version=4.5.7">【JAVA】抽象类和接口的联系与区别</a>，留着以后不懂时多拿出来看看。  </p>
+    <title>Java内部类的作用，实现多重继承</title>
+    <url>/posts/39656/</url>
+    <content><![CDATA[<p>分享一篇文章：<a href="https://blog.csdn.net/yzw_will/article/details/21229225?utm_source=app&app_version=4.5.7">Java内部类的作用，实现多重继承</a>  </p>
 <span id="more"></span>  
 
-<p><strong>完！</strong>  </p>
+<p><strong>完！</strong></p>
 ]]></content>
       <categories>
         <category>Java</category>
@@ -348,36 +299,6 @@
 <p>2、<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/javaCuoTi.JPG">  </p>
 <p>3、<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/javaCuoTi2.JPG">  </p>
 <p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/javaCuoTi2_2.JPG">  </p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Lambda表达式与匿名内部类的联系和区别</title>
-    <url>/posts/47201/</url>
-    <content><![CDATA[<p>分享一篇文章：<a href="https://blog.csdn.net/hlang8160/article/details/78285971?utm_source=app&app_version=4.5.8">《Lambda表达式与匿名内部类的联系和区别》</a>  </p>
-<span id="more"></span>  
-
-<p><strong>完！</strong></p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java访问控制修饰符详解</title>
-    <url>/posts/44557/</url>
-    <content><![CDATA[<p>详细介绍可参考C语言中文网Java教程<a href="http://c.biancheng.net/view/965.html">《Java访问控制修饰符详解(public、private、protected和friendly)</a>  </p>
-<span id="more"></span>  
-
-<p><strong>完！</strong>  </p>
 ]]></content>
       <categories>
         <category>Java</category>
@@ -464,15 +385,30 @@
       </tags>
   </entry>
   <entry>
-    <title>MIT教授推荐的学习方法</title>
-    <url>/posts/29170/</url>
-    <content><![CDATA[<p>老师这样说的，在你思考难题时，如果独自想了45分钟左右仍没有解决题目，那么你就应该选择放弃，就算完全没有搞懂也没有关系，在接下来的时间里可以做其它更有意义的事，难题一般需要团队协作来解决，不仅效率高，而且对个人的学习能力的提升也有很大的帮助，不过，要在团队解决问题之前应该独立思考45分钟左右做好准备，应该怎么问。  </p>
+    <title>Java访问控制修饰符详解</title>
+    <url>/posts/44557/</url>
+    <content><![CDATA[<p>详细介绍可参考C语言中文网Java教程<a href="http://c.biancheng.net/view/965.html">《Java访问控制修饰符详解(public、private、protected和friendly)</a>  </p>
+<span id="more"></span>  
+
+<p><strong>完！</strong>  </p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Lambda表达式与匿名内部类的联系和区别</title>
+    <url>/posts/47201/</url>
+    <content><![CDATA[<p>分享一篇文章：<a href="https://blog.csdn.net/hlang8160/article/details/78285971?utm_source=app&app_version=4.5.8">《Lambda表达式与匿名内部类的联系和区别》</a>  </p>
 <span id="more"></span>  
 
 <p><strong>完！</strong></p>
 ]]></content>
       <categories>
-        <category>随笔</category>
+        <category>Java</category>
       </categories>
       <tags>
         <tag>学习</tag>
@@ -492,6 +428,21 @@
 ]]></content>
       <categories>
         <category>Python</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MIT教授推荐的学习方法</title>
+    <url>/posts/29170/</url>
+    <content><![CDATA[<p>老师这样说的，在你思考难题时，如果独自想了45分钟左右仍没有解决题目，那么你就应该选择放弃，就算完全没有搞懂也没有关系，在接下来的时间里可以做其它更有意义的事，难题一般需要团队协作来解决，不仅效率高，而且对个人的学习能力的提升也有很大的帮助，不过，要在团队解决问题之前应该独立思考45分钟左右做好准备，应该怎么问。  </p>
+<span id="more"></span>  
+
+<p><strong>完！</strong></p>
+]]></content>
+      <categories>
+        <category>随笔</category>
       </categories>
       <tags>
         <tag>学习</tag>
@@ -603,22 +554,6 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo+next主题黑暗模式配置</title>
-    <url>/posts/9967/</url>
-    <content><![CDATA[<h4 id="参考网站"><a href="#参考网站" class="headerlink" title="参考网站"></a>参考网站</h4><p><a href="https://github.com/rqh656418510/hexo-next-darkmode">hexo-next-darkmode</a>.</p>
-<span id="more"></span>
-
-<p>网站上的教程挺详细，有空再看。现在懒得搞…</p>
-]]></content>
-      <categories>
-        <category>博客教程</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>next</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo静态博客播放网络视频</title>
     <url>/posts/20018/</url>
     <content><![CDATA[<p>如下所示：  </p>
@@ -636,6 +571,22 @@
       </categories>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo+next主题黑暗模式配置</title>
+    <url>/posts/9967/</url>
+    <content><![CDATA[<h4 id="参考网站"><a href="#参考网站" class="headerlink" title="参考网站"></a>参考网站</h4><p><a href="https://github.com/rqh656418510/hexo-next-darkmode">hexo-next-darkmode</a>.</p>
+<span id="more"></span>
+
+<p>网站上的教程挺详细，有空再看。现在懒得搞…</p>
+]]></content>
+      <categories>
+        <category>博客教程</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
       </tags>
   </entry>
   <entry>
@@ -699,35 +650,13 @@
 <p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican11.jpg">  </p>
 <p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican12.jpg">  </p>
 <p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican13.jpg">  </p>
-<p>本人无意侵犯原作者著作权，若此文章侵犯了您的权益，请将相关版权信息提交至邮箱<a href="mailto:&#50;&#x33;&#x32;&#x32;&#x30;&#x33;&#51;&#51;&#x34;&#56;&#64;&#x71;&#x71;&#46;&#x63;&#111;&#109;">&#50;&#x33;&#x32;&#x32;&#x30;&#x33;&#51;&#51;&#x34;&#56;&#64;&#x71;&#x71;&#46;&#x63;&#111;&#109;</a>，我会第一时间处理，谢谢！</p>
+<p>本人无意侵犯原作者著作权，若此文章侵犯了您的权益，请将相关版权信息提交至邮箱<a href="mailto:&#50;&#x33;&#50;&#50;&#48;&#x33;&#51;&#x33;&#x34;&#x38;&#64;&#x71;&#113;&#x2e;&#99;&#x6f;&#109;">&#50;&#x33;&#50;&#50;&#48;&#x33;&#51;&#x33;&#x34;&#x38;&#64;&#x71;&#113;&#x2e;&#99;&#x6f;&#109;</a>，我会第一时间处理，谢谢！</p>
 ]]></content>
       <categories>
         <category>随笔</category>
       </categories>
       <tags>
         <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>为博客添加雪花飘落效果</title>
-    <url>/posts/11460/</url>
-    <content><![CDATA[<p id="hitokoto">获取中...</p>
-<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
-
-<span id="more"></span>
-
-<h4 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h4><ol>
-<li><a href="https://juejin.cn/post/6997775533840793614#heading-10">https://juejin.cn/post/6997775533840793614#heading-10</a>.</li>
-<li><a href="https://www.imooc.com/article/272005?block_id=tuijian_wz">https://www.imooc.com/article/272005?block_id=tuijian_wz</a>.</li>
-<li><a href="https://cnhuazhu.gitee.io/2021/02/24/Hexo%E9%AD%94%E6%94%B9/Hexo%E6%B7%BB%E5%8A%A0%E9%9B%AA%E8%8A%B1%E5%8A%A8%E6%80%81%E6%95%88%E6%9E%9C%E8%83%8C%E6%99%AF/">https://cnhuazhu.gitee.io/2021/02/24/Hexo%E9%AD%94%E6%94%B9/Hexo%E6%B7%BB%E5%8A%A0%E9%9B%AA%E8%8A%B1%E5%8A%A8%E6%80%81%E6%95%88%E6%9E%9C%E8%83%8C%E6%99%AF/</a>.</li>
-</ol>
-<h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><p>需要注意的就是要引入jquery，代码<code>&lt;script type=&quot;text/javascript&quot; src=&quot;//libs.baidu.com/jquery/1.8.3/jquery.min.js&quot;&gt;&lt;/script&gt;</code></p>
-]]></content>
-      <categories>
-        <category>博客教程</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -770,31 +699,6 @@
       </tags>
   </entry>
   <entry>
-    <title>介绍几种个人博客的搭建框架</title>
-    <url>/posts/39590/</url>
-    <content><![CDATA[<ol>
-<li>hexo: <a href="https://hexo.io/">https://hexo.io/</a>  </li>
-<li>jekyll: <a href="https://jekyllrb.com/">https://jekyllrb.com/</a></li>
-</ol>
-<span id="more"></span>
-
-<ol>
-<li>hugo: <a href="https://www.gohugo.org/">https://www.gohugo.org/</a>  </li>
-<li>vuepress: <a href="https://vuepress.vuejs.org/">https://vuepress.vuejs.org/</a>  </li>
-<li>solo: <a href="https://solo.b3log.org/">https://solo.b3log.org/</a>  </li>
-<li>wordpress: <a href="https://wordpress.org/">https://wordpress.org/</a></li>
-</ol>
-<p>参考文章：<a href="https://blog.csdn.net/weixin_45784655/article/details/104780438?utm_source=app&app_version=4.5.8">《个人博客搭建——介绍几种博客搭建框架》</a>，如本文侵犯了您的权益，请通过邮箱发送相关消息给本人(<a href="mailto:&#x32;&#51;&#50;&#x32;&#x30;&#51;&#51;&#51;&#52;&#56;&#64;&#113;&#x71;&#46;&#99;&#x6f;&#x6d;">&#x32;&#51;&#50;&#x32;&#x30;&#51;&#51;&#51;&#52;&#56;&#64;&#113;&#x71;&#46;&#99;&#x6f;&#x6d;</a>)，也可通过右边聊天图标发送消息，我看到后会第一时间进行处理，谢谢！  </p>
-<p><strong>完！</strong></p>
-]]></content>
-      <categories>
-        <category>博客教程</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>免费在线影视网址集合</title>
     <url>/posts/34575/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码不太对，请再试试" data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -814,6 +718,28 @@
       </categories>
       <tags>
         <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为博客添加雪花飘落效果</title>
+    <url>/posts/11460/</url>
+    <content><![CDATA[<p id="hitokoto">获取中...</p>
+<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+
+<span id="more"></span>
+
+<h4 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h4><ol>
+<li><a href="https://juejin.cn/post/6997775533840793614#heading-10">https://juejin.cn/post/6997775533840793614#heading-10</a>.</li>
+<li><a href="https://www.imooc.com/article/272005?block_id=tuijian_wz">https://www.imooc.com/article/272005?block_id=tuijian_wz</a>.</li>
+<li><a href="https://cnhuazhu.gitee.io/2021/02/24/Hexo%E9%AD%94%E6%94%B9/Hexo%E6%B7%BB%E5%8A%A0%E9%9B%AA%E8%8A%B1%E5%8A%A8%E6%80%81%E6%95%88%E6%9E%9C%E8%83%8C%E6%99%AF/">https://cnhuazhu.gitee.io/2021/02/24/Hexo%E9%AD%94%E6%94%B9/Hexo%E6%B7%BB%E5%8A%A0%E9%9B%AA%E8%8A%B1%E5%8A%A8%E6%80%81%E6%95%88%E6%9E%9C%E8%83%8C%E6%99%AF/</a>.</li>
+</ol>
+<h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><p>需要注意的就是要引入jquery，代码<code>&lt;script type=&quot;text/javascript&quot; src=&quot;//libs.baidu.com/jquery/1.8.3/jquery.min.js&quot;&gt;&lt;/script&gt;</code></p>
+]]></content>
+      <categories>
+        <category>博客教程</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -915,22 +841,6 @@
       </tags>
   </entry>
   <entry>
-    <title>关于next主题配置执行hexo g出现问题</title>
-    <url>/posts/63081/</url>
-    <content><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>我在我的旧电脑中不曾遇到过这种情况，就是会出现找不到某css文件，解析失败的情况。</p>
-<span id="more"></span>
-
-<h4 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h4><p>这是next主题的原因，我使用其它主题都没出现过这种情况，关闭杀毒软件，退出窗口重新进入再执行<code>hexo g</code>命令即可，如果是其它的问题就可能不是主题的原因了，需要另外分析了。</p>
-]]></content>
-      <categories>
-        <category>博客教程</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>next</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于hexo+next主题添加友链页面</title>
     <url>/posts/25115/</url>
     <content><![CDATA[<h4 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h4><ol>
@@ -958,16 +868,19 @@
       </tags>
   </entry>
   <entry>
-    <title>分享一个每日领qq绿钻的软件</title>
-    <url>/posts/18991/</url>
-    <content><![CDATA[<p>前言：此软件由个人或团队所做，非官方人员所做，因此存在盗号的危险，介意勿下，我使用了之后发现自己好友里莫名其妙的多了一个陌生人，但是我的账号里什么都没有，我不怕被盗，因此我是使用了的，在这里分享以作记录，独乐乐不如众乐乐！  </p>
-<span id="more"></span>  
+    <title>关于next主题配置执行hexo g出现问题</title>
+    <url>/posts/63081/</url>
+    <content><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>我在我的旧电脑中不曾遇到过这种情况，就是会出现找不到某css文件，解析失败的情况。</p>
+<span id="more"></span>
 
-<p><del>软件下载地址：<a href="https://pan.bilnn.com/s/w6OXFG">https://pan.bilnn.com/s/w6OXFG</a></del><br><strong>已失效</strong>，估计是被官方查出了漏洞，已经修补了。  </p>
-<p><strong>完！</strong></p>
+<h4 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h4><p>这是next主题的原因，我使用其它主题都没出现过这种情况，关闭杀毒软件，退出窗口重新进入再执行<code>hexo g</code>命令即可，如果是其它的问题就可能不是主题的原因了，需要另外分析了。</p>
 ]]></content>
+      <categories>
+        <category>博客教程</category>
+      </categories>
       <tags>
-        <tag>生活</tag>
+        <tag>hexo</tag>
+        <tag>next</tag>
       </tags>
   </entry>
   <entry>
@@ -1002,6 +915,19 @@
       </categories>
       <tags>
         <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>分享一个每日领qq绿钻的软件</title>
+    <url>/posts/18991/</url>
+    <content><![CDATA[<p>前言：此软件由个人或团队所做，非官方人员所做，因此存在盗号的危险，介意勿下，我使用了之后发现自己好友里莫名其妙的多了一个陌生人，但是我的账号里什么都没有，我不怕被盗，因此我是使用了的，在这里分享以作记录，独乐乐不如众乐乐！  </p>
+<span id="more"></span>  
+
+<p><del>软件下载地址：<a href="https://pan.bilnn.com/s/w6OXFG">https://pan.bilnn.com/s/w6OXFG</a></del><br><strong>已失效</strong>，估计是被官方查出了漏洞，已经修补了。  </p>
+<p><strong>完！</strong></p>
+]]></content>
+      <tags>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -1051,6 +977,85 @@
         <category>随笔</category>
       </categories>
       <tags>
+        <tag>励志</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>安装Git以及连接GitHub</title>
+    <url>/posts/5303/</url>
+    <content><![CDATA[<h6 id="1-安装"><a href="#1-安装" class="headerlink" title="1.安装"></a>1.安装</h6><ul>
+<li><p>Git下载地址：<a href="https://git-scm.com/download">https://git-scm.com/download</a> 根据对应的版本下载安装即可   如果不想修改安装目录的话，一路next即可，修改安装目录后也是一路next即可    </p>
+<span id="more"></span></li>
+</ul>
+<h6 id="2-检查"><a href="#2-检查" class="headerlink" title="2.检查"></a>2.检查</h6><ul>
+<li>检查git是否安装成功，在cmd窗口中，输入git显示如下：<br>  <img src="http://qiniu.iloveszy.com/blog/2023/git.png" alt="git 显示"></li>
+</ul>
+<h6 id="3-连接"><a href="#3-连接" class="headerlink" title="3.连接"></a>3.连接</h6><ul>
+<li>Git连接Github，首先在<a href="https://github.com/">Github</a>上注册一个账号(有账号的可以先建一个仓库，之后什么也不做，留着之后用)</li>
+</ul>
+<h6 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h6><ul>
+<li>可在桌面右键菜单点击Open Git Bash Here，如下图：<img src="http://qiniu.iloveszy.com/blog/2023/git%20bash.png"> 接着在打开的窗口设置user.name和user.email配置信息：</li>
+</ul>
+<ol>
+<li><code>git config --global user.name &quot;你的GitHub用户名&quot;</code>    回车</li>
+<li><code>git config --global user.email &quot;你的GitHub注册邮箱&quot;</code>    回车</li>
+</ol>
+<ul>
+<li>然后生成ssh密钥文件<br>  <code>ssh-keygen -t rsa -C &quot;你的GitHub注册邮箱&quot;</code>  回车<strong>两次</strong>，<strong>不要输入任何东西</strong>    </li>
+<li>在C:\Users\用户名.ssh 中找到id_rsa.pub(用记事本打开)，它会有提示你在哪里找到这个id_rsa.pub文件，将里面的所有内容全部复制出来   </li>
+<li>在<a href="https://github.com/settings/keys">https://github.com/settings/keys</a>点击New SSH key,如下：<img src="http://qiniu.iloveszy.com/blog/2023/ssh%20key.png">  </li>
+<li>Title随便填写，Key粘贴刚才复制的key，然后点击Add SSH key</li>
+</ul>
+<h6 id="5-检验"><a href="#5-检验" class="headerlink" title="5.检验"></a>5.检验</h6><ul>
+<li>在Git Bash中输入 <code>ssh git@github.com</code> 如果显示下图说明连接成功 <img src="http://qiniu.iloveszy.com/blog/2023/ssh%20git.png"></li>
+</ul>
+<h6 id="6-可能会出现的问题"><a href="#6-可能会出现的问题" class="headerlink" title="6.可能会出现的问题"></a>6.可能会出现的问题</h6><p>我在win11上测试时发现在生成ssh密钥文件时，如果只回车一次它不会生成文件，即使上面已经提升生成了文件，但是当你按它给出的路径去找时会发现不存在该路径，另外回车一次后最好不要输入任何东西再回车，否则它就会在你open bash的地方生成密钥文件，而不是在用户文件夹下生成。</p>
+<p>回车两次即可，不需要输入任何东西。</p>
+]]></content>
+      <categories>
+        <category>博客教程</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>安装Node.js</title>
+    <url>/posts/11257/</url>
+    <content><![CDATA[<h6 id="1-下载"><a href="#1-下载" class="headerlink" title="1.下载"></a>1.下载</h6><p><a href="https://nodejs.org/zh-cn/download">官网下载地址</a>     </p>
+<span id="more"></span>  
+
+<h6 id="2-安装"><a href="#2-安装" class="headerlink" title="2.安装"></a>2.安装</h6><p>如果不想修改安装目录的话，一路next即可，修改安装目录后也是一路next即可    </p>
+<h6 id="3-检验"><a href="#3-检验" class="headerlink" title="3.检验"></a>3.检验</h6><p>在cmd窗口中输入如下指令：    </p>
+<ol>
+<li><code>node -v</code><br>2. <code>npm -v</code></li>
+</ol>
+<p>显示结果如下代表安装成功：<img src="http://qiniu.iloveszy.com/blog/2023/node%20-v.png">     </p>
+<h6 id="4-配值环境变量"><a href="#4-配值环境变量" class="headerlink" title="4.配值环境变量"></a>4.配值环境变量</h6><ol>
+<li>首先在nodejs这个文件夹(即刚刚安装node.js所在目录下)建立”node_global”和”node_cache”两个文件夹，如图：<img src="http://qiniu.iloveszy.com/blog/2023/node_global.png">    </li>
+<li>打开cmd(是以管理员身份运行，我以前没有以管理员身份运行，后面就会出现错误)，输入：</li>
+</ol>
+<ul>
+<li><code>npm config set prefix &quot;你的路径\nodejs\node_global&quot;</code>  回车   </li>
+<li><code>npm config set cache &quot;你的路径\nodejs\node_cache&quot;</code>  回车   </li>
+<li>然后关闭cmd窗口，使用win+r键输入control打开控制面板，找到系统-高级系统设置-高级-环境变量，在<em>系统变量</em>下新建变量 <code>NODE_PATH</code> ，变量值填写：<br><code>你的路径\nodejs\node_global\node_modules</code>     </li>
+<li>在变量path下新建新的路径：<img src="http://qiniu.iloveszy.com/blog/2023/node%20path.png"></li>
+</ul>
+<h6 id="5-可能出现的错误"><a href="#5-可能出现的错误" class="headerlink" title="5.可能出现的错误"></a>5.可能出现的错误</h6><ol>
+<li>我在win11上遇到过安装hexo失败的问题，原因是权限问题，即之前没用管理员模式打开cmd设置，用户无权访问node_global、node_cache和node_modules文件夹，解决办法是手动更改权限，右键node_cache、node_global、node_modules，属性，安全，更改Authenticated Users的权限，主要是允许写入，然后应用后再确定，如图所示：</li>
+</ol>
+<p><img src="http://qiniu.iloveszy.com/blog/2023/%E6%9B%B4%E6%94%B9node_global%E6%9D%83%E9%99%90.png"></p>
+<ol start="2">
+<li>打开cmd窗口，如果你已经安装hexo，输入<code>hexo -v</code>，会出现如下所示，即代表你已经安装成功hexo。</li>
+</ol>
+<p><img src="http://qiniu.iloveszy.com/blog/2023/hexo%20-v.png"></p>
+<p>若出现既不是内部也不是外部指令，就需要设置hexo的路径，如图所示，系统-高级系统设置-高级-环境变量-系统变量-Path，新建路径，如图所示，<em>注意下面这个是设置你的hexo路径，我是因为自定义安装node.js，所以需要手动设置hexo指令路径，你需要找到它，并path上添加这个路径。</em>      </p>
+<p><img src="http://qiniu.iloveszy.com/blog/2023/%E6%B7%BB%E5%8A%A0hexo%E8%B7%AF%E5%BE%84.png"></p>
+]]></content>
+      <categories>
+        <category>博客教程</category>
+      </categories>
+      <tags>
         <tag>学习</tag>
       </tags>
   </entry>
@@ -1094,129 +1099,71 @@
       </tags>
   </entry>
   <entry>
-    <title>安装Git以及连接GitHub</title>
-    <url>/posts/5303/</url>
-    <content><![CDATA[<ol>
-<li>安装</li>
-</ol>
-<ul>
-<li><p>Git下载地址：<a href="https://git-scm.com/download">https://git-scm.com/download</a> 根据对应的版本下载安装即可   如果不想修改安装目录的话，一路next即可，修改安装目录后也是一路next即可    </p>
-<span id="more"></span></li>
-</ul>
-<ol start="2">
-<li>检查</li>
-</ol>
-<ul>
-<li>检查git是否安装成功，在cmd窗口中，输入git显示如下：<br>  <img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/git.PNG" alt="git 显示"></li>
-</ul>
-<ol start="3">
-<li>连接</li>
-</ol>
-<ul>
-<li>Git连接Github，首先在<a href="https://github.com/">Github</a>上注册一个账号(有账号的可以先建一个仓库，之后什么也不做，留着之后用)</li>
-</ul>
-<ol start="4">
-<li>配置</li>
-</ol>
-<ul>
-<li>可在桌面右键菜单点击Git Bash Here，如下图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/git%20bash.jpg"> 接着在打开的窗口设置user.name和user.email配置信息：</li>
-</ul>
-<ol>
-<li><code>git config --global user.name &quot;你的GitHub用户名&quot;</code>    回车</li>
-<li><code>git config --global user.email &quot;你的GitHub注册邮箱&quot;</code>    回车</li>
-</ol>
-<ul>
-<li>然后生成ssh密钥文件<br>  <code>ssh-keygen -t rsa -C &quot;你的GitHub注册邮箱&quot;</code>  回车    </li>
-<li>在C:\Users\用户名.ssh 中找到id_rsa.pub(用记事本打开)，将里面的所有内容全部复制出来   </li>
-<li>在<a href="https://github.com/settings/keys">https://github.com/settings/keys</a>点击New SSH key,如下：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ssh%20key.PNG">  </li>
-<li>Title随便填写，Key粘贴刚才复制的key，然后点击Add SSH key</li>
-</ul>
-<ol start="5">
-<li>检验</li>
-</ol>
-<ul>
-<li>在Git Bash中输入 <code>ssh git@github.com</code> 如果显示下图说明连接成功 <img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ssh%20git.PNG"></li>
-</ul>
-<ol start="6">
-<li>结束</li>
-</ol>
+    <title>悼念外婆</title>
+    <url>/posts/44562/</url>
+    <content><![CDATA[<p>最近因为做英语诗歌赏析，所选取的诗歌就是一首悼亡诗，由感而发，想到了已经去世十多年的外婆，触物生情，故在此抒发一下自己的情绪，同时表达一下对外婆的怀念！  </p>
+<span id="more"></span>  
+<p><strong>江城子·乙卯正月二十日夜记梦</strong><br>                                ————苏轼<br>十年生死两茫茫，不思量，自难忘。千里孤坟，无处话凄凉。纵使相逢应不识，尘满面，鬓如霜。<br>夜来幽梦忽还乡，小轩窗，正梳妆。相顾无言，惟有泪千行。料得年年肠断处，明月夜，短松冈。  </p>
 ]]></content>
       <categories>
-        <category>博客教程</category>
+        <category>随笔</category>
       </categories>
       <tags>
-        <tag>学习</tag>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
-    <title>安装Node.js</title>
-    <url>/posts/11257/</url>
-    <content><![CDATA[<ul>
-<li><p>下载<br>  <a href="https://nodejs.org/zh-cn/download">官网下载地址</a>     </p>
-  <span id="more"></span>  
-</li>
-<li><p>安装<br>如果不想修改安装目录的话，一路next即可，修改安装目录后也是一路next即可    </p>
-</li>
-<li><p>检验<br>在cmd窗口中输入如下指令：    </p>
-<ol>
-<li><code>node -v</code>    </li>
-<li><code>npm -v</code><br>显示结果如下代表安装成功：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/node%20-v.PNG"></li>
-</ol>
-</li>
-<li><p>配值环境变量</p>
-</li>
-</ul>
-<ol>
-<li>首先在NodeJs这个文件夹(即刚刚安装node.js所在目录下)建立”node_global”和”node_cache”两个文件夹，如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/node_global.PNG">    </li>
-<li>打开cmd(是以管理员身份运行，我以前没有以管理员身份运行，后面就会出现错误)，输入：</li>
-</ol>
-<ul>
-<li><code>npm config set prefix &quot;你的路径\nodejs\node_global&quot;</code>  回车   </li>
-<li><code>npm config set cache &quot;你的路径\nodejs\node_cache&quot;</code>  回车   </li>
-<li>然后关闭cmd窗口，使用win+r键输入control打开控制面板，找到系统-高级系统设置-高级-环境变量，在<em>系统变量</em>下新建变量 <code>NODE_PATH</code> ，变量值填写：<br><code>你的路径\nodejs\node_global\node_modules</code>     </li>
-<li>在变量path下新建新的路径：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/%E8%AE%BE%E7%BD%AEnode%E8%B7%AF%E5%BE%84.PNG">   <em>注意下面这个是设置你的hexo路径，我是因为自定义安装node.js，所以需要手动设置hexo指令路径，你需要找到它，并path上添加这个路径</em></li>
-</ul>
-<ol start="3">
-<li>可能出现的错误</li>
-</ol>
-<ul>
-<li>在你的博客文件夹中按住shift同时右键鼠标，点击*在此处打开PowerShell窗口(s)*，如果你已经安装hexo，输入<code>hexo -v</code>，若出现既不是内部也不是外部指令，就需要设置hexo的路径</li>
-</ul>
-<ul>
-<li>结束</li>
-</ul>
-]]></content>
-      <categories>
-        <category>博客教程</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数据结构用C实现非递减有序单链表删除重复元素值</title>
-    <url>/posts/29063/</url>
-    <content><![CDATA[<p>参考文章<a href="/My2Blog/2021/03/28/C%E5%AE%9E%E7%8E%B0%E9%9D%9E%E9%80%92%E5%87%8F%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E5%88%A0%E9%99%A4%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0">C实现非递减有序数组删除重复元素值</a>   </p>
+    <title>搭建Hexo博客详细教程</title>
+    <url>/posts/31931/</url>
+    <content><![CDATA[<p>欢迎来到我的博客！这是我用hexo建立的第一个博客静态网页，部署在<a href="https://github.com/">github</a>上的，因此难免会有些许不尽人意的地方，但我会努力改善的，我会分享一些我平时所学的知识与经验，也分享一些我遇到过的技术错误。    </p>
 <span id="more"></span>  
 
-<p>具体实现代码如下：  </p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> //声明单链表</span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="type">int</span> data;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span>* <span class="title">next</span>;</span></span><br><span class="line">&#125; Node, *LList;</span><br><span class="line"><span class="type">void</span> <span class="title function_">InitList</span><span class="params">(LList *L)</span> <span class="comment">//初始化单链表</span></span><br><span class="line">&#123;</span><br><span class="line">    *L=(LList)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">    (*L)-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">CFTail</span><span class="params">(LList L)</span> <span class="comment">//用尾插法建立单链表</span></span><br><span class="line">&#123;</span><br><span class="line">    Node *r,*s;</span><br><span class="line">    <span class="type">int</span> flag=<span class="number">1</span>;</span><br><span class="line">    r=L;</span><br><span class="line">    <span class="keyword">while</span>(flag)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> c;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;c);</span><br><span class="line">        <span class="keyword">if</span>(c!=<span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            s=(Node*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">            s-&gt;data=c;</span><br><span class="line">            r-&gt;next=s;</span><br><span class="line">            r=s;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            flag=<span class="number">0</span>;</span><br><span class="line">            r-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">DelSameX</span><span class="params">(LList L)</span> <span class="comment">//删除重复的元素值</span></span><br><span class="line">&#123;</span><br><span class="line">    Node *pre,*p;</span><br><span class="line">    pre=L-&gt;next;</span><br><span class="line">    <span class="comment">//</span></span><br><span class="line">    <span class="keyword">if</span>(pre==<span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        pre=L-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(p=pre-&gt;next;p!=<span class="literal">NULL</span>;p=p-&gt;next)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(p-&gt;data != pre-&gt;data)</span><br><span class="line">            &#123;</span><br><span class="line">                pre-&gt;next=p;</span><br><span class="line">                pre=pre-&gt;next;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">print</span><span class="params">(LList L)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">while</span>(L-&gt;next != <span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        L=L-&gt;next;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,L-&gt;data);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    LList L;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;jian li dan lian biao: \n&quot;</span>);</span><br><span class="line">    InitList(&amp;L);</span><br><span class="line">    CFTail(L);</span><br><span class="line">    DelSameX(L);</span><br><span class="line">    print(L);</span><br><span class="line">    <span class="built_in">putchar</span>(<span class="string">&#x27;\n&#x27;</span>);</span><br><span class="line">    system(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>实现效果如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/DelSame2.JPG">  </p>
-<p>这说明这个程序还是有些许bug，检查原因，发现还是在最后的结点处没有给它指向空，因此它又指向了原先的那个最后的结点，简单点说，就是没有断开原先的尾结点，改变后的程序如下：  </p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> //声明单链表</span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="type">int</span> data;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span>* <span class="title">next</span>;</span></span><br><span class="line">&#125; Node, *LList;</span><br><span class="line"><span class="type">void</span> <span class="title function_">InitList</span><span class="params">(LList *L)</span> <span class="comment">//初始化单链表</span></span><br><span class="line">&#123;</span><br><span class="line">    *L=(LList)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">    (*L)-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">CFTail</span><span class="params">(LList L)</span> <span class="comment">//用尾插法建立单链表</span></span><br><span class="line">&#123;</span><br><span class="line">    Node *r,*s;</span><br><span class="line">    <span class="type">int</span> flag=<span class="number">1</span>;</span><br><span class="line">    r=L;</span><br><span class="line">    <span class="keyword">while</span>(flag)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> c;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;c);</span><br><span class="line">        <span class="keyword">if</span>(c!=<span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            s=(Node*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">            s-&gt;data=c;</span><br><span class="line">            r-&gt;next=s;</span><br><span class="line">            r=s;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            flag=<span class="number">0</span>;</span><br><span class="line">            r-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">DelSameX</span><span class="params">(LList L)</span> <span class="comment">//删除重复的元素值</span></span><br><span class="line">&#123;</span><br><span class="line">    Node *pre,*p;</span><br><span class="line">    pre=L-&gt;next;</span><br><span class="line">    <span class="comment">//</span></span><br><span class="line">    <span class="keyword">if</span>(pre==<span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        pre=L-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(p=pre-&gt;next;p!=<span class="literal">NULL</span>;p=p-&gt;next)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(p-&gt;data != pre-&gt;data)</span><br><span class="line">            &#123;</span><br><span class="line">                pre-&gt;next=p;</span><br><span class="line">                pre=p;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        pre-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">print</span><span class="params">(LList L)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">while</span>(L-&gt;next != <span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        L=L-&gt;next;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,L-&gt;data);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    LList L;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;jian li dan lian biao: \n&quot;</span>);</span><br><span class="line">    InitList(&amp;L);</span><br><span class="line">    CFTail(L);</span><br><span class="line">    DelSameX(L);</span><br><span class="line">    print(L);</span><br><span class="line">    <span class="built_in">putchar</span>(<span class="string">&#x27;\n&#x27;</span>);</span><br><span class="line">    system(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/DelSame2_1.JPG">  </p>
-<p>还有一种写法，一并放在这里。  </p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*删除递增有序单链表中的重复元素*/</span></span><br><span class="line"><span class="comment">/*包含头文件*/</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;ds.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*定义ElemType类型和使用到的物理数据类型*/</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="type">int</span> ElemType;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">Node</span>    /* 结点类型定义 */</span></span><br><span class="line"><span class="class">&#123;</span> ElemType data;</span><br><span class="line">  <span class="class"><span class="keyword">struct</span> <span class="title">Node</span>  * <span class="title">next</span>;</span></span><br><span class="line">&#125;Node, *LinkList;</span><br><span class="line"></span><br><span class="line"><span class="comment">//初始化单链表</span></span><br><span class="line">LinkList <span class="title function_">InitList</span><span class="params">(LinkList *L)</span></span><br><span class="line">&#123;</span><br><span class="line">	*L=(LinkList)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">	(*L)-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*声明物理数据类型的操作（函数）和使用到的其他功能函数*/</span></span><br><span class="line"><span class="comment">/*根据输入的任意次序的字符元素创建升序单链表*/</span></span><br><span class="line">LinkList  <span class="title function_">CreateASCList</span><span class="params">(LinkList L)</span>;</span><br><span class="line"><span class="comment">/*打印链表*/</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">LListPrint</span><span class="params">(LinkList L)</span>;</span><br><span class="line"><span class="comment">/*删除递增有序单链表中的重复元素*/</span></span><br><span class="line"><span class="type">void</span>  <span class="title function_">LListDelElem</span><span class="params">(LinkList L)</span>;</span><br><span class="line"><span class="comment">/*销毁单链表*/</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">ListDestroy</span><span class="params">(LinkList L)</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/*定义物理数据类型的操作（函数）和使用到的其他功能函数*/</span></span><br><span class="line"><span class="comment">/*根据输入的任意次序的字符元素创建升序单链表*/</span></span><br><span class="line">LinkList  <span class="title function_">CreateASCList</span><span class="params">(LinkList L)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;Please input int xing numbers and input -1 means end input: \n&quot;</span>);</span><br><span class="line">	<span class="type">int</span> count=<span class="number">0</span>;</span><br><span class="line">	ElemType ch[MAXSIZE];</span><br><span class="line">	<span class="keyword">do</span> &#123;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;ch[count]);</span><br><span class="line">		count++;</span><br><span class="line">	&#125; <span class="keyword">while</span>(ch[count<span class="number">-1</span>]!=<span class="number">-1</span>);</span><br><span class="line">	<span class="type">int</span> i,j;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;count<span class="number">-1</span>;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span>(j=count<span class="number">-2</span>;j&gt;i;j--)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span>(ch[j<span class="number">-1</span>]&gt;ch[j])</span><br><span class="line">			&#123;</span><br><span class="line">				ElemType t=ch[j<span class="number">-1</span>];</span><br><span class="line">				ch[j<span class="number">-1</span>]=ch[j];</span><br><span class="line">				ch[j]=t;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	Node *r,*s;</span><br><span class="line">	r=L;</span><br><span class="line">	i=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">do</span> &#123;</span><br><span class="line">		s=(Node *)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">		s-&gt;data=ch[i];</span><br><span class="line">		r-&gt;next=s;</span><br><span class="line">		r=s;</span><br><span class="line">		i++;</span><br><span class="line">	&#125; <span class="keyword">while</span>(i&lt;(count<span class="number">-1</span>));</span><br><span class="line">	r-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">	<span class="keyword">return</span> L;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*打印链表*/</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">LListPrint</span><span class="params">(LinkList L)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">while</span>((L-&gt;next)!= <span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        L=L-&gt;next;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,L-&gt;data);</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="built_in">putchar</span>(<span class="string">&#x27;\n&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/*删除递增有序单链表中的重复元素*/</span></span><br><span class="line"><span class="type">void</span>  <span class="title function_">LListDelElem</span><span class="params">(LinkList L)</span></span><br><span class="line">&#123;</span><br><span class="line">	Node *pre,*p;</span><br><span class="line">    pre=L-&gt;next;</span><br><span class="line">    <span class="keyword">if</span>(pre==<span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        pre=L-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(p=pre-&gt;next;p!=<span class="literal">NULL</span>;p=p-&gt;next)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(p-&gt;data != pre-&gt;data)</span><br><span class="line">            &#123;</span><br><span class="line">                pre-&gt;next=p;</span><br><span class="line">                pre=pre-&gt;next;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">		pre-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*销毁单链表*/</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">ListDestroy</span><span class="params">(LinkList L)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">free</span>(L);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*定义主函数，通过主函数调用各物理数据类型的操作和功能函数*/</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">	LinkList a;</span><br><span class="line">	InitList(&amp;a);</span><br><span class="line">	a=CreateASCList(a);</span><br><span class="line">	LListPrint(a);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;shan chu chong fu yuan su hou\n&quot;</span>);	</span><br><span class="line">	LListDelElem(a);</span><br><span class="line">	LListPrint(a);</span><br><span class="line">	ListDestroy(a);</span><br><span class="line">	system(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>其中ds.h文件定义如下：  </p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span>		TRUE	1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span>		FALSE	0</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span>		OK		1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span>		ERROR	0</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span>		MAXSIZE	100</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>完！</strong></p>
+<h4 id="搭建hexo博客经验分享"><a href="#搭建hexo博客经验分享" class="headerlink" title="搭建hexo博客经验分享"></a>搭建hexo博客经验分享</h4><h5 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h5><p>这就相当是制作一个静态网页，但是不用自掏资本，但只能是轻量的网页，因此非常适合博客的搭建，本网页界面就是用hexo制作的，也许不足以激发你的兴趣，但是它也可以用来分享你的生活的点点滴滴，只要你有一颗好奇的心，以及敢于去尝试的勇气，搞定博客不在话下。   </p>
+<p><strong>最开始我是参考博主小坏孩的博客制作的，传送门：<a href="https://www.sakura521.cn/technology/hexoTutorial.html">Hexo博客 搭建超详细教程</a>，我在这里简单介绍一下步骤：</strong>  </p>
+<ol>
+<li><p><strong>安装Git以及连接GitHub</strong><br> <a href="/posts/5303">详细教程</a>      </p>
+</li>
+<li><p><strong>安装Node.js</strong><br> <a href="/posts/11257">详细教程</a>   </p>
+</li>
+<li><p><strong>安装Hexo</strong></p>
+</li>
+</ol>
+<ul>
+<li>首先创建一个文件夹，命名(感觉最好全是英文)，进入文件夹后，按住shift键同时右键鼠标，点击<code>在此处打开PowerShell窗口(s)</code> ，使用npm命令安装hexo，<code>npm install -g hexo-cli</code> ，安装完后输入<code>hexo -v</code> 来验证是否安装成功，若显示既不是外部也不是内部命令，则请参考文章：<a href="/2021-02-09-%E5%AE%89%E8%A3%85Node-js">安装Node.js</a> ，若提示这是非签名脚本，已被系统拒绝执行，请参考以下步骤(没有则请忽略😂)：     <ul>
+<li>win10下关闭脚本执行安全策略<br>点击开始，设置，搜索power，点击powershell developer settings，往下拉，找到应用以下设置已执行powershell脚本，勾选，点击应用就可以了</li>
+</ul>
+</li>
+<li>hexo -v正确显示之后就开始初始化网址，输入<br>  <code>hexo init</code>   </li>
+<li>接着输入npm install来安装这个网址需要的插件<br>  <code>npm install</code>    </li>
+<li>完成后，输入hexo g来生成静态网页<br>  <code>hexo g</code>   </li>
+<li>结果显示：<img src="http://qiniu.iloveszy.com/blog/2023/hexo%20g.png">   </li>
+<li>hexo s开启本地服务器<br>  <code>hexo s</code>   </li>
+<li>结果显示：<img src="http://qiniu.iloveszy.com/blog/2023/hexo%20s.png"> 这就代表启动成功了。  </li>
+<li>可在浏览器输入网址<a href="http://localhost:4000/">http://localhost:4000</a>就可以查看了，关闭本地服务可直接ctrl+c</li>
+</ul>
+<ol start="4">
+<li><strong>后续美化</strong></li>
+</ol>
+<ul>
+<li>我正在学习，慢慢添加吧，网上有很多教程的，这里推荐<a href="https://hexo.io/">博客主题网站</a>，里面有许多精美主题，个个都是大佬，相信只要我们不断努力学习，也能达到大佬的水平的，相信自己😂！  </li>
+<li>我目前正在使用的主题是参考网上一位大佬的教程制作的，在这里为这位大佬点赞，我是看了他的文章才知道如何使用别人的主题，其完整教程：<a href="https://mp.weixin.qq.com/s/2Spv9KHO6mLHui0CFBmCnQ">Hexo搭建个人博客网站</a> ，我使用的是next主题，具体可参考他的文章<a href="https://mp.weixin.qq.com/s?__biz=MzA4MzA2NDUxOQ==&mid=2247484074&idx=1&sn=5f5afa93c6c5aa7a9ea3b1d62ce31cd0&chksm=9ffd6102a88ae81480769c40377ab9414bad00f895684df8ea3b68d0a9e4285672bf01ecd1f2&cur_album_id=1339610139661484036&scene=189#rd">Hexo主题配置-Next</a>    </li>
+<li>可参考文章(next主题配置美化)：<a href="https://blog.csdn.net/nightmare_dimple/article/details/86661502?utm_source=app&app_version=4.5.8">《Hexo博客优化之Next主题美化》</a>、<a href="https://blog.csdn.net/forever_008/article/details/113524039?utm_source=app&app_version=4.5.8">《安装并优化next主题》</a></li>
+</ul>
+<h5 id="安装过程中出现的问题"><a href="#安装过程中出现的问题" class="headerlink" title="安装过程中出现的问题"></a>安装过程中出现的问题</h5><ol>
+<li>连接<strong>GitHub</strong>和上传博客到<strong>GitHub</strong>出现问题，建议搭梯子，科学上网。</li>
+<li>node.js和安装hexo中遇到的问题可以参考文章<a href="/posts/11257">安装Node.js</a>.</li>
+</ol>
+<h5 id="其它个人博客搭建框架"><a href="#其它个人博客搭建框架" class="headerlink" title="其它个人博客搭建框架"></a>其它个人博客搭建框架</h5><p><strong>hexo</strong>：<a href="https://hexo.io/">https://hexo.io</a>.</p>
+<p><strong>jekyll</strong>：<a href="https://jekyllrb.com/">https://jekyllrb.com</a>.</p>
+<p><strong>hugo</strong>: <a href="https://www.gohugo.org/">https://www.gohugo.org</a>.</p>
+<p><strong>vuepress</strong>：<a href="https://vuepress.vuejs.org/">https://vuepress.vuejs.org</a>.</p>
+<p><strong>solo</strong>：<a href="https://solo.b3log.org/">https://solo.b3log.org</a>.</p>
+<p><strong>wordpress</strong>：<a href="https://wordpress.org/">https://wordpress.org</a>.</p>
+<p><strong>typecho</strong>：<a href="https://typecho.org/">https://typecho.org</a>.</p>
+<p>参考文章：<a href="https://blog.csdn.net/weixin_45784655/article/details/104780438">《个人博客搭建——介绍几种博客搭建框架》</a>.</p>
 ]]></content>
       <categories>
-        <category>数据结构</category>
+        <category>博客教程</category>
       </categories>
       <tags>
         <tag>学习</tag>
@@ -1253,17 +1200,32 @@
       </tags>
   </entry>
   <entry>
-    <title>悼念外婆</title>
-    <url>/posts/44562/</url>
-    <content><![CDATA[<p>最近因为做英语诗歌赏析，所选取的诗歌就是一首悼亡诗，由感而发，想到了已经去世十多年的外婆，触物生情，故在此抒发一下自己的情绪，同时表达一下对外婆的怀念！  </p>
+    <title>数据结构用C实现非递减有序单链表删除重复元素值</title>
+    <url>/posts/29063/</url>
+    <content><![CDATA[<p>参考文章<a href="/My2Blog/2021/03/28/C%E5%AE%9E%E7%8E%B0%E9%9D%9E%E9%80%92%E5%87%8F%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E5%88%A0%E9%99%A4%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0">C实现非递减有序数组删除重复元素值</a>   </p>
 <span id="more"></span>  
-<p><strong>江城子·乙卯正月二十日夜记梦</strong><br>                                ————苏轼<br>十年生死两茫茫，不思量，自难忘。千里孤坟，无处话凄凉。纵使相逢应不识，尘满面，鬓如霜。<br>夜来幽梦忽还乡，小轩窗，正梳妆。相顾无言，惟有泪千行。料得年年肠断处，明月夜，短松冈。  </p>
+
+<p>具体实现代码如下：  </p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> //声明单链表</span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="type">int</span> data;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span>* <span class="title">next</span>;</span></span><br><span class="line">&#125; Node, *LList;</span><br><span class="line"><span class="type">void</span> <span class="title function_">InitList</span><span class="params">(LList *L)</span> <span class="comment">//初始化单链表</span></span><br><span class="line">&#123;</span><br><span class="line">    *L=(LList)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">    (*L)-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">CFTail</span><span class="params">(LList L)</span> <span class="comment">//用尾插法建立单链表</span></span><br><span class="line">&#123;</span><br><span class="line">    Node *r,*s;</span><br><span class="line">    <span class="type">int</span> flag=<span class="number">1</span>;</span><br><span class="line">    r=L;</span><br><span class="line">    <span class="keyword">while</span>(flag)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> c;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;c);</span><br><span class="line">        <span class="keyword">if</span>(c!=<span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            s=(Node*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">            s-&gt;data=c;</span><br><span class="line">            r-&gt;next=s;</span><br><span class="line">            r=s;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            flag=<span class="number">0</span>;</span><br><span class="line">            r-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">DelSameX</span><span class="params">(LList L)</span> <span class="comment">//删除重复的元素值</span></span><br><span class="line">&#123;</span><br><span class="line">    Node *pre,*p;</span><br><span class="line">    pre=L-&gt;next;</span><br><span class="line">    <span class="comment">//</span></span><br><span class="line">    <span class="keyword">if</span>(pre==<span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        pre=L-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(p=pre-&gt;next;p!=<span class="literal">NULL</span>;p=p-&gt;next)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(p-&gt;data != pre-&gt;data)</span><br><span class="line">            &#123;</span><br><span class="line">                pre-&gt;next=p;</span><br><span class="line">                pre=pre-&gt;next;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">print</span><span class="params">(LList L)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">while</span>(L-&gt;next != <span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        L=L-&gt;next;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,L-&gt;data);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    LList L;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;jian li dan lian biao: \n&quot;</span>);</span><br><span class="line">    InitList(&amp;L);</span><br><span class="line">    CFTail(L);</span><br><span class="line">    DelSameX(L);</span><br><span class="line">    print(L);</span><br><span class="line">    <span class="built_in">putchar</span>(<span class="string">&#x27;\n&#x27;</span>);</span><br><span class="line">    system(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>实现效果如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/DelSame2.JPG">  </p>
+<p>这说明这个程序还是有些许bug，检查原因，发现还是在最后的结点处没有给它指向空，因此它又指向了原先的那个最后的结点，简单点说，就是没有断开原先的尾结点，改变后的程序如下：  </p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> //声明单链表</span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="type">int</span> data;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span>* <span class="title">next</span>;</span></span><br><span class="line">&#125; Node, *LList;</span><br><span class="line"><span class="type">void</span> <span class="title function_">InitList</span><span class="params">(LList *L)</span> <span class="comment">//初始化单链表</span></span><br><span class="line">&#123;</span><br><span class="line">    *L=(LList)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">    (*L)-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">CFTail</span><span class="params">(LList L)</span> <span class="comment">//用尾插法建立单链表</span></span><br><span class="line">&#123;</span><br><span class="line">    Node *r,*s;</span><br><span class="line">    <span class="type">int</span> flag=<span class="number">1</span>;</span><br><span class="line">    r=L;</span><br><span class="line">    <span class="keyword">while</span>(flag)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> c;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;c);</span><br><span class="line">        <span class="keyword">if</span>(c!=<span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            s=(Node*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">            s-&gt;data=c;</span><br><span class="line">            r-&gt;next=s;</span><br><span class="line">            r=s;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            flag=<span class="number">0</span>;</span><br><span class="line">            r-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">DelSameX</span><span class="params">(LList L)</span> <span class="comment">//删除重复的元素值</span></span><br><span class="line">&#123;</span><br><span class="line">    Node *pre,*p;</span><br><span class="line">    pre=L-&gt;next;</span><br><span class="line">    <span class="comment">//</span></span><br><span class="line">    <span class="keyword">if</span>(pre==<span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        pre=L-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(p=pre-&gt;next;p!=<span class="literal">NULL</span>;p=p-&gt;next)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(p-&gt;data != pre-&gt;data)</span><br><span class="line">            &#123;</span><br><span class="line">                pre-&gt;next=p;</span><br><span class="line">                pre=p;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        pre-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">print</span><span class="params">(LList L)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">while</span>(L-&gt;next != <span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        L=L-&gt;next;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,L-&gt;data);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    LList L;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;jian li dan lian biao: \n&quot;</span>);</span><br><span class="line">    InitList(&amp;L);</span><br><span class="line">    CFTail(L);</span><br><span class="line">    DelSameX(L);</span><br><span class="line">    print(L);</span><br><span class="line">    <span class="built_in">putchar</span>(<span class="string">&#x27;\n&#x27;</span>);</span><br><span class="line">    system(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/DelSame2_1.JPG">  </p>
+<p>还有一种写法，一并放在这里。  </p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*删除递增有序单链表中的重复元素*/</span></span><br><span class="line"><span class="comment">/*包含头文件*/</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;ds.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*定义ElemType类型和使用到的物理数据类型*/</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="type">int</span> ElemType;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">Node</span>    /* 结点类型定义 */</span></span><br><span class="line"><span class="class">&#123;</span> ElemType data;</span><br><span class="line">  <span class="class"><span class="keyword">struct</span> <span class="title">Node</span>  * <span class="title">next</span>;</span></span><br><span class="line">&#125;Node, *LinkList;</span><br><span class="line"></span><br><span class="line"><span class="comment">//初始化单链表</span></span><br><span class="line">LinkList <span class="title function_">InitList</span><span class="params">(LinkList *L)</span></span><br><span class="line">&#123;</span><br><span class="line">	*L=(LinkList)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">	(*L)-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*声明物理数据类型的操作（函数）和使用到的其他功能函数*/</span></span><br><span class="line"><span class="comment">/*根据输入的任意次序的字符元素创建升序单链表*/</span></span><br><span class="line">LinkList  <span class="title function_">CreateASCList</span><span class="params">(LinkList L)</span>;</span><br><span class="line"><span class="comment">/*打印链表*/</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">LListPrint</span><span class="params">(LinkList L)</span>;</span><br><span class="line"><span class="comment">/*删除递增有序单链表中的重复元素*/</span></span><br><span class="line"><span class="type">void</span>  <span class="title function_">LListDelElem</span><span class="params">(LinkList L)</span>;</span><br><span class="line"><span class="comment">/*销毁单链表*/</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">ListDestroy</span><span class="params">(LinkList L)</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/*定义物理数据类型的操作（函数）和使用到的其他功能函数*/</span></span><br><span class="line"><span class="comment">/*根据输入的任意次序的字符元素创建升序单链表*/</span></span><br><span class="line">LinkList  <span class="title function_">CreateASCList</span><span class="params">(LinkList L)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;Please input int xing numbers and input -1 means end input: \n&quot;</span>);</span><br><span class="line">	<span class="type">int</span> count=<span class="number">0</span>;</span><br><span class="line">	ElemType ch[MAXSIZE];</span><br><span class="line">	<span class="keyword">do</span> &#123;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;ch[count]);</span><br><span class="line">		count++;</span><br><span class="line">	&#125; <span class="keyword">while</span>(ch[count<span class="number">-1</span>]!=<span class="number">-1</span>);</span><br><span class="line">	<span class="type">int</span> i,j;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;count<span class="number">-1</span>;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span>(j=count<span class="number">-2</span>;j&gt;i;j--)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span>(ch[j<span class="number">-1</span>]&gt;ch[j])</span><br><span class="line">			&#123;</span><br><span class="line">				ElemType t=ch[j<span class="number">-1</span>];</span><br><span class="line">				ch[j<span class="number">-1</span>]=ch[j];</span><br><span class="line">				ch[j]=t;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	Node *r,*s;</span><br><span class="line">	r=L;</span><br><span class="line">	i=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">do</span> &#123;</span><br><span class="line">		s=(Node *)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">		s-&gt;data=ch[i];</span><br><span class="line">		r-&gt;next=s;</span><br><span class="line">		r=s;</span><br><span class="line">		i++;</span><br><span class="line">	&#125; <span class="keyword">while</span>(i&lt;(count<span class="number">-1</span>));</span><br><span class="line">	r-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">	<span class="keyword">return</span> L;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*打印链表*/</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">LListPrint</span><span class="params">(LinkList L)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">while</span>((L-&gt;next)!= <span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        L=L-&gt;next;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,L-&gt;data);</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="built_in">putchar</span>(<span class="string">&#x27;\n&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/*删除递增有序单链表中的重复元素*/</span></span><br><span class="line"><span class="type">void</span>  <span class="title function_">LListDelElem</span><span class="params">(LinkList L)</span></span><br><span class="line">&#123;</span><br><span class="line">	Node *pre,*p;</span><br><span class="line">    pre=L-&gt;next;</span><br><span class="line">    <span class="keyword">if</span>(pre==<span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        pre=L-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(p=pre-&gt;next;p!=<span class="literal">NULL</span>;p=p-&gt;next)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(p-&gt;data != pre-&gt;data)</span><br><span class="line">            &#123;</span><br><span class="line">                pre-&gt;next=p;</span><br><span class="line">                pre=pre-&gt;next;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">		pre-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*销毁单链表*/</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">ListDestroy</span><span class="params">(LinkList L)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">free</span>(L);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*定义主函数，通过主函数调用各物理数据类型的操作和功能函数*/</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">	LinkList a;</span><br><span class="line">	InitList(&amp;a);</span><br><span class="line">	a=CreateASCList(a);</span><br><span class="line">	LListPrint(a);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;shan chu chong fu yuan su hou\n&quot;</span>);	</span><br><span class="line">	LListDelElem(a);</span><br><span class="line">	LListPrint(a);</span><br><span class="line">	ListDestroy(a);</span><br><span class="line">	system(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>其中ds.h文件定义如下：  </p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span>		TRUE	1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span>		FALSE	0</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span>		OK		1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span>		ERROR	0</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span>		MAXSIZE	100</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>完！</strong></p>
 ]]></content>
       <categories>
-        <category>随笔</category>
+        <category>数据结构</category>
       </categories>
       <tags>
-        <tag>生活</tag>
+        <tag>学习</tag>
       </tags>
   </entry>
   <entry>
@@ -1335,6 +1297,42 @@
       </tags>
   </entry>
   <entry>
+    <title>矩阵连乘暨动态规划</title>
+    <url>/posts/12885/</url>
+    <content><![CDATA[<p>推荐观看b站上的up主九章算术发布的视频，有关于动态规划，个人认为讲的非常好，老师还是一名清华大学毕业生！</p>
+<span id="more"></span>
+
+<p>前言：现在懂了一点…  </p>
+<p>先来看一道题目：用2、5、7拼成27，假设2、5、7各有很多，要求所需要的个数最少。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[2?] --&gt; B[5?] --&gt; C[7?] --&gt; D[27]</span><br></pre></td></tr></table></figure>
+
+<p>这是一道比较常见的可以用动态规划求解的题目，用4步来解决此题  </p>
+<blockquote>
+<p>1.确定状态  </p>
+<blockquote>
+<p>最后一步  </p>
+<p>子问题</p>
+</blockquote>
+</blockquote>
+<p>本题最后一步就是不管怎样进行取舍，最后拿的一定是2、5、7三个中的一个，不可能是其它，因此就可以分条件了，原文题就转化为如何用最少数量拼凑出27-2、27-5、27-7，这样问题规模就缩小了，就划分成了三个子问题，即三个中哪个所需最少，同样可以继续对27-2、27-5、27-7进行类似分析，思路就逐步明朗了，由此可以联想到用递归算法进行求解，但是用递归会有重复步骤，效率不高，这里使用动态规划算法  </p>
+<blockquote>
+<p>2.转移方程  </p>
+</blockquote>
+<p>经过上述分析，大致有了一个思路，接下来就要列转移方程了，这里用函数f[x]来表示拼出x所需的最少数量，本题我们计算f[27]</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>未完待续！</strong></p>
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>算法实现从顺序表中删除所有元素值介于x和y之间的所有元素且要求空间复杂度为O(1)</title>
     <url>/posts/24179/</url>
     <content><![CDATA[<p><strong>题目1：</strong>设计一个高效的算法，从顺序表L中删除所有元素值介于x和y之间的所有元素，要求空间复杂度为O(1)，即算法最多只额外使用一个元素空间。函数原型如下所示：  </p>
@@ -1394,66 +1392,6 @@
       </tags>
   </entry>
   <entry>
-    <title>矩阵连乘暨动态规划</title>
-    <url>/posts/12885/</url>
-    <content><![CDATA[<p>推荐观看b站上的up主九章算术发布的视频，有关于动态规划，个人认为讲的非常好，老师还是一名清华大学毕业生！</p>
-<span id="more"></span>
-
-<p>前言：现在懂了一点…  </p>
-<p>先来看一道题目：用2、5、7拼成27，假设2、5、7各有很多，要求所需要的个数最少。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[2?] --&gt; B[5?] --&gt; C[7?] --&gt; D[27]</span><br></pre></td></tr></table></figure>
-
-<p>这是一道比较常见的可以用动态规划求解的题目，用4步来解决此题  </p>
-<blockquote>
-<p>1.确定状态  </p>
-<blockquote>
-<p>最后一步  </p>
-<p>子问题</p>
-</blockquote>
-</blockquote>
-<p>本题最后一步就是不管怎样进行取舍，最后拿的一定是2、5、7三个中的一个，不可能是其它，因此就可以分条件了，原文题就转化为如何用最少数量拼凑出27-2、27-5、27-7，这样问题规模就缩小了，就划分成了三个子问题，即三个中哪个所需最少，同样可以继续对27-2、27-5、27-7进行类似分析，思路就逐步明朗了，由此可以联想到用递归算法进行求解，但是用递归会有重复步骤，效率不高，这里使用动态规划算法  </p>
-<blockquote>
-<p>2.转移方程  </p>
-</blockquote>
-<p>经过上述分析，大致有了一个思路，接下来就要列转移方程了，这里用函数f[x]来表示拼出x所需的最少数量，本题我们计算f[27]</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<p><strong>未完待续！</strong></p>
-]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>联想工程师内部专用工具</title>
-    <url>/posts/52374/</url>
-    <content><![CDATA[<p>分享一篇公众号文章：<a href="https://mp.weixin.qq.com/s/IqHR3zKrKk2c7NCCGaxvZg">内部泄露软件！足足两百多款！</a>，再附上下载链接：<a href="https://pan.baidu.com/s/1O0IlN1zx0GZUmDIAk8QWuw">https://pan.baidu.com/s/1O0IlN1zx0GZUmDIAk8QWuw</a>，提取码：qqve  </p>
-<span id="more"></span>  ]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>虎牙云游戏手机端体验</title>
-    <url>/posts/59253/</url>
-    <content><![CDATA[<p>不得不说，体验云游戏的感觉就是速度快，延迟特别小，有个缺点就是手机不太好操作PC端游戏，反应也挺快的，就是人的思路没有跟上，哈哈😂，我用手机打了两盘联盟，真心想说，我太难了，还是不能适应它的操作啊，暂且就这样吧，我觉得云游戏可能是以后游戏的一个发展趋势，普通人也许不需要配置很好的电脑就能玩要求很高的游戏，同样，手机也是如此，让我们拭目以待吧！但是不得不说，云游戏的确还有很长一段路要走。 </p>
-<span id="more"></span>  ]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>编写算法求一元多项式的值</title>
     <url>/posts/4387/</url>
     <content><![CDATA[<p>题目如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/Czuoye1.JPG"></p>
@@ -1473,6 +1411,18 @@
       </tags>
   </entry>
   <entry>
+    <title>联想工程师内部专用工具</title>
+    <url>/posts/52374/</url>
+    <content><![CDATA[<p>分享一篇公众号文章：<a href="https://mp.weixin.qq.com/s/IqHR3zKrKk2c7NCCGaxvZg">内部泄露软件！足足两百多款！</a>，再附上下载链接：<a href="https://pan.baidu.com/s/1O0IlN1zx0GZUmDIAk8QWuw">https://pan.baidu.com/s/1O0IlN1zx0GZUmDIAk8QWuw</a>，提取码：qqve  </p>
+<span id="more"></span>  ]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>要做就做努力的失败者，绝不做沉沦的失败者</title>
     <url>/posts/47530/</url>
     <content><![CDATA[<p><strong>算是对学习上出现思想下滑的自己一种勉励吧！</strong>  </p>
@@ -1484,7 +1434,7 @@
         <category>随笔</category>
       </categories>
       <tags>
-        <tag>学习</tag>
+        <tag>励志</tag>
       </tags>
   </entry>
   <entry>
@@ -1550,6 +1500,18 @@
       </tags>
   </entry>
   <entry>
+    <title>虎牙云游戏手机端体验</title>
+    <url>/posts/59253/</url>
+    <content><![CDATA[<p>不得不说，体验云游戏的感觉就是速度快，延迟特别小，有个缺点就是手机不太好操作PC端游戏，反应也挺快的，就是人的思路没有跟上，哈哈😂，我用手机打了两盘联盟，真心想说，我太难了，还是不能适应它的操作啊，暂且就这样吧，我觉得云游戏可能是以后游戏的一个发展趋势，普通人也许不需要配置很好的电脑就能玩要求很高的游戏，同样，手机也是如此，让我们拭目以待吧！但是不得不说，云游戏的确还有很长一段路要走。 </p>
+<span id="more"></span>  ]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>计算机组成原理定点除法运算</title>
     <url>/posts/41291/</url>
     <content><![CDATA[<p>对于定点除法运算，我认为我只掌握了一点皮毛，真正的精髓我还没触碰到，最重要的是，我发现老师讲的与书上说的有一点出入，这令我很不解，第一次感到很困惑，哎，有点难受！  </p>
@@ -1573,34 +1535,6 @@
       </categories>
       <tags>
         <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>谷歌镜像网站</title>
-    <url>/posts/50687/</url>
-    <content><![CDATA[<div class="poem-wrap">
-  <div class="poem-border poem-left"></div>
-  <div class="poem-border poem-right"></div>
-    <h1>诗词</h1>
-    <div>
-    <span id="jinrishici-sentence">小荷才露尖尖角，早有蜻蜓立上头。</span></div>
-<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-</div>
-
-<span id="more"></span>
-
-<p>网址：<a href="https://jia110.github.io/">https://jia110.github.io/</a>. <a href="http://gufenso.coderschool.cn/">http://gufenso.coderschool.cn/</a>.</p>
-<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ol>
-<li><a href="https://www.wrfou.com/google.html">2022谷歌镜像网站大全，教你无限制使用谷歌搜索及谷歌学术科学上网查阅资料</a>.</li>
-<li><a href="https://funletu.com/1158/.html">谷歌镜像站大全</a>.</li>
-</ol>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-        <tag>google</tag>
       </tags>
   </entry>
   <entry>
@@ -1643,6 +1577,34 @@
       </categories>
       <tags>
         <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>谷歌镜像网站</title>
+    <url>/posts/50687/</url>
+    <content><![CDATA[<div class="poem-wrap">
+  <div class="poem-border poem-left"></div>
+  <div class="poem-border poem-right"></div>
+    <h1>诗词</h1>
+    <div>
+    <span id="jinrishici-sentence">小荷才露尖尖角，早有蜻蜓立上头。</span></div>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+</div>
+
+<span id="more"></span>
+
+<p>网址：<a href="https://jia110.github.io/">https://jia110.github.io/</a>. <a href="http://gufenso.coderschool.cn/">http://gufenso.coderschool.cn/</a>.</p>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ol>
+<li><a href="https://www.wrfou.com/google.html">2022谷歌镜像网站大全，教你无限制使用谷歌搜索及谷歌学术科学上网查阅资料</a>.</li>
+<li><a href="https://funletu.com/1158/.html">谷歌镜像站大全</a>.</li>
+</ol>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+        <tag>google</tag>
       </tags>
   </entry>
 </search>

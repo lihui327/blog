@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>C实现非递减有序数组删除重复元素</title>
+    <url>/posts/46996/</url>
+    <content><![CDATA[<p>参考csdn上一位大佬的文章：<a href="https://blog.csdn.net/zy010101/article/details/81302145?utm_source=app&app_version=4.5.5">删除一个有序数组中的重复元素</a>  </p>
+<span id="more"></span>  
+
+<p>本人采用的是方案二，代码实现如下：  </p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="comment">//#define OK 1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> N 10</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">DelSameX</span><span class="params">(<span class="type">int</span> *L,<span class="type">int</span> n)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> i=<span class="number">0</span>,j;</span><br><span class="line">    <span class="keyword">if</span>(n==<span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        i=<span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(j=<span class="number">1</span>;j&lt;n;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(L[j]!=L[i])</span><br><span class="line">            &#123;</span><br><span class="line">                i++;</span><br><span class="line">                L[i]=L[j];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> i;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Please input feidijian youxu shuzu[%d]: &quot;</span>,N);</span><br><span class="line">    <span class="type">int</span> num[N];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;N;i++)</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;num[i]);</span><br><span class="line">    <span class="type">int</span> j=DelSameX(num,N);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;=j;i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,num[i]);</span><br><span class="line">    <span class="built_in">putchar</span>(<span class="string">&#x27;\n&#x27;</span>);</span><br><span class="line">    system(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行效果如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/DelSame.JPG">  </p>
+<p><strong>完！</strong></p>
+]]></content>
+      <categories>
+        <category>数据结构</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2020下半年英语六级</title>
     <url>/posts/13114/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码不太对，请再试试" data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -38,10 +57,24 @@
       </tags>
   </entry>
   <entry>
-    <title>Java finally和return的执行顺序(非常重要)</title>
-    <url>/posts/28311/</url>
-    <content><![CDATA[<p>分享两篇文章，我个人认为好！  </p>
-<p><a href="https://blog.csdn.net/coder_no/article/details/83581442?utm_source=app&app_version=4.5.8">《java return与finally执行顺序测试》</a>  <a href="https://blog.csdn.net/qq_36299025/article/details/89435275?utm_source=app&app_version=4.5.8">《Java中finally和return执行顺序》</a>  </p>
+    <title>Java static的常见问题和使用误区</title>
+    <url>/posts/10897/</url>
+    <content><![CDATA[<p>详细介绍可学习csdn大佬的一篇文章<a href="https://blog.csdn.net/weixin_44234912/article/details/108737054?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161512057416780266281223%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=161512057416780266281223&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-2-108737054.first_rank_v2_pc_rank_v29&utm_term=Java+static%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E4%BD%BF%E7%94%A8%E8%AF%AF%E5%8C%BA">《static的常见问题和使用误区》</a>  </p>
+<span id="more"></span>  
+
+<p><strong>完！</strong>  </p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java中的空对象</title>
+    <url>/posts/31520/</url>
+    <content><![CDATA[<p>详细介绍可参考<a href="https://blog.csdn.net/lgh2691861/article/details/52248038?utm_source=app&app_version=4.5.2">《Java中空对象（null)引用方法及属性简单分析！》</a>  </p>
 <span id="more"></span>  
 
 <p><strong>完！</strong>  </p>
@@ -69,9 +102,10 @@
       </tags>
   </entry>
   <entry>
-    <title>Java static的常见问题和使用误区</title>
-    <url>/posts/10897/</url>
-    <content><![CDATA[<p>详细介绍可学习csdn大佬的一篇文章<a href="https://blog.csdn.net/weixin_44234912/article/details/108737054?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161512057416780266281223%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=161512057416780266281223&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-2-108737054.first_rank_v2_pc_rank_v29&utm_term=Java+static%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%92%8C%E4%BD%BF%E7%94%A8%E8%AF%AF%E5%8C%BA">《static的常见问题和使用误区》</a>  </p>
+    <title>Java finally和return的执行顺序(非常重要)</title>
+    <url>/posts/28311/</url>
+    <content><![CDATA[<p>分享两篇文章，我个人认为好！  </p>
+<p><a href="https://blog.csdn.net/coder_no/article/details/83581442?utm_source=app&app_version=4.5.8">《java return与finally执行顺序测试》</a>  <a href="https://blog.csdn.net/qq_36299025/article/details/89435275?utm_source=app&app_version=4.5.8">《Java中finally和return执行顺序》</a>  </p>
 <span id="more"></span>  
 
 <p><strong>完！</strong>  </p>
@@ -84,46 +118,28 @@
       </tags>
   </entry>
   <entry>
-    <title>C实现非递减有序数组删除重复元素</title>
-    <url>/posts/46996/</url>
-    <content><![CDATA[<p>参考csdn上一位大佬的文章：<a href="https://blog.csdn.net/zy010101/article/details/81302145?utm_source=app&app_version=4.5.5">删除一个有序数组中的重复元素</a>  </p>
+    <title>Java使用二维数组输出杨辉三角</title>
+    <url>/posts/9719/</url>
+    <content><![CDATA[<p>代码如下：    </p>
 <span id="more"></span>  
 
-<p>本人采用的是方案二，代码实现如下：  </p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="comment">//#define OK 1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> N 10</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">DelSameX</span><span class="params">(<span class="type">int</span> *L,<span class="type">int</span> n)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> i=<span class="number">0</span>,j;</span><br><span class="line">    <span class="keyword">if</span>(n==<span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        i=<span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(j=<span class="number">1</span>;j&lt;n;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(L[j]!=L[i])</span><br><span class="line">            &#123;</span><br><span class="line">                i++;</span><br><span class="line">                L[i]=L[j];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> i;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Please input feidijian youxu shuzu[%d]: &quot;</span>,N);</span><br><span class="line">    <span class="type">int</span> num[N];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;N;i++)</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;num[i]);</span><br><span class="line">    <span class="type">int</span> j=DelSameX(num,N);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;=j;i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,num[i]);</span><br><span class="line">    <span class="built_in">putchar</span>(<span class="string">&#x27;\n&#x27;</span>);</span><br><span class="line">    system(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ArrayTest5</span> &#123;</span><br><span class="line">	<span class="comment">/*</span></span><br><span class="line"><span class="comment">	 * 声明num()方法，在 num() 方法中传入两个参数，即 x 和 y。</span></span><br><span class="line"><span class="comment">	 * 其中，x 表示行，y 表示列。num() 方法用于计算第 x 行第 y 列的数值。</span></span><br><span class="line"><span class="comment">	 * 代码如下：</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">num</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y)</span>	&#123;</span><br><span class="line">		<span class="keyword">if</span>(y==<span class="number">1</span> || y==x)</span><br><span class="line">			<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">		<span class="type">int</span> c=num(x-<span class="number">1</span>,y-<span class="number">1</span>)+num(x-<span class="number">1</span>,y);</span><br><span class="line">		<span class="keyword">return</span> c;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>	&#123;</span><br><span class="line">		<span class="meta">@SuppressWarnings(&quot;resource&quot;)</span></span><br><span class="line">		Scanner input=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		System.out.print(<span class="string">&quot;输入打印杨辉三角形的行数：&quot;</span>);</span><br><span class="line">		<span class="type">int</span> row=input.nextInt();</span><br><span class="line">		<span class="type">int</span>[][] yhsj=<span class="keyword">new</span> <span class="title class_">int</span>[row+<span class="number">1</span>][row+<span class="number">1</span>];</span><br><span class="line">		<span class="comment">//定义二维数组，因为第0行不用，所以数组空间大小要+1</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=row;i++)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=i;j++)	&#123;</span><br><span class="line">				yhsj[i][j]=num(i,j);</span><br><span class="line">				<span class="comment">//通过数组来存储每行的数值</span></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=row;i++)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=row-i;j++)	&#123;</span><br><span class="line">				System.out.print(<span class="string">&quot; &quot;</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=i;j++)	&#123;</span><br><span class="line">				System.out.print(yhsj[i][j] + <span class="string">&quot; &quot;</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			System.out.println();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>保存，输出结果如图示：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/yhsj.JPG">  </p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java内部类的作用，实现多重继承</title>
+    <url>/posts/39656/</url>
+    <content><![CDATA[<p>分享一篇文章：<a href="https://blog.csdn.net/yzw_will/article/details/21229225?utm_source=app&app_version=4.5.7">Java内部类的作用，实现多重继承</a>  </p>
+<span id="more"></span>  
 
-<p>运行效果如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/DelSame.JPG">  </p>
 <p><strong>完！</strong></p>
-]]></content>
-      <categories>
-        <category>数据结构</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java中的空对象</title>
-    <url>/posts/31520/</url>
-    <content><![CDATA[<p>详细介绍可参考<a href="https://blog.csdn.net/lgh2691861/article/details/52248038?utm_source=app&app_version=4.5.2">《Java中空对象（null)引用方法及属性简单分析！》</a>  </p>
-<span id="more"></span>  
-
-<p><strong>完！</strong>  </p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java抽象类和接口的联系与区别</title>
-    <url>/posts/4792/</url>
-    <content><![CDATA[<p>分享一篇文章：<a href="https://blog.csdn.net/qq_33591903/article/details/81709511?utm_source=app&app_version=4.5.7">【JAVA】抽象类和接口的联系与区别</a>，留着以后不懂时多拿出来看看。  </p>
-<span id="more"></span>  
-
-<p><strong>完！</strong>  </p>
 ]]></content>
       <categories>
         <category>Java</category>
@@ -185,21 +201,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Java数组实战训练2</title>
-    <url>/posts/919/</url>
-    <content><![CDATA[<p>假设在仓库系统中，每件商品都有 3 个库存信息，分别是入库量、出库量和当前库存量。定义一个一维数组来存储 5 件商品的名称，并定义一个二维数组来存储这 5 件商品的 3 个库存信息。用户可以根据商品名称查询该商品的所有库存，也可以查看某个类别库存下数量小于 100 的商品名单，并将该类别的所有库存量按从低到高的顺序排列。具体代码如下:  </p>
-<span id="more"></span>          
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ArrayTest4</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>	&#123;</span><br><span class="line">		<span class="meta">@SuppressWarnings(&quot;resource&quot;)</span></span><br><span class="line">		Scanner input=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		String[] products= &#123;<span class="string">&quot;洗发水&quot;</span>,<span class="string">&quot;纸巾&quot;</span>,<span class="string">&quot;水杯&quot;</span>,<span class="string">&quot;牙膏&quot;</span>,</span><br><span class="line">			<span class="string">&quot;香皂&quot;</span>&#125;;</span><br><span class="line">		<span class="type">int</span>[][] amounts= &#123;&#123;<span class="number">50</span>,<span class="number">80</span>,<span class="number">90</span>&#125;,&#123;<span class="number">40</span>,<span class="number">80</span>,<span class="number">78</span>&#125;,&#123;<span class="number">50</span>,<span class="number">45</span></span><br><span class="line">			,<span class="number">789</span>&#125;,&#123;<span class="number">100</span>,<span class="number">685</span>,<span class="number">55</span>&#125;,&#123;<span class="number">898</span>,<span class="number">754</span>,<span class="number">63</span>&#125;&#125;;</span><br><span class="line">		System.out.println(<span class="string">&quot;————————库存系统————————&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;请输入要查询库存信息的商品名称：&quot;</span>);</span><br><span class="line">		String name=input.next();</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;products.length;i++)	&#123;</span><br><span class="line">			<span class="keyword">if</span>(products[i].equals(name))	&#123;</span><br><span class="line">				System.out.println(<span class="string">&quot;商品【&quot;</span> + products[i]</span><br><span class="line">						+ <span class="string">&quot;】的库存信息如下：&quot;</span>);</span><br><span class="line">				System.out.println(<span class="string">&quot;入库\t出库\t库存&quot;</span>);</span><br><span class="line">				<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;<span class="number">3</span>;j++)	&#123;</span><br><span class="line">					System.out.print(amounts[i][j] + <span class="string">&quot;\t&quot;</span>);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(<span class="string">&quot;\n————————查询库存不足100的商品&quot;</span></span><br><span class="line">				+ <span class="string">&quot;————————&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;1.入库\t2.出库\t3.库存&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;请输入序号：&quot;</span>);</span><br><span class="line">		<span class="type">int</span> no=input.nextInt();</span><br><span class="line">		<span class="type">int</span>[] temp=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">5</span>];<span class="comment">//定义数组，存储该类别的所有商品</span></span><br><span class="line">		System.out.println(<span class="string">&quot;该类别下数量较少的商品有：&quot;</span>);</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)	&#123;</span><br><span class="line">			temp[i]=amounts[i][no-<span class="number">1</span>];<span class="comment">//将指定类别的商品数目</span></span><br><span class="line">			<span class="comment">//存储到temp数组中</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;temp.length;i++)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=temp.length-i-<span class="number">2</span>;j&gt;=i;j--)	&#123;</span><br><span class="line">				<span class="keyword">if</span>(temp[j]&gt;temp[j+<span class="number">1</span>])	&#123;</span><br><span class="line">					<span class="type">int</span> x=temp[j];</span><br><span class="line">					temp[j]=temp[j+<span class="number">1</span>];</span><br><span class="line">					temp[j+<span class="number">1</span>]=x;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)	&#123;</span><br><span class="line">			<span class="keyword">if</span>(temp[i]&lt;<span class="number">100</span> &amp;&amp; temp[i]!=temp[i+<span class="number">1</span>])	&#123;</span><br><span class="line">				<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;<span class="number">5</span>;j++)	&#123;</span><br><span class="line">					<span class="keyword">if</span>(amounts[j][no-<span class="number">1</span>]==temp[i])	&#123;</span><br><span class="line">						System.out.print(products[j] + </span><br><span class="line">								<span class="string">&quot;\t&quot;</span>);</span><br><span class="line">						</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(<span class="string">&quot;\n该类别的商品库存信息从低到高的&quot;</span></span><br><span class="line">				+ <span class="string">&quot;排列如下：&quot;</span>);</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;temp.length;i++)	&#123;</span><br><span class="line">			System.out.print(temp[i] + <span class="string">&quot;\t&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;     </span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Java数组实战训练</title>
     <url>/posts/22327/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我是参考csdn的一位大佬的代码编写的，传送门：<a href="https://blog.csdn.net/weixin_45743799/article/details/104696705?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161286173616780264077580%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=161286173616780264077580&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v29-1-104696705.pc_search_result_no_baidu_js&utm_term=java%E8%BD%AC%E4%BA%BA%E6%B0%91%E5%B8%81%E8%AF%BB%E6%B3%95&spm=1018.2226.3001.4187">java人民币读法转换</a>，以下为详细代码：  </p>
@@ -217,28 +218,12 @@
       </tags>
   </entry>
   <entry>
-    <title>Java使用二维数组输出杨辉三角</title>
-    <url>/posts/9719/</url>
-    <content><![CDATA[<p>代码如下：    </p>
-<span id="more"></span>  
+    <title>Java数组实战训练2</title>
+    <url>/posts/919/</url>
+    <content><![CDATA[<p>假设在仓库系统中，每件商品都有 3 个库存信息，分别是入库量、出库量和当前库存量。定义一个一维数组来存储 5 件商品的名称，并定义一个二维数组来存储这 5 件商品的 3 个库存信息。用户可以根据商品名称查询该商品的所有库存，也可以查看某个类别库存下数量小于 100 的商品名单，并将该类别的所有库存量按从低到高的顺序排列。具体代码如下:  </p>
+<span id="more"></span>          
 
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ArrayTest5</span> &#123;</span><br><span class="line">	<span class="comment">/*</span></span><br><span class="line"><span class="comment">	 * 声明num()方法，在 num() 方法中传入两个参数，即 x 和 y。</span></span><br><span class="line"><span class="comment">	 * 其中，x 表示行，y 表示列。num() 方法用于计算第 x 行第 y 列的数值。</span></span><br><span class="line"><span class="comment">	 * 代码如下：</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">num</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y)</span>	&#123;</span><br><span class="line">		<span class="keyword">if</span>(y==<span class="number">1</span> || y==x)</span><br><span class="line">			<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">		<span class="type">int</span> c=num(x-<span class="number">1</span>,y-<span class="number">1</span>)+num(x-<span class="number">1</span>,y);</span><br><span class="line">		<span class="keyword">return</span> c;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>	&#123;</span><br><span class="line">		<span class="meta">@SuppressWarnings(&quot;resource&quot;)</span></span><br><span class="line">		Scanner input=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		System.out.print(<span class="string">&quot;输入打印杨辉三角形的行数：&quot;</span>);</span><br><span class="line">		<span class="type">int</span> row=input.nextInt();</span><br><span class="line">		<span class="type">int</span>[][] yhsj=<span class="keyword">new</span> <span class="title class_">int</span>[row+<span class="number">1</span>][row+<span class="number">1</span>];</span><br><span class="line">		<span class="comment">//定义二维数组，因为第0行不用，所以数组空间大小要+1</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=row;i++)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=i;j++)	&#123;</span><br><span class="line">				yhsj[i][j]=num(i,j);</span><br><span class="line">				<span class="comment">//通过数组来存储每行的数值</span></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=row;i++)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=row-i;j++)	&#123;</span><br><span class="line">				System.out.print(<span class="string">&quot; &quot;</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=i;j++)	&#123;</span><br><span class="line">				System.out.print(yhsj[i][j] + <span class="string">&quot; &quot;</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			System.out.println();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>保存，输出结果如图示：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/yhsj.JPG">  </p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java内部类的作用，实现多重继承</title>
-    <url>/posts/39656/</url>
-    <content><![CDATA[<p>分享一篇文章：<a href="https://blog.csdn.net/yzw_will/article/details/21229225?utm_source=app&app_version=4.5.7">Java内部类的作用，实现多重继承</a>  </p>
-<span id="more"></span>  
-
-<p><strong>完！</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ArrayTest4</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>	&#123;</span><br><span class="line">		<span class="meta">@SuppressWarnings(&quot;resource&quot;)</span></span><br><span class="line">		Scanner input=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		String[] products= &#123;<span class="string">&quot;洗发水&quot;</span>,<span class="string">&quot;纸巾&quot;</span>,<span class="string">&quot;水杯&quot;</span>,<span class="string">&quot;牙膏&quot;</span>,</span><br><span class="line">			<span class="string">&quot;香皂&quot;</span>&#125;;</span><br><span class="line">		<span class="type">int</span>[][] amounts= &#123;&#123;<span class="number">50</span>,<span class="number">80</span>,<span class="number">90</span>&#125;,&#123;<span class="number">40</span>,<span class="number">80</span>,<span class="number">78</span>&#125;,&#123;<span class="number">50</span>,<span class="number">45</span></span><br><span class="line">			,<span class="number">789</span>&#125;,&#123;<span class="number">100</span>,<span class="number">685</span>,<span class="number">55</span>&#125;,&#123;<span class="number">898</span>,<span class="number">754</span>,<span class="number">63</span>&#125;&#125;;</span><br><span class="line">		System.out.println(<span class="string">&quot;————————库存系统————————&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;请输入要查询库存信息的商品名称：&quot;</span>);</span><br><span class="line">		String name=input.next();</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;products.length;i++)	&#123;</span><br><span class="line">			<span class="keyword">if</span>(products[i].equals(name))	&#123;</span><br><span class="line">				System.out.println(<span class="string">&quot;商品【&quot;</span> + products[i]</span><br><span class="line">						+ <span class="string">&quot;】的库存信息如下：&quot;</span>);</span><br><span class="line">				System.out.println(<span class="string">&quot;入库\t出库\t库存&quot;</span>);</span><br><span class="line">				<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;<span class="number">3</span>;j++)	&#123;</span><br><span class="line">					System.out.print(amounts[i][j] + <span class="string">&quot;\t&quot;</span>);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(<span class="string">&quot;\n————————查询库存不足100的商品&quot;</span></span><br><span class="line">				+ <span class="string">&quot;————————&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;1.入库\t2.出库\t3.库存&quot;</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;请输入序号：&quot;</span>);</span><br><span class="line">		<span class="type">int</span> no=input.nextInt();</span><br><span class="line">		<span class="type">int</span>[] temp=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">5</span>];<span class="comment">//定义数组，存储该类别的所有商品</span></span><br><span class="line">		System.out.println(<span class="string">&quot;该类别下数量较少的商品有：&quot;</span>);</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)	&#123;</span><br><span class="line">			temp[i]=amounts[i][no-<span class="number">1</span>];<span class="comment">//将指定类别的商品数目</span></span><br><span class="line">			<span class="comment">//存储到temp数组中</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;temp.length;i++)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=temp.length-i-<span class="number">2</span>;j&gt;=i;j--)	&#123;</span><br><span class="line">				<span class="keyword">if</span>(temp[j]&gt;temp[j+<span class="number">1</span>])	&#123;</span><br><span class="line">					<span class="type">int</span> x=temp[j];</span><br><span class="line">					temp[j]=temp[j+<span class="number">1</span>];</span><br><span class="line">					temp[j+<span class="number">1</span>]=x;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)	&#123;</span><br><span class="line">			<span class="keyword">if</span>(temp[i]&lt;<span class="number">100</span> &amp;&amp; temp[i]!=temp[i+<span class="number">1</span>])	&#123;</span><br><span class="line">				<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;<span class="number">5</span>;j++)	&#123;</span><br><span class="line">					<span class="keyword">if</span>(amounts[j][no-<span class="number">1</span>]==temp[i])	&#123;</span><br><span class="line">						System.out.print(products[j] + </span><br><span class="line">								<span class="string">&quot;\t&quot;</span>);</span><br><span class="line">						</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(<span class="string">&quot;\n该类别的商品库存信息从低到高的&quot;</span></span><br><span class="line">				+ <span class="string">&quot;排列如下：&quot;</span>);</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;temp.length;i++)	&#123;</span><br><span class="line">			System.out.print(temp[i] + <span class="string">&quot;\t&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;     </span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>Java</category>
@@ -278,6 +263,21 @@
 </ol>
 <p>在main()方法中创建了Member类的对象admin，并访问了该对象的成员变量password和成员方法toString()。  </p>
 <p>输出结果如图所示：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/chpw.JPG">  <img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/chpw2.JPG">  </p>
+<p><strong>完！</strong>  </p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java抽象类和接口的联系与区别</title>
+    <url>/posts/4792/</url>
+    <content><![CDATA[<p>分享一篇文章：<a href="https://blog.csdn.net/qq_33591903/article/details/81709511?utm_source=app&app_version=4.5.7">【JAVA】抽象类和接口的联系与区别</a>，留着以后不懂时多拿出来看看。  </p>
+<span id="more"></span>  
+
 <p><strong>完！</strong>  </p>
 ]]></content>
       <categories>
@@ -400,6 +400,21 @@
       </tags>
   </entry>
   <entry>
+    <title>MIT教授推荐的学习方法</title>
+    <url>/posts/29170/</url>
+    <content><![CDATA[<p>老师这样说的，在你思考难题时，如果独自想了45分钟左右仍没有解决题目，那么你就应该选择放弃，就算完全没有搞懂也没有关系，在接下来的时间里可以做其它更有意义的事，难题一般需要团队协作来解决，不仅效率高，而且对个人的学习能力的提升也有很大的帮助，不过，要在团队解决问题之前应该独立思考45分钟左右做好准备，应该怎么问。  </p>
+<span id="more"></span>  
+
+<p><strong>完！</strong></p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Lambda表达式与匿名内部类的联系和区别</title>
     <url>/posts/47201/</url>
     <content><![CDATA[<p>分享一篇文章：<a href="https://blog.csdn.net/hlang8160/article/details/78285971?utm_source=app&app_version=4.5.8">《Lambda表达式与匿名内部类的联系和区别》</a>  </p>
@@ -428,21 +443,6 @@
 ]]></content>
       <categories>
         <category>Python</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MIT教授推荐的学习方法</title>
-    <url>/posts/29170/</url>
-    <content><![CDATA[<p>老师这样说的，在你思考难题时，如果独自想了45分钟左右仍没有解决题目，那么你就应该选择放弃，就算完全没有搞懂也没有关系，在接下来的时间里可以做其它更有意义的事，难题一般需要团队协作来解决，不仅效率高，而且对个人的学习能力的提升也有很大的帮助，不过，要在团队解决问题之前应该独立思考45分钟左右做好准备，应该怎么问。  </p>
-<span id="more"></span>  
-
-<p><strong>完！</strong></p>
-]]></content>
-      <categories>
-        <category>随笔</category>
       </categories>
       <tags>
         <tag>学习</tag>
@@ -554,6 +554,22 @@
       </tags>
   </entry>
   <entry>
+    <title>hexo+next主题黑暗模式配置</title>
+    <url>/posts/9967/</url>
+    <content><![CDATA[<h4 id="参考网站"><a href="#参考网站" class="headerlink" title="参考网站"></a>参考网站</h4><p><a href="https://github.com/rqh656418510/hexo-next-darkmode">hexo-next-darkmode</a>.</p>
+<span id="more"></span>
+
+<p>网站上的教程挺详细，有空再看。现在懒得搞…</p>
+]]></content>
+      <categories>
+        <category>博客教程</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo静态博客播放网络视频</title>
     <url>/posts/20018/</url>
     <content><![CDATA[<p>如下所示：  </p>
@@ -571,22 +587,6 @@
       </categories>
       <tags>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo+next主题黑暗模式配置</title>
-    <url>/posts/9967/</url>
-    <content><![CDATA[<h4 id="参考网站"><a href="#参考网站" class="headerlink" title="参考网站"></a>参考网站</h4><p><a href="https://github.com/rqh656418510/hexo-next-darkmode">hexo-next-darkmode</a>.</p>
-<span id="more"></span>
-
-<p>网站上的教程挺详细，有空再看。现在懒得搞…</p>
-]]></content>
-      <categories>
-        <category>博客教程</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>next</tag>
       </tags>
   </entry>
   <entry>
@@ -630,36 +630,6 @@
       </tags>
   </entry>
   <entry>
-    <title>中国程序员VS美国程序员，太形象了...</title>
-    <url>/posts/26891/</url>
-    <content><![CDATA[<p>转载一篇文章，原创<a href="https://mp.weixin.qq.com/s/tglPT8ipyUuvg6JJmm-F6A"><em>中国程序员VS美国程序员，太形象了…</em></a>，作者：不笑青年，公众号：不会笑青年  </p>
-<span id="more"></span>    
-
-
-
-<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican.jpg">  </p>
-<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican2.jpg">  </p>
-<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican3.jpg">  </p>
-<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican4.jpg">  </p>
-<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican5.jpg">  </p>
-<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican6.jpg">  </p>
-<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican7.jpg">  </p>
-<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican8.jpg">  </p>
-<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican9.jpg">  </p>
-<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican10.jpg">  </p>
-<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican11.jpg">  </p>
-<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican12.jpg">  </p>
-<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican13.jpg">  </p>
-<p>本人无意侵犯原作者著作权，若此文章侵犯了您的权益，请将相关版权信息提交至邮箱<a href="mailto:&#50;&#x33;&#50;&#50;&#48;&#x33;&#51;&#x33;&#x34;&#x38;&#64;&#x71;&#113;&#x2e;&#99;&#x6f;&#109;">&#50;&#x33;&#50;&#50;&#48;&#x33;&#51;&#x33;&#x34;&#x38;&#64;&#x71;&#113;&#x2e;&#99;&#x6f;&#109;</a>，我会第一时间处理，谢谢！</p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>为博客添加每日一言或诗</title>
     <url>/posts/62709/</url>
     <content><![CDATA[<div class="poem-wrap">
@@ -699,20 +669,28 @@
       </tags>
   </entry>
   <entry>
-    <title>免费在线影视网址集合</title>
-    <url>/posts/34575/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码不太对，请再试试" data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="03fe879d974ff45d1fcad679a4288a4542fc0e92e6565a4bb2db877c5183976c">d78246ed3107d3ce8473038a4d318bc2d9962d736b180a14aab77b90c594b965087b5bc207aa7de03197c1adc26760e7e4bb1527b3a50996d321965788e44e78b625bd436177eba810de0230e7a9e189deae40dee8e9d26f2e08e25a3ef7b42b86202d7c38626179d3c99a9e3e1ab7b9a63209bb9bfbc8a7e253fa29f94e748b0749ca34865e37877686599f4644b62aba55062b365e0e99a1cf70601c0f9b65e8785dd86eb051ba75d8299422fcdb8a6c59786b3699f621e33de1e4da29019b51be4b2490dded0696c7850de5d26ae709f5d81d8800a734ed5ccbe0368cb02dd94cf6336aa060e1ea7dfa3a932590629d5197484c05924c9c64e05caf072cd0251594c26a3e66c0cdcb7c97f46fbf7b671c975b12af2442c7f462eff091157b9d41b4ebd679fee3049156148cd58d998cbf229e8036a8bf78187cf517aa78f749cbad1666da16055cb8ad81771dad9b46fb0d41eeef071bdcf6b6a091ec6f7e0354b507e9d3c0fee8084862b3d9451e565a8305b58d72a4cc68ba273b2b738f7ec814f06f1769602c96294d06424252b34d0b76da44151193b7c97eaca18d53f58cd5191a7808256a7119a06e89bf953775f70775d326006b58f22ea215c0873e365b196ada79f383e9d97ecb8940e5f48407a4c6f7e2efb9822a6cdcb26cbfbd193bb98aa71aa6270289832341ad5eb64488ee0f537541edaef33b08408cd1f10133b1e8639ebe1620562071acd7792e41174e88ba952826462040ab5636781018403443ed6c95fe32c6cbba74814ef5258d59e1c6db99b7b95a72dcbadf457539b61fcaa1170af9a886cb2a952947393f50d58a0da0f0f52676ed7f9bc6ca3bc4511fb02a25366d902aa94ba30dc5517082533f5f9a78fb95d34e985e04c7bf3cee3633f17cfc843af8efa5bae55415d2c5a2737c06852e74f6171bb966a88028979bd18772b2c20a52285efa02a4ebe887bfadec069b23c18c8873633b9797fc36d4e628cd61522f1176155eac0dd11ad17fcd8f0988c30ad13adcf71658abb88b8636f48b85216fc4d29f22b3102874b245e88ca01528cdd785727cee945baddeb9df62ec549fc58438f0a8d046990ff18e7b17f8cbe82e2bf803dc556b598a884dd29f5b990e0b6b9b34ce7ea912670f9be2cc8ea3e492baa950eab13ac51e7ea7c5306a1cc765d34c53b7f4661e15f4665c3d4363adaa3e03aa79de4c2dab5aa082f3cf2bced1ca49acc77adecb3701cdcbc2bbeed06243c262f85433b794b4ec2e7b69e06e7938efec9d8f733b7b96ba2697336bc582fa35ac9ce9b46210a3ed1baf72bdff4e3bf649752d3884941762ecd3d4eafd46b8d5f96866900884987aacc6fe4fb6b2f0d993efcab1868a3df74717872d26e418efefaf2e91502023f9619175d72f1a2028f2ac30f953268f69ee88c0f1fa0e78db8dc89250c4436bb1f359bafa40701e9683537bb5770997400300c293ad19515a639a93309420f0afe09dd2bd92e39fec8c5888bf770ba68ee834f16f4def0811df47e4190aa2d9c7dbdf80d0adcc567a2fd4be582b71f44bfcfcb1e71bc4e369c28604c5baf493ae3ddb4efe76d8f147c3814531c6c8789c0ada945a0a36c29a1b129ee592462024a81688a5446c5fceb8328862f1bf5ed966444f36ed3e8cc8f0170ada3b06fed3f1dab8a274952e24d36b3a9c6c21448b407ca0a4852b556fa436bf77e0398348576b755f80bae71b1b918592320ffd499555edd620cf54540a20ef38bc023323c42acfb8dcfef6de924fe30105e61692c4ced289b217d573df919bce1bb051dd7f12dfc055f5b44ac3e89d4a856626eeebc225666bd044cb41710f7b79056d194afa2cf4620d0e431fbeae844ec21238c1851b0869a6d34ef64c84cb5ce11453bdb970e821a736962e3f19c42a97cddc4f065377583803e19ca989f6b29d5d5247ba082c5948a410b4dbadd8946b4a6107bbc658f5ec8a3196c1a7f458ef38e06b7bb2cd2a2afd4b662c8c2c00402c3a583890085e1b6e861c72b87191c5d13482dd5bee380797d21e4c6740394eaf6171c3664623852ca66a80b890bfb805b8c513ab68355ea1f90a29e1d8e177c880d55762bf2e4e8dd9dddb8837a3221c8ff42a05f0e9bddb2201b942e204adf37cfef7da8ba125bbb8f1e750ec31e8be6dace1e8ebc924b74516a1467d3cfdbefe8a1d833a8241654a9ea4123704c47ee6a1308c3cc80ed4e1a528c7693046a1529e6c6eb2bed07aefd3c40f062d28c62a8105063dbeb24c23278ecceccf72ffcb5725ddb087da13501057afcd6ee752aa9447516b8c058609213be0243e7175b7cfebc6ec145aaed6382058db563ef032c66797fdd9298fe6429bf2dbcdb238e3fd5e7590178677d6e3707fa6d0c75e8474eb91dc6501bb6aafbec3a0e861daff80311dad43402883c3c57ebde27334a4cd9bc3f2598bd498bbd92f9fde316510a80cbfd6af0400750bf6fbb6f5c4a266a1136b33d25c006c3641a1ac62cea80015a8bcd8c649484bf123a0b66ea33c9c16440b423b0578f63999214571a1ff6961a25a6e0932fed4059393806ced68bbbae3ee2c5aa84f0aeb73da514555dce2e5921c0c640f6974b72ebb490578a67ed47b8011c5f8a46d440a70e5649d177b619f15e5ae212681ef25f7f00af8033e60e205d86fed65270a083cf3743d157fc54c1ab5cc50c7ecd8f66fb079154ea616058ef30ec253437482a579023926af639bebabd6e913bed69978384a7096a5a8df64950644e1e0b5a33918b00d6a911afaba99beed1b1bbfa406cdc498b1fdce9a272b4c8a1c4da55f3ddb86fc4f43eb56860f970b732daaf76937fd94d6276fdd0744f80feb9ea3119186f392f9e6411101864435d65eef099af0a817885fab24e926b26b350836ebb49ac1d5ce98e4496d33ffa30c8288c12e36d7c9418dceb61899e0d3fc29a5d3c6f4f9a4d044ac0a3684fe7760131e845b1ebca7592d62a0921c6dbd7f3a68aa6db8f73fbcffcb6a96d8172502502c2abcf20cc5001671749ad3da820ec68323b63a58dd8b1b755cfdce06977b9e9209b8ea7da793ef63c1636ee6f6d80803b00d339d3fe825786c5732f486bd7d85ab463f924045d381ddcfb0169d17af5298421578e05843f0040279004cbdf6c4b328b7f34a5c793fc9d7bf0f61f0b5570393eacb5fc7e89eede1370f49e71d7de4f75a86141b0373d8aa9c0995d30983aeec17178e9f28d0a1b906959bdb2e3cbf3fa4629dcf4e92b6d6f2b40c1183ac71103f965e873a1e31404f9dcd075f4fb11cffe5fb4be4a80a7cd5cd5bbf10d4aa10274da6e53a135296c47040aecfca69e73387b1bddf07a2c7a9888c1fc1723c39c02686074712bf68fe34e8bae9e77a97a170275965c383120170082a8a0205f3a064baeb98dec934c4edffba033e13a68df998b1e4d19f5963fdf33d51916483dd696a2f92149615921d8b745acd72d1922a5de28a4a7242891ea9ba329f0f6a15520cd88f1626f525dc6501485e4dffd5fd605ad26e06c25a13a8050cdfe7ae3f3527f632e5a74119000c78f3a47241ea3fe8e3b5613754f5d4fed26edecd58547173c5834f9fe37527157bf97d49593aeb5377b3ad63e3063d0919241549fc6d6f34a33d04fb7ce056c21afdc65d4ddaa7c45b5ef1d48009ab1ea95065f331b5efb881ae282fce664c3cc0e8d33e6408f16c2f65408c38725f8c5119cfef9abe703efaed00b71cfa590a8e1752391a3236ef3c1f2eb9b625601c7ed939a9380bfe9f99952db8189429a622fcc285971c6d1575d20ff2d77e845900ee5238f1624e388395dc1a1edd1809eeab506a0a03ff4ad8a12fe866f8fd4821037d01a66db842545fa50fafff2e4758e8b298b049b679422f7d8bacc82fbd6dd38e28fb24487d8eb11bba46f7479b3564a4fe4d37e5d1bfb71fa18ad62c382a5e79bfb837cbd2e622eb27150d8fbb1847f9d06ca045681f0877cb0ee5409861d7d0f6c93f94b49b7cfb5bdf24a51591836a15568c5357b1b7e04eb61ddec67e722a9fc788429b618d74be809b7c710316115e17e5c9d77118b9b42bfd3bd14d72866595135dab5e167a9991c1fc94c408c32ae7b92db00d8163f646e282f1c28eeb54aaeb5efba18a3a3eac924e7caff8eb3da540c310957caa7c068b70d7b0b4c74970489718aa0c0112ad12b5daad48a6fb74b5e0ef394e0311dbfc489eef122b09d85a02c7f792b5796c2a337b39a23951a8018c577892c5151f7a6f5d5b2109e9f1977ebb05d786e2bd83aec785c1e8fa85b652c63b4d0361321fd65e72e2b8f4598c2199b38e6cee2f4d42fccd75dc3bae8de7f4a45ff4d63b80aeef61ee8d1f51c7e229dd62404a35eb8fb03b58c2046d2f5e4e5f0bdbae9380968c954227e57239fd9318d53efb70f542fde8c9479b8bbf874f47b494838a7d15413e1249405701efbf845efcd71491a832296e67ab712123a1ae5be04d58cc2f3838bd81112fdcd1ebea1aa0b2dff2408c8ea79d212094410eb5df46ba4fd0bd1e3e201ee59cb0e734962c0e84007470669a61afbd1095282b4e707c23ccd91d3c9a0c56f2c88d9ea5c39feda2abad019d20803a0293903befc6cbaf7abac4bca64551de6737906e4410e99228ca6d80318260471a805f67cb713d2df2aab3acf5348aa01d5531f76aad6336ebf1eedf5c8012f1f1f584b91337c314a976f18cfbdc324993c79d6282f9752ab214e8094f7b0105f6fa008c332bbb7ea1791f40db12c541aa321fa3324c27f4423d40d7213b0277acc42bc8eb803b80e4b71080796057ef436cc1417d04addc5cd5c0118ae28a4aaf134ac6e5a70dd0874aee1dea50ef7df9bdb709aa56c7d5da7fec97ba84d2cf0b0da113d0138a69cece77206196d4c9140b162dddbf4da55e3a820e471142947a5a1a816646cfe5c9414097d5f84287953b77b858a5c71b6e9a87646de4cb17878632ca5f233de7112398bd92d7c5deeb943f6174d4fe4b3b0e6e5d4cd9efa47d57dd98ca1ec7622c357cdadfda74b7e19e265a5e455b98262fea6d22d9a473c21cd78fdcd0b70e88d88ce9e50dcf6423998f573953437f6b174e1566cfd1ee3a2567a6e174a1bad6f341c1a059958e0943f7ceae4554034854dfb5ae3fbabea4eeb02cf691693fcf35accc729b746c944325177f06faaf842d71ac941ea19609d7698e8eca1e54291bf040d92aed7afa67c7c1655d7e7fcfbe7d914c8b831fd43ebc8d91c83a9eb3fa5b6480829b8f97d25aa30d999ba9b4f8fd91ea0e1c9f0092308a27992c49cd7d1c030f1796627d3b6cee2aaf6e4348655e40b8f85c9d84e880a3efd0328049d459f34cbdf52c690391703a055fab38bdb3e1de4d0be0249992251b5fb15cc8c3be333732fed2f4dd1c36da1faf1b2655535b67d48ce89f5173157b070f6a2a794f4bef6c046d0b028ecadd7a5d394c651c8bf2e7078f54220b0c33efa46918f90c787be9fba0a4094aa5da4a2dc1665a759466419b3a6c9684881113cc70e490008d3cc02823772a5c1ef51f49e678510a4d7662cfa1ab12524ed0586af6dfa568362e00d39edeb823cb440c45176c0683eff4c5dc6c20b4b620fd7086acbfce6d9ca26d42cb361d606ecc450a6c8215df38794b64405d9e20de461bd00c737b5b365d4b34fa8be91cb09de22a7cc514053a97387b435fb3a4c368daeb042a98c4a10cce856d94d81998adb824fb263f5f3d3ae27aae700b689fdadf251af40ba69027d2eb20473e144a760b2e1f444067a6184d026aa0c14201864969e013c61e9034cd350f51dc06e8f26a9276e3d0994a45a2ef78e3000903f96361f027d9b2f2873459c23408127c9388004756beede3c5b6dd2c30a6ee48761836c01d5e02a50535addde09d2955738b28cdc1a0624c35beb69c3e14a3c53f07d615d2d4a9d1b46a18f18c287a</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">这里需要密码才能访问</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    <title>中国程序员VS美国程序员，太形象了...</title>
+    <url>/posts/26891/</url>
+    <content><![CDATA[<p>转载一篇文章，原创<a href="https://mp.weixin.qq.com/s/tglPT8ipyUuvg6JJmm-F6A"><em>中国程序员VS美国程序员，太形象了…</em></a>，作者：不笑青年，公众号：不会笑青年  </p>
+<span id="more"></span>    
+
+
+
+<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican.jpg">  </p>
+<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican2.jpg">  </p>
+<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican3.jpg">  </p>
+<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican4.jpg">  </p>
+<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican5.jpg">  </p>
+<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican6.jpg">  </p>
+<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican7.jpg">  </p>
+<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican8.jpg">  </p>
+<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican9.jpg">  </p>
+<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican10.jpg">  </p>
+<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican11.jpg">  </p>
+<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican12.jpg">  </p>
+<p><img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/ChinaVSAmerican13.jpg">  </p>
+<p>本人无意侵犯原作者著作权，若此文章侵犯了您的权益，请将相关版权信息提交至邮箱<a href="mailto:&#50;&#x33;&#x32;&#x32;&#48;&#x33;&#x33;&#51;&#x34;&#56;&#x40;&#113;&#113;&#x2e;&#x63;&#111;&#109;">&#50;&#x33;&#x32;&#x32;&#48;&#x33;&#x33;&#51;&#x34;&#56;&#x40;&#113;&#113;&#x2e;&#x63;&#111;&#109;</a>，我会第一时间处理，谢谢！</p>
+]]></content>
       <categories>
         <category>随笔</category>
       </categories>
@@ -740,6 +718,28 @@
       </categories>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>免费在线影视网址集合</title>
+    <url>/posts/34575/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码不太对，请再试试" data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="03fe879d974ff45d1fcad679a4288a4542fc0e92e6565a4bb2db877c5183976c">d78246ed3107d3ce8473038a4d318bc2d9962d736b180a14aab77b90c594b965087b5bc207aa7de03197c1adc26760e7e4bb1527b3a50996d321965788e44e78b625bd436177eba810de0230e7a9e189deae40dee8e9d26f2e08e25a3ef7b42b86202d7c38626179d3c99a9e3e1ab7b9a63209bb9bfbc8a7e253fa29f94e748b0749ca34865e37877686599f4644b62aba55062b365e0e99a1cf70601c0f9b65e8785dd86eb051ba75d8299422fcdb8a6c59786b3699f621e33de1e4da29019b51be4b2490dded0696c7850de5d26ae709f5d81d8800a734ed5ccbe0368cb02dd94cf6336aa060e1ea7dfa3a932590629d5197484c05924c9c64e05caf072cd0251594c26a3e66c0cdcb7c97f46fbf7b671c975b12af2442c7f462eff091157b9d41b4ebd679fee3049156148cd58d998cbf229e8036a8bf78187cf517aa78f749cbad1666da16055cb8ad81771dad9b46fb0d41eeef071bdcf6b6a091ec6f7e0354b507e9d3c0fee8084862b3d9451e565a8305b58d72a4cc68ba273b2b738f7ec814f06f1769602c96294d06424252b34d0b76da44151193b7c97eaca18d53f58cd5191a7808256a7119a06e89bf953775f70775d326006b58f22ea215c0873e365b196ada79f383e9d97ecb8940e5f48407a4c6f7e2efb9822a6cdcb26cbfbd193bb98aa71aa6270289832341ad5eb64488ee0f537541edaef33b08408cd1f10133b1e8639ebe1620562071acd7792e41174e88ba952826462040ab5636781018403443ed6c95fe32c6cbba74814ef5258d59e1c6db99b7b95a72dcbadf457539b61fcaa1170af9a886cb2a952947393f50d58a0da0f0f52676ed7f9bc6ca3bc4511fb02a25366d902aa94ba30dc5517082533f5f9a78fb95d34e985e04c7bf3cee3633f17cfc843af8efa5bae55415d2c5a2737c06852e74f6171bb966a88028979bd18772b2c20a52285efa02a4ebe887bfadec069b23c18c8873633b9797fc36d4e628cd61522f1176155eac0dd11ad17fcd8f0988c30ad13adcf71658abb88b8636f48b85216fc4d29f22b3102874b245e88ca01528cdd785727cee945baddeb9df62ec549fc58438f0a8d046990ff18e7b17f8cbe82e2bf803dc556b598a884dd29f5b990e0b6b9b34ce7ea912670f9be2cc8ea3e492baa950eab13ac51e7ea7c5306a1cc765d34c53b7f4661e15f4665c3d4363adaa3e03aa79de4c2dab5aa082f3cf2bced1ca49acc77adecb3701cdcbc2bbeed06243c262f85433b794b4ec2e7b69e06e7938efec9d8f733b7b96ba2697336bc582fa35ac9ce9b46210a3ed1baf72bdff4e3bf649752d3884941762ecd3d4eafd46b8d5f96866900884987aacc6fe4fb6b2f0d993efcab1868a3df74717872d26e418efefaf2e91502023f9619175d72f1a2028f2ac30f953268f69ee88c0f1fa0e78db8dc89250c4436bb1f359bafa40701e9683537bb5770997400300c293ad19515a639a93309420f0afe09dd2bd92e39fec8c5888bf770ba68ee834f16f4def0811df47e4190aa2d9c7dbdf80d0adcc567a2fd4be582b71f44bfcfcb1e71bc4e369c28604c5baf493ae3ddb4efe76d8f147c3814531c6c8789c0ada945a0a36c29a1b129ee592462024a81688a5446c5fceb8328862f1bf5ed966444f36ed3e8cc8f0170ada3b06fed3f1dab8a274952e24d36b3a9c6c21448b407ca0a4852b556fa436bf77e0398348576b755f80bae71b1b918592320ffd499555edd620cf54540a20ef38bc023323c42acfb8dcfef6de924fe30105e61692c4ced289b217d573df919bce1bb051dd7f12dfc055f5b44ac3e89d4a856626eeebc225666bd044cb41710f7b79056d194afa2cf4620d0e431fbeae844ec21238c1851b0869a6d34ef64c84cb5ce11453bdb970e821a736962e3f19c42a97cddc4f065377583803e19ca989f6b29d5d5247ba082c5948a410b4dbadd8946b4a6107bbc658f5ec8a3196c1a7f458ef38e06b7bb2cd2a2afd4b662c8c2c00402c3a583890085e1b6e861c72b87191c5d13482dd5bee380797d21e4c6740394eaf6171c3664623852ca66a80b890bfb805b8c513ab68355ea1f90a29e1d8e177c880d55762bf2e4e8dd9dddb8837a3221c8ff42a05f0e9bddb2201b942e204adf37cfef7da8ba125bbb8f1e750ec31e8be6dace1e8ebc924b74516a1467d3cfdbefe8a1d833a8241654a9ea4123704c47ee6a1308c3cc80ed4e1a528c7693046a1529e6c6eb2bed07aefd3c40f062d28c62a8105063dbeb24c23278ecceccf72ffcb5725ddb087da13501057afcd6ee752aa9447516b8c058609213be0243e7175b7cfebc6ec145aaed6382058db563ef032c66797fdd9298fe6429bf2dbcdb238e3fd5e7590178677d6e3707fa6d0c75e8474eb91dc6501bb6aafbec3a0e861daff80311dad43402883c3c57ebde27334a4cd9bc3f2598bd498bbd92f9fde316510a80cbfd6af0400750bf6fbb6f5c4a266a1136b33d25c006c3641a1ac62cea80015a8bcd8c649484bf123a0b66ea33c9c16440b423b0578f63999214571a1ff6961a25a6e0932fed4059393806ced68bbbae3ee2c5aa84f0aeb73da514555dce2e5921c0c640f6974b72ebb490578a67ed47b8011c5f8a46d440a70e5649d177b619f15e5ae212681ef25f7f00af8033e60e205d86fed65270a083cf3743d157fc54c1ab5cc50c7ecd8f66fb079154ea616058ef30ec253437482a579023926af639bebabd6e913bed69978384a7096a5a8df64950644e1e0b5a33918b00d6a911afaba99beed1b1bbfa406cdc498b1fdce9a272b4c8a1c4da55f3ddb86fc4f43eb56860f970b732daaf76937fd94d6276fdd0744f80feb9ea3119186f392f9e6411101864435d65eef099af0a817885fab24e926b26b350836ebb49ac1d5ce98e4496d33ffa30c8288c12e36d7c9418dceb61899e0d3fc29a5d3c6f4f9a4d044ac0a3684fe7760131e845b1ebca7592d62a0921c6dbd7f3a68aa6db8f73fbcffcb6a96d8172502502c2abcf20cc5001671749ad3da820ec68323b63a58dd8b1b755cfdce06977b9e9209b8ea7da793ef63c1636ee6f6d80803b00d339d3fe825786c5732f486bd7d85ab463f924045d381ddcfb0169d17af5298421578e05843f0040279004cbdf6c4b328b7f34a5c793fc9d7bf0f61f0b5570393eacb5fc7e89eede1370f49e71d7de4f75a86141b0373d8aa9c0995d30983aeec17178e9f28d0a1b906959bdb2e3cbf3fa4629dcf4e92b6d6f2b40c1183ac71103f965e873a1e31404f9dcd075f4fb11cffe5fb4be4a80a7cd5cd5bbf10d4aa10274da6e53a135296c47040aecfca69e73387b1bddf07a2c7a9888c1fc1723c39c02686074712bf68fe34e8bae9e77a97a170275965c383120170082a8a0205f3a064baeb98dec934c4edffba033e13a68df998b1e4d19f5963fdf33d51916483dd696a2f92149615921d8b745acd72d1922a5de28a4a7242891ea9ba329f0f6a15520cd88f1626f525dc6501485e4dffd5fd605ad26e06c25a13a8050cdfe7ae3f3527f632e5a74119000c78f3a47241ea3fe8e3b5613754f5d4fed26edecd58547173c5834f9fe37527157bf97d49593aeb5377b3ad63e3063d0919241549fc6d6f34a33d04fb7ce056c21afdc65d4ddaa7c45b5ef1d48009ab1ea95065f331b5efb881ae282fce664c3cc0e8d33e6408f16c2f65408c38725f8c5119cfef9abe703efaed00b71cfa590a8e1752391a3236ef3c1f2eb9b625601c7ed939a9380bfe9f99952db8189429a622fcc285971c6d1575d20ff2d77e845900ee5238f1624e388395dc1a1edd1809eeab506a0a03ff4ad8a12fe866f8fd4821037d01a66db842545fa50fafff2e4758e8b298b049b679422f7d8bacc82fbd6dd38e28fb24487d8eb11bba46f7479b3564a4fe4d37e5d1bfb71fa18ad62c382a5e79bfb837cbd2e622eb27150d8fbb1847f9d06ca045681f0877cb0ee5409861d7d0f6c93f94b49b7cfb5bdf24a51591836a15568c5357b1b7e04eb61ddec67e722a9fc788429b618d74be809b7c710316115e17e5c9d77118b9b42bfd3bd14d72866595135dab5e167a9991c1fc94c408c32ae7b92db00d8163f646e282f1c28eeb54aaeb5efba18a3a3eac924e7caff8eb3da540c310957caa7c068b70d7b0b4c74970489718aa0c0112ad12b5daad48a6fb74b5e0ef394e0311dbfc489eef122b09d85a02c7f792b5796c2a337b39a23951a8018c577892c5151f7a6f5d5b2109e9f1977ebb05d786e2bd83aec785c1e8fa85b652c63b4d0361321fd65e72e2b8f4598c2199b38e6cee2f4d42fccd75dc3bae8de7f4a45ff4d63b80aeef61ee8d1f51c7e229dd62404a35eb8fb03b58c2046d2f5e4e5f0bdbae9380968c954227e57239fd9318d53efb70f542fde8c9479b8bbf874f47b494838a7d15413e1249405701efbf845efcd71491a832296e67ab712123a1ae5be04d58cc2f3838bd81112fdcd1ebea1aa0b2dff2408c8ea79d212094410eb5df46ba4fd0bd1e3e201ee59cb0e734962c0e84007470669a61afbd1095282b4e707c23ccd91d3c9a0c56f2c88d9ea5c39feda2abad019d20803a0293903befc6cbaf7abac4bca64551de6737906e4410e99228ca6d80318260471a805f67cb713d2df2aab3acf5348aa01d5531f76aad6336ebf1eedf5c8012f1f1f584b91337c314a976f18cfbdc324993c79d6282f9752ab214e8094f7b0105f6fa008c332bbb7ea1791f40db12c541aa321fa3324c27f4423d40d7213b0277acc42bc8eb803b80e4b71080796057ef436cc1417d04addc5cd5c0118ae28a4aaf134ac6e5a70dd0874aee1dea50ef7df9bdb709aa56c7d5da7fec97ba84d2cf0b0da113d0138a69cece77206196d4c9140b162dddbf4da55e3a820e471142947a5a1a816646cfe5c9414097d5f84287953b77b858a5c71b6e9a87646de4cb17878632ca5f233de7112398bd92d7c5deeb943f6174d4fe4b3b0e6e5d4cd9efa47d57dd98ca1ec7622c357cdadfda74b7e19e265a5e455b98262fea6d22d9a473c21cd78fdcd0b70e88d88ce9e50dcf6423998f573953437f6b174e1566cfd1ee3a2567a6e174a1bad6f341c1a059958e0943f7ceae4554034854dfb5ae3fbabea4eeb02cf691693fcf35accc729b746c944325177f06faaf842d71ac941ea19609d7698e8eca1e54291bf040d92aed7afa67c7c1655d7e7fcfbe7d914c8b831fd43ebc8d91c83a9eb3fa5b6480829b8f97d25aa30d999ba9b4f8fd91ea0e1c9f0092308a27992c49cd7d1c030f1796627d3b6cee2aaf6e4348655e40b8f85c9d84e880a3efd0328049d459f34cbdf52c690391703a055fab38bdb3e1de4d0be0249992251b5fb15cc8c3be333732fed2f4dd1c36da1faf1b2655535b67d48ce89f5173157b070f6a2a794f4bef6c046d0b028ecadd7a5d394c651c8bf2e7078f54220b0c33efa46918f90c787be9fba0a4094aa5da4a2dc1665a759466419b3a6c9684881113cc70e490008d3cc02823772a5c1ef51f49e678510a4d7662cfa1ab12524ed0586af6dfa568362e00d39edeb823cb440c45176c0683eff4c5dc6c20b4b620fd7086acbfce6d9ca26d42cb361d606ecc450a6c8215df38794b64405d9e20de461bd00c737b5b365d4b34fa8be91cb09de22a7cc514053a97387b435fb3a4c368daeb042a98c4a10cce856d94d81998adb824fb263f5f3d3ae27aae700b689fdadf251af40ba69027d2eb20473e144a760b2e1f444067a6184d026aa0c14201864969e013c61e9034cd350f51dc06e8f26a9276e3d0994a45a2ef78e3000903f96361f027d9b2f2873459c23408127c9388004756beede3c5b6dd2c30a6ee48761836c01d5e02a50535addde09d2955738b28cdc1a0624c35beb69c3e14a3c53f07d615d2d4a9d1b46a18f18c287a</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">这里需要密码才能访问</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -795,6 +795,33 @@
       </tags>
   </entry>
   <entry>
+    <title>关于hexo+next主题添加友链页面</title>
+    <url>/posts/25115/</url>
+    <content><![CDATA[<h4 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h4><ol>
+<li><a href="https://www.heson10.com/posts/3243.html">Hexo+next主题自定义友情链接页面</a>.</li>
+<li><a href="https://bestzuo.cn/posts/2016690040.html">hexo博客next主题自定义友情链接页面</a>.</li>
+</ol>
+<span id="more"></span>
+
+<h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><ol>
+<li>文件的后缀名，随着next主题版本的更新layout文件夹下的后缀名也在更改，因此需要注意一下；</li>
+<li>page文件注意更改后缀名</li>
+</ol>
+<p><img src="https://photo.lihui327.cn/blog/2022/2022-05-07_135639.jpg"></p>
+<ol start="3">
+<li>links文件里面的内容建议参考第二篇文章；</li>
+<li>主题配置文件里面的内容修改建议参考第二篇文章。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>博客教程</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于Java自定义方法内部进行数值相等比较产生的问题</title>
     <url>/posts/36358/</url>
     <content><![CDATA[<p>我的建议就是不要在函数内部进行例如整数之类的相等比较，不管怎样，总是false，我也不知道为啥，例如下面的这个程序，如果我在自定义方法内部进行比较的话，一定出错，不信可以自己试试，但是在主方法内部进行比较时没有问题，so，我认为还是不要在方法内进行比较，这个原因还有待我考证，再说吧…   </p>
@@ -841,33 +868,6 @@
       </tags>
   </entry>
   <entry>
-    <title>关于hexo+next主题添加友链页面</title>
-    <url>/posts/25115/</url>
-    <content><![CDATA[<h4 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h4><ol>
-<li><a href="https://www.heson10.com/posts/3243.html">Hexo+next主题自定义友情链接页面</a>.</li>
-<li><a href="https://bestzuo.cn/posts/2016690040.html">hexo博客next主题自定义友情链接页面</a>.</li>
-</ol>
-<span id="more"></span>
-
-<h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><ol>
-<li>文件的后缀名，随着next主题版本的更新layout文件夹下的后缀名也在更改，因此需要注意一下；</li>
-<li>page文件注意更改后缀名</li>
-</ol>
-<p><img src="https://photo.lihui327.cn/blog/2022/2022-05-07_135639.jpg"></p>
-<ol start="3">
-<li>links文件里面的内容建议参考第二篇文章；</li>
-<li>主题配置文件里面的内容修改建议参考第二篇文章。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>博客教程</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>next</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于next主题配置执行hexo g出现问题</title>
     <url>/posts/63081/</url>
     <content><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>我在我的旧电脑中不曾遇到过这种情况，就是会出现找不到某css文件，解析失败的情况。</p>
@@ -881,6 +881,19 @@
       <tags>
         <tag>hexo</tag>
         <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>分享一个每日领qq绿钻的软件</title>
+    <url>/posts/18991/</url>
+    <content><![CDATA[<p>前言：此软件由个人或团队所做，非官方人员所做，因此存在盗号的危险，介意勿下，我使用了之后发现自己好友里莫名其妙的多了一个陌生人，但是我的账号里什么都没有，我不怕被盗，因此我是使用了的，在这里分享以作记录，独乐乐不如众乐乐！  </p>
+<span id="more"></span>  
+
+<p><del>软件下载地址：<a href="https://pan.bilnn.com/s/w6OXFG">https://pan.bilnn.com/s/w6OXFG</a></del><br><strong>已失效</strong>，估计是被官方查出了漏洞，已经修补了。  </p>
+<p><strong>完！</strong></p>
+]]></content>
+      <tags>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -918,16 +931,17 @@
       </tags>
   </entry>
   <entry>
-    <title>分享一个每日领qq绿钻的软件</title>
-    <url>/posts/18991/</url>
-    <content><![CDATA[<p>前言：此软件由个人或团队所做，非官方人员所做，因此存在盗号的危险，介意勿下，我使用了之后发现自己好友里莫名其妙的多了一个陌生人，但是我的账号里什么都没有，我不怕被盗，因此我是使用了的，在这里分享以作记录，独乐乐不如众乐乐！  </p>
+    <title>大佬都还在坚持，我有什么理由去选择放弃。</title>
+    <url>/posts/25287/</url>
+    <content><![CDATA[<p><strong>干就完事！</strong>  </p>
 <span id="more"></span>  
 
-<p><del>软件下载地址：<a href="https://pan.bilnn.com/s/w6OXFG">https://pan.bilnn.com/s/w6OXFG</a></del><br><strong>已失效</strong>，估计是被官方查出了漏洞，已经修补了。  </p>
-<p><strong>完！</strong></p>
-]]></content>
+<iframe width="1350" height="775" src="//player.bilibili.com/player.html?aid=248824623&bvid=BV1fv411n73Q&cid=359525880&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
       <tags>
-        <tag>生活</tag>
+        <tag>励志</tag>
       </tags>
   </entry>
   <entry>
@@ -967,17 +981,42 @@
       </tags>
   </entry>
   <entry>
-    <title>大佬都还在坚持，我有什么理由去选择放弃。</title>
-    <url>/posts/25287/</url>
-    <content><![CDATA[<p><strong>干就完事！</strong>  </p>
+    <title>如何在博客文章中添加每日一句诗或者每日一言</title>
+    <url>/posts/34763/</url>
+    <content><![CDATA[<p>示例如下：  </p>
+<div class="poem-wrap">
+  <div class="poem-border poem-left"></div>
+  <div class="poem-border poem-right"></div>
+    <h1>两句诗</h1>
+    <p id="poem">挑选中...</p>
+    <p id="info"> 
+  <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    jinrishici.load(function(result) {
+      poem.innerHTML = result.data.content
+      info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
+      document.getElementById("poem").value(poem);
+      document.getElementById("info").value(info);  
+  });
+  </script> 
+</div>
+
 <span id="more"></span>  
 
-<iframe width="1350" height="775" src="//player.bilibili.com/player.html?aid=248824623&bvid=BV1fv411n73Q&cid=359525880&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>]]></content>
+<p>参考文章：<a href="https://blog.csdn.net/qq_44036990/article/details/105088198?utm_source=app">hexo(next)-每日一言，今日诗词</a>  </p>
+<p>可直接在你的.md或者.html文件里插入如下代码显示每日诗词：  </p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;poem-wrap&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;poem-border poem-left&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;poem-border poem-right&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>念两句诗<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">&quot;poem&quot;</span>&gt;</span>挑选中...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">&quot;info&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://sdk.jinrishici.com/v2/browser/jinrishici.js&quot;</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    jinrishici.<span class="title function_">load</span>(<span class="keyword">function</span>(<span class="params">result</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">      poem.<span class="property">innerHTML</span> = result.<span class="property">data</span>.<span class="property">content</span></span></span><br><span class="line"><span class="language-javascript">      info.<span class="property">innerHTML</span> = <span class="string">&#x27;【&#x27;</span> + result.<span class="property">data</span>.<span class="property">origin</span>.<span class="property">dynasty</span> + <span class="string">&#x27;】&#x27;</span> + result.<span class="property">data</span>.<span class="property">origin</span>.<span class="property">author</span> + <span class="string">&#x27;《&#x27;</span> + result.<span class="property">data</span>.<span class="property">origin</span>.<span class="property">title</span> + <span class="string">&#x27;》&#x27;</span></span></span><br><span class="line"><span class="language-javascript">      <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;poem&quot;</span>).<span class="title function_">value</span>(poem);</span></span><br><span class="line"><span class="language-javascript">      <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;info&quot;</span>).<span class="title function_">value</span>(info);  </span></span><br><span class="line"><span class="language-javascript">  &#125;);</span></span><br><span class="line"><span class="language-javascript">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>也可在文本中插入如下代码显示每日一言：  </p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">&quot;hitokoto&quot;</span>&gt;</span>获取中...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://v1.hitokoto.cn/?encode=js&amp;select=%23hitokoto&quot;</span> <span class="attr">defer</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>完！</strong></p>
+]]></content>
       <categories>
-        <category>随笔</category>
+        <category>博客教程</category>
       </categories>
       <tags>
-        <tag>励志</tag>
+        <tag>学习</tag>
       </tags>
   </entry>
   <entry>
@@ -1011,85 +1050,6 @@
 </ul>
 <h6 id="6-可能会出现的问题"><a href="#6-可能会出现的问题" class="headerlink" title="6.可能会出现的问题"></a>6.可能会出现的问题</h6><p>我在win11上测试时发现在生成ssh密钥文件时，如果只回车一次它不会生成文件，即使上面已经提升生成了文件，但是当你按它给出的路径去找时会发现不存在该路径，另外回车一次后最好不要输入任何东西再回车，否则它就会在你open bash的地方生成密钥文件，而不是在用户文件夹下生成。</p>
 <p>回车两次即可，不需要输入任何东西。</p>
-]]></content>
-      <categories>
-        <category>博客教程</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>安装Node.js</title>
-    <url>/posts/11257/</url>
-    <content><![CDATA[<h6 id="1-下载"><a href="#1-下载" class="headerlink" title="1.下载"></a>1.下载</h6><p><a href="https://nodejs.org/zh-cn/download">官网下载地址</a>     </p>
-<span id="more"></span>  
-
-<h6 id="2-安装"><a href="#2-安装" class="headerlink" title="2.安装"></a>2.安装</h6><p>如果不想修改安装目录的话，一路next即可，修改安装目录后也是一路next即可    </p>
-<h6 id="3-检验"><a href="#3-检验" class="headerlink" title="3.检验"></a>3.检验</h6><p>在cmd窗口中输入如下指令：    </p>
-<ol>
-<li><code>node -v</code><br>2. <code>npm -v</code></li>
-</ol>
-<p>显示结果如下代表安装成功：<img src="http://qiniu.iloveszy.com/blog/2023/node%20-v.png">     </p>
-<h6 id="4-配值环境变量"><a href="#4-配值环境变量" class="headerlink" title="4.配值环境变量"></a>4.配值环境变量</h6><ol>
-<li>首先在nodejs这个文件夹(即刚刚安装node.js所在目录下)建立”node_global”和”node_cache”两个文件夹，如图：<img src="http://qiniu.iloveszy.com/blog/2023/node_global.png">    </li>
-<li>打开cmd(是以管理员身份运行，我以前没有以管理员身份运行，后面就会出现错误)，输入：</li>
-</ol>
-<ul>
-<li><code>npm config set prefix &quot;你的路径\nodejs\node_global&quot;</code>  回车   </li>
-<li><code>npm config set cache &quot;你的路径\nodejs\node_cache&quot;</code>  回车   </li>
-<li>然后关闭cmd窗口，使用win+r键输入control打开控制面板，找到系统-高级系统设置-高级-环境变量，在<em>系统变量</em>下新建变量 <code>NODE_PATH</code> ，变量值填写：<br><code>你的路径\nodejs\node_global\node_modules</code>     </li>
-<li>在变量path下新建新的路径：<img src="http://qiniu.iloveszy.com/blog/2023/node%20path.png"></li>
-</ul>
-<h6 id="5-可能出现的错误"><a href="#5-可能出现的错误" class="headerlink" title="5.可能出现的错误"></a>5.可能出现的错误</h6><ol>
-<li>我在win11上遇到过安装hexo失败的问题，原因是权限问题，即之前没用管理员模式打开cmd设置，用户无权访问node_global、node_cache和node_modules文件夹，解决办法是手动更改权限，右键node_cache、node_global、node_modules，属性，安全，更改Authenticated Users的权限，主要是允许写入，然后应用后再确定，如图所示：</li>
-</ol>
-<p><img src="http://qiniu.iloveszy.com/blog/2023/%E6%9B%B4%E6%94%B9node_global%E6%9D%83%E9%99%90.png"></p>
-<ol start="2">
-<li>打开cmd窗口，如果你已经安装hexo，输入<code>hexo -v</code>，会出现如下所示，即代表你已经安装成功hexo。</li>
-</ol>
-<p><img src="http://qiniu.iloveszy.com/blog/2023/hexo%20-v.png"></p>
-<p>若出现既不是内部也不是外部指令，就需要设置hexo的路径，如图所示，系统-高级系统设置-高级-环境变量-系统变量-Path，新建路径，如图所示，<em>注意下面这个是设置你的hexo路径，我是因为自定义安装node.js，所以需要手动设置hexo指令路径，你需要找到它，并path上添加这个路径。</em>      </p>
-<p><img src="http://qiniu.iloveszy.com/blog/2023/%E6%B7%BB%E5%8A%A0hexo%E8%B7%AF%E5%BE%84.png"></p>
-]]></content>
-      <categories>
-        <category>博客教程</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何在博客文章中添加每日一句诗或者每日一言</title>
-    <url>/posts/34763/</url>
-    <content><![CDATA[<p>示例如下：  </p>
-<div class="poem-wrap">
-  <div class="poem-border poem-left"></div>
-  <div class="poem-border poem-right"></div>
-    <h1>两句诗</h1>
-    <p id="poem">挑选中...</p>
-    <p id="info"> 
-  <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-  <script type="text/javascript">
-    jinrishici.load(function(result) {
-      poem.innerHTML = result.data.content
-      info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
-      document.getElementById("poem").value(poem);
-      document.getElementById("info").value(info);  
-  });
-  </script> 
-</div>
-
-<span id="more"></span>  
-
-<p>参考文章：<a href="https://blog.csdn.net/qq_44036990/article/details/105088198?utm_source=app">hexo(next)-每日一言，今日诗词</a>  </p>
-<p>可直接在你的.md或者.html文件里插入如下代码显示每日诗词：  </p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;poem-wrap&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;poem-border poem-left&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;poem-border poem-right&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>念两句诗<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">&quot;poem&quot;</span>&gt;</span>挑选中...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">&quot;info&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://sdk.jinrishici.com/v2/browser/jinrishici.js&quot;</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">    jinrishici.<span class="title function_">load</span>(<span class="keyword">function</span>(<span class="params">result</span>) &#123;</span></span><br><span class="line"><span class="language-javascript">      poem.<span class="property">innerHTML</span> = result.<span class="property">data</span>.<span class="property">content</span></span></span><br><span class="line"><span class="language-javascript">      info.<span class="property">innerHTML</span> = <span class="string">&#x27;【&#x27;</span> + result.<span class="property">data</span>.<span class="property">origin</span>.<span class="property">dynasty</span> + <span class="string">&#x27;】&#x27;</span> + result.<span class="property">data</span>.<span class="property">origin</span>.<span class="property">author</span> + <span class="string">&#x27;《&#x27;</span> + result.<span class="property">data</span>.<span class="property">origin</span>.<span class="property">title</span> + <span class="string">&#x27;》&#x27;</span></span></span><br><span class="line"><span class="language-javascript">      <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;poem&quot;</span>).<span class="title function_">value</span>(poem);</span></span><br><span class="line"><span class="language-javascript">      <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;info&quot;</span>).<span class="title function_">value</span>(info);  </span></span><br><span class="line"><span class="language-javascript">  &#125;);</span></span><br><span class="line"><span class="language-javascript">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>也可在文本中插入如下代码显示每日一言：  </p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">&quot;hitokoto&quot;</span>&gt;</span>获取中...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://v1.hitokoto.cn/?encode=js&amp;select=%23hitokoto&quot;</span> <span class="attr">defer</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>完！</strong></p>
 ]]></content>
       <categories>
         <category>博客教程</category>
@@ -1170,6 +1130,75 @@
       </tags>
   </entry>
   <entry>
+    <title>数据结构用C实现非递减有序单链表删除重复元素值</title>
+    <url>/posts/29063/</url>
+    <content><![CDATA[<p>参考文章<a href="/My2Blog/2021/03/28/C%E5%AE%9E%E7%8E%B0%E9%9D%9E%E9%80%92%E5%87%8F%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E5%88%A0%E9%99%A4%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0">C实现非递减有序数组删除重复元素值</a>   </p>
+<span id="more"></span>  
+
+<p>具体实现代码如下：  </p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> //声明单链表</span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="type">int</span> data;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span>* <span class="title">next</span>;</span></span><br><span class="line">&#125; Node, *LList;</span><br><span class="line"><span class="type">void</span> <span class="title function_">InitList</span><span class="params">(LList *L)</span> <span class="comment">//初始化单链表</span></span><br><span class="line">&#123;</span><br><span class="line">    *L=(LList)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">    (*L)-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">CFTail</span><span class="params">(LList L)</span> <span class="comment">//用尾插法建立单链表</span></span><br><span class="line">&#123;</span><br><span class="line">    Node *r,*s;</span><br><span class="line">    <span class="type">int</span> flag=<span class="number">1</span>;</span><br><span class="line">    r=L;</span><br><span class="line">    <span class="keyword">while</span>(flag)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> c;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;c);</span><br><span class="line">        <span class="keyword">if</span>(c!=<span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            s=(Node*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">            s-&gt;data=c;</span><br><span class="line">            r-&gt;next=s;</span><br><span class="line">            r=s;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            flag=<span class="number">0</span>;</span><br><span class="line">            r-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">DelSameX</span><span class="params">(LList L)</span> <span class="comment">//删除重复的元素值</span></span><br><span class="line">&#123;</span><br><span class="line">    Node *pre,*p;</span><br><span class="line">    pre=L-&gt;next;</span><br><span class="line">    <span class="comment">//</span></span><br><span class="line">    <span class="keyword">if</span>(pre==<span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        pre=L-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(p=pre-&gt;next;p!=<span class="literal">NULL</span>;p=p-&gt;next)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(p-&gt;data != pre-&gt;data)</span><br><span class="line">            &#123;</span><br><span class="line">                pre-&gt;next=p;</span><br><span class="line">                pre=pre-&gt;next;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">print</span><span class="params">(LList L)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">while</span>(L-&gt;next != <span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        L=L-&gt;next;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,L-&gt;data);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    LList L;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;jian li dan lian biao: \n&quot;</span>);</span><br><span class="line">    InitList(&amp;L);</span><br><span class="line">    CFTail(L);</span><br><span class="line">    DelSameX(L);</span><br><span class="line">    print(L);</span><br><span class="line">    <span class="built_in">putchar</span>(<span class="string">&#x27;\n&#x27;</span>);</span><br><span class="line">    system(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>实现效果如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/DelSame2.JPG">  </p>
+<p>这说明这个程序还是有些许bug，检查原因，发现还是在最后的结点处没有给它指向空，因此它又指向了原先的那个最后的结点，简单点说，就是没有断开原先的尾结点，改变后的程序如下：  </p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> //声明单链表</span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="type">int</span> data;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span>* <span class="title">next</span>;</span></span><br><span class="line">&#125; Node, *LList;</span><br><span class="line"><span class="type">void</span> <span class="title function_">InitList</span><span class="params">(LList *L)</span> <span class="comment">//初始化单链表</span></span><br><span class="line">&#123;</span><br><span class="line">    *L=(LList)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">    (*L)-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">CFTail</span><span class="params">(LList L)</span> <span class="comment">//用尾插法建立单链表</span></span><br><span class="line">&#123;</span><br><span class="line">    Node *r,*s;</span><br><span class="line">    <span class="type">int</span> flag=<span class="number">1</span>;</span><br><span class="line">    r=L;</span><br><span class="line">    <span class="keyword">while</span>(flag)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> c;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;c);</span><br><span class="line">        <span class="keyword">if</span>(c!=<span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            s=(Node*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">            s-&gt;data=c;</span><br><span class="line">            r-&gt;next=s;</span><br><span class="line">            r=s;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            flag=<span class="number">0</span>;</span><br><span class="line">            r-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">DelSameX</span><span class="params">(LList L)</span> <span class="comment">//删除重复的元素值</span></span><br><span class="line">&#123;</span><br><span class="line">    Node *pre,*p;</span><br><span class="line">    pre=L-&gt;next;</span><br><span class="line">    <span class="comment">//</span></span><br><span class="line">    <span class="keyword">if</span>(pre==<span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        pre=L-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(p=pre-&gt;next;p!=<span class="literal">NULL</span>;p=p-&gt;next)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(p-&gt;data != pre-&gt;data)</span><br><span class="line">            &#123;</span><br><span class="line">                pre-&gt;next=p;</span><br><span class="line">                pre=p;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        pre-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">print</span><span class="params">(LList L)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">while</span>(L-&gt;next != <span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        L=L-&gt;next;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,L-&gt;data);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    LList L;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;jian li dan lian biao: \n&quot;</span>);</span><br><span class="line">    InitList(&amp;L);</span><br><span class="line">    CFTail(L);</span><br><span class="line">    DelSameX(L);</span><br><span class="line">    print(L);</span><br><span class="line">    <span class="built_in">putchar</span>(<span class="string">&#x27;\n&#x27;</span>);</span><br><span class="line">    system(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/DelSame2_1.JPG">  </p>
+<p>还有一种写法，一并放在这里。  </p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*删除递增有序单链表中的重复元素*/</span></span><br><span class="line"><span class="comment">/*包含头文件*/</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;ds.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*定义ElemType类型和使用到的物理数据类型*/</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="type">int</span> ElemType;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">Node</span>    /* 结点类型定义 */</span></span><br><span class="line"><span class="class">&#123;</span> ElemType data;</span><br><span class="line">  <span class="class"><span class="keyword">struct</span> <span class="title">Node</span>  * <span class="title">next</span>;</span></span><br><span class="line">&#125;Node, *LinkList;</span><br><span class="line"></span><br><span class="line"><span class="comment">//初始化单链表</span></span><br><span class="line">LinkList <span class="title function_">InitList</span><span class="params">(LinkList *L)</span></span><br><span class="line">&#123;</span><br><span class="line">	*L=(LinkList)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">	(*L)-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*声明物理数据类型的操作（函数）和使用到的其他功能函数*/</span></span><br><span class="line"><span class="comment">/*根据输入的任意次序的字符元素创建升序单链表*/</span></span><br><span class="line">LinkList  <span class="title function_">CreateASCList</span><span class="params">(LinkList L)</span>;</span><br><span class="line"><span class="comment">/*打印链表*/</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">LListPrint</span><span class="params">(LinkList L)</span>;</span><br><span class="line"><span class="comment">/*删除递增有序单链表中的重复元素*/</span></span><br><span class="line"><span class="type">void</span>  <span class="title function_">LListDelElem</span><span class="params">(LinkList L)</span>;</span><br><span class="line"><span class="comment">/*销毁单链表*/</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">ListDestroy</span><span class="params">(LinkList L)</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/*定义物理数据类型的操作（函数）和使用到的其他功能函数*/</span></span><br><span class="line"><span class="comment">/*根据输入的任意次序的字符元素创建升序单链表*/</span></span><br><span class="line">LinkList  <span class="title function_">CreateASCList</span><span class="params">(LinkList L)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;Please input int xing numbers and input -1 means end input: \n&quot;</span>);</span><br><span class="line">	<span class="type">int</span> count=<span class="number">0</span>;</span><br><span class="line">	ElemType ch[MAXSIZE];</span><br><span class="line">	<span class="keyword">do</span> &#123;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;ch[count]);</span><br><span class="line">		count++;</span><br><span class="line">	&#125; <span class="keyword">while</span>(ch[count<span class="number">-1</span>]!=<span class="number">-1</span>);</span><br><span class="line">	<span class="type">int</span> i,j;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;count<span class="number">-1</span>;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span>(j=count<span class="number">-2</span>;j&gt;i;j--)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span>(ch[j<span class="number">-1</span>]&gt;ch[j])</span><br><span class="line">			&#123;</span><br><span class="line">				ElemType t=ch[j<span class="number">-1</span>];</span><br><span class="line">				ch[j<span class="number">-1</span>]=ch[j];</span><br><span class="line">				ch[j]=t;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	Node *r,*s;</span><br><span class="line">	r=L;</span><br><span class="line">	i=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">do</span> &#123;</span><br><span class="line">		s=(Node *)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">		s-&gt;data=ch[i];</span><br><span class="line">		r-&gt;next=s;</span><br><span class="line">		r=s;</span><br><span class="line">		i++;</span><br><span class="line">	&#125; <span class="keyword">while</span>(i&lt;(count<span class="number">-1</span>));</span><br><span class="line">	r-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">	<span class="keyword">return</span> L;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*打印链表*/</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">LListPrint</span><span class="params">(LinkList L)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">while</span>((L-&gt;next)!= <span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        L=L-&gt;next;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,L-&gt;data);</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="built_in">putchar</span>(<span class="string">&#x27;\n&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/*删除递增有序单链表中的重复元素*/</span></span><br><span class="line"><span class="type">void</span>  <span class="title function_">LListDelElem</span><span class="params">(LinkList L)</span></span><br><span class="line">&#123;</span><br><span class="line">	Node *pre,*p;</span><br><span class="line">    pre=L-&gt;next;</span><br><span class="line">    <span class="keyword">if</span>(pre==<span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        pre=L-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(p=pre-&gt;next;p!=<span class="literal">NULL</span>;p=p-&gt;next)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(p-&gt;data != pre-&gt;data)</span><br><span class="line">            &#123;</span><br><span class="line">                pre-&gt;next=p;</span><br><span class="line">                pre=pre-&gt;next;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">		pre-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*销毁单链表*/</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">ListDestroy</span><span class="params">(LinkList L)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">free</span>(L);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*定义主函数，通过主函数调用各物理数据类型的操作和功能函数*/</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">	LinkList a;</span><br><span class="line">	InitList(&amp;a);</span><br><span class="line">	a=CreateASCList(a);</span><br><span class="line">	LListPrint(a);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;shan chu chong fu yuan su hou\n&quot;</span>);	</span><br><span class="line">	LListDelElem(a);</span><br><span class="line">	LListPrint(a);</span><br><span class="line">	ListDestroy(a);</span><br><span class="line">	system(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>其中ds.h文件定义如下：  </p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span>		TRUE	1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span>		FALSE	0</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span>		OK		1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span>		ERROR	0</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span>		MAXSIZE	100</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>完！</strong></p>
+]]></content>
+      <categories>
+        <category>数据结构</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>安装Node.js</title>
+    <url>/posts/11257/</url>
+    <content><![CDATA[<h6 id="1-下载"><a href="#1-下载" class="headerlink" title="1.下载"></a>1.下载</h6><p><a href="https://nodejs.org/zh-cn/download">官网下载地址</a>     </p>
+<span id="more"></span>  
+
+<h6 id="2-安装"><a href="#2-安装" class="headerlink" title="2.安装"></a>2.安装</h6><p>如果不想修改安装目录的话，一路next即可，修改安装目录后也是一路next即可    </p>
+<h6 id="3-检验"><a href="#3-检验" class="headerlink" title="3.检验"></a>3.检验</h6><p>在cmd窗口中输入如下指令：    </p>
+<ol>
+<li><code>node -v</code><br>2. <code>npm -v</code></li>
+</ol>
+<p>显示结果如下代表安装成功：<img src="http://qiniu.iloveszy.com/blog/2023/node%20-v.png">     </p>
+<h6 id="4-配值环境变量"><a href="#4-配值环境变量" class="headerlink" title="4.配值环境变量"></a>4.配值环境变量</h6><ol>
+<li>首先在nodejs这个文件夹(即刚刚安装node.js所在目录下)建立”node_global”和”node_cache”两个文件夹，如图：<img src="http://qiniu.iloveszy.com/blog/2023/node_global.png">    </li>
+<li>打开cmd(是以管理员身份运行，我以前没有以管理员身份运行，后面就会出现错误)，输入：</li>
+</ol>
+<ul>
+<li><code>npm config set prefix &quot;你的路径\nodejs\node_global&quot;</code>  回车   </li>
+<li><code>npm config set cache &quot;你的路径\nodejs\node_cache&quot;</code>  回车   </li>
+<li>然后关闭cmd窗口，使用win+r键输入control打开控制面板，找到系统-高级系统设置-高级-环境变量，在<em>系统变量</em>下新建变量 <code>NODE_PATH</code> ，变量值填写：<br><code>你的路径\nodejs\node_global\node_modules</code>     </li>
+<li>在变量path下新建新的路径：<img src="http://qiniu.iloveszy.com/blog/2023/node%20path.png"></li>
+</ul>
+<h6 id="5-可能出现的错误"><a href="#5-可能出现的错误" class="headerlink" title="5.可能出现的错误"></a>5.可能出现的错误</h6><ol>
+<li>我在win11上遇到过安装hexo失败的问题，原因是权限问题，即之前没用管理员模式打开cmd设置，用户无权访问node_global、node_cache和node_modules文件夹，解决办法是手动更改权限，右键node_cache、node_global、node_modules，属性，安全，更改Authenticated Users的权限，主要是允许写入，然后应用后再确定，如图所示：</li>
+</ol>
+<p><img src="http://qiniu.iloveszy.com/blog/2023/%E6%9B%B4%E6%94%B9node_global%E6%9D%83%E9%99%90.png"></p>
+<ol start="2">
+<li>打开cmd窗口，如果你已经安装hexo，输入<code>hexo -v</code>，会出现如下所示，即代表你已经安装成功hexo。</li>
+</ol>
+<p><img src="http://qiniu.iloveszy.com/blog/2023/hexo%20-v.png"></p>
+<p>若出现既不是内部也不是外部指令，就需要设置hexo的路径，如图所示，系统-高级系统设置-高级-环境变量-系统变量-Path，新建路径，如图所示，<em>注意下面这个是设置你的hexo路径，我是因为自定义安装node.js，所以需要手动设置hexo指令路径，你需要找到它，并path上添加这个路径。</em>      </p>
+<p><img src="http://qiniu.iloveszy.com/blog/2023/%E6%B7%BB%E5%8A%A0hexo%E8%B7%AF%E5%BE%84.png"></p>
+]]></content>
+      <categories>
+        <category>博客教程</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>新年祝福</title>
     <url>/posts/47961/</url>
     <content><![CDATA[<div class="poem-wrap">
@@ -1197,35 +1226,6 @@
       </categories>
       <tags>
         <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数据结构用C实现非递减有序单链表删除重复元素值</title>
-    <url>/posts/29063/</url>
-    <content><![CDATA[<p>参考文章<a href="/My2Blog/2021/03/28/C%E5%AE%9E%E7%8E%B0%E9%9D%9E%E9%80%92%E5%87%8F%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E5%88%A0%E9%99%A4%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0">C实现非递减有序数组删除重复元素值</a>   </p>
-<span id="more"></span>  
-
-<p>具体实现代码如下：  </p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> //声明单链表</span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="type">int</span> data;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span>* <span class="title">next</span>;</span></span><br><span class="line">&#125; Node, *LList;</span><br><span class="line"><span class="type">void</span> <span class="title function_">InitList</span><span class="params">(LList *L)</span> <span class="comment">//初始化单链表</span></span><br><span class="line">&#123;</span><br><span class="line">    *L=(LList)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">    (*L)-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">CFTail</span><span class="params">(LList L)</span> <span class="comment">//用尾插法建立单链表</span></span><br><span class="line">&#123;</span><br><span class="line">    Node *r,*s;</span><br><span class="line">    <span class="type">int</span> flag=<span class="number">1</span>;</span><br><span class="line">    r=L;</span><br><span class="line">    <span class="keyword">while</span>(flag)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> c;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;c);</span><br><span class="line">        <span class="keyword">if</span>(c!=<span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            s=(Node*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">            s-&gt;data=c;</span><br><span class="line">            r-&gt;next=s;</span><br><span class="line">            r=s;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            flag=<span class="number">0</span>;</span><br><span class="line">            r-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">DelSameX</span><span class="params">(LList L)</span> <span class="comment">//删除重复的元素值</span></span><br><span class="line">&#123;</span><br><span class="line">    Node *pre,*p;</span><br><span class="line">    pre=L-&gt;next;</span><br><span class="line">    <span class="comment">//</span></span><br><span class="line">    <span class="keyword">if</span>(pre==<span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        pre=L-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(p=pre-&gt;next;p!=<span class="literal">NULL</span>;p=p-&gt;next)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(p-&gt;data != pre-&gt;data)</span><br><span class="line">            &#123;</span><br><span class="line">                pre-&gt;next=p;</span><br><span class="line">                pre=pre-&gt;next;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">print</span><span class="params">(LList L)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">while</span>(L-&gt;next != <span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        L=L-&gt;next;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,L-&gt;data);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    LList L;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;jian li dan lian biao: \n&quot;</span>);</span><br><span class="line">    InitList(&amp;L);</span><br><span class="line">    CFTail(L);</span><br><span class="line">    DelSameX(L);</span><br><span class="line">    print(L);</span><br><span class="line">    <span class="built_in">putchar</span>(<span class="string">&#x27;\n&#x27;</span>);</span><br><span class="line">    system(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>实现效果如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/DelSame2.JPG">  </p>
-<p>这说明这个程序还是有些许bug，检查原因，发现还是在最后的结点处没有给它指向空，因此它又指向了原先的那个最后的结点，简单点说，就是没有断开原先的尾结点，改变后的程序如下：  </p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> //声明单链表</span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="type">int</span> data;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span>* <span class="title">next</span>;</span></span><br><span class="line">&#125; Node, *LList;</span><br><span class="line"><span class="type">void</span> <span class="title function_">InitList</span><span class="params">(LList *L)</span> <span class="comment">//初始化单链表</span></span><br><span class="line">&#123;</span><br><span class="line">    *L=(LList)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">    (*L)-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">CFTail</span><span class="params">(LList L)</span> <span class="comment">//用尾插法建立单链表</span></span><br><span class="line">&#123;</span><br><span class="line">    Node *r,*s;</span><br><span class="line">    <span class="type">int</span> flag=<span class="number">1</span>;</span><br><span class="line">    r=L;</span><br><span class="line">    <span class="keyword">while</span>(flag)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> c;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;c);</span><br><span class="line">        <span class="keyword">if</span>(c!=<span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            s=(Node*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">            s-&gt;data=c;</span><br><span class="line">            r-&gt;next=s;</span><br><span class="line">            r=s;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            flag=<span class="number">0</span>;</span><br><span class="line">            r-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">DelSameX</span><span class="params">(LList L)</span> <span class="comment">//删除重复的元素值</span></span><br><span class="line">&#123;</span><br><span class="line">    Node *pre,*p;</span><br><span class="line">    pre=L-&gt;next;</span><br><span class="line">    <span class="comment">//</span></span><br><span class="line">    <span class="keyword">if</span>(pre==<span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        pre=L-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(p=pre-&gt;next;p!=<span class="literal">NULL</span>;p=p-&gt;next)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(p-&gt;data != pre-&gt;data)</span><br><span class="line">            &#123;</span><br><span class="line">                pre-&gt;next=p;</span><br><span class="line">                pre=p;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        pre-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">print</span><span class="params">(LList L)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">while</span>(L-&gt;next != <span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        L=L-&gt;next;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,L-&gt;data);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    LList L;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;jian li dan lian biao: \n&quot;</span>);</span><br><span class="line">    InitList(&amp;L);</span><br><span class="line">    CFTail(L);</span><br><span class="line">    DelSameX(L);</span><br><span class="line">    print(L);</span><br><span class="line">    <span class="built_in">putchar</span>(<span class="string">&#x27;\n&#x27;</span>);</span><br><span class="line">    system(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/DelSame2_1.JPG">  </p>
-<p>还有一种写法，一并放在这里。  </p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*删除递增有序单链表中的重复元素*/</span></span><br><span class="line"><span class="comment">/*包含头文件*/</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;ds.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*定义ElemType类型和使用到的物理数据类型*/</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="type">int</span> ElemType;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">Node</span>    /* 结点类型定义 */</span></span><br><span class="line"><span class="class">&#123;</span> ElemType data;</span><br><span class="line">  <span class="class"><span class="keyword">struct</span> <span class="title">Node</span>  * <span class="title">next</span>;</span></span><br><span class="line">&#125;Node, *LinkList;</span><br><span class="line"></span><br><span class="line"><span class="comment">//初始化单链表</span></span><br><span class="line">LinkList <span class="title function_">InitList</span><span class="params">(LinkList *L)</span></span><br><span class="line">&#123;</span><br><span class="line">	*L=(LinkList)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">	(*L)-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*声明物理数据类型的操作（函数）和使用到的其他功能函数*/</span></span><br><span class="line"><span class="comment">/*根据输入的任意次序的字符元素创建升序单链表*/</span></span><br><span class="line">LinkList  <span class="title function_">CreateASCList</span><span class="params">(LinkList L)</span>;</span><br><span class="line"><span class="comment">/*打印链表*/</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">LListPrint</span><span class="params">(LinkList L)</span>;</span><br><span class="line"><span class="comment">/*删除递增有序单链表中的重复元素*/</span></span><br><span class="line"><span class="type">void</span>  <span class="title function_">LListDelElem</span><span class="params">(LinkList L)</span>;</span><br><span class="line"><span class="comment">/*销毁单链表*/</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">ListDestroy</span><span class="params">(LinkList L)</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/*定义物理数据类型的操作（函数）和使用到的其他功能函数*/</span></span><br><span class="line"><span class="comment">/*根据输入的任意次序的字符元素创建升序单链表*/</span></span><br><span class="line">LinkList  <span class="title function_">CreateASCList</span><span class="params">(LinkList L)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;Please input int xing numbers and input -1 means end input: \n&quot;</span>);</span><br><span class="line">	<span class="type">int</span> count=<span class="number">0</span>;</span><br><span class="line">	ElemType ch[MAXSIZE];</span><br><span class="line">	<span class="keyword">do</span> &#123;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;ch[count]);</span><br><span class="line">		count++;</span><br><span class="line">	&#125; <span class="keyword">while</span>(ch[count<span class="number">-1</span>]!=<span class="number">-1</span>);</span><br><span class="line">	<span class="type">int</span> i,j;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;count<span class="number">-1</span>;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span>(j=count<span class="number">-2</span>;j&gt;i;j--)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span>(ch[j<span class="number">-1</span>]&gt;ch[j])</span><br><span class="line">			&#123;</span><br><span class="line">				ElemType t=ch[j<span class="number">-1</span>];</span><br><span class="line">				ch[j<span class="number">-1</span>]=ch[j];</span><br><span class="line">				ch[j]=t;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	Node *r,*s;</span><br><span class="line">	r=L;</span><br><span class="line">	i=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">do</span> &#123;</span><br><span class="line">		s=(Node *)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">		s-&gt;data=ch[i];</span><br><span class="line">		r-&gt;next=s;</span><br><span class="line">		r=s;</span><br><span class="line">		i++;</span><br><span class="line">	&#125; <span class="keyword">while</span>(i&lt;(count<span class="number">-1</span>));</span><br><span class="line">	r-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">	<span class="keyword">return</span> L;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*打印链表*/</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">LListPrint</span><span class="params">(LinkList L)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">while</span>((L-&gt;next)!= <span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        L=L-&gt;next;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,L-&gt;data);</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="built_in">putchar</span>(<span class="string">&#x27;\n&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/*删除递增有序单链表中的重复元素*/</span></span><br><span class="line"><span class="type">void</span>  <span class="title function_">LListDelElem</span><span class="params">(LinkList L)</span></span><br><span class="line">&#123;</span><br><span class="line">	Node *pre,*p;</span><br><span class="line">    pre=L-&gt;next;</span><br><span class="line">    <span class="keyword">if</span>(pre==<span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        pre=L-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(p=pre-&gt;next;p!=<span class="literal">NULL</span>;p=p-&gt;next)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(p-&gt;data != pre-&gt;data)</span><br><span class="line">            &#123;</span><br><span class="line">                pre-&gt;next=p;</span><br><span class="line">                pre=pre-&gt;next;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">		pre-&gt;next=<span class="literal">NULL</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*销毁单链表*/</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">ListDestroy</span><span class="params">(LinkList L)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">free</span>(L);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*定义主函数，通过主函数调用各物理数据类型的操作和功能函数*/</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">	LinkList a;</span><br><span class="line">	InitList(&amp;a);</span><br><span class="line">	a=CreateASCList(a);</span><br><span class="line">	LListPrint(a);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;shan chu chong fu yuan su hou\n&quot;</span>);	</span><br><span class="line">	LListDelElem(a);</span><br><span class="line">	LListPrint(a);</span><br><span class="line">	ListDestroy(a);</span><br><span class="line">	system(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>其中ds.h文件定义如下：  </p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span>		TRUE	1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span>		FALSE	0</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span>		OK		1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span>		ERROR	0</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span>		MAXSIZE	100</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>完！</strong></p>
-]]></content>
-      <categories>
-        <category>数据结构</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
       </tags>
   </entry>
   <entry>
@@ -1333,6 +1333,37 @@
       </tags>
   </entry>
   <entry>
+    <title>编写算法求一元多项式的值</title>
+    <url>/posts/4387/</url>
+    <content><![CDATA[<p>题目如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/Czuoye1.JPG"></p>
+<span id="more"></span>  
+
+<p>废话不多说，直接上代码：  </p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> N 10</span></span><br><span class="line"><span class="comment">/* 使用迭代法重写第一次作业算法题 */</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">QiuMi</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> a)</span> </span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">return</span> a*x;</span><br><span class="line">&#125;   </span><br><span class="line"><span class="type">void</span> <span class="title function_">PrintPn</span><span class="params">(<span class="type">int</span> *a,<span class="type">int</span> n,<span class="type">int</span> x)</span> <span class="comment">/* 负责打印结果，以及调用求幂函数参与运算 */</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> Pn=<span class="number">0</span>,count=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;n;i++) </span><br><span class="line">    &#123;</span><br><span class="line">        Pn+=(a[i]*QiuMi(x,count));<span class="comment">//该语句一共执行n-1次</span></span><br><span class="line">        count=QiuMi(x,count);</span><br><span class="line">    &#125;</span><br><span class="line">    Pn+=a[<span class="number">0</span>];<span class="comment">//执行1次</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Pn(%d)=%d\n&quot;</span>,x,Pn);</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> a[N],x;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Please input %d numbers: \n&quot;</span>,N);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;N;i++) </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;a[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Please input X0: \n&quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;x);</span><br><span class="line">    PrintPn(a,N,x);</span><br><span class="line">    system(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>程序运行结果如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/CdiyizhangZuoYe.JPG">  </p>
+<p>正确答案如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/Czuoye1DaAn.JPG"></p>
+]]></content>
+      <categories>
+        <category>C</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>联想工程师内部专用工具</title>
+    <url>/posts/52374/</url>
+    <content><![CDATA[<p>分享一篇公众号文章：<a href="https://mp.weixin.qq.com/s/IqHR3zKrKk2c7NCCGaxvZg">内部泄露软件！足足两百多款！</a>，再附上下载链接：<a href="https://pan.baidu.com/s/1O0IlN1zx0GZUmDIAk8QWuw">https://pan.baidu.com/s/1O0IlN1zx0GZUmDIAk8QWuw</a>，提取码：qqve  </p>
+<span id="more"></span>  ]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>算法实现从顺序表中删除所有元素值介于x和y之间的所有元素且要求空间复杂度为O(1)</title>
     <url>/posts/24179/</url>
     <content><![CDATA[<p><strong>题目1：</strong>设计一个高效的算法，从顺序表L中删除所有元素值介于x和y之间的所有元素，要求空间复杂度为O(1)，即算法最多只额外使用一个元素空间。函数原型如下所示：  </p>
@@ -1392,34 +1423,15 @@
       </tags>
   </entry>
   <entry>
-    <title>编写算法求一元多项式的值</title>
-    <url>/posts/4387/</url>
-    <content><![CDATA[<p>题目如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/Czuoye1.JPG"></p>
-<span id="more"></span>  
-
-<p>废话不多说，直接上代码：  </p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> N 10</span></span><br><span class="line"><span class="comment">/* 使用迭代法重写第一次作业算法题 */</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">QiuMi</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> a)</span> </span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">return</span> a*x;</span><br><span class="line">&#125;   </span><br><span class="line"><span class="type">void</span> <span class="title function_">PrintPn</span><span class="params">(<span class="type">int</span> *a,<span class="type">int</span> n,<span class="type">int</span> x)</span> <span class="comment">/* 负责打印结果，以及调用求幂函数参与运算 */</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> Pn=<span class="number">0</span>,count=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;n;i++) </span><br><span class="line">    &#123;</span><br><span class="line">        Pn+=(a[i]*QiuMi(x,count));<span class="comment">//该语句一共执行n-1次</span></span><br><span class="line">        count=QiuMi(x,count);</span><br><span class="line">    &#125;</span><br><span class="line">    Pn+=a[<span class="number">0</span>];<span class="comment">//执行1次</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Pn(%d)=%d\n&quot;</span>,x,Pn);</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> a[N],x;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Please input %d numbers: \n&quot;</span>,N);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;N;i++) </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;a[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Please input X0: \n&quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;x);</span><br><span class="line">    PrintPn(a,N,x);</span><br><span class="line">    system(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>程序运行结果如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/CdiyizhangZuoYe.JPG">  </p>
-<p>正确答案如图：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/Czuoye1DaAn.JPG"></p>
-]]></content>
-      <categories>
-        <category>C</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>联想工程师内部专用工具</title>
-    <url>/posts/52374/</url>
-    <content><![CDATA[<p>分享一篇公众号文章：<a href="https://mp.weixin.qq.com/s/IqHR3zKrKk2c7NCCGaxvZg">内部泄露软件！足足两百多款！</a>，再附上下载链接：<a href="https://pan.baidu.com/s/1O0IlN1zx0GZUmDIAk8QWuw">https://pan.baidu.com/s/1O0IlN1zx0GZUmDIAk8QWuw</a>，提取码：qqve  </p>
+    <title>虎牙云游戏手机端体验</title>
+    <url>/posts/59253/</url>
+    <content><![CDATA[<p>不得不说，体验云游戏的感觉就是速度快，延迟特别小，有个缺点就是手机不太好操作PC端游戏，反应也挺快的，就是人的思路没有跟上，哈哈😂，我用手机打了两盘联盟，真心想说，我太难了，还是不能适应它的操作啊，暂且就这样吧，我觉得云游戏可能是以后游戏的一个发展趋势，普通人也许不需要配置很好的电脑就能玩要求很高的游戏，同样，手机也是如此，让我们拭目以待吧！但是不得不说，云游戏的确还有很长一段路要走。 </p>
 <span id="more"></span>  ]]></content>
       <categories>
         <category>随笔</category>
       </categories>
       <tags>
-        <tag>学习</tag>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -1500,18 +1512,6 @@
       </tags>
   </entry>
   <entry>
-    <title>虎牙云游戏手机端体验</title>
-    <url>/posts/59253/</url>
-    <content><![CDATA[<p>不得不说，体验云游戏的感觉就是速度快，延迟特别小，有个缺点就是手机不太好操作PC端游戏，反应也挺快的，就是人的思路没有跟上，哈哈😂，我用手机打了两盘联盟，真心想说，我太难了，还是不能适应它的操作啊，暂且就这样吧，我觉得云游戏可能是以后游戏的一个发展趋势，普通人也许不需要配置很好的电脑就能玩要求很高的游戏，同样，手机也是如此，让我们拭目以待吧！但是不得不说，云游戏的确还有很长一段路要走。 </p>
-<span id="more"></span>  ]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>计算机组成原理定点除法运算</title>
     <url>/posts/41291/</url>
     <content><![CDATA[<p>对于定点除法运算，我认为我只掌握了一点皮毛，真正的精髓我还没触碰到，最重要的是，我发现老师讲的与书上说的有一点出入，这令我很不解，第一次感到很困惑，哎，有点难受！  </p>
@@ -1535,6 +1535,34 @@
       </categories>
       <tags>
         <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>谷歌镜像网站</title>
+    <url>/posts/50687/</url>
+    <content><![CDATA[<div class="poem-wrap">
+  <div class="poem-border poem-left"></div>
+  <div class="poem-border poem-right"></div>
+    <h1>诗词</h1>
+    <div>
+    <span id="jinrishici-sentence">小荷才露尖尖角，早有蜻蜓立上头。</span></div>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+</div>
+
+<span id="more"></span>
+
+<p>网址：<a href="https://jia110.github.io/">https://jia110.github.io/</a>. <a href="http://gufenso.coderschool.cn/">http://gufenso.coderschool.cn/</a>.</p>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ol>
+<li><a href="https://www.wrfou.com/google.html">2022谷歌镜像网站大全，教你无限制使用谷歌搜索及谷歌学术科学上网查阅资料</a>.</li>
+<li><a href="https://funletu.com/1158/.html">谷歌镜像站大全</a>.</li>
+</ol>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+        <tag>google</tag>
       </tags>
   </entry>
   <entry>
@@ -1577,34 +1605,6 @@
       </categories>
       <tags>
         <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>谷歌镜像网站</title>
-    <url>/posts/50687/</url>
-    <content><![CDATA[<div class="poem-wrap">
-  <div class="poem-border poem-left"></div>
-  <div class="poem-border poem-right"></div>
-    <h1>诗词</h1>
-    <div>
-    <span id="jinrishici-sentence">小荷才露尖尖角，早有蜻蜓立上头。</span></div>
-<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-</div>
-
-<span id="more"></span>
-
-<p>网址：<a href="https://jia110.github.io/">https://jia110.github.io/</a>. <a href="http://gufenso.coderschool.cn/">http://gufenso.coderschool.cn/</a>.</p>
-<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h5><ol>
-<li><a href="https://www.wrfou.com/google.html">2022谷歌镜像网站大全，教你无限制使用谷歌搜索及谷歌学术科学上网查阅资料</a>.</li>
-<li><a href="https://funletu.com/1158/.html">谷歌镜像站大全</a>.</li>
-</ol>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-        <tag>google</tag>
       </tags>
   </entry>
 </search>

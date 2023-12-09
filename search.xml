@@ -42,6 +42,22 @@
       </tags>
   </entry>
   <entry>
+    <title>Java finally和return的执行顺序(非常重要)</title>
+    <url>/posts/28311/</url>
+    <content><![CDATA[<p>分享两篇文章，我个人认为好！  </p>
+<p><a href="https://blog.csdn.net/coder_no/article/details/83581442?utm_source=app&app_version=4.5.8">《java return与finally执行顺序测试》</a>  <a href="https://blog.csdn.net/qq_36299025/article/details/89435275?utm_source=app&app_version=4.5.8">《Java中finally和return执行顺序》</a>  </p>
+<span id="more"></span>  
+
+<p><strong>完！</strong>  </p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ENIAC计算机与ABC计算机的关于第一台计算机的十余年之争</title>
     <url>/posts/20094/</url>
     <content><![CDATA[<p>分享一篇文章<a href="https://baijiahao.baidu.com/s?id=1645658087402989097&wfr=spider&for=pc">ENIAC计算机与ABC计算机的关于第一台计算机的十余年之争</a>。</p>
@@ -102,13 +118,13 @@
       </tags>
   </entry>
   <entry>
-    <title>Java finally和return的执行顺序(非常重要)</title>
-    <url>/posts/28311/</url>
-    <content><![CDATA[<p>分享两篇文章，我个人认为好！  </p>
-<p><a href="https://blog.csdn.net/coder_no/article/details/83581442?utm_source=app&app_version=4.5.8">《java return与finally执行顺序测试》</a>  <a href="https://blog.csdn.net/qq_36299025/article/details/89435275?utm_source=app&app_version=4.5.8">《Java中finally和return执行顺序》</a>  </p>
+    <title>Java使用二维数组输出杨辉三角</title>
+    <url>/posts/9719/</url>
+    <content><![CDATA[<p>代码如下：    </p>
 <span id="more"></span>  
 
-<p><strong>完！</strong>  </p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ArrayTest5</span> &#123;</span><br><span class="line">	<span class="comment">/*</span></span><br><span class="line"><span class="comment">	 * 声明num()方法，在 num() 方法中传入两个参数，即 x 和 y。</span></span><br><span class="line"><span class="comment">	 * 其中，x 表示行，y 表示列。num() 方法用于计算第 x 行第 y 列的数值。</span></span><br><span class="line"><span class="comment">	 * 代码如下：</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">num</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y)</span>	&#123;</span><br><span class="line">		<span class="keyword">if</span>(y==<span class="number">1</span> || y==x)</span><br><span class="line">			<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">		<span class="type">int</span> c=num(x-<span class="number">1</span>,y-<span class="number">1</span>)+num(x-<span class="number">1</span>,y);</span><br><span class="line">		<span class="keyword">return</span> c;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>	&#123;</span><br><span class="line">		<span class="meta">@SuppressWarnings(&quot;resource&quot;)</span></span><br><span class="line">		Scanner input=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		System.out.print(<span class="string">&quot;输入打印杨辉三角形的行数：&quot;</span>);</span><br><span class="line">		<span class="type">int</span> row=input.nextInt();</span><br><span class="line">		<span class="type">int</span>[][] yhsj=<span class="keyword">new</span> <span class="title class_">int</span>[row+<span class="number">1</span>][row+<span class="number">1</span>];</span><br><span class="line">		<span class="comment">//定义二维数组，因为第0行不用，所以数组空间大小要+1</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=row;i++)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=i;j++)	&#123;</span><br><span class="line">				yhsj[i][j]=num(i,j);</span><br><span class="line">				<span class="comment">//通过数组来存储每行的数值</span></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=row;i++)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=row-i;j++)	&#123;</span><br><span class="line">				System.out.print(<span class="string">&quot; &quot;</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=i;j++)	&#123;</span><br><span class="line">				System.out.print(yhsj[i][j] + <span class="string">&quot; &quot;</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			System.out.println();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>保存，输出结果如图示：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/yhsj.JPG">  </p>
 ]]></content>
       <categories>
         <category>Java</category>
@@ -185,13 +201,12 @@
       </tags>
   </entry>
   <entry>
-    <title>Java使用二维数组输出杨辉三角</title>
-    <url>/posts/9719/</url>
-    <content><![CDATA[<p>代码如下：    </p>
+    <title>Java抽象类和接口的联系与区别</title>
+    <url>/posts/4792/</url>
+    <content><![CDATA[<p>分享一篇文章：<a href="https://blog.csdn.net/qq_33591903/article/details/81709511?utm_source=app&app_version=4.5.7">【JAVA】抽象类和接口的联系与区别</a>，留着以后不懂时多拿出来看看。  </p>
 <span id="more"></span>  
 
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ArrayTest5</span> &#123;</span><br><span class="line">	<span class="comment">/*</span></span><br><span class="line"><span class="comment">	 * 声明num()方法，在 num() 方法中传入两个参数，即 x 和 y。</span></span><br><span class="line"><span class="comment">	 * 其中，x 表示行，y 表示列。num() 方法用于计算第 x 行第 y 列的数值。</span></span><br><span class="line"><span class="comment">	 * 代码如下：</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">num</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y)</span>	&#123;</span><br><span class="line">		<span class="keyword">if</span>(y==<span class="number">1</span> || y==x)</span><br><span class="line">			<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">		<span class="type">int</span> c=num(x-<span class="number">1</span>,y-<span class="number">1</span>)+num(x-<span class="number">1</span>,y);</span><br><span class="line">		<span class="keyword">return</span> c;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>	&#123;</span><br><span class="line">		<span class="meta">@SuppressWarnings(&quot;resource&quot;)</span></span><br><span class="line">		Scanner input=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		System.out.print(<span class="string">&quot;输入打印杨辉三角形的行数：&quot;</span>);</span><br><span class="line">		<span class="type">int</span> row=input.nextInt();</span><br><span class="line">		<span class="type">int</span>[][] yhsj=<span class="keyword">new</span> <span class="title class_">int</span>[row+<span class="number">1</span>][row+<span class="number">1</span>];</span><br><span class="line">		<span class="comment">//定义二维数组，因为第0行不用，所以数组空间大小要+1</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=row;i++)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=i;j++)	&#123;</span><br><span class="line">				yhsj[i][j]=num(i,j);</span><br><span class="line">				<span class="comment">//通过数组来存储每行的数值</span></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=row;i++)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=row-i;j++)	&#123;</span><br><span class="line">				System.out.print(<span class="string">&quot; &quot;</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=i;j++)	&#123;</span><br><span class="line">				System.out.print(yhsj[i][j] + <span class="string">&quot; &quot;</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			System.out.println();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>保存，输出结果如图示：<img src="https://cdn.jsdelivr.net/gh/Li-hui327/PhotoBed/img/yhsj.JPG">  </p>
+<p><strong>完！</strong>  </p>
 ]]></content>
       <categories>
         <category>Java</category>
@@ -209,21 +224,6 @@
 <ol>
 <li>Java数字转人民币读法，代码如下：      <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ArrayTest2</span> &#123;</span><br><span class="line">	<span class="keyword">private</span> String[] str1= &#123;<span class="string">&quot;零&quot;</span>,<span class="string">&quot;壹&quot;</span>,<span class="string">&quot;贰&quot;</span>,<span class="string">&quot;叁&quot;</span>,<span class="string">&quot;肆&quot;</span>,<span class="string">&quot;伍&quot;</span>,</span><br><span class="line">			<span class="string">&quot;陆&quot;</span>,<span class="string">&quot;柒&quot;</span>,<span class="string">&quot;捌&quot;</span>,<span class="string">&quot;玖&quot;</span>&#125;;</span><br><span class="line">	<span class="keyword">private</span> String[] str2= &#123;<span class="string">&quot;十&quot;</span>,<span class="string">&quot;百&quot;</span>,<span class="string">&quot;千&quot;</span>&#125;;</span><br><span class="line">	<span class="keyword">private</span> String[] str3= &#123;<span class="string">&quot;角&quot;</span>,<span class="string">&quot;分&quot;</span>&#125;;</span><br><span class="line">	<span class="keyword">private</span> String[] str4= &#123;<span class="string">&quot;元&quot;</span>,<span class="string">&quot;万&quot;</span>,<span class="string">&quot;亿&quot;</span>&#125;;</span><br><span class="line">	<span class="keyword">private</span> String <span class="title function_">divadeZheng</span><span class="params">(<span class="type">double</span> num)</span>	&#123;</span><br><span class="line">		<span class="comment">//把浮点数分解成整数部分字符串</span></span><br><span class="line">		<span class="type">long</span> zheng=(<span class="type">long</span>)num;</span><br><span class="line">		<span class="keyword">return</span> String.valueOf(zheng);<span class="comment">//整型转换成字符串</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">private</span> String <span class="title function_">divadeXiao</span><span class="params">(<span class="type">double</span> num)</span>	&#123;</span><br><span class="line">		<span class="comment">//把浮点数分解成小数部分字符串</span></span><br><span class="line">		<span class="type">long</span> zheng=(<span class="type">long</span>)num;</span><br><span class="line">		<span class="type">long</span> xiao=Math.round((num-zheng)*<span class="number">100</span>);</span><br><span class="line">		<span class="comment">//得到浮点数的小数部分</span></span><br><span class="line">		<span class="keyword">return</span> String.valueOf(xiao);<span class="comment">//返回字符串</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">private</span> String <span class="title function_">toStr1</span><span class="params">(String xiao)</span>	&#123;</span><br><span class="line">		<span class="comment">//把小数部分的数字字符串转换成汉字字符串</span></span><br><span class="line">		String re1=<span class="string">&quot;&quot;</span>;</span><br><span class="line">		<span class="type">int</span> len=xiao.length();</span><br><span class="line">		<span class="keyword">if</span>(len==<span class="number">2</span>)	&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">2</span>;i++)	&#123;</span><br><span class="line">				<span class="type">int</span> num=xiao.charAt(i)-<span class="number">48</span>;<span class="comment">//把字符串转换成数字</span></span><br><span class="line">				<span class="keyword">if</span>(num!=<span class="number">0</span>)	&#123;</span><br><span class="line">					re1+=str1[num]+str3[i];</span><br><span class="line">					<span class="comment">//数字不为零则需要加单位，为零则不操作</span></span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(len==<span class="number">1</span> &amp;&amp; xiao.charAt(<span class="number">0</span>)!=<span class="string">&#x27;0&#x27;</span>)	&#123;</span><br><span class="line">			<span class="comment">//若长度为1，例：12.09小数部分为9</span></span><br><span class="line">			<span class="type">int</span> num=xiao.charAt(<span class="number">0</span>)-<span class="number">48</span>;</span><br><span class="line">			re1+=str1[num]+str3[<span class="number">1</span>];</span><br><span class="line">			<span class="comment">//此时只有分，加单位str3[1]</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> re1;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">private</span> String <span class="title function_">toStr</span><span class="params">(String zheng)</span>	&#123;</span><br><span class="line">		<span class="comment">//把一个四位的数字字符串变成汉字字符串</span></span><br><span class="line">		String re=<span class="string">&quot;&quot;</span>;</span><br><span class="line">		<span class="type">int</span> j=<span class="number">0</span>;</span><br><span class="line">		<span class="type">int</span> lenz=zheng.length();</span><br><span class="line">		<span class="keyword">if</span>(zheng.charAt(<span class="number">0</span>)==<span class="string">&#x27;0&#x27;</span> &amp;&amp; lenz==<span class="number">1</span>)	&#123;</span><br><span class="line">			<span class="comment">//特殊情况如输入0.89时，整数字符串为0的处理</span></span><br><span class="line">			re+=<span class="string">&quot;零&quot;</span>;</span><br><span class="line">			<span class="keyword">return</span> re;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;lenz;i++)	&#123;<span class="comment">//遍历每一位数字</span></span><br><span class="line">			<span class="type">int</span> num=zheng.charAt(i)-<span class="number">48</span>;</span><br><span class="line">			<span class="keyword">if</span>(i!=lenz-<span class="number">1</span> &amp;&amp; num!=<span class="number">0</span>)	&#123;</span><br><span class="line">				<span class="comment">//若不是最后一位数字且数字不为零，则需要添加单位</span></span><br><span class="line">				re+=str1[num]+str2[lenz-<span class="number">2</span>-i];</span><br><span class="line">			&#125;	<span class="keyword">else</span> <span class="keyword">if</span>(!(num==<span class="number">0</span> &amp;&amp; re.charAt(j-<span class="number">1</span>)==<span class="string">&#x27;零&#x27;</span>)</span><br><span class="line">					)	&#123;</span><br><span class="line">				<span class="comment">//对于连续0出现的特殊处理，如009，第二个零不进行操作</span></span><br><span class="line">				re+=str1[num];</span><br><span class="line">			&#125;</span><br><span class="line">			j=re.length();</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(re.charAt(j-<span class="number">1</span>)==<span class="string">&#x27;零&#x27;</span>)	&#123;</span><br><span class="line">			<span class="comment">//对特殊情况最后一位是零的处理，如1990，删除掉末尾的零</span></span><br><span class="line">			re=re.substring(<span class="number">0</span>, j-<span class="number">1</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> re;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">private</span> String <span class="title function_">zhengDivade</span><span class="params">(String zheng)</span>	&#123;</span><br><span class="line">		<span class="comment">//对于金额的整数部分在12位数以内的处理，以4位数为一组</span></span><br><span class="line">		<span class="comment">//如1234（亿），5678（万），1234（元）.89</span></span><br><span class="line">		<span class="type">int</span> len=zheng.length();</span><br><span class="line">		String Re=<span class="string">&quot;&quot;</span>;</span><br><span class="line">		<span class="type">int</span> n=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">if</span>(len&gt;=<span class="number">9</span>)</span><br><span class="line">			<span class="comment">//判断整数部分的长度，考虑需要分几个组</span></span><br><span class="line">			n=<span class="number">3</span>;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(len&gt;=<span class="number">5</span> &amp;&amp; n&lt;<span class="number">9</span>)</span><br><span class="line">			n=<span class="number">2</span>;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(len&gt;=<span class="number">1</span> &amp;&amp; n&lt;<span class="number">5</span>)</span><br><span class="line">			n=<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span>(len%<span class="number">4</span> != <span class="number">0</span>)	&#123;</span><br><span class="line">			<span class="comment">//若位数非4的倍数，则在前面补0，直到位数为4的倍数为止</span></span><br><span class="line">			<span class="comment">//如12，2345补为0012，2345</span></span><br><span class="line">			String zh=<span class="string">&quot;&quot;</span>;</span><br><span class="line">			<span class="type">int</span> s=len%<span class="number">4</span>;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> k=<span class="number">0</span>;k&lt;(<span class="number">4</span>-s);k++)	&#123;</span><br><span class="line">				<span class="comment">//在前面补0</span></span><br><span class="line">				zh+=<span class="string">&quot;0&quot;</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			zh+=zheng;</span><br><span class="line">			zheng=zh;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)	&#123;</span><br><span class="line">			<span class="comment">//进行n个组合的串联</span></span><br><span class="line">			<span class="comment">//进行n次循环</span></span><br><span class="line">			String Zheng=<span class="string">&quot;&quot;</span>;</span><br><span class="line">			String sss=<span class="string">&quot;&quot;</span>;</span><br><span class="line">			len=zheng.length();<span class="comment">//长度在变化</span></span><br><span class="line">			<span class="comment">//提取出整数部分后四位，进行分开的转换</span></span><br><span class="line">			Zheng=zheng.substring(len-<span class="number">4</span>);</span><br><span class="line">			<span class="comment">//除去已经提取的字符串以外的字符串，字符串更新</span></span><br><span class="line">			zheng=zheng.substring(<span class="number">0</span>, len-<span class="number">4</span>);</span><br><span class="line">			<span class="type">int</span> m=<span class="number">0</span>,me=<span class="number">0</span>;</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">3</span>;j&gt;=<span class="number">0</span>;j--)	&#123;</span><br><span class="line">				<span class="comment">//把字符串转换成整形数，如0012换成12</span></span><br><span class="line">				m=(<span class="type">int</span>)((Zheng.charAt(j)-<span class="number">48</span>)*Math.pow</span><br><span class="line">						(<span class="number">10</span>, <span class="number">3</span>-j));</span><br><span class="line">				me+=m;</span><br><span class="line">			&#125;</span><br><span class="line">			Zheng=String.valueOf(me);<span class="comment">//把数字转换成字符串</span></span><br><span class="line">			sss=<span class="built_in">this</span>.toStr(Zheng);<span class="comment">//把字符串转换成中文汉字</span></span><br><span class="line">			sss+=str4[i]+Re;</span><br><span class="line">			<span class="comment">//衔接上元等单位，再加上已经转换好的汉字字符串，注意每组</span></span><br><span class="line">			<span class="comment">//字符串间的顺序</span></span><br><span class="line">			Re=sss;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> Re;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>	&#123;</span><br><span class="line">		<span class="comment">//输入金额，并将整数部分和小数部分连接</span></span><br><span class="line">		<span class="comment">//TODO Auto-generated method stub</span></span><br><span class="line">		ArrayTest2 s=<span class="keyword">new</span> <span class="title class_">ArrayTest2</span>();</span><br><span class="line">		System.out.println(<span class="string">&quot;请输入整数部分为十二位以内的金额：&quot;</span>);</span><br><span class="line">		<span class="meta">@SuppressWarnings(&quot;resource&quot;)</span></span><br><span class="line">		Scanner input=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">		<span class="type">double</span> a=input.nextDouble();</span><br><span class="line">		System.out.println(<span class="string">&quot;人民币读法为：&quot;</span>);</span><br><span class="line">		System.out.println(s.zhengDivade(s.divadeZheng(a))</span><br><span class="line">				+s.toStr1(s.divadeXiao(a)));</span><br><span class="line">		<span class="comment">//将整数部分的汉字字符串和小数部分的汉字字符串连接</span></span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ol>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java抽象类和接口的联系与区别</title>
-    <url>/posts/4792/</url>
-    <content><![CDATA[<p>分享一篇文章：<a href="https://blog.csdn.net/qq_33591903/article/details/81709511?utm_source=app&app_version=4.5.7">【JAVA】抽象类和接口的联系与区别</a>，留着以后不懂时多拿出来看看。  </p>
-<span id="more"></span>  
-
-<p><strong>完！</strong>  </p>
 ]]></content>
       <categories>
         <category>Java</category>
@@ -465,6 +465,22 @@
       </tags>
   </entry>
   <entry>
+    <title>Python最简单的图片爬虫</title>
+    <url>/posts/19823/</url>
+    <content><![CDATA[<p>分享一篇文章，很有技术含量，值得我去学习。  </p>
+<p><a href="https://blog.csdn.net/RRRJ97699/article/details/107159814?utm_source=app&app_version=4.5.7">Python最简单的图片爬虫，只用20行代码爬遍全网</a>  </p>
+<span id="more"></span>  
+
+<p><strong>完！</strong>  </p>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Windows安装Git以及连接GitHub</title>
     <url>/posts/5303/</url>
     <content><![CDATA[<h3 id="1-安装"><a href="#1-安装" class="headerlink" title="1.安装"></a>1.安装</h3><ul>
@@ -503,22 +519,6 @@
         <tag>学习</tag>
         <tag>hexo</tag>
         <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python最简单的图片爬虫</title>
-    <url>/posts/19823/</url>
-    <content><![CDATA[<p>分享一篇文章，很有技术含量，值得我去学习。  </p>
-<p><a href="https://blog.csdn.net/RRRJ97699/article/details/107159814?utm_source=app&app_version=4.5.7">Python最简单的图片爬虫，只用20行代码爬遍全网</a>  </p>
-<span id="more"></span>  
-
-<p><strong>完！</strong>  </p>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
       </tags>
   </entry>
   <entry>
@@ -589,36 +589,6 @@
       </categories>
       <tags>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo+next主题添加valine评论</title>
-    <url>/posts/51662/</url>
-    <content><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>参考文章：<a href="https://github.com/next-theme/hexo-theme-next/issues/188#issuecomment-766578906">Why remove the valine comment in the latest version？</a>.</p>
-<span id="more"></span>
-
-<p><img src="https://photo.lihui327.cn/blog/2022/2022-05-07_143721.jpg"></p>
-<h4 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h4><ol>
-<li>换一个评论系统，完事…</li>
-<li>参考<a href="https://github.com/next-theme/hexo-next-valine">Hexo NexT Valine</a>.</li>
-</ol>
-<p>① powershell管理员模式下cd到博客根目录，执行<code>npm install next-theme/hexo-next-valine</code></p>
-<p>② 进入主题配置文件夹，加入如下代码</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Valine</span></span><br><span class="line"><span class="comment"># For more information: https://valine.js.org, https://github.com/xCss/Valine</span></span><br><span class="line"><span class="attr">valine:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">appId:</span>  <span class="comment"># your leancloud application appid</span></span><br><span class="line">  <span class="attr">appKey:</span>  <span class="comment"># your leancloud application appkey</span></span><br><span class="line">  <span class="attr">serverURLs:</span> <span class="comment"># When the custom domain name is enabled, fill it in here</span></span><br><span class="line">  <span class="attr">placeholder:</span> <span class="string">Just</span> <span class="string">go</span> <span class="string">go</span> <span class="comment"># comment box placeholder</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">mm</span> <span class="comment"># gravatar style</span></span><br><span class="line">  <span class="attr">meta:</span> [<span class="string">nick</span>, <span class="string">mail</span>, <span class="string">link</span>] <span class="comment"># Custom comment header</span></span><br><span class="line">  <span class="attr">pageSize:</span> <span class="number">10</span> <span class="comment"># pagination size</span></span><br><span class="line">  <span class="attr">visitor:</span> <span class="literal">false</span> <span class="comment"># leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors&#x27; for counter compatibility. Article reading statistic https://valine.js.org/visitor.html</span></span><br><span class="line">  <span class="attr">comment_count:</span> <span class="literal">true</span> <span class="comment"># If false, comment count will only be displayed in post page, not in home page</span></span><br><span class="line">  <span class="attr">recordIP:</span> <span class="literal">false</span> <span class="comment"># Whether to record the commenter IP</span></span><br></pre></td></tr></table></figure>
-
-<p>③ <a href="https://www.leancloud.cn/">leancloud</a>. 创建开发板项目，获取appid和appkey，并将其填入上面的appId和appKey中</p>
-<p>④ 调试，一般情况下到这里就完成了，不过因为我的是next主题，所以有点特殊，经过上述配置后，调试时，在文章底部会看到如下问题：</p>
-<p><img src="https://photo.lihui327.cn/blog/2022/2022-05-07_144622.jpg"></p>
-<p><strong>解决办法</strong>：进入leancloud控制台，在设置-应用凭证里复制<code>REST API 服务器地址</code>，粘贴到上面代码中的<code>serverURLs</code>中，即可解决。</p>
-<p>参考文章：<a href="https://zhuanlan.zhihu.com/p/424932976">Next主题设置-安装Valine和Artitalk</a>.</p>
-]]></content>
-      <categories>
-        <category>博客教程</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>next</tag>
-        <tag>valine</tag>
       </tags>
   </entry>
   <entry>
@@ -808,6 +778,73 @@
 <p>插入iframe代码</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">width</span>=<span class="string">&quot;951&quot;</span> <span class="attr">height</span>=<span class="string">&quot;535&quot;</span> <span class="attr">src</span>=<span class="string">&quot;https://www.youtube.com/embed/m4iRwp_FWxI&quot;</span> <span class="attr">frameborder</span>=<span class="string">&quot;0&quot;</span> <span class="attr">allow</span>=<span class="string">&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot;</span> <span class="attr">allowfullscreen</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
+<h3 id="提高加载速度"><a href="#提高加载速度" class="headerlink" title="提高加载速度"></a>提高加载速度</h3><p>有几种办法：</p>
+<ol>
+<li><a href="https://www.vercel.com/">vercel</a></li>
+<li><a href="https://www.netlify.com/">netlify</a></li>
+<li><a href="https://www.cloudflare.com/">cloudflare</a></li>
+<li>域名绑定GitHub page页面，然后使用国内cdn提供商加速，如七牛云cdn、又拍云cdn、腾讯云cdn、阿里云cdn，这些都需要域名备案才具有更好的性价比。</li>
+<li>hexo主题优化，替换谷歌字体，如下：</li>
+</ol>
+<p>修改主题配置文件<code>_config.yml</code>，找到其中的font配置，设置为true，编辑host，替换原来的<code>https://fonts.googleapis.com</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">font:</span><br><span class="line">  enable: true</span><br><span class="line"></span><br><span class="line">  # Uri of fonts host, e.g. https://fonts.googleapis.com (Default).</span><br><span class="line">  host: https://fonts.lug.ustc.edu.cn/</span><br></pre></td></tr></table></figure>
+
+<p>替换JQuery服务，编辑主题配置文件<code>_config.yml</code>，找到vendors配置，自定义custom_cdn_url，如下：</p>
+<p><code>custom_cdn_url: https://code.jquery.com/jquery-2.0.3.min.js</code></p>
+<ol start="6">
+<li>hexo懒加载插件，在配置文件中配置图片lazyload，进一步减少网页呈现的时间。</li>
+<li>hexo代码压缩插件。</li>
+<li>hexo-offline-popup插件。</li>
+</ol>
+<h3 id="添加valine评论"><a href="#添加valine评论" class="headerlink" title="添加valine评论"></a>添加valine评论</h3><p><a href="https://github.com/next-theme/hexo-theme-next/issues/188#issuecomment-766578906">Why remove the valine comment in the latest version？</a>.</p>
+<p><img src="http://qiniu.iloveszy.com/blog/2022/NexT%E4%B8%BB%E9%A2%98%E7%A7%BB%E9%99%A4Valine%E8%AF%84%E8%AE%BA.png"></p>
+<p><strong>解决办法</strong></p>
+<ol>
+<li>换一个评论系统，完事…</li>
+<li>参考<a href="https://github.com/next-theme/hexo-next-valine">Hexo NexT Valine</a>.</li>
+</ol>
+<p>① powershell管理员模式下cd到博客根目录，执行<code>npm install next-theme/hexo-next-valine</code></p>
+<p>② 进入主题配置文件夹，加入如下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Valine</span><br><span class="line"># For more information: https://valine.js.org, https://github.com/xCss/Valine</span><br><span class="line">valine:</span><br><span class="line">  enable: false</span><br><span class="line">  appId:  # your leancloud application appid</span><br><span class="line">  appKey:  # your leancloud application appkey</span><br><span class="line">  serverURLs: # When the custom domain name is enabled, fill it in here</span><br><span class="line">  placeholder: Just go go # comment box placeholder</span><br><span class="line">  avatar: mm # gravatar style</span><br><span class="line">  meta: [nick, mail, link] # Custom comment header</span><br><span class="line">  pageSize: 10 # pagination size</span><br><span class="line">  visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors&#x27; for counter compatibility. Article reading statistic https://valine.js.org/visitor.html</span><br><span class="line">  comment_count: true # If false, comment count will only be displayed in post page, not in home page</span><br><span class="line">  recordIP: false # Whether to record the commenter IP</span><br></pre></td></tr></table></figure>
+
+<p>③ <a href="https://www.leancloud.cn/">leancloud</a>. 创建开发板项目(已有的无需再创建)，获取appid和appkey，并将其填入上面的appId和appKey中</p>
+<p>④ 调试，一般情况下到这里就完成了，不过因为我的是next主题，所以有点特殊，经过上述配置后，调试时，在文章底部会看到如下问题：</p>
+<p><img src="http://qiniu.iloveszy.com/blog/2022/2022-05-07_144622.jpg"></p>
+<p><strong>解决办法</strong>：进入leancloud控制台，在设置-应用凭证里复制<code>REST API 服务器地址</code>，粘贴到上面代码中的<code>serverURLs</code>中，即可解决。</p>
+<h3 id="valine评论设置邮件提醒"><a href="#valine评论设置邮件提醒" class="headerlink" title="valine评论设置邮件提醒"></a>valine评论设置邮件提醒</h3><ol>
+<li>打开leancloud<a href="https://console.leancloud.app/">官网</a>登录进入控制台，然后按照图示来(PS: 就为了找到这个Git部署，我花了好长时间，真的感觉自己眼睛不大好使啊😂)</li>
+</ol>
+<p><img src="http://qiniu.iloveszy.com/blog/2022/leancloudGit%E9%83%A8%E7%BD%B2.jpg"></p>
+<p><strong>注意</strong>：可能一开始看不到Git部署，要先部署项目，然后选择Git部署；</p>
+<ol start="2">
+<li>选择配置Git</li>
+</ol>
+<p><img src="http://qiniu.iloveszy.com/blog/2022/leancloud%E9%85%8D%E7%BD%AEGit.jpg"></p>
+<ol start="3">
+<li>配置Git填写<code>https://github.com/DesertsP/Valine-Admin</code>(<strong>随着时间的更改，可能会因为该仓库下的node版本过低而导致部署失败，这时就去GitHub上搜索新的Valine-Admin</strong>)，分支填写master，点击部署；</li>
+</ol>
+<p><img src="http://qiniu.iloveszy.com/blog/2022/leancloud%E9%85%8D%E7%BD%AEGit2.jpg"></p>
+<p><img src="http://qiniu.iloveszy.com/blog/2022/leancloud%E9%85%8D%E7%BD%AEGit3.jpg"></p>
+<ol start="4">
+<li>设置6个变量；</li>
+</ol>
+<p><img src="http://qiniu.iloveszy.com/blog/2022/leancloud%E8%AE%BE%E7%BD%AE%E5%8F%98%E9%87%8F.jpg"></p>
+<p><strong>注意</strong>：</p>
+<p><code>SMTP_PASS</code>就是邮箱授权码，需要支持smtp，如何获取请百度或者谷歌。</p>
+<p><code>SMEP_SERVICE</code>支持列表<a href="https://nodemailer.com/smtp/well-known/#supported-services">https://nodemailer.com/smtp/well-known/#supported-services</a>.</p>
+<p><code>SMTP_USER</code>就是邮箱地址。</p>
+<ol start="5">
+<li>需要设置邮箱的休眠策略，<del>需要有管理后台的必须域名备案(国际版好像不用，但我用的是国内开发版)，然后参考上面的文章即可，没有备案的可忽略</del>，表达式填写<code>0 */20 7-23 * * ?</code></li>
+</ol>
+<p><img src="http://qiniu.iloveszy.com/blog/2022/leancloud%E8%AE%BE%E7%BD%AE%E9%82%AE%E7%AE%B1%E4%BC%91%E7%9C%A0%E7%AD%96%E7%95%A5.jpg"></p>
+<ol start="6">
+<li>重启服务，重新部署，不要忘记填写分支master</li>
+</ol>
+<p><img src="http://qiniu.iloveszy.com/blog/2022/leancloud%E9%87%8D%E6%96%B0Git%E9%83%A8%E7%BD%B2.jpg"></p>
+<ol start="7">
+<li>到这里就结束了，不用更新hexo，等待一会儿之后，在博客网站里面提交评论时就会收到邮件提醒了。</li>
+</ol>
+<h3 id="关于next主题配置执行hexo-g出现问题"><a href="#关于next主题配置执行hexo-g出现问题" class="headerlink" title="关于next主题配置执行hexo g出现问题"></a>关于next主题配置执行hexo g出现问题</h3><p>这是next主题的原因，我使用其它主题都没出现过这种情况，关闭杀毒软件，退出窗口重新进入再执行<code>hexo g</code>命令即可，如果是其它的问题就可能不是主题的原因了，需要另外分析了。</p>
 <h2 id="推荐其它几个好看的主题"><a href="#推荐其它几个好看的主题" class="headerlink" title="推荐其它几个好看的主题"></a>推荐其它几个好看的主题</h2><ol>
 <li><a href="https://github.com/blinkfox/hexo-theme-matery">GitHub - blinkfox&#x2F;hexo-theme-matery: A beautiful hexo blog theme with material design and responsive design.一个基于材料设计和响应式设计而成的全面、美观的Hexo主题。国内访问：http://blinkfox.com</a>.</li>
 <li><a href="https://github.com/fluid-dev/hexo-theme-fluid">GitHub - fluid-dev&#x2F;hexo-theme-fluid: :ocean: 一款 Material Design 风格的 Hexo 主题 &#x2F; An elegant Material-Design theme for Hexo</a>.</li>
@@ -826,6 +863,14 @@
 <li><a href="https://blog.csdn.net/qq_44036990/article/details/105088198?utm_source=app">hexo(next)——每日一言、今日诗词_hexo 诗词-CSDN博客</a>.</li>
 <li><a href="https://cloud.tencent.com/developer/article/2199563">hexo博客插入音视频-腾讯云开发者社区-腾讯云 (tencent.com)</a>.</li>
 <li><a href="https://www.jianshu.com/p/ef110f36650b">Hexo NexT主题自定义友链页面</a>.</li>
+<li><a href="https://blog.csdn.net/MSDN_tang/article/details/106610897">Hexo页面加载速度优化</a>.</li>
+<li><a href="https://blog.csdn.net/qq_37402392/article/details/127029330">Hexo博客再次完善_hexo 图片懒加载-CSDN博客</a>.</li>
+<li><a href="https://blog.csdn.net/weixin_58068682/article/details/116613947">Hexo博客技巧：提升博客访问速度</a>.</li>
+<li><a href="https://zhuanlan.zhihu.com/p/424932976">Next主题设置-安装Valine和Artitalk</a>.</li>
+<li><a href="https://github.com/zhaojun1998/Valine-Admin">GitHub - zhaojun1998&#x2F;Valine-Admin: 一个 Valine 的拓展应用，用来增强 Valine 的邮件通知。</a>.</li>
+<li><a href="https://blog.csdn.net/weixin_43167980/article/details/113808068">为Valine评论系统添加邮件提醒_fluid主题实现valine评论通知系统-CSDN博客</a>.</li>
+<li><a href="https://github.com/DesertsP/Valine-Admin">GitHub - DesertsP&#x2F;Valine-Admin: 🔥A simple comment system based on LeanCloud and Valine.</a>。</li>
+<li><a href="https://github.com/DesertsP/Valine-Admin/issues/63">关于时区的一个问题 · Issue #63 · DesertsP&#x2F;Valine-Admin (github.com)</a>。</li>
 <li>可参考文章(next主题配置美化)：<a href="https://blog.csdn.net/nightmare_dimple/article/details/86661502?utm_source=app&app_version=4.5.8">《Hexo博客优化之Next主题美化》</a>、<a href="https://blog.csdn.net/forever_008/article/details/113524039?utm_source=app&app_version=4.5.8">《安装并优化next主题》</a></li>
 <li><a href="https://blog.csdn.net/weixin_53070478/article/details/122328889">hexo下NexT的主题背景及框体透明度修改_hexo 透明度-CSDN博客</a>.</li>
 <li><a href="https://www.izhaoo.com/">zhaoo (izhaoo.com)</a>.</li>
@@ -884,103 +929,6 @@
       </categories>
       <tags>
         <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于hexo+next主题valine评论设置邮件提醒</title>
-    <url>/posts/31714/</url>
-    <content><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>可能是我眼睛不好使的缘故，本来网上的教程讲得很详细，我硬是没有看到操作界面，这，我也比较无语…</p>
-<span id="more"></span>
-
-<h4 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h4><p><a href="https://blog.csdn.net/weixin_43167980/article/details/113808068">为Valine评论系统添加邮件提醒</a>.</p>
-<p><a href="https://github.com/zhaojun1998/Valine-Admin">Valine-Admin</a>.</p>
-<p><strong>说明</strong>：网上的教程千篇一律，大致相同，但是我选择这篇，因为它让我找到了正确的位置。</p>
-<h4 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h4><ol>
-<li>打开leancloud官网&lt;&gt;登录进入控制台，然后按照图示来(PS: 就为了找到这个Git部署，我花了好长时间，真的感觉自己眼睛不大好使啊😂)</li>
-</ol>
-<p><img src="https://photo.lihui327.cn/blog/2022/2022-05-08_214953.jpg"></p>
-<p><strong>注意</strong>：可能一开始看不到Git部署，要先部署项目，然后选择Git部署；</p>
-<ol start="2">
-<li>选择配置Git</li>
-</ol>
-<p><img src="https://photo.lihui327.cn/blog/2022/2022-05-08_215700.jpg"> </p>
-<ol start="3">
-<li>配置Git填写<code>https://github.com/zhaojun1998/Valine-Admin</code>(固定)，分支填写master，点击部署；</li>
-</ol>
-<p><img src="https://photo.lihui327.cn/blog/2022/2022-05-08_220215.jpg"></p>
-<p><img src="http://photo.lihui327.cn/blog/2022/2022-05-08_215946.jpg"></p>
-<ol start="4">
-<li>设置6个变量；</li>
-</ol>
-<p><img src="https://photo.lihui327.cn/blog/2022/2022-05-08_220601.jpg"> </p>
-<p><strong>注意</strong>：</p>
-<p><code>SMTP_PASS</code>就是邮箱授权码，需要支持smtp，如何获取请百度或者谷歌。</p>
-<p><code>SMEP_SERVICE</code>支持列表<a href="https://nodemailer.com/smtp/well-known/#supported-services">https://nodemailer.com/smtp/well-known/#supported-services</a>.</p>
-<p><code>SMTP_USER</code>就是邮箱地址。</p>
-<ol start="5">
-<li>需要设置邮箱的休眠策略，需要有管理后台的必须域名备案(国际版好像不用，但我用的是国内开发版)，然后参考上面的文章即可，没有备案的可忽略，表达式填写<code>0 */20 7-23 * * ?</code></li>
-</ol>
-<p><img src="https://photo.lihui327.cn/blog/2022/2022-05-08_221657.jpg"></p>
-<ol start="6">
-<li>重启服务，重新部署，不要忘记填写分支master</li>
-</ol>
-<p><img src="https://photo.lihui327.cn/blog/2022/2022-05-08_221956.jpg"> </p>
-<ol start="7">
-<li>到这里就结束了，不用更新hexo，等待一会儿之后，在博客网站里面提交评论时就会收到邮件提醒了。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>博客教程</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>next</tag>
-        <tag>valine</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于hexo+next主题提高加载速度</title>
-    <url>/posts/46103/</url>
-    <content><![CDATA[<h4 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h4><p><a href="http://t.zoukankan.com/lfri-p-12221963.html">Hexo-Next提高加载速度</a>.</p>
-<span id="more"></span>
-
-<p>文章里面介绍很详细，不过有几点需要注意。</p>
-<ol>
-<li>首先不是所有的js都可以用，这个要视具体情况而定，另外这个是针对next主题的，不同主题有一些不一样。</li>
-<li>即使有些可以用，但是不是所有的都能正常显示，比如说我使用<code>fontawesome: //cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css</code>，就出现一个问题，如图示：</li>
-</ol>
-<p><img src="https://photo.lihui327.cn/blog/2022/2022-05-08_104411.jpg"> </p>
-<p>图标加载不出来，正常情况下应该是这样的：</p>
-<p><img src="https://photo.lihui327.cn/blog/2022/2022-05-08_104540.jpg"> </p>
-<p>所以有些虽然能用但不一定好用。</p>
-<p>发下我能使用的代码</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">internal:</span> <span class="string">lib</span></span><br><span class="line">  <span class="attr">anime:</span> <span class="string">//cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js</span></span><br><span class="line">  <span class="attr">mathjax:</span> <span class="string">//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML</span></span><br><span class="line">  <span class="attr">mhchem:</span> <span class="string">//cdn.jsdelivr.net/npm/mathjax-mhchem@3</span></span><br><span class="line">  <span class="attr">katex:</span> <span class="string">//cdn.jsdelivr.net/npm/katex@0/dist/katex.min.css</span></span><br><span class="line">  <span class="attr">copy_tex_js:</span> <span class="string">//cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.js</span></span><br><span class="line">  <span class="attr">copy_tex_css:</span> <span class="string">//cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.css</span></span><br><span class="line">  <span class="attr">pjax:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js</span></span><br><span class="line">  <span class="attr">jquery:</span> <span class="string">//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js</span></span><br><span class="line">  <span class="attr">fancybox:</span> <span class="string">//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js</span></span><br><span class="line">  <span class="attr">fancybox_css:</span> <span class="string">//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css</span></span><br><span class="line">  <span class="attr">mediumzoom:</span> <span class="string">//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js</span></span><br><span class="line">  <span class="attr">lazyload:</span> <span class="string">//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js</span></span><br><span class="line">  <span class="attr">pangu:</span> <span class="string">//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js</span></span><br><span class="line">  <span class="attr">quicklink:</span> <span class="string">//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js</span></span><br><span class="line">  <span class="attr">disqusjs_js:</span> <span class="string">//cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js</span></span><br><span class="line">  <span class="attr">disqusjs_css:</span> <span class="string">//cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css</span></span><br><span class="line">  <span class="attr">valine:</span> <span class="string">//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js</span></span><br><span class="line">  <span class="attr">gitalk_js:</span> <span class="string">//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js</span></span><br><span class="line">  <span class="attr">gitalk_css:</span> <span class="string">//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css</span></span><br><span class="line">  <span class="attr">algolia_instant_js:</span> <span class="string">//cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js</span></span><br><span class="line">  <span class="attr">algolia_instant_css:</span> <span class="string">//cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.css</span></span><br><span class="line">  <span class="attr">pdfobject:</span> <span class="string">//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js</span></span><br><span class="line">  <span class="attr">mermaid:</span> <span class="string">//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js</span></span><br><span class="line">  <span class="attr">velocity:</span> <span class="string">//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js</span></span><br><span class="line">  <span class="attr">velocity_ui:</span> <span class="string">//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js</span></span><br><span class="line">  <span class="attr">pace:</span> <span class="string">//cdn.jsdelivr.net/npm/pace-js@1/pace.min.js</span></span><br><span class="line">  <span class="attr">pace_css:</span> <span class="string">//cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css</span></span><br><span class="line">  <span class="attr">three:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three.min.js</span></span><br><span class="line">  <span class="attr">three_waves:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three-waves.min.js</span></span><br><span class="line">  <span class="attr">canvas_lines:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_lines.min.js</span></span><br><span class="line">  <span class="attr">canvas_sphere:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_sphere.min.js</span></span><br><span class="line">  <span class="attr">canvas_nest:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest.min.js</span></span><br><span class="line">  <span class="attr">canvas_nest_nomobile:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest-nomobile.min.js</span></span><br><span class="line">  <span class="attr">canvas_ribbon:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js</span></span><br></pre></td></tr></table></figure>
-
-<p>图片懒加载也可以用一下。</p>
-<p>这里需要强调一下，国内提供的CDN加速服务都是需要域名备案才能用的，所以想白嫖是不大可能的，趁早死了这条心吧（￣︶￣）↗　</p>
-]]></content>
-      <categories>
-        <category>博客教程</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>next</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于next主题配置执行hexo g出现问题</title>
-    <url>/posts/63081/</url>
-    <content><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>我在我的旧电脑中不曾遇到过这种情况，就是会出现找不到某css文件，解析失败的情况。</p>
-<span id="more"></span>
-
-<h4 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h4><p>这是next主题的原因，我使用其它主题都没出现过这种情况，关闭杀毒软件，退出窗口重新进入再执行<code>hexo g</code>命令即可，如果是其它的问题就可能不是主题的原因了，需要另外分析了。</p>
-]]></content>
-      <categories>
-        <category>博客教程</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>next</tag>
       </tags>
   </entry>
   <entry>
@@ -1065,6 +1013,20 @@
       </categories>
       <tags>
         <tag>励志</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>悼念外婆</title>
+    <url>/posts/44562/</url>
+    <content><![CDATA[<p>最近因为做英语诗歌赏析，所选取的诗歌就是一首悼亡诗，由感而发，想到了已经去世十多年的外婆，触物生情，故在此抒发一下自己的情绪，同时表达一下对外婆的怀念！  </p>
+<span id="more"></span>  
+<p><strong>江城子·乙卯正月二十日夜记梦</strong><br>                                ————苏轼<br>十年生死两茫茫，不思量，自难忘。千里孤坟，无处话凄凉。纵使相逢应不识，尘满面，鬓如霜。<br>夜来幽梦忽还乡，小轩窗，正梳妆。相顾无言，惟有泪千行。料得年年肠断处，明月夜，短松冈。  </p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -1232,20 +1194,6 @@
       </tags>
   </entry>
   <entry>
-    <title>悼念外婆</title>
-    <url>/posts/44562/</url>
-    <content><![CDATA[<p>最近因为做英语诗歌赏析，所选取的诗歌就是一首悼亡诗，由感而发，想到了已经去世十多年的外婆，触物生情，故在此抒发一下自己的情绪，同时表达一下对外婆的怀念！  </p>
-<span id="more"></span>  
-<p><strong>江城子·乙卯正月二十日夜记梦</strong><br>                                ————苏轼<br>十年生死两茫茫，不思量，自难忘。千里孤坟，无处话凄凉。纵使相逢应不识，尘满面，鬓如霜。<br>夜来幽梦忽还乡，小轩窗，正梳妆。相顾无言，惟有泪千行。料得年年肠断处，明月夜，短松冈。  </p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>新年祝福</title>
     <url>/posts/47961/</url>
     <content><![CDATA[<div class="poem-wrap">
@@ -1310,6 +1258,21 @@
       </tags>
   </entry>
   <entry>
+    <title>浑河之战--戚家军的最后一战</title>
+    <url>/posts/62204/</url>
+    <content><![CDATA[<p>转载一篇文章，还原历史。<a href="http://m.qulishi.com/article/201810/300924.html">浑河之战–戚家军的最后一战</a>  </p>
+<span id="more"></span>  
+
+<p><strong>完！</strong>  </p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>历史</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>用C语言来表示有理数</title>
     <url>/posts/13387/</url>
     <content><![CDATA[<p>废话不多说，附上源码，欢迎大家指点学习！ </p>
@@ -1362,21 +1325,6 @@
       </categories>
       <tags>
         <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>浑河之战--戚家军的最后一战</title>
-    <url>/posts/62204/</url>
-    <content><![CDATA[<p>转载一篇文章，还原历史。<a href="http://m.qulishi.com/article/201810/300924.html">浑河之战–戚家军的最后一战</a>  </p>
-<span id="more"></span>  
-
-<p><strong>完！</strong>  </p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>历史</tag>
       </tags>
   </entry>
   <entry>
